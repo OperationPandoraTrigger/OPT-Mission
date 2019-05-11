@@ -1,0 +1,21 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+disabledAI=0;
+debriefing=1;
+showGPS=1;
+Respawn = 3;
+RespawnDelay = 20;
+RespawnDialog = 0;
+enabledebugconsole = true;
+
+#include "rsc\RscBasicDefines.hpp"
+
+
+class CLib {
+	// Specify which modules (Mods) should get loaded for this mission
+    Modules[] = {"CLib"};
+	
+    useExperimentalAutoload = 0;
+    useCompressedFunction = 0;
+    useFallbackRemoteExecution = 0;
+};
