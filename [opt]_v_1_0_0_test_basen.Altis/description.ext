@@ -13,7 +13,7 @@ enabledebugconsole = true;
 
 class CLib {
 	// Specify which modules (Mods) should get loaded for this mission
-    Modules[] = {"CLib"};
+    Modules[] = {"CLib","OPT"};
 	
     useExperimentalAutoload = 0;
     useCompressedFunction = 0;
