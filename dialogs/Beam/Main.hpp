@@ -1,6 +1,6 @@
 class OPTBeam
 {
-	idd = OPT_IDD_Beam;
+	idd = IDD_BEAM;
 	name="OPTBeam";
 	movingEnable = false;
 	
@@ -16,24 +16,24 @@ class OPTBeam
 			w = safeZoneW * 0.92;
 			h = safeZoneH * 0.92;
 			text = "";
-			colorBackground[] = OPT_ColorBack;
+			colorBackground[] = COLOR_BACK;
 		};
 		class BeamMap : RscMapControl
 		{
-			idc = OPT_IDC_BeamMap;
+			idc = IDC_BEAM_MAP;
 			style = ST_FRAME;
 			x = safeZoneX + safeZoneW * 0.05;
 			y = safeZoneY + safeZoneH * 0.05;
 			w = safeZoneW * 0.69;
 			h = safeZoneH * 0.9 ;
-			colorBackground[] = OPT_ColorMapBack;
+			colorBackground[] = COLOR_MAP_BACK;
 		};
 	};
 	class Controls
 	{
 		class BeamList : RscListBox
 		{
-			idc = OPT_IDC_BeamList;
+			idc = IDC_BEAM_LIST;
 			style = ST_BACKGROUND;
 			x = safeZoneX + safeZoneW * 0.75;
 			y = safeZoneY + safeZoneH * 0.05;
