@@ -8,18 +8,22 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=799;
+		nextID=804;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class LayerIndexProvider
 	{
-		nextID=533;
+		nextID=755;
 	};
 	class Camera
 	{
-		pos[]={24467.314,350.58926,18382.199};
-		dir[]={-0.79021436,-0.49420962,-0.36255005};
-		up[]={-0.44923216,0.86931163,-0.20610759};
-		aside[]={-0.41702941,1.2227101e-006,0.90895963};
+		pos[]={23527.055,22.319492,18898.271};
+		dir[]={-0.21841401,-0.5893721,0.77786827};
+		up[]={-0.15933649,0.80782658,0.5674696};
+		aside[]={0.96283501,1.0685762e-006,0.2703478};
 	};
 };
 binarizationWanted=0;
@@ -44,11 +48,11 @@ addons[]=
 	"ace_dragging",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_Exp_Infrastructure_Pavements",
-	"opt_a3_characters",
+	"opt_characters",
 	"A3_Weapons_F",
 	"tfar_handhelds",
 	"A3_Characters_F",
-	"opt_a3_weapons",
+	"opt_weapons",
 	"A3_Weapons_F_Acc",
 	"ace_flashsuppressors",
 	"A3_Weapons_F_Exp",
@@ -84,7 +88,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -178,8 +182,8 @@ class AddonsMetaData
 		};
 		class Item13
 		{
-			className="opt_a3_characters";
-			name="opt_a3_characters";
+			className="opt_characters";
+			name="opt_characters";
 		};
 		class Item14
 		{
@@ -203,8 +207,8 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="opt_a3_weapons";
-			name="opt_a3_weapons";
+			className="opt_weapons";
+			name="opt_weapons";
 		};
 		class Item18
 		{
@@ -346,6 +350,11 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item38
+		{
+			className="opt_modules";
+			name="opt_modules";
+		};
 	};
 };
 randomSeed=2349428;
@@ -409,7 +418,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=10;
 		class Item0
 		{
 			dataType="Layer";
@@ -1036,7 +1045,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\nato_sr_funke.paa";
+													value="opt_core\bilder\nato_sr_funke.paa";
 												};
 											};
 										};
@@ -1095,7 +1104,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\nato_lr_funke.paa";
+													value="opt_core\bilder\nato_lr_funke.paa";
 												};
 											};
 										};
@@ -1154,7 +1163,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\1nato_funktabelle.paa";
+													value="opt_core\bilder\1nato_funktabelle.paa";
 												};
 											};
 										};
@@ -1213,7 +1222,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_A_nato.paa";
+													value="opt_core\bilder\schild_trapo_A_nato.paa";
 												};
 											};
 										};
@@ -1272,7 +1281,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_A_nato.paa";
+													value="opt_core\bilder\schild_trapo_A_nato.paa";
 												};
 											};
 										};
@@ -1331,7 +1340,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_V_nato.paa";
+													value="opt_core\bilder\schild_trapo_V_nato.paa";
 												};
 											};
 										};
@@ -1390,7 +1399,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_V_nato.paa";
+													value="opt_core\bilder\schild_trapo_V_nato.paa";
 												};
 											};
 										};
@@ -1450,7 +1459,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -1510,7 +1519,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -1570,7 +1579,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -1630,7 +1639,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -1690,7 +1699,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -1750,7 +1759,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -1810,7 +1819,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -1870,7 +1879,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -1930,7 +1939,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -1990,7 +1999,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -2050,7 +2059,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -2110,7 +2119,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -2170,7 +2179,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -2230,7 +2239,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -2290,7 +2299,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -2350,7 +2359,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -2410,7 +2419,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -2470,7 +2479,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -2530,7 +2539,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -2590,7 +2599,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -2650,7 +2659,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -2710,7 +2719,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -2770,7 +2779,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -2830,7 +2839,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -2890,7 +2899,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -2950,7 +2959,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3010,7 +3019,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3070,7 +3079,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3130,7 +3139,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3190,7 +3199,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3250,7 +3259,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3310,7 +3319,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3370,7 +3379,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -3430,7 +3439,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -3490,7 +3499,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -3550,7 +3559,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -3609,7 +3618,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\opt4_logo.paa";
+													value="opt_core\bilder\opt4_logo.paa";
 												};
 											};
 										};
@@ -3648,7 +3657,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_uebersicht_nato.paa";
+													value="opt_core\bilder\schild_uebersicht_nato.paa";
 												};
 											};
 										};
@@ -24002,7 +24011,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\csat_sr_funke.paa";
+													value="opt_core\bilder\csat_sr_funke.paa";
 												};
 											};
 										};
@@ -24061,7 +24070,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\csat_lr_funke.paa";
+													value="opt_core\bilder\csat_lr_funke.paa";
 												};
 											};
 										};
@@ -24120,7 +24129,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\1csat_funktabelle.paa";
+													value="opt_core\bilder\1csat_funktabelle.paa";
 												};
 											};
 										};
@@ -24179,7 +24188,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_V_csat.paa";
+													value="opt_core\bilder\schild_trapo_V_csat.paa";
 												};
 											};
 										};
@@ -24238,7 +24247,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_A_csat.paa";
+													value="opt_core\bilder\schild_trapo_A_csat.paa";
 												};
 											};
 										};
@@ -24297,7 +24306,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_A_csat.paa";
+													value="opt_core\bilder\schild_trapo_A_csat.paa";
 												};
 											};
 										};
@@ -24356,7 +24365,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_trapo_V_csat.paa";
+													value="opt_core\bilder\schild_trapo_V_csat.paa";
 												};
 											};
 										};
@@ -24416,7 +24425,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -24476,7 +24485,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -24536,7 +24545,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_luftwaffe.paa";
+													value="opt_core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -24596,7 +24605,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -24656,7 +24665,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -24716,7 +24725,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_verkaufen.paa";
+													value="opt_core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -24776,7 +24785,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -24836,7 +24845,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -24896,7 +24905,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_panzer.paa";
+													value="opt_core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -24956,7 +24965,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -25016,7 +25025,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -25076,7 +25085,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_radar.paa";
+													value="opt_core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -25136,7 +25145,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -25196,7 +25205,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -25256,7 +25265,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_nachschub.paa";
+													value="opt_core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -25316,7 +25325,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -25376,7 +25385,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -25436,7 +25445,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_fahrzeuge.paa";
+													value="opt_core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -25496,7 +25505,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -25556,7 +25565,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -25616,7 +25625,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -25676,7 +25685,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -25736,7 +25745,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -25796,7 +25805,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_service.paa";
+													value="opt_core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -25856,7 +25865,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -25916,7 +25925,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -25976,7 +25985,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26036,7 +26045,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26096,7 +26105,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26156,7 +26165,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26216,7 +26225,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26276,7 +26285,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26336,7 +26345,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_muni.paa";
+													value="opt_core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -26396,7 +26405,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -26456,7 +26465,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -26516,7 +26525,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_teleport.paa";
+													value="opt_core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -26575,7 +26584,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\opt4_logo.paa";
+													value="opt_core\bilder\opt4_logo.paa";
 												};
 											};
 										};
@@ -26634,7 +26643,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_a3_core\bilder\schild_uebersicht_csat.paa";
+													value="opt_core\bilder\schild_uebersicht_csat.paa";
 												};
 											};
 										};
@@ -38793,7 +38802,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -38852,7 +38861,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -38912,7 +38921,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -39012,7 +39021,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -39072,7 +39081,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -39132,7 +39141,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="opt_a3_core\bilder\schild_muni.paa";
+									value="opt_core\bilder\schild_muni.paa";
 								};
 							};
 						};
@@ -39210,7 +39219,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_a3_core\bilder\csat_marine_ausruestung.paa";
+											value="opt_core\bilder\csat_marine_ausruestung.paa";
 										};
 									};
 								};
@@ -39532,7 +39541,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_a3_core\bilder\nato_nachschub.paa";
+											value="opt_core\bilder\nato_nachschub.paa";
 										};
 									};
 								};
@@ -39778,6 +39787,295 @@ class Mission
 			};
 			id=786;
 			atlOffset=6.1898603;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23521.203,3.1900001,18907.43};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{this setVariable [""beamName"", ""Salzsee""];" \n "this setVariable [""beamType"", ""both""];" \n "this setVariable [""beamClasses"", [""infantry""]];" \n "this setVariable [""beamPeaceOnly"", true];" \n "this setVariable [""beamSide"", ""WEST""];" \n "this setVariable [""beamOrder"", 1];" \n "this setVariable [""beamActive"", true];}";
+			};
+			id=799;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item8
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={23526.189,3.1900001,18915.555};
+			};
+			id=800;
+			type="OPT_BeamPoint";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="opt_beamPoints";
+					expression="_this setVariable ['Units',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="opt_beamPoint_allowedTank";
+					expression="_this setVariable ['ClassTank',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="opt_beamPoint_name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Salzsee";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="opt_beamPoint_allowedHeli";
+					expression="_this setVariable ['ClassHeli',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="opt_beamPoint_allowedArmed";
+					expression="_this setVariable ['ClassArmed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="opt_beamPoint_allowedInfantry";
+					expression="_this setVariable ['ClassInfantry',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="opt_beamPoint_allowedPlane";
+					expression="_this setVariable ['ClassPlane',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="opt_beamPoint_allowedLight";
+					expression="_this setVariable ['ClassLight',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="opt_beamPoint_allowedAPC";
+					expression="_this setVariable ['ClassAPC',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="opt_beamPoint_side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="opt_beamPoint_type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="both";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="opt_beamPoint_validUntil";
+					expression="_this setVariable ['ValidUntil',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="peace";
+						};
+					};
+				};
+				nAttributes=12;
+			};
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={23581.01,3.1900001,18914.631};
+			name="marker_0";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=50;
+			b=50;
+			id=803;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=1;
+		};
+		class Links
+		{
+			items=1;
+			class Item0
+			{
+				linkID=0;
+				item0=800;
+				item1=799;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
