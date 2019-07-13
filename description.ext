@@ -18,5 +18,3 @@ class CLib {
     useCompressedFunction = 0;
     useFallbackRemoteExecution = 0;
 };
-
-#include "dialogs\include.hpp" // Include dialog configs
