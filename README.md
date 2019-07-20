@@ -1,6 +1,9 @@
-# OPT-Mission
+﻿# OPT-Mission
 Repo für die OPT Mission (ohne Skripts).
 
+Building
+--------
+To pack the mission to a PBO simply execute `tools\scripts\buildMission.bat`.
 
 ## Dialoge
 Dialog-Klassen werden in der Mission unter `dialogs` gespeichert. Für jedes Modul wird hier ein eigener Ordner angelegt.
