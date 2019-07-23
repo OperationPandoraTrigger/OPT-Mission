@@ -56,7 +56,7 @@ GVARMAIN(nato_flags_pos) = [
 	   [20888, 14625, west,"11 - Sumpf - Krokodiljäger",false], // 11 - Sumpf - Krokodiljäger - wheeliebin
 	   [18481, 14309, west,"11 - Sumpf - Mine",false], // 11 - Sumpf - Mine - wheeliebin
 	   
-	   [11526, 7040, west,"12 - Insel - Dorf",true] // 12 - Insel - Dorf - 
+	   [3588, 13450, west,"12 - Kavala - Nordost",true] // 12 - Kavala-Nordost
 ];
 
 GVARMAIN(csat_flags_pos) = [
@@ -108,7 +108,7 @@ GVARMAIN(csat_flags_pos) = [
 	   [9019, 12015, east,"11 - Zaros - Zentrum",false], // 11 - Zaros - Zentrum - wheelie
 	   [10627, 12253, east,"11 - Zaros - Therisa",false], //  11 - Zaros - Therisa - wheelie
 	   
-	   [11174, 8697, east,"12 - Insel - Burg",true] //  12 - Insel - Burg
+	   [3454, 13034, east,"12 - Kavala-Suedstadt",true] //  12 - Kavala - Suedstadt
     ];
 
 

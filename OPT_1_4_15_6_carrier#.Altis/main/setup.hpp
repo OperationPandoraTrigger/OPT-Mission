@@ -27,7 +27,7 @@
 #define __RESPAWN_TYPE__ 3
 
 // Anzahl max. möglicher Spieler eingeben
-#define __PLNUM__ 115
+#define __PLNUM__ 113
 
 // falls die Mission respawn haben soll, dann die folgende Zeile auskommentieren und respawn Zeit festlegen
 // wenn das Respawndelay größer als 10 Sekunden ist erscheint ein berühmtes Zitat während die Kamera den leblosen Körper zeigt
