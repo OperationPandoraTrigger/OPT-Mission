@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Vom Thrakischen Meer nach Frini"
+#define __MISSION_NAME__ "Betongold"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ Complete new build 1.MAJOR.MINOR.BUILD
 // made by
