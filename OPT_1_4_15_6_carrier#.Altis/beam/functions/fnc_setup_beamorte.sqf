@@ -48,11 +48,11 @@
 //West
 GVAR(locations_west) =
 [
-    [[8945,0,7989], "Landung_alpha", -1],
-    [[9470,0,8942], "Landung_bravo", -1],
-    [[9863,0,9728], "Landung_charly", -1],
-    [[8477,0,7383], "Marine Basis", -1],
-    [[8570,0,7349], "FOB", -1],
+    [[3723,0,17576], "Landung_alpha", -1],
+    [[9470,0,8942], "Landung_bravo", 0],
+    [[9863,0,9728], "Landung_charly", 0],
+    [[3003,0,18176], "Marine Basis", -1],
+    [[8570,0,7349], "FOB", 0],
 
     [[12538,31.9272,16319], "1 - Lakka - Fabrik", 0],
     [[12261.611,24.580132,15468.185], "1 - Lakka - Zentrum", 0],
@@ -103,11 +103,11 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[12901,0,6514], "Landung_alpha", -1],
-    [[12922,0,7989], "Landung_bravo", -1],
-    [[12664,0,9651], "Landung_charly", -1],
-    [[14051,0,6395], "Marine Basis", -1],
-    [[13769,0,6378], "FOB", -1],
+    [[7282,0,10998], "Landung_alpha", -1],
+    [[12922,0,7989], "Landung_bravo", 0],
+    [[12664,0,9651], "Landung_charly", 0],
+    [[7147,0,10947], "Marine Basis", -1],
+    [[13769,0,6378], "FOB", 0],
 	
     [[21378.822,36.758911,8976.4902], "1 - Panagia - Umspannwerk", 0],        
     [[20432.508,39.498234,8917.2764], "1 - Panagia - Stadt", 0],    
