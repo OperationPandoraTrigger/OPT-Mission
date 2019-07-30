@@ -9,107 +9,178 @@ east -> Angriffsziel für NATO
 
 GVARMAIN(nato_flags_pos) = [
 
-// Basis Nordost - 7
-	   [12635, 16402, west,"1- Lakka - Fabrik",false], // 1- Lakka - Fabrik - garbage3
-	   [12421, 15574, west,"1 - Lakka - Stadt",false], // 1 - Lakka - Stadt - garbage5
-	   [12988, 15068, west,"1 - Lakka - Stavros",false], // 1 - Lakka - Stavros - garbage bags
-	   
-	   [16592, 19052, west,"2 - Athira - Militär",false], // 2 - Athira - Militär - garbage line
-	   [14018, 18747, west,"2 - Athira - Stadt",false], // 2 - Athira - Stadt - garbage barrel
-	   [14361, 18922, west,"2 - Athira - Industrie",false], // 2 - Athira - Industrie - garbage barrel greek
-	   
-	   [16657, 16122, west,"3 - Telos - Anthrakia",false], // 3 - Telos - Anthrakia - garbage pallet
-	   [16363, 17238, west,"3 - Telos - Stadt",false], // 3 - Telos - Stadt - garbage washing
-	   [16079, 16999, west,"3 - Telos - Militär",false], // 3 - Telos - Militär - luggage bunch
+// Basis 
+	   [4913, 21907, west,"1 - Throns castel",true], // 1 - Throns_castel
+	   [4618, 21363, west,"2 - Oreokastro",true], // 2 - Oreokastro
+	   [4872, 19455, west,"3 - Waffenlager Nord West",true], // 3 - Waffenlager_Nord_West
+	   [3354, 18329, west,"4 - Villa Constans",true], // 4 - Villa_Constans
 
-	   [12608, 14284, west,"4 - Neochori - Stadt",false], // 4 - Neochori - Stadt - luggage couple
-	   [11906, 14350, west,"4 - Neochori - Landhaus",false], // 4 - Neochori - Landhaus - luggage few
-	   [11096, 14616, west,"4 - Neochori - Alikampos",false], // 4 - Neochori - Alikampos - luggage heap
-	   
-	   [10457, 17229, west,"5 - Koroni - Orino",false], // 5 - Koroni - Orino - luggage pile
-	   [10908, 17860, west,"5 - Koroni - VTOL-Absturz",false], // 5 - Koroni - VTOL-Absturz - oil spill
-	   [11728, 18291, west,"5 - Koroni - Dorf",false], // 5 - Koroni - Dorf - garbage heap 1
+	   [5398, 17888, west,"5 - Mine Gore",true], // 5 - Mine_Gore
+	   [6210, 16240, west,"6 - Kore Fabrik",true], // 6 - Kore_Fabrik
+	   [4264, 13929, west,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
+	   [3739, 12997, west,"8 - Kavala Hospital",true], // 8 - Kavala_Hospital
 
-	   [12791, 19679, west,"6 - Frini - Ifestiona",false], // 6 - Frini - Ifestiona - garbage heap 2
-	   [14236, 21229, west,"6 - Frini - Militär",false], // 6 - Frini - Militär - garbage heap 3
-	   [14621, 20772, west,"6 - Frini - Kirche",false], // 6 - Frini - Kirche - garbage heap 4
+	   [5924, 12469, west,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
+	   [12608, 14284, west,"10 - Edessa",true], // 10 - Edessa
+	   [9710, 22282, west,"11 - Krya Nera",true], // 11 - Krya_Nera
+	   [8560, 20883, west,"12 - Abdera Farm",true], // 12 - Abdera_Farm
 	   
-	   [14592, 20788, west,"6 - Frini - Zentrum Süd",false], // 6 - Frini - Zentrum Süd
+	   [9423, 20273, west,"13 - Abdera Rathaus",true], // 13 - Abdera_Rathaus
+	   [10351, 19030, west,"14 - Galati alte Post",true], // 14 - Galati_alte_Post
+	   [7515, 18333, west,"15 - Enclave Syrta",true], // 15 - Enclave_Syrta
 
-	   [18128, 15267, west,"7 - Charkia - Zentrum",false], // 7 - Charkia - Zentrum - junkpile
-	   [18774, 16598, west,"7 - Charkia - Rodopoli",false], // 7 - Charkia - Rodopoli - tyre
-	   [18204, 17271, west,"7 - Charkia - Alte Kommandatur",false], // 7 - Charkia - Alte Kommandatur - tyre1
-
-	   [16943, 12635, west,"8 - Pyrgos - Zentrum",false], // 8 - Pyrgos - Zentrum - tyre line
-	   [17437, 13137, west,"8 - Pyrgos - Militär",false], // 8 - Pyrgos - Militär - land tyres
-	   [19454, 13240, west,"8 - Pyrgos - Dorida",false], // 8 - Pyrgos - Dorida - garbage bin
+	   [7174, 16468, west,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
+	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",true], // 17 - Checkpoint Agios Dionisos
+	   [9321, 13699, west,"18 - Xirolimni Damm",true], // 18 - Xirolimni_Damm",true
 	   
-	   [10979, 13387, west,"9 - Agios Dionysios - Poliakko",false], // 9 - Agios Dionysios - Poliakko - container closed
-	   [9558, 15110, west,"9 - Agios Dionysios - Fabrik",false], // 9 - Agios Dionysios - Fabrik - container open
-	   [9252, 15800, west,"9 - Agios Dionysios - Zentrum",false], // 9 - Agios Dionysios - Zentrum - tire van
+	   [9489, 8236, west,"19 - Hühnerfarm Sfaka",true], // 19 - Hühnerfarm_Sfaka
+
+	   [12346, 22844, west,"20 - Tonos Bucht",true], // 20 - Tonos_Bucht
+	   [13054, 19448, west,"21 - Checkpoint Ifestonia",true], // Checkpoint_Ifestonia
+	   [12634, 16399, west,"22 - Lacca Fabrik",true], // 22 - Lacca_Fabrik
+
+	   [13273, 14969, west,"23 - Stavros Radar",true], // 23 - Stavros_Radar
+	   [12178, 14352, west,"24 - Neochori Wollmarkt",true], // 24 - Neochori_Wollmarkt
+	   [11083, 13363, west,"25 - Poliakko alte Brennerei",true], // 25 - Poliakko_alte_Brennerei
+	   
+	   [10676, 12234, west,"26 - Therisa Markt",true], // 26 - Therisa_Markt
+	   [10795, 10868, west,"27 - Drimea Fährstation",true], // 27 - Drimea_Fährstation
+	   [11536, 7047, west,"28 - Egino Farmhaus",true], // 28 - Egino_Farmhaus
   
-	   [20956, 17059, west,"10 - Paros - Zentrum",false], // 10 - Paros - Zentrum - tire van 2 
-	   [21331, 16388, west,"10 - Paros - Kalochori",false], // 10 - Paros - Kalochori -  tire van transport
-	   [22560, 16400, west,"10 - Paros - Handelsposten",false], // 10 - Paros - Handelsposten - tire van spare
+	   [14283, 22224, west,"29 - Hanf Plantage Frini",true], // 29 - Hanf_Plantage_Frini 
+	   [14752, 20733, west,"30 - Frini Polizeistation",true], // 30 - Frini_Polizeistation
+	   [14325, 18928, west,"31 - Athira Factory",true], // 31 - Athira_Factory
 	   
-	   [21691, 14075, west,"11 - Sumpf - Farm",false], // 11 - Sumpf - Farm - wheeliebin
-	   [20888, 14625, west,"11 - Sumpf - Krokodiljäger",false], // 11 - Sumpf - Krokodiljäger - wheeliebin
-	   [18481, 14309, west,"11 - Sumpf - Mine",false], // 11 - Sumpf - Mine - wheeliebin
+	   [14920, 17172, west,"32 - Airbase Altis",true], // 32 - Airbase_Altis
+	   [13591, 15188, west,"33 - xxxxxxxxxxxxx",true], // 33 - xxxxxxxxxxxxx
+	   [11922, 9722, west,"34 - Alpaka Residenz",true], // 34 - Alpaka_Residenz
 	   
-	   [3588, 13450, west,"12 - Kavala - Nordost",true] // 12 - Kavala-Nordost
+	   [16603, 19042, west,"35 - Kalithea Kontrolltower",true], // 35 - Kalithea_Kontrolltower
+	   
+	   [16459, 17202, west,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
+	   [16654, 16122, west,"37 - Athira Kirchplatz",true], // 37 - Athira_Kirchplatz
+	   [16720, 13548, west,"38 - xxxxxxxxxxx",true], // 38 _ xxxxxxxxxxxxxx
+
+	   [16589, 12635, west,"39 - Pyrgos Zentrum",true], // 39 - Pyrgos_Zentrum
+	   [17806, 10596, west,"40 - Ekali Stones",true], // 40 - Ekali Stones 
+	   [19422, 7972, west,"41 - Lonely",true], // 42 - Lonely
+
+	   [18897, 16660, west,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
+	   [18374, 15529, west,"43 - Charkia Storage",true], // 43 - Charkia Storage
+	   [18116, 15218, west,"44 - Charkia",true], // 44 - Charkia
+
+	   [19677, 12998, west,"45 - Dorida Woods",true], // 45 - Dorida Woods
+	   [20166, 11710, west,"46 - Chalikea",true], // 46 - Chalikea
+	   [20546, 9003, west,"47 - Panagia",true], // 47 - Panagia
+	   
+	   [20897, 6643, west,"48 - Selakano",true], // 48 - Selakano
+	   [20077, 20064, west,"49 - Pefka Colloseum",true], // 49 - Pefka Colloseum
+	   [20923, 19242, west,"50 - Pefkas Lab",true], // 50 - Pefkas Lab
+	   
+	   [20940, 17008, west,"51 - Paros",true], // 51 - Paros
+	   [21365, 16285, west,"52 - Kalochori",true], // 52 - Kalochori
+	   [21154, 14594, west,"53 - Limni Swamp",true], // 53 - Limni Swamp
+	   
+	   [21980, 21035, west,"54 - Pefkas Palace",true], // 54 - Pefkas Palace
+	   [22303, 18491, west,"55 - Almyra West",true], // 55 - Almyra West
+	   [22627, 16807, west,"56 - Almyra South",true], // 56 - Almyra South
+	   
+	   [23346, 24195, west,"57 - Sideras",true], // 57 - Sideras
+	   [23467, 21158, west,"58 - Delfinaki Military",true], // 58 - Delfinaki Military
+	   [24770, 19122, west,"59 - Almyra North",true], // 59 - Almyra North
+	   
+	   [26746, 24660, west,"60 - Molos Airbase",true], // 60 - Molos Airbase
+	   [26958, 23200, west,"61 - Molos Town",true], // 61 - Molos Town
+	   [25440, 20346, west,"62 - Refinery",true] // 62 - Refinery
 ];
 
 GVARMAIN(csat_flags_pos) = [
 
-//Basis aussen
-	   [21385, 9042, east,"1 - Panagia - Umspannwerk",false], // 1 - Panagia - Umspannwerk - garbage3
-	   [20469, 8900, east,"1 - Panagia - Stadt",false], // 1 - Panagia - Stadt - garbage5
-	   [19343, 9685, east,"1 - Panagia - Antenne",false], // 1 - Panagia - Antenne - garbage bags
+//Basis 
 
-	   [17091, 11311, east,"2 - Chalkeia - Steinbruch",false], // 2 - Chalkeia - Steinbruch - bags line
-	   [21550, 10928, east,"2 - Chalkeia - Ausgrabungsstätte",false], // 2 - Chalkeia - Ausgrabungsstätte - barrel	  
-	   [20251, 11615, east,"2 - Chalkeia - Zentrum",false], // 2 - Chalkeia - Zentrum - barrel greek
+	   [4913, 21907, east,"1 - Throns castel",true], // 1 - Throns_castel
+	   [4618, 21363, east,"2 - Oreokastro",true], // 2 - Oreokastro
+	   [4872, 19455, east,"3 - Waffenlager Nord West",true], // 3 - Waffenlager_Nord_West
+	   [3354, 18329, east,"4 - Villa Constans",true], // 4 - Villa_Constans
 
-	   [20112, 20011, east,"3 - Ioannina - Ausgrabungsstätte",false], // 3 - Ioannina - Ausgrabungsstätte - pallet
-	   [20963, 19212, east,"3 - Ioannina - Militärposten",false], // 3 - Ioannina - Militärposten - wash
-	   [22188, 18360, east,"3 - Ioannina - Zollstation",false], // 3 - Ioannina - Zollstation - luggage heap 3
+	   [5398, 17888, east,"5 - Mine Gore",true], // 5 - Mine_Gore
+	   [6210, 16240, east,"6 - Kore Fabrik",true], // 6 - Kore_Fabrik
+	   [4264, 13929, east,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
+	   [3739, 12997, east,"8 - Kavala Hospital",true], // 8 - Kavala_Hospital
 
-	   [25406, 20355, east,"4 - Delfinaki - Kraftwerk",false], // 4 - Delfinaki - Kraftwerk - luggage heap 1
-	   [23620, 21076, east,"4 - Delfinaki - Militär",false], // 4 - Delfinaki - Militär - luggage 2
-	   [21901, 20942, east,"4 - Delfinaki - Hotelanlage",false], // 4 - Delfinaki - Hotelanlage - luggage 5
+	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
+	   [12608, 14284, east,"10 - Edessa",true], // 10 - Edessa
+	   [9710, 22282, east,"11 - Krya Nera",true], // 11 - Krya_Nera
+	   [8560, 20883, east,"12 - Abdera Farm",true], // 12 - Abdera_Farm
 	   
-	   [9743, 22307, east,"5 - Abdera - Krya Nera",false], // 5 - Abdera - Krya Nera - luggage 4
-	   [12206, 22940, east,"5 - Abdera - Tonos Bay",false], // 5 - Abdera - Tonos Bay - oil spill
-	   [9468, 20290, east,"5 - Abdera - Zentrum",false], // 5 - Abdera - Zentrum - garbage heap 1
+	   [9423, 20273, east,"13 - Abdera Rathaus",true], // 13 - Abdera_Rathaus
+	   [10351, 19030, east,"14 - Galati alte Post",true], // 14 - Galati_alte_Post
+	   [7515, 18333, east,"15 - Enclave Syrta",true], // 15 - Enclave_Syrta
+
+	   [7174, 16468, east,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
+	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",true], // 17 - Checkpoint Agios Dionisos
+	   [9321, 13699, east,"18 - Xirolimni Damm",true], // 18 - Xirolimni_Damm",true
 	   
-	   [10293, 19074, west,"6 - Galati - Zentrum",false], // 6 - Galati - Zentrum - garbage 2
-	   [11539, 20400, west,"6 - Galati - Steinbruch",false], // 6 - Galati - Steinbruch - garbage 3
-	   [14194, 22157, west,"6 - Galati - Jagdhaus",false], // 6 - Galati - Jagdhaus - garbage 4
+	   [9489, 8236, east,"19 - Hühnerfarm Sfaka",true], // 19 - Hühnerfarm_Sfaka
+
+	   [12346, 22844, east,"20 - Tonos Bucht",true], // 20 - Tonos_Bucht
+	   [13054, 19448, east,"21 - Checkpoint Ifestonia",true], // Checkpoint_Ifestonia
+	   [12634, 16399, east,"22 - Lacca Fabrik",true], // 22 - Lacca_Fabrik
+
+	   [13273, 14969, east,"23 - Stavros Radar",true], // 23 - Stavros_Radar
+	   [12178, 14352, east,"24 - Neochori Wollmarkt",true], // 24 - Neochori_Wollmarkt
+	   [11083, 13363, east,"25 - Poliakko alte Brennerei",true], // 25 - Poliakko_alte_Brennerei
 	   
-	   [8614, 18246, east,"7 - Syrta - Zentrum",false], // 7 - Syrta - Zentrum - junk pile
-	   [5410, 17908, east,"7 - Syrta - Verladestation",false], // 7 - Syrta - Verladestation - tyre
-	   [3932, 17349, east,"7 - Syrta - Agios Konstantinos",false], // 7 - Syrta - Agios Konstantinos - tyre1
+	   [10676, 12234, east,"26 - Therisa Markt",true], // 26 - Therisa_Markt
+	   [10795, 10868, east,"27 - Drimea Fährstation",true], // 27 - Drimea_Fährstation
+	   [11536, 7047, east,"28 - Egino Farmhaus",true], // 28 - Egino_Farmhaus
+  
+	   [14283, 22224, east,"29 - Hanf Plantage Frini",true], // 29 - Hanf_Plantage_Frini 
+	   [14752, 20733, east,"30 - Frini Polizeistation",true], // 30 - Frini_Polizeistation
+	   [14325, 18928, east,"31 - Athira Factory",true], // 31 - Athira_Factory
 	   
-	   [7172, 16468, east,"8 - Kore - Zentrum",false], // 8 - Kore - Zentrum - tyre line
-	   [6763, 15834, east,"8 - Kore - Müllkippe",false], // 8 - Kore - Müllkippe - tyres
-	   [4874, 16177, east,"8 - Kore - Negades",false], // 8 - Kore - Negades - garbage bin
+	   [14920, 17172, east,"32 - Airbase_Altis",true], // 32 - Airbase_Altis
+	   [13591, 15188, east,"33 - xxxxxxxxxxxxx",true], // 33 - xxxxxxxxxxxxx
+	   [11922, 9722, east,"34 - Alpaka_Residenz",true], // 34 - Alpaka_Residenz
 	   
-	   [3369, 14274, east,"9 - Aggelochori - Villenviertel",false], // 9 - Aggelochori - Villenviertel - trash closed
-	   [6465, 13750, east,"9 - Aggelochori - Schaffarm",false], // 9 - Aggelochori - Schaffarm - trash open
-	   [3789, 13591, east,"9 - Aggelochori - Zentrum",false], // 9 - Aggelochori - Zentrum - van 2
+	   [16603, 19042, east,"35 - Kalithea Kontrolltower",true], // 35 - Kalithea_Kontrolltower
+
+	   [16459, 17202, east,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
+	   [16654, 16122, east,"37 - Athira Kirchplatz",true], // 37 - Athira_Kirchplatz
+	   [16720, 13548, east,"38 - xxxxxxxxxxx",true], // 38 _ xxxxxxxxxxxxxx
+
+	   [16589, 12635, east,"39 - Pyrgos Zentrum",true], // 39 - Pyrgos_Zentrum
+	   [17806, 10596, east,"40 - Ekali Stones",true], // 40 - Ekali Stones 
+	   [19422, 7972, east,"41 - Lonely",true], // 42 - Lonely
+
+	   [18897, 16660, east,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
+	   [18374, 15529, east,"43 - Charkia Storage",true], // 43 - Charkia Storage
+	   [18116, 15218, east,"44 - Charkia",true], // 44 - Charkia
+
+	   [19677, 12998, east,"45 - Dorida Woods",true], // 45 - Dorida Woods
+	   [20166, 11710, east,"46 - Chalikea",true], // 46 - Chalikea
+	   [20546, 9003, east,"47 - Panagia",true], // 47 - Panagia
 	   
-	   [14601, 20800, east,"6 - Frini - Zentrum Nord",false], // 6 - Frini - Zentrum Nord
+	   [20897, 6643, east,"48 - Selakano",true], // 48 - Selakano
+	   [20077, 20064, east,"49 - Pefka Colloseum",true], // 49 - Pefka Colloseum
+	   [20923, 19242, east,"50 - Pefkas Lab",true], // 50 - Pefkas Lab
 	   
-	   [7571, 12195, east,"10 - Edessa - Farm",false], // 10 - Edessa - Farm - wheelie
-	   [7146, 11010, east,"10 - Edessa - Strand",false], // 10 - Edessa - Strand - wheelie 
-	   [8215, 10897, east,"10 - Edessa - Kraftwerk",false], // 10 - Edessa - Kraftwerk - wheelie
+	   [20940, 17008, east,"51 - Paros",true], // 51 - Paros
+	   [21365, 16285, east,"52 - Kalochori",true], // 52 - Kalochori
+	   [21154, 14594, east,"53 - Limni Swamp",true], // 53 - Limni Swamp
 	   
-	   [10040, 11316, east,"11 - Zaros - Villa",false], // 11 - Zaros - Villa - wheelie
-	   [9019, 12015, east,"11 - Zaros - Zentrum",false], // 11 - Zaros - Zentrum - wheelie
-	   [10627, 12253, east,"11 - Zaros - Therisa",false], //  11 - Zaros - Therisa - wheelie
+	   [21980, 21035, east,"54 - Pefkas Palace",true], // 54 - Pefkas Palace
+	   [22303, 18491, east,"55 - Almyra West",true], // 55 - Almyra West
+	   [22627, 16807, east,"56 - Almyra South",true], // 56 - Almyra South
 	   
-	   [3454, 13034, east,"12 - Kavala-Suedstadt",true] //  12 - Kavala - Suedstadt
-    ];
+	   [23346, 24195, east,"57 - Sideras",true], // 57 - Sideras
+	   [23467, 21158, east,"58 - Delfinaki Military",true], // 58 - Delfinaki Military
+	   [24770, 19122, east,"59 - Almyra North",true], // 59 - Almyra North
+	   
+	   [26746, 24660, east,"60 - Molos Airbase",true], // 60 - Molos Airbase
+	   [26958, 23200, east,"61 - Molos Town",true], // 61 - Molos Town
+	   [25440, 20346, east,"62 - Refinery",true] // 62 - Refinery
+];
 
 
 // erzeuge für alle oben gelisteten Positionen einen Flaggenmast mit korrekter Flagge vom Server aus.

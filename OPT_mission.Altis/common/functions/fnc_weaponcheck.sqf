@@ -111,8 +111,15 @@ if !(_typeOfPlayer in GVARMAIN(operator)) then {
 // check medic item
 if !(_typeOfPlayer in GVARMAIN(medic)) then {
     {
-        _unit removeItems _x
+        _unit removeItems _x;
     } forEach ["Medikit"]; //TODO: ACE
+};
+
+// check Lasermarker
+if !(_typeOfPlayer in GVARMAIN(spaeher)) then {
+    {
+        _unit removeWeapon _x;
+    } forEach ["OPT_Laserdesignator","OPT_Laserdesignator_02","OPT_Laserdesignator_01_khk_F","OPT_Laserdesignator_02_ghex_F"];
 };
 
 if (_bad_item_used) then {

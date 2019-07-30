@@ -48,111 +48,187 @@
 //West
 GVAR(locations_west) =
 [
-    [[3723,0,17576], "Landung_alpha", -1],
+    [[3723,0,17576], "Landung_alpha", 0],
     [[9470,0,8942], "Landung_bravo", 0],
     [[9863,0,9728], "Landung_charly", 0],
-    [[3003,0,18176], "Marine Basis", -1],
+    [[3003,0,18176], "Marine Basis", 0],
     [[8570,0,7349], "FOB", 0],
 
-    [[12538,31.9272,16319], "1 - Lakka - Fabrik", 0],
-    [[12261.611,24.580132,15468.185], "1 - Lakka - Zentrum", 0],
-    [[13009.863,23.24024,14861.646], "1 - Lakka - Stavros", 0],    
+       [[4925.6323,341.19653,21895.656], "1 - Throns castel",1], // 1 - Throns_castel
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",1], // 2 - Oreokastro
+	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",1], // 3 - Waffenlager_Nord_West
+	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",1], // 4 - Villa_Constans
 
-    [[16660.316,32.487659,19089.379], "2 - Athira - Militär", 0],    
-    [[14165.508,27.977919,18659.793], "2 - Athira - Stadt", 0],            
-    [[14430.449,39.187088,18884.332], "2 - Athira - Industrie", 0],    
+	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",1], // 5 - Mine_Gore
+	   [[6181.8838,43.000999,16256.253], "6 - Kore Fabrik",1], // 6 - Kore_Fabrik
+	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",1], // 7 - Checkpoint_charlie
+	   [[3723.6956,18.555311,12999.2], "8 - Kavala Hospital",1], // 8 - Kavala_Hospital
 
-    [[16737.273,17.730064,16132.73], "3 - Telos - Anthrakia", 0],
-    [[16295.838,16.738787,17099.875], "3 - Telos - Stadt", 0],
-    [[15877.67,15.085531,16974.648], "3 - Telos - Militär", 0],    
+	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",1], // 9 - Lager_Panagiotis
+	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",1], // 10 - Edessa
+	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",1], // 11 - Krya_Nera
+	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",1], // 12 - Abdera_Farm
+	   
+	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",1], // 13 - Abdera_Rathaus
+	   [[10405.196,120.67762,19023.145], "14 - Galati alte Post",1], // 14 - Galati_alte_Post
+	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",1], // 15 - Enclave_Syrta
 
-    [[12733.035,11.836403,14372.348], "4 - Neochori - Stadt", 0],        
-    [[11969.951,14.046638,14291.693], "4 - Neochori - Landhaus", 0],
-    [[11023.203,39.982777,14531.577], "4 - Neochori - Alikampos", 0],
-    
-    [[10385.715,80.255913,17164.092], "5 - Koroni - Orino", 0],
-    [[10985.872,59.443657,17920.361], "5 - Koroni - VTOL-Absturz", 0],
-    [[11751.703,50.946453,18206.74], "5 - Koroni - Dorf", 0],   
-	
+	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",1], // 16 - Kore_Zentrum
+	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",1], // 17 - Checkpoint Agios Dionisos
+	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",1], // 18 - Xirolimni_Damm",1
+	   
+	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",1], // 19 - Hühnerfarm_Sfaka
 
-    [[12718.259,46.086807,19714.48], "6 - Frini - Ifestiona", 0],    
-    [[14163.192,77.935982,21256.35], "6 - Frini - Militär", 0],    
-    [[14651.827,46.015129,20746.74], "6 - Frini - Kirche", 0],
+	   [[12318.005,20.195953,22856.318], "20 - Tonos Bucht",1], // 20 - Tonos_Bucht
+	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",1], // Checkpoint_Ifestonia
+	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",1], // 22 - Lacca_Fabrik
 
-    [[18120.027,19.071079,15093.02], "7 - Charkia - Zentrum", 0],
-    [[18871.184,27.950462,16450.836], "7 - Charkia - Rodopoli", 0],
-    [[18221.91,23.064184,17296.074], "7 - Charkia - Alte Kommandatur", 0],
+	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",1], // 23 - Stavros_Radar
+	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",1], // 24 - Neochori_Wollmarkt
+	   [[11105.64,19.684849,13325.393], "25 - Poliakko alte Brennerei",1], // 25 - Poliakko_alte_Brennerei
+	   
+	   [[10675.173,16.757935,12266.578], "26 - Therisa Markt",1], // 26 - Therisa_Markt
+	   [[10819.854,6.4413772,10859.053], "27 - Drimea Fährstation",1], // 27 - Drimea_Fährstation
+	   [[11562.51,77.303802,7045.9185], "28 - Egino Farmhaus",1], // 28 - Egino_Farmhaus
+  
+	   [[14266.871,43.789253,22215.367], "29 - Hanf Plantage Frini",1], // 29 - Hanf_Plantage_Frini 
+	   [[14716.515,46.701706,20735.465], "30 - Frini Polizeistation",1], // 30 - Frini_Polizeistation
+	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",1], // 31 - Athira_Factory
+	   
+	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",1], // 32 - Airbase_Altis
+	   [[13589.743,16.363777,12166.921], "33 - xxxxxxxxxxxxx",1], // 33 - xxxxxxxxxxxxx
+	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",1], // 34 - Alpaka_Residenz
+	   
+	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",1], // 35 - Kalithea_Kontrolltower
+	   
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
+	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",1], // 37 - Athira_Kirchplatz
+	   [[16703.346,10.311413,13522.601], "38 - xxxxxxxxxxx",1], // 38 _ xxxxxxxxxxxxxx
 
-    [[17068.695,14.694515,12525.737], "8 - Pyrgos - Zentrum", 0],    
-    [[17417.117,14.183782,13175.799], "8 - Pyrgos - Militär", 0],    
-    [[19577.238,37.416702,13293.302], "8 - Pyrgos - Dorida", 0],
-	
-    [[10956.118,28.231323,13339.095], "9 - Agios Dionysios - Poliakko", 0],
-    [[9523.1953,128.22626,15122.915], "9 - Agios Dionysios - Fabrik", 0],
-    [[9227.1748,121.45984,15834.313], "9 - Agios Dionysios - Zentrum", 0],
- 
-    [[20941.775,44.582573,17101.422], "10 - Paros - Zentrum", 0],    
-    [[21351.789,21.15097,16375.116], "10 - Paros - Kalochori", 0],
-    [[22599.023,13.503523,16456.139], "10 - Paros - Handelsposten", 0],
+	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",1], // 39 - Pyrgos_Zentrum
+	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",1], // 40 - Ekali Stones 
+	   [[19406.996,50.685932,7955.5903], "41 - Lonely",1], // 42 - Lonely
 
-    [[21732.85,14.710834,14126.517], "11 - Sumpf - Farm", 0], 
-    [[20871.459,2.1758637,14547.363], "11 - Sumpf - Krokodilfarm", 0], 
-    [[18369.736,21.488216,14258.045], "11 - Sumpf - Mine", 0]
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
+	   [[18147.764,25.077732,15225.152], "44 - Charkia",1], // 44 - Charkia
+
+	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",1], // 45 - Dorida Woods
+	   [[20155.959,41.908695,11718.664], "46 - Chalikea",1], // 46 - Chalikea
+	   [[20555.693,39.293385,9022.5293], "47 - Panagia",1], // 47 - Panagia
+	   
+	   [[20907.025,34.035168,6664.6289], "48 - Selakano",1], // 48 - Selakano
+	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",1], // 49 - Pefka Colloseum
+	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",1], // 50 - Pefkas Lab
+	   
+	   [[50940,0,17008], "51 - Paros",1], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
+	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",1], // 53 - Limni Swamp
+	   
+	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",1], // 54 - Pefkas Palace
+	   [[22283.615,14.165822,18499.398], "55 - Almyra West",1], // 55 - Almyra West
+	   [[22599.842,13.634861,16825.371], "56 - Almyra South",1], // 56 - Almyra South
+	   
+	   [[23371.816,3.9426758,24183.539], "57 - Sideras",1], // 57 - Sideras
+	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",1], // 58 - Delfinaki Military
+	   [[24755.986,3.8023796,19153.188], "59 - Almyra North",1], // 59 - Almyra North
+	   
+	   [[26731.115,20.005753,24638.008], "60 - Molos Airbase",1], // 60 - Molos Airbase
+	   [[26989.885,20.367672,23206.453], "61 - Molos Town",1], // 61 - Molos Town
+	   [[25420.861,10.028322,20338.611], "62 - Refinery",1] // 62 - Refinery
 ];
 
 //East
 GVAR(locations_east) =
 [
-    [[7282,0,10998], "Landung_alpha", -1],
+    [[7282,0,10998], "Landung_alpha", 0],
     [[12922,0,7989], "Landung_bravo", 0],
     [[12664,0,9651], "Landung_charly", 0],
-    [[7147,0,10947], "Marine Basis", -1],
+    [[7147,0,10947], "Marine Basis", 0],
     [[13769,0,6378], "FOB", 0],
 	
-    [[21378.822,36.758911,8976.4902], "1 - Panagia - Umspannwerk", 0],        
-    [[20432.508,39.498234,8917.2764], "1 - Panagia - Stadt", 0],    
-    [[19304.264,188.92511,9650.2051], "1 - Panagia - Antenne", 0],
-	
-    [[17047.197,23.779554,11319.724], "2 - Chalkeia - Steinbruch", 0],    
-    [[21552.613,14.999241,10965.695], "2 - Chalkeia - Ausgrabungsstätte", 0],    
-    [[20279.32,66.769104,11592.766], "2 - Chalkeia - Zentrum", 0],
+        [[4925.6323,341.19653,21895.656], "1 - Throns castel",1], // 1 - Throns_castel
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",1], // 2 - Oreokastro
+	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",1], // 3 - Waffenlager_Nord_West
+	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",1], // 4 - Villa_Constans
 
-    [[20154.674,20.015493,19991.996], "3 - Ioannina - Ausgrabungsstätte", 0],        
-    [[21033.391,17.245554,19274.801], "3 - Ioannina - Militärposten", 0],    
-    [[22178.254,17.411903,18389.48], "3 - Ioannina - Zollstation", 0],
+	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",1], // 5 - Mine_Gore
+	   [[6181.8838,43.000999,16256.253], "6 - Kore Fabrik",1], // 6 - Kore_Fabrik
+	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",1], // 7 - Checkpoint_charlie
+	   [[3723.6956,18.555311,12999.2], "8 - Kavala Hospital",1], // 8 - Kavala_Hospital
 
-    [[25334.148,10.723906,20351.393], "4 - Delfinaki - Kraftwerk", 0],
-    [[23507.813,92.002312,21134.75], "4 - Delfinaki - Militär", 0],
-    [[21900.697,23.09441,21013.383], "4 - Delfinaki - Hotelanlage", 0],
-    
-    [[9679.2852,4.1055808,22269.486], "5 - Abdera - Krya Nera", 0],    
-    [[12202.975,2.3049662,22949.342], "5 - Abdera - Tonos Bay", 0],
-    [[9407.8926,118.60757,20303.814], "5 - Abdera - Zentrum", 0],
-	
-    [[10279.33,131.39256,19127.998], "6 - Galati - Zentrum", 0],
-    [[11457.833,136.5833,20568.986], "6 - Galati - Steinbruch", 0],
-    [[14163.031,60.523945,22131.926], "6 - Galati - Jagdhaus", 0],
+	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",1], // 9 - Lager_Panagiotis
+	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",1], // 10 - Edessa
+	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",1], // 11 - Krya_Nera
+	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",1], // 12 - Abdera_Farm
+	   
+	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",1], // 13 - Abdera_Rathaus
+	   [[10405.196,120.67762,19023.145], "14 - Galati alte Post",1], // 14 - Galati_alte_Post
+	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",1], // 15 - Enclave_Syrta
 
-    [[8633.3174,181.03595,18283.008], "7 - Syrta - Zentrum", 0],    
-    [[5444.7119,76.440422,17925.609], "7 - Syrta - Verladestation", 0],        
-    [[3919.8413,9.3780146,17309.154], "7 - Syrta - Agios Konstantinos", 0],
-    
-    [[7111.814,111.81547,16434.742], "8 - Kore - Zentrum", 0],    
-    [[6788.9038,51.23349,15824.688], "8 - Kore - Müllkippe", 0], 
-    [[4871.9341,79.06218,16144.493], "8 - Kore - Negades", 0],     
+	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",1], // 16 - Kore_Zentrum
+	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",1], // 17 - Checkpoint Agios Dionisos
+	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",1], // 18 - Xirolimni_Damm",1
+	   
+	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",1], // 19 - Hühnerfarm_Sfaka
 
-    [[3378.1877,27.699886,14338.034], "9 - Aggelochori - Villenviertel", 0],
-    [[6432.2759,118.61,13770.329], "9 - Aggelochori - Schaffarm", 0],
-    [[3753.0562,14.725172,13572.595], "9 - Aggelochori - Zentrum", 0],
-	
+	   [[12318.005,20.195953,22856.318], "20 - Tonos Bucht",1], // 20 - Tonos_Bucht
+	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",1], // Checkpoint_Ifestonia
+	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",1], // 22 - Lacca_Fabrik
 
-    [[7493.9761,27.520681,12177.818], "10 - Edessa - Farm", 0],
-    [[7114.9277,6.1351104,11061.224], "10 - Edessa - Strand", 0],
-    [[8281.8408,15.422586,10903.659], "10 - Edessa - Kraftwerk", 0],
+	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",1], // 23 - Stavros_Radar
+	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",1], // 24 - Neochori_Wollmarkt
+	   [[11105.64,19.684849,13325.393], "25 - Poliakko alte Brennerei",1], // 25 - Poliakko_alte_Brennerei
+	   
+	   [[10675.173,16.757935,12266.578], "26 - Therisa Markt",1], // 26 - Therisa_Markt
+	   [[10819.854,6.4413772,10859.053], "27 - Drimea Fährstation",1], // 27 - Drimea_Fährstation
+	   [[11562.51,77.303802,7045.9185], "28 - Egino Farmhaus",1], // 28 - Egino_Farmhaus
+  
+	   [[14266.871,43.789253,22215.367], "29 - Hanf Plantage Frini",1], // 29 - Hanf_Plantage_Frini 
+	   [[14716.515,46.701706,20735.465], "30 - Frini Polizeistation",1], // 30 - Frini_Polizeistation
+	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",1], // 31 - Athira_Factory
+	   
+	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",1], // 32 - Airbase_Altis
+	   [[13589.743,16.363777,12166.921], "33 - xxxxxxxxxxxxx",1], // 33 - xxxxxxxxxxxxx
+	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",1], // 34 - Alpaka_Residenz
+	   
+	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",1], // 35 - Kalithea_Kontrolltower
+	   
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
+	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",1], // 37 - Athira_Kirchplatz
+	   [[16703.346,10.311413,13522.601], "38 - xxxxxxxxxxx",1], // 38 _ xxxxxxxxxxxxxx
 
-    [[10066.178,20.615116,11325.61], "11 - Zaros - Villa", 0],
-    [[9046.04,22.475744,11960.659], "11 - Zaros - Zentrum", 0],
-    [[10673.085,17.257212,12266.678], "11 - Zaros - Therisa", 0]
+	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",1], // 39 - Pyrgos_Zentrum
+	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",1], // 40 - Ekali Stones 
+	   [[19406.996,50.685932,7955.5903], "41 - Lonely",1], // 42 - Lonely
+
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
+	   [[18147.764,25.077732,15225.152], "44 - Charkia",1], // 44 - Charkia
+
+	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",1], // 45 - Dorida Woods
+	   [[20155.959,41.908695,11718.664], "46 - Chalikea",1], // 46 - Chalikea
+	   [[20555.693,39.293385,9022.5293], "47 - Panagia",1], // 47 - Panagia
+	   
+	   [[20907.025,34.035168,6664.6289], "48 - Selakano",1], // 48 - Selakano
+	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",1], // 49 - Pefka Colloseum
+	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",1], // 50 - Pefkas Lab
+	   
+	   [[50940,0,17008], "51 - Paros",1], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
+	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",1], // 53 - Limni Swamp
+	   
+	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",1], // 54 - Pefkas Palace
+	   [[22283.615,14.165822,18499.398], "55 - Almyra West",1], // 55 - Almyra West
+	   [[22599.842,13.634861,16825.371], "56 - Almyra South",1], // 56 - Almyra South
+	   
+	   [[23371.816,3.9426758,24183.539], "57 - Sideras",1], // 57 - Sideras
+	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",1], // 58 - Delfinaki Military
+	   [[24755.986,3.8023796,19153.188], "59 - Almyra North",1], // 59 - Almyra North
+	   
+	   [[26731.115,20.005753,24638.008], "60 - Molos Airbase",1], // 60 - Molos Airbase
+	   [[26989.885,20.367672,23206.453], "61 - Molos Town",1], // 61 - Molos Town
+	   [[25420.861,10.028322,20338.611], "62 - Refinery",1] // 62 - Refinery
 
 ];
 
