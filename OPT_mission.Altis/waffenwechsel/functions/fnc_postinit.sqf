@@ -45,12 +45,10 @@ if (hasInterface) then
         ["Waffenwechsel-Dialog öffnen", "Öffnet den Waffenwechsel-Dialog im Fahnenbereich."], 
         {
             private _triggerUnits = 
-			(list csat_trigger_Waffenwechsel_sw_1)
-			+ (list csat_trigger_Waffenwechsel_sw_2) 
-			+ (list csat_trigger_Waffenwechsel_sw_3) 
+			(list csat_trigger_Waffenwechsel1)
+			+ (list csat_trigger_Waffenwechsel2) 
 			+ (list nato_trigger_Waffenwechsel1) 
-			+ (list nato_trigger_Waffenwechsel2) 
-			+ (list nato_trigger_Waffenwechsel3);
+			+ (list nato_trigger_Waffenwechsel2);
             if (player isEqualTo assignedDriver vehicle player and (vehicle player in _triggerUnits)) then {
                 [] call FUNC(openDialog);
             };

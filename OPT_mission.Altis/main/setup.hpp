@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Betongold"
+#define __MISSION_NAME__ "In Hephaistos Schmiede"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ Complete new build 1.MAJOR.MINOR.BUILD
 // made by
@@ -27,7 +27,7 @@
 #define __RESPAWN_TYPE__ 3
 
 // Anzahl max. möglicher Spieler eingeben
-#define __PLNUM__ 113
+#define __PLNUM__ 117
 
 // falls die Mission respawn haben soll, dann die folgende Zeile auskommentieren und respawn Zeit festlegen
 // wenn das Respawndelay größer als 10 Sekunden ist erscheint ein berühmtes Zitat während die Kamera den leblosen Körper zeigt

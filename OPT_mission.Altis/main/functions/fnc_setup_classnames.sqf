@@ -178,6 +178,12 @@ GVARMAIN(medic) = [
 	"OPT_CSAT_Sanitaeter"
 ];
 
+/* spaeher */
+GVARMAIN(spaeher) = [
+	"OPT_NATO_Aufklaerung_JTAC",
+	"OPT_CSAT_Aufklaerung_JTAC"
+];
+
 /* RECONSNIPER+waffen */
 GVARMAIN(reconSnipers) = [
 	"OPT_NATO_Aufklaerung_Scharfschutze_T",
@@ -190,7 +196,7 @@ GVARMAIN(reconSnipers) = [
 
 GVARMAIN(reconSniperRifles) = [
 	"OPT_arifle_MXM_Black_F",
-	"OPT_srifle_DMR_07_blk_F"
+	"OPT_srifle_DMR_07_blk_F"	
 ];	
 						
 /* SNIPER+waffen */

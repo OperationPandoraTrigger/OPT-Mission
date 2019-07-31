@@ -123,7 +123,7 @@ GVAR(Gunvehwest) =
 //[Magazinename, Waffenname, Preis/Schuss, Preis Magazin, Boxname, Waffenkontrolle Pilot KHS]
 GVAR(Raktenhelieast) = 
 [
-    ["OPT_PylonRack_1Rnd_Missile_AGM_01_F", "OPT_Missile_AGM_01_Plane_CAS_02_F", 150000, 150000, "1xSharur", 0],  // 0.1xSharur
+    ["OPT_PylonRack_1Rnd_Missile_AGM_02_F", "OPT_Missile_AGM_02_Plane_CAS_01_F", 150000, 150000, "1xMacer", 0],  // 0.1xMacer
     ["OPT_PylonMissile_Missile_AMRAAM_D_INT_x1", "OPT_weapon_AMRAAMLauncher", 100000, 100000, "1xAMRAAM", 0],  //      1.1xAMRAAM
     ["OPT_PylonRack_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 200000, "1xScalpel", 0],  //      2.1xScalpel AH9, Orca
     ["OPT_PylonRack_3Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 600000, "3xScalpel", 0],  //      3.3xScalpel
@@ -218,8 +218,8 @@ GVAR(preisDatalink) = 10000;
 
 //West Einheiten
 //[[Raketen], [Gun], [Drahtkäfig, Tranung], [Datalink], [Raketenmagzine, Gunmagazine]]
-GVAR(Pawnee) = [[0, 2, 4, 8, 9, 10, 11, 13], [0, 1, 2], [0, 0], [1], [2, 2]];    //kallek
-GVAR(hellcat1) = [[0, 2, 4, 8, 9, 10, 11, 13], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
+GVAR(Pawnee) = [[0, 4, 8, 9, 10, 11], [0, 1, 2], [0, 0], [1], [2, 2]];    //kallek
+GVAR(hellcat1) = [[0,4, 8, 9, 10, 11], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
 GVAR(Blackfoot) = [[0, 1, 4, 6, 8, 9, 10, 11, 12, 15], [3, 4, 5, 6, 7], [0, 0], [1], [4, 2]];
 GVAR(HunterHMG) = [[], [0, 1, 2], [0, 0], [1], [0, 4]];
 GVAR(HunterGMG) = [[], [7, 8, 9, 10, 11], [0, 0], [1], [0, 4]];
@@ -233,8 +233,8 @@ GVAR(SlammerUp) = [[], [3, 4, 5, 6, 45, 27, 30, 28, 47, 31, 29, 32, 38], [0, 0],
 GVAR(Scorcher) = [[], [40, 41, 42], [0, 0], [1], [0, 4]];
 
 //EAST Einheiten
-GVAR(Orca) = [[0, 2, 4, 8, 9, 10, 11, 13], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
-GVAR(hellcat)  =  [[0, 2, 4, 8, 9, 10, 11, 13], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
+GVAR(Orca) = [[0, 4, 8, 9, 10, 11], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
+GVAR(hellcat)  =  [[0, 4, 8, 9, 10, 11], [0, 1, 2], [0, 0], [1], [2, 2]]; //kallek
 GVAR(Kajman) = [[0, 1, 4, 6, 8, 9, 10, 11, 12, 15], [3, 4, 5, 6, 7], [0, 0], [1], [4, 2]];
 GVAR(irifHMG) = [[], [0, 1, 2], [0, 0], [1], [0, 4]];
 GVAR(irifGMG) = [[], [7, 8, 9, 10, 11], [0, 0], [1], [0, 4]];
@@ -306,8 +306,8 @@ GVAR(textsloteast) =
 
 //West Einheiten Loadouts (Arrystelle von Einheitconfig als Boxindex)
 //[[Raketen], [Gun], [Drahtkäfig, Tranung], [Datalink]] 
-GVAR(Pawneeloadout) = [[2, 7], [0], [0, 0], [0]];    
-GVAR(hellcat1loadout) = [[2, 7], [0], [0, 0], [0]]; 
+GVAR(Pawneeloadout) = [[1,1], [0], [0, 0], [0]];    
+GVAR(hellcat1loadout) = [[1, 1], [0], [0, 0], [0]]; 
 GVAR(Blackfootloadout) = [[2 , 2, 8, 9], [0], [0, 0], [0]];
 GVAR(HunterHMGloadout) = [[], [0], [0, 0], [0]];
 GVAR(HunterGMGloadout) = [[], [3], [0, 0], [0]];
@@ -321,8 +321,8 @@ GVAR(SlammerUploadout) = [[], [0, 4, 7, 10], [0, 0], [0]];
 GVAR(Scorcherloadout) = [[], [0,0], [0, 0], [0]];
 
 //EAST Einheiten Loadouts
-GVAR(Orcaloadout) = [[2,7], [0], [0, 0], [0]]; 
-GVAR(hellcatloadout)  =  [[2,7], [0], [0, 0], [0]]; 
+GVAR(Orcaloadout) = [[1,1], [0], [0, 0], [0]]; 
+GVAR(hellcatloadout)  =  [[1,1], [0], [0, 0], [0]]; 
 GVAR(Kajmanloadout) = [[2, 2, 8, 9], [0], [0, 0], [0]];
 GVAR(irifHMGloadout) = [[], [0], [0, 0], [0]];
 GVAR(irifGMGloadout) = [[], [3], [0, 0], [0]];
