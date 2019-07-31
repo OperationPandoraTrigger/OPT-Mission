@@ -104,14 +104,13 @@ GVAR(nato_supplies) =
     ["OPT_Box_NATO_WpsSpecial_F", 60000, 10000, 20000],         // Munition spezial
     ["OPT_Box_NATO_Grenades_F", 75000, 10000, 20000],           // granatenkiste
     ["OPT_NATO_Sprengstoffkiste", 150000, 10000, 20000],        // sprengstoffkiste
-    ["OPT_Box_NATO_WpsSpecial_AT3_F", 130000, 10000, 20000],     // AT Raketenkiste (RPG-42)
+    ["OPT_Box_NATO_WpsSpecial_AT_L1", 200000, 10000, 20000],     // AT Raketenkiste (MRAWS)
+	["OPT_Box_NATO_WpsSpecial_AT_L2", 150000, 10000, 20000],     // AT Raketenkiste (PCML)
+	["OPT_Box_NATO_WpsSpecial_AT_H1", 350000, 10000, 20000],     // AT Raketenkiste (Titan)
     ["OPT_Box_NATO_WpsSpecial_AA_F", 140000, 10000, 20000],      // AA Raketenkiste
     ["OPT_B_supplyCrate_F", DEF_PROD(0)],                     // Transportkiste (leer)
     ["OPT_B_CargoNet_01_ammo_F", DEF_PROD(5000)],               // Ausrstungskiste
     ["OPT_Box_NATO_WpsSpecial_Diver_F", DEF_PROD(5000)],        // Taucherkiste    
-    ["OPT_Box_NATO_WpsSpecial_F", DEF_PROD(0)],                 // PCML-M Raketenkiste
-    ["OPT_Box_NATO_WpsSpecial_AT_F", DEF_PROD(0)],              // PCML Raketenkiste    
-    ["OPT_Box_NATO_WpsLaunch_F", DEF_PROD(0)],                  // HAT-Kiste (Titan)
     ["OPT_B_UGV_01_F", DEF_PROD(2000)],                         // UGV Stomper
     ["OPT_B_UAV_01_F", DEF_PROD(0)],                            // Darter AR-2
     ["OPT_FlexibleTank_01_forest_F", DEF_PROD(1000)],           // Treibstoff-Fass
@@ -212,11 +211,11 @@ GVAR(csat_choppers) =
     ["OPT4_O_Heli_Light_02_black_F", DEF_PROD(0)],              // PO-30 Orca (DAR)
     ["OPT_O_Heli_Light_02_F", DEF_PROD(0)],                     // PO-30 Orca (scalpel)
     ["OPT_O_Heli_Light_02_black_F", DEF_PROD(0)],               // PO-30 Orca (scalpel)
-    ["OPT_O_Heli_Transport_04_F", DEF_PROD(85000)],             // Mi-290 Taru (Lift)
+    ["OPT_O_Heli_Transport_04_F", DEF_PROD(0)],             // Mi-290 Taru (Lift)
     ["OPT_O_Heli_Transport_04_black_F", DEF_PROD(0)],           // Mi-290 Taru (Lift)
     ["OPT_O_Heli_Transport_04_covered_F", DEF_PROD(110000)],    // Mi-290 Taru (Transport)
     ["OPT_O_Heli_Transport_04_covered_black_F", DEF_PROD(0)],   // Mi-290 Taru (Transport)
-    ["OPT_O_Heli_Transport_04_bench_F", DEF_PROD(90000)],       // Mi-290 Taru (Bench)
+    ["OPT_O_Heli_Transport_04_bench_F", DEF_PROD(0)],       // Mi-290 Taru (Bench)
     ["OPT_O_Heli_Transport_04_bench_black_F", DEF_PROD(0)],     // Mi-290 Taru (Bench)
     ["OPT_O_UAV_02_light_F", DEF_PROD(300000)],                 // Ababil unbewaffnet
     ["OPT_O_UAV_02_CAS_F", DEF_PROD(0)],                        // Ababil GBU-12
@@ -268,12 +267,13 @@ GVAR(csat_supplies) =
     ["OPT_Box_East_WpsSpecial_F", 60000, 10000, 20000],                     // Munition spezial kiste
     ["OPT_Box_East_Grenades_F", 75000, 10000, 20000],                       // granatenkiste
     ["OPT_CSAT_Sprengstoffkiste", 150000, 10000, 20000],                    // sprengstoffkiste
-    ["OPT_Box_East_WpsSpecial_AT_F", 130000, 10000, 20000],                  // AT Raketenkiste (RPG-42)
+    ["OPT_Box_East_WpsSpecial_AT_L1", 200000, 10000, 20000],                  // AT Raketenkiste (RPG-42)
+	["OPT_Box_East_WpsSpecial_AT_L2", 150000, 10000, 20000],                  // AT Raketenkiste (RPG-7)
+	["OPT_Box_East_WpsSpecial_AT_H1", 350000, 10000, 20000],                  // AT Raketenkiste (9M135 Vorona)
     ["OPT_Box_East_WpsSpecial_AA_F", 140000, 10000, 20000],                  // AA Raketenkiste
     ["OPT_O_supplyCrate_F", DEF_PROD(500)],                                 // Transportkiste
-    ["OPT_O_CargoNet_01_ammo_F", DEF_PROD(0)],                           // Ausrstungskiste
+    ["OPT_O_CargoNet_01_ammo_F", DEF_PROD(5000)],                           // Ausrstungskiste
     ["OPT_Box_East_WpsSpecial_Diver_F", DEF_PROD(5000)],                    // Taucherkiste
-    ["OPT_Box_East_WpsLaunch_F", DEF_PROD(0)],                              // HAT-Kiste (Titan)
     ["OPT_O_T_UGV_01_ghex_F", DEF_PROD(0)],                                 // UGV Saif    
     ["OPT_O_UGV_01_F", DEF_PROD(2000)],                                     // UGV Saif    
     ["OPT_O_UAV_01_F", DEF_PROD(0)],                                        // Tayran AR-2

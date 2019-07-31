@@ -132,35 +132,55 @@ GVARMAIN(SMG) = [
 	"OPT_SMG_02_F"
 ];
 
-/* AT-Schützen UND LAUNCHER */
-GVARMAIN(rocketmen) = [
-	"OPT_NATO_Luftabwehrspezialist",
-	"OPT_CSAT_Luftabwehrspezialist",
+/* Light AT-Schützen UND LAUNCHER */
+GVARMAIN(Lightrocketmen) = [
 	"OPT_NATO_PA_Schuetze",
 	"OPT_NATO_PA_Schuetze_T",
 	"OPT_CSAT_PA_Schuetze_T",
 	"OPT_CSAT_PA_Schuetze",
-	"OPT_NATO_PA_Schuetze_Heavy",
-	"OPT_CSAT_PA_Schuetze_Heavy",
 	"OPT_NATO_Aufklaerung_Spaeher_AT",
 	"OPT_CSAT_Aufklaerung_Spaeher_AT",
 	"OPT_NATO_Aufklaerung_Spaeher_AT_T",
 	"OPT_CSAT_Aufklaerung_Spaeher_AT_T"
 ];
 
-GVARMAIN(launchers) = [
+GVARMAIN(lightlaunchers) = [
     "OPT_launch_B_RPG32_F",
     "OPT_launch_RPG32_F",
     "OPT_launch_NLAW_F",
     "OPT_launch_NLAW_M_F",
+	"OPT_launch_MRAWS_green_rail_F",
+	"OPT_launch_MRAWS_olive_rail_F",
+	"launch_RPG7_F"
+];
+
+/* Heavy AT-Schützen UND LAUNCHER */
+GVARMAIN(Heavyrocketmen) = [
+	"OPT_NATO_PA_Schuetze_Heavy",
+	"OPT_CSAT_PA_Schuetze_Heavy"
+];
+
+GVARMAIN(Heavylaunchers) = [
+    "OPT_launch_O_Titan_short_F",
+    "OPT_launch_B_Titan_short_F",
+	"OPT_launch_O_Titan_short_ghex_F",
+	"OPT_launch_B_Titan_short_tna_F",
+	"OPT_launch_O_Vorona_green_F"
+];
+
+/* AA-Schützen UND LAUNCHER */
+GVARMAIN(AArocketmen) = [
+	"OPT_NATO_Luftabwehrspezialist",
+	"OPT_CSAT_Luftabwehrspezialist"
+];
+
+GVARMAIN(AAlaunchers) = [
     "OPT_launch_B_Titan_F",
 	"OPT_launch_B_Titan_tna_F",
     "OPT_launch_O_Titan_F",
-    "OPT_launch_O_Titan_short_F",
-    "OPT_launch_B_Titan_short_F",
-	"Weapon_launch_MRAWS_green_rail_F",
-	"Weapon_launch_MRAWS_olive_rail_F"
+	"OPT_launch_O_Titan_ghex_F"
 ];
+
 
 /* OPERATOR */
 GVARMAIN(operator) = [
