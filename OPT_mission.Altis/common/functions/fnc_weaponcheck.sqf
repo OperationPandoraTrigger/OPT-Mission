@@ -30,10 +30,30 @@ if !(_typeOfPlayer in (GVARMAIN(officer) + GVARMAIN(pilots) + GVARMAIN(crew))) t
     } forEach (weapons _unit);
 };
 
-// check launcher
-if !(_typeOfPlayer in GVARMAIN(rocketmen)) then {
+// check Light launcher
+if !(_typeOfPlayer in GVARMAIN(Lightrocketmen)) then {
     {
-        if (_x in GVARMAIN(launchers)) then {
+        if (_x in GVARMAIN(lightlaunchers)) then {
+            _unit removeWeapon _x;
+            _bad_item_used = true;
+        };
+    } forEach (weapons _unit);
+};
+
+// check Heavy launcher
+if !(_typeOfPlayer in GVARMAIN(Heavyrocketmen)) then {
+    {
+        if (_x in GVARMAIN(Heavylaunchers)) then {
+            _unit removeWeapon _x;
+            _bad_item_used = true;
+        };
+    } forEach (weapons _unit);
+};
+
+// check AA launcher
+if !(_typeOfPlayer in GVARMAIN(AArocketmen)) then {
+    {
+        if (_x in GVARMAIN(AAlaunchers)) then {
             _unit removeWeapon _x;
             _bad_item_used = true;
         };
