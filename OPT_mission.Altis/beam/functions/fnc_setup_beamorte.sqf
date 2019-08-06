@@ -7,6 +7,9 @@
 * Author:
 * Lord & James
 *
+* Edit by:
+* Manu
+*
 * Arguments:
 * None
 *
@@ -24,11 +27,25 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
+*
+* Usage:
+* Position=[0, 0, 0] 
+* Name = "ABC"
+* Level = {-1; 0; 1; 2; 3}
+* [[Position], Name, Level]
+* 
+* Level:
+* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
+* 0 = not available
+* 1 = infantry only
+* 2 = infantry + light vehicles
+* 3 = infantry + light vehicles + heavy vehicles
 */
+
 #include "script_component.hpp"
 
 /* PARAMS */
@@ -38,14 +55,7 @@
 /* CODE BODY */
 
 
-// Position=[0, 0, 0]
-// Name = "ABC"
-// Stufe = -1-0-1-2-3 // -1 nach Waffenruhe wählbar, 0 Nicht Wählbar,  1 Inf,  2 inf + leichte Fahrzeuge,  3 inf + Schwere Fahrzeuge
-//
-// Bsp [[Position], Name, Stufe], 
-
-
-//West
+//BLUFOR
 GVAR(locations_west) =
 [
     [[3723,0,17576], "Landung_alpha", 0],
@@ -138,7 +148,7 @@ GVAR(locations_west) =
 	   [[25420.861,10.028322,20338.611], "62 - Refinery",0] // 62 - Refinery
 ];
 
-//East
+//OPFOR
 GVAR(locations_east) =
 [
     [[7282,0,10998], "Landung_alpha", 0],
@@ -262,6 +272,15 @@ GVAR(heavy_vehicles) =
 	"OPT4_B_LSV_01_AT_F"
  ];
 
+/* vehicles usable for beaming after mission start */
+GVAR(beam_vehicles) =
+[
+	"OPT_B_Truck_01_medical_F", 		//HEMTT Medic
+	"OPT_B_Quadbike_01_F",			//Quadbike NATO
+	
+	"OPT_O_Truck_03_medical_F",		//Tempest Medic
+	"OPT_O_Quadbike_01_F"			//Quadbike CSAT
+];	
 
 /* List of triggers in Editor for beam functionality */
 GVAR(beam_trigger) = 
