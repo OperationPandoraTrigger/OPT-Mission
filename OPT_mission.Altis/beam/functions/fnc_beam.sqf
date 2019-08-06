@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * Teleport player and their vehicle to selected destination.
 * Check for truce time and level of teleport location.
@@ -47,16 +47,34 @@ private _arry = GVAR(box) select _ix;
 private _lvl = _arry select 2;
 private _beam_pos = _arry select 0;
 
-//Zeitabgelaufen check -> oder lvl gleich -1 (Marinebasis)
-if (GVARMAIN(missionStarted) and _lvl != -1) exitWith 
+/* kBF = kein Beamfahrzeug */
+private _kBF = true;
+
+/* prevents beaming to beampoints with level > 0 after mission start if dialog was opened before */
+if (GVARMAIN(missionStarted) and _lvl != -1) then
 { 
-    ["Beamsystem", "Das System steht nur während der Waffenruhe zur Verfügung!", "red"] call EFUNC(gui,message);
-    closeDialog 0;
+    _beamfrei = false;
+    
+    ["Beamsystem", "Dieser Beampunkt steht nur während der Waffenruhe zur Verfügung!", "red"] call EFUNC(gui,message);
 };
 
 if ((typeOf vehicle player) in GVAR(heavy_vehicles)) then 
 {
     _SF = true;
+};
+
+/* sets _kBF to false if used vehicle is listed in GVAR(beam_vehicles) */
+if ((typeOf vehicle player) in GVAR(beam_vehicles)) then
+{
+	_kBF = false;
+};
+
+/* denies beaming after mission start for vehicles not listed in GVAR(beam_vehicles) */
+if ( GVARMAIN(missionStarted) and _kBF and (vehicle player != player)) then
+{
+	_beamfrei = false;
+	
+	["Beamsystem", "Das System steht nur noch für spezielle Beamfahrzeuge zur Verfügung!", "red"] call EFUNC(gui,message);
 };
 
 // Schwere Fahrzeuge zum Beamziel klein Stufe 3 verneinen
@@ -107,9 +125,6 @@ if (_beamfrei) then
 };
 
 closeDialog 0;
-
-
-
 
 
 
