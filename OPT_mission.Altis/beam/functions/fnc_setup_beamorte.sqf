@@ -65,7 +65,7 @@ GVAR(locations_west) =
     [[8570,0,7349], "FOB", 0],
 
        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
@@ -158,7 +158,7 @@ GVAR(locations_east) =
     [[13769,0,6378], "FOB", 0],
 	
         [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
