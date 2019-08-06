@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * initialize beam dialog and fill listbox with available options
 * if component is disabled, only options with level -1 are available
