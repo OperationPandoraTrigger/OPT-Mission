@@ -7,6 +7,9 @@
 * Author:
 * Lord
 *
+* Edit by:
+* Manu
+*
 * Arguments:
 * None
 *
