@@ -6,6 +6,9 @@
 * Author:
 * James
 *
+* Edit by:
+* Manu
+*
 * Arguments:
 * 0: <NUMBER> current selected index of listbox control
 *
