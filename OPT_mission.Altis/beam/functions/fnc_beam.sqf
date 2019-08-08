@@ -50,8 +50,8 @@ private _arry = GVAR(box) select _ix;
 private _lvl = _arry select 2;
 private _beam_pos = _arry select 0;
 
-/* kBF = kein Beamfahrzeug */
-private _kBF = true;
+/* used for checking beam permissions after mission start */
+private _isBeamInMissionForbidden = true;
 
 /* prevents beaming to beampoints with level > 0 after mission start if dialog was opened before */
 if (GVARMAIN(missionStarted) and _lvl != -1) then
@@ -66,14 +66,14 @@ if ((typeOf vehicle player) in GVAR(heavy_vehicles)) then
     _SF = true;
 };
 
-/* sets _kBF to false if used vehicle is listed in GVAR(beam_vehicles) */
+/* sets _isBeamInMissionForbidden to false if used vehicle is listed in GVAR(beam_vehicles) */
 if ((typeOf vehicle player) in GVAR(beam_vehicles)) then
 {
-	_kBF = false;
+	_isBeamInMissionForbidden = false;
 };
 
 /* denies beaming after mission start for vehicles not listed in GVAR(beam_vehicles) */
-if ( GVARMAIN(missionStarted) and _kBF and (vehicle player != player)) then
+if ( GVARMAIN(missionStarted) and _isBeamInMissionForbidden and (vehicle player != player)) then
 {
 	_beamfrei = false;
 	
