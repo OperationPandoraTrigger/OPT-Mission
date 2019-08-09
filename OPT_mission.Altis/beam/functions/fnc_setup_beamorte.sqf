@@ -7,6 +7,9 @@
 * Author:
 * Lord & James
 *
+* Edit by:
+* Manu
+*
 * Arguments:
 * None
 *
@@ -24,11 +27,25 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
+*
+* Usage:
+* Position=[0, 0, 0] 
+* Name = "ABC"
+* Level = {-1; 0; 1; 2; 3}
+* [[Position], Name, Level]
+* 
+* Level:
+* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
+* 0 = not available
+* 1 = infantry only
+* 2 = infantry + light vehicles
+* 3 = infantry + light vehicles + heavy vehicles
 */
+
 #include "script_component.hpp"
 
 /* PARAMS */
@@ -38,14 +55,7 @@
 /* CODE BODY */
 
 
-// Position=[0, 0, 0]
-// Name = "ABC"
-// Stufe = -1-0-1-2-3 // -1 nach Waffenruhe wählbar, 0 Nicht Wählbar,  1 Inf,  2 inf + leichte Fahrzeuge,  3 inf + Schwere Fahrzeuge
-//
-// Bsp [[Position], Name, Stufe], 
-
-
-//West
+//BLUFOR
 GVAR(locations_west) =
 [
     [[3723,0,17576], "Landung_alpha", 0],
@@ -55,7 +65,7 @@ GVAR(locations_west) =
     [[8570,0,7349], "FOB", 0],
 
        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
@@ -138,7 +148,7 @@ GVAR(locations_west) =
 	   [[25420.861,10.028322,20338.611], "62 - Refinery",0] // 62 - Refinery
 ];
 
-//East
+//OPFOR
 GVAR(locations_east) =
 [
     [[7282,0,10998], "Landung_alpha", 0],
@@ -148,7 +158,7 @@ GVAR(locations_east) =
     [[13769,0,6378], "FOB", 0],
 	
         [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
@@ -262,6 +272,28 @@ GVAR(heavy_vehicles) =
 	"OPT4_B_LSV_01_AT_F"
  ];
 
+/* vehicles usable for beaming after mission start */
+GVAR(beam_vehicles) =
+[
+	//BLUFOR
+	"OPT_B_Truck_01_covered_F",						//HEMTT Abgedeckt
+	"OPT_B_Truck_01_Repair_F",						//HEMTT Reparatur
+	"OPT_B_Truck_01_medical_F", 					//HEMTT Medic
+	"OPT_B_Truck_01_transport_F",					//HEMTT
+	"OPT_B_Quadbike_01_F",							//Quadbike NATO
+	//OPFOR hextarn
+	"OPT_O_Truck_03_covered_F",						//Tempest Abgedeckt
+	"OPT_O_Truck_03_repair_F",						//Tempest Reparatur
+	"OPT_O_Truck_03_medical_F",						//Tempest Medic
+	"OPT_O_Truck_03_transport_F",					//Tempest
+	"OPT_O_Quadbike_01_F",							//Quadbike CSAT
+	//OPFOR tropentarn
+	"OPT_O_T_Truck_03_covered_ghex_F",				//Tempest Abgedeckt
+	"OPT_O_T_Truck_03_repair_ghex_F",				//Tempest Reparatur
+	"OPT_O_T_Truck_03_medical_ghex_F",				//Tempest Medic
+	"OPT_O_T_Truck_03_transport_ghex_F",			//Tempest
+	"OPT_O_T_Quadbike_01_ghex_F"					//Quadbike CSAT
+];	
 
 /* List of triggers in Editor for beam functionality */
 GVAR(beam_trigger) = 
