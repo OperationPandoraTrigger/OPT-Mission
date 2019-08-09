@@ -49,7 +49,7 @@
 GVAR(canTransportCargo) = 
 [
 // NATO Vehicles
-    ["OPT_B_Quadbike_01_F", 2],						    // Quadbike	- checken!
+    ["OPT_B_Quadbike_01_F", 0],						    // Quadbike	- checken!
 	["OPT_B_G_Offroad_01_F", 4],					    // Pickup - grad nich drin!
 	["OPT_B_G_Offroad_01_armed_F", 4],				    // Pickup HMG - grad nich drin!
 	["OPT_B_T_LSV_01_unarmed_F", 4], 				    // Prowler unarmed
@@ -61,12 +61,12 @@ GVAR(canTransportCargo) =
 	["OPT_B_MRAP_01_F", 4],							    // Hunter
 	["OPT4_B_MRAP_01_hmg_F", 4],						    // Hunter HMG
 	["OPT4_B_MRAP_01_gmg_F", 4],						    // Hunter GMG
-	["OPT_B_Truck_01_covered_F", 6], 					// HEMTT Inf-Transport
+	["OPT_B_Truck_01_covered_F", 0], 					// HEMTT Inf-Transport
 	["OPT_B_Truck_01_transport_F", 8],					// HEMTT Logistik - hinzugefügt
 	["OPT_B_Truck_01_ammo_F", 2],                 // HEMTT Ammo, 50000 ersetzt durch Container
     ["OPT_B_Truck_01_fuel_F", 2],
-	["OPT_B_Truck_01_Repair_F", 2],               // HEMTT Repair, ersetzt durch Container
-    ["OPT_B_Truck_01_medical_F", 2],              // HEMTT Medical, ersetzt durch Container
+	["OPT_B_Truck_01_Repair_F", 0],               // HEMTT Repair, ersetzt durch Container
+    ["OPT_B_Truck_01_medical_F", 0],              // HEMTT Medical, ersetzt durch Container
 // NATO Armored	
 	["OPT_B_APC_Wheeled_01_cannon_F", 4],			    // AMV-7 Marshall
 	["OPT4_B_APC_Wheeled_01_cannon_F", 4],				// AMV-7 Marshall - neu
@@ -102,7 +102,7 @@ GVAR(canTransportCargo) =
 // NATO supplies/drohnen	
 	["OPT_B_UGV_01_F", 6],						    	// UGV Stomper	von 30
 // CSAT Vehicles	
-	["OPT_O_T_Quadbike_01_ghex_F", 2],				    // Quadbike	- checken!
+	["OPT_O_T_Quadbike_01_ghex_F", 0],				    // Quadbike	- checken!
 	["OPT_O_T_LSV_02_unarmed_F", 4], 				    // Quilin unarmed
 	["OPT_O_T_LSV_02_armed_F", 4],					    // Quilin armed
 	["O_T_LSV_01_AT_F_un", 4], 						// Prowler AT - vanilla	- lord
@@ -111,22 +111,22 @@ GVAR(canTransportCargo) =
 	["OPT_O_T_MRAP_02_ghex_F", 4],					    // Ifrit - tropentarn hinzugefügt
 	["OPT_O_T_MRAP_02_hmg_ghex_F", 4],				    // Ifrit HMG  - tropentarn hinzugefügt
 	["OPT_O_T_MRAP_02_gmg_ghex_F", 4],				    // Ifrit GMG  - tropentarn hinzugefügt
-	["OPT_O_T_Truck_03_covered_ghex_F", 6],			    // Tempest Transport	
+	["OPT_O_T_Truck_03_covered_ghex_F", 0],			    // Tempest Transport	
 	["OPT_O_T_Truck_03_transport_ghex_F", 8],		    // Tempest Logistik - hinzugefügt
 	["OPT_O_T_Truck_03_ammo_ghex_F", 2],              // Tempest Ammo, ersetzt durch container 50000
     ["OPT_O_T_Truck_03_fuel_ghex_F", 2],              // Tempest Fuel, ersetzt durch container 10000
     ["OPT_O_Truck_03_ammo_F", 2],                 // Tempest Ammo, ersetzt durch container
     ["OPT_O_Truck_03_fuel_F", 2],                  // Tempest Fuel, ersetzt durch container
-	["OPT_O_Truck_03_repair_F", 2],               // Tempest Repair, ersetzt durch container-
-    ["OPT_O_Truck_03_medical_F", 2],              // Tempest Medical, ersetzt durch container-
+	["OPT_O_Truck_03_repair_F", 0],               // Tempest Repair, ersetzt durch container-
+    ["OPT_O_Truck_03_medical_F", 0],              // Tempest Medical, ersetzt durch container-
 //vanilla	
-	["OPT_O_Quadbike_01_F", 2],					        // Quadbike	- checken!
+	["OPT_O_Quadbike_01_F", 0],					        // Quadbike	- checken!
 	["OPT_O_MRAP_02_F", 4],						        // Ifrit - tropentarn hinzugefügt
 	["OPT_O_MRAP_02_hmg_F", 4],					        // Ifrit HMG  - tropentarn hinzugefügt
 	["OPT_O_MRAP_02_gmg_F", 4],					        // Ifrit GMG  - tropentarn hinzugefügt
 	["OPT4_O_MRAP_02_hmg_F", 4],				// Ifrit HMG - neu
 	["OPT4_O_MRAP_02_gmg_F", 4],					// Ifrit GMG - neu
-	["OPT_O_Truck_03_covered_F", 6],			        // Tempest Transport	
+	["OPT_O_Truck_03_covered_F", 0],			        // Tempest Transport	
 	["OPT_O_Truck_03_transport_F", 8],			        // Tempest Logistik - hinzugefügt
 // CSAT Armored
 	["OPT_O_APC_Wheeled_03_cannon_F", 4],			    // AFV-4 Gorgon
@@ -158,6 +158,7 @@ GVAR(canTransportCargo) =
 	["sfp_bo105_unarmed", 4],					// BO105 - neu	
 	["OPT_O_Heli_Transport_04_covered_F", 10], 	// Mi-290 Taru (Transport),110000
 	["OPT_O_Heli_Transport_04_covered_black_F", 10], 	// Mi-290 Taru (Transport),110000	
+	["OPT_O_Heli_Transport_02_F", 10],			    	// CH-49 Mohawk (Transport+Lift)    von 30
 	["OPT_O_T_VTOL_02_infantry_unarmed_F", 10],			// Y-32 Xi'an (Inf-Transport), 180000
 	["OPT_O_T_VTOL_01_vehicle_F", 10],			// Blackfish (Vehikel-Transport), 180000
 // CSAT Supplies	
@@ -221,7 +222,9 @@ GVAR(canBeTransported) =
 	["OPT_Box_NATO_WpsSpecial_F", 2],          			    // Munition spezial NEUE KISTE!
 	["OPT_Box_NATO_Grenades_F", 2],  					    // granatenkiste	
 	["OPT_NATO_Sprengstoffkiste", 2],  					    // sprengstoffkiste NEUE KISTE!
-	["OPT_Box_NATO_WpsSpecial_AT3_F", 2],				    // Raketenkiste RPG42 NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_L1", 2],				    // Raketenkiste MAWWS NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_L2", 2],				    // Raketenkiste PCML NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_H1", 2],				    // Raketenkiste Titan NEUE KISTE!
 	["OPT_Box_NATO_WpsSpecial_AA_F", 2],				    // Raketenkiste AA 
 	["OPT_Box_NATO_WpsSpecial_Diver_F", 2],				    // Taucherkiste,5000
 	["OPT_B_HMG_01_F", 2],							    	                    // Stand-MG niedrig,10000
@@ -297,7 +300,9 @@ GVAR(canBeTransported) =
 	["OPT_Box_East_WpsSpecial_F", 2],         			    // Munition spezial kiste NEUE KISTE!
 	["OPT_Box_East_Grenades_F", 2],     				    // granatenkiste
 	["OPT_CSAT_Sprengstoffkiste", 2],     				    // sprengstoffkiste NEUE KISTE!
-	["OPT_Box_East_WpsSpecial_AT_F", 2],   				    // AT Raketenkiste NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_L1", 2],   				    // AT Raketenkiste RPG42 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_L2", 2],   				    // AT Raketenkiste PPG 7 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_H1", 2],   				    // AT Raketenkiste Titan NEUE KISTE!
 	["OPT_Box_East_WpsSpecial_AA_F", 2],				    // AA Raketenkiste
 	["OPT_Box_East_WpsSpecial_Diver_F", 2],				    // Taucherkiste
 	["OPT_O_HMG_01_F", 2],								                        // Stand-MG niedrig,10000
@@ -342,7 +347,9 @@ GVAR(canBeDragged) =
 	["OPT_Box_NATO_WpsSpecial_F"],            				                // Munition spezial kiste NEUE KISTE!	
     ["OPT_Box_NATO_Grenades_F"],         				                    // granatenkiste,75000
     ["OPT_NATO_Sprengstoffkiste"],         				                    // sprengstoffkiste,75000 NEUE KISTE!	
- 	["OPT_Box_NATO_WpsSpecial_AT3_F"],			    	                    // AT Raketenkiste (RPG-42),30000 NEUE KISTE!	
+	["OPT_Box_NATO_WpsSpecial_AT_L1"],				   					 // Raketenkiste MAWWS NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_L2"],				   					 // Raketenkiste PCML NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_H1"],				    				// Raketenkiste Titan NEUE KISTE!	
 	["OPT_Box_NATO_WpsSpecial_AA_F"],					                    // AA Raketenkiste,40000	
 	["OPT_B_HMG_01_F"],							    	                    // Stand-MG niedrig,10000
 	["OPT_B_HMG_01_high_F"],							                    // Stand-MG hoch,10000
@@ -371,7 +378,9 @@ GVAR(canBeDragged) =
 	["OPT_O_supplyCrate_F", [0, 2, 0.1], 0],							    // Transportkiste,500
 	["OPT_Box_East_WpsSpecial_Diver_F"],				                    // Taucherkiste,5000
 	["OPT_Box_East_WpsSpecial_AA_F"],				                        // AA Raketenkiste,40000
-	["OPT_Box_East_WpsSpecial_AT_F"],            		                   	// AT Raketenkiste (RPG-42),30000	NEUE KISTE!	
+	["OPT_Box_East_WpsSpecial_AT_L1"],   				   					// AT Raketenkiste RPG42 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_L2"],   				   					// AT Raketenkiste PPG 7 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_H1"],   				    				// AT Raketenkiste Titan NEUE KISTE!
 	["OPT_Box_East_Ammo_F"],            			                        // Munitionskiste,40000
 	["OPT_Box_East_WpsSpecial_F"],            			                    // Munition spezial kiste NEUE KISTE!
     ["OPT_Box_East_Grenades_F"],            		                        // granatenkiste,75000
@@ -413,7 +422,10 @@ GVAR(canBeCarried) =
 	["OPT_Box_NATO_WpsSpecial_F"],            			// Munition spezial kiste NEUE KISTE!	
     ["OPT_Box_NATO_Grenades_F"],         				// granatenkiste,75000
     ["OPT_NATO_Sprengstoffkiste"],         				// sprengstoffkiste,75000 NEUE KISTE!
-	["OPT_Box_NATO_WpsSpecial_AT3_F"],			    	// AT Raketenkiste (RPG-42),30000 NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_L1"],				   	// Raketenkiste MAWWS NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_L2"],				   	// Raketenkiste PCML NEUE KISTE!
+	["OPT_Box_NATO_WpsSpecial_AT_H1"],				    // Raketenkiste Titan NEUE KISTE!	
+	["OPT_Box_NATO_WpsSpecial_AA_F"],					// AA Raketenkiste,40000	
 	["OPT_Box_NATO_WpsSpecial_AA_F"],					// AA Raketenkiste,40000
 	["OPT_B_HMG_01_F"],							    	// Stand-MG niedrig,10000
 	["OPT_B_HMG_01_high_F"],							// Stand-MG hoch,10000
@@ -435,7 +447,9 @@ GVAR(canBeCarried) =
 	["OPT_O_supplyCrate_F"],							// Transportkiste,500
 	["OPT_Box_East_WpsSpecial_Diver_F"],				// Taucherkiste,5000
 	["OPT_Box_East_WpsSpecial_AA_F"],					// AA Raketenkiste,40000
-	["OPT_Box_East_WpsSpecial_AT_F"],            		// AT Raketenkiste (RPG-42),30000 NEUE KISTE!	
+	["OPT_Box_East_WpsSpecial_AT_L1"],   				// AT Raketenkiste RPG42 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_L2"],   				// AT Raketenkiste PPG 7 NEUE KISTE!
+	["OPT_Box_East_WpsSpecial_AT_H1"],   				// AT Raketenkiste Titan NEUE KISTE!
 	["OPT_Box_East_Ammo_F"],            				// Munitionskiste,40000
 	["OPT_Box_East_WpsSpecial_F"],            			// Munition spezial kiste NEUE KISTE!
     ["OPT_Box_East_Grenades_F"],                		// granatenkiste,75000

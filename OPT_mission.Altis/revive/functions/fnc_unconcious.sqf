@@ -134,7 +134,7 @@ if (FAR_REVIVE_BLEEDOUT > 0 && {time > GVAR(bleedOut)} && {_unit getVariable ["F
     _unit action ["WeaponInHand", player];
 	
 	//Signal zu ändern des Markers in Clib
-	["OPTRemoveMarkerTextRevive",_unit] call CLib_fnc_globalEvent;
+	//["OPTRemoveMarkerTextRevive",_unit] call CLib_fnc_globalEvent;
 
     if (dialog) then {
         [] spawn {

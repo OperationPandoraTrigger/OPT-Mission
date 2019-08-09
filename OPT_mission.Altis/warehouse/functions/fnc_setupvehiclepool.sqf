@@ -114,8 +114,7 @@ GVAR(nato_supplies) =
     ["OPT_B_UGV_01_F", DEF_PROD(2000)],                         // UGV Stomper
     ["OPT_B_UAV_01_F", DEF_PROD(0)],                            // Darter AR-2
     ["OPT_FlexibleTank_01_forest_F", DEF_PROD(1000)],           // Treibstoff-Fass
-    ["OPT4_ACE_Box_82mm_Mo_HE", DEF_PROD(100000)],              // Mörsermuni
-    ["OPT_B_Slingload_01_Ammo_F", 0, 0, 0],        			 // Munitionscontainer
+	["OPT_B_Slingload_01_Ammo_F", 0, 0, 0],        			 // Munitionscontainer
     ["OPT_B_Slingload_01_Fuel_F", DEF_PROD(8000)],              // Fuelcontainer
     ["OPT_B_Slingload_01_Repair_F", DEF_PROD(8000)],            // Reparaturcontainer
     ["OPT_B_Slingload_01_Medevac_F", DEF_PROD(0)],              // Lazarettcontainer, 5000            //psycho, dieser container verursacht Probleme mit den Load-Scripts und wird durch den weien Container ersetzt welcher zum Lazarett ausgebaut werden kann
@@ -217,6 +216,7 @@ GVAR(csat_choppers) =
     ["OPT_O_Heli_Transport_04_covered_black_F", DEF_PROD(0)],   // Mi-290 Taru (Transport)
     ["OPT_O_Heli_Transport_04_bench_F", DEF_PROD(0)],       // Mi-290 Taru (Bench)
     ["OPT_O_Heli_Transport_04_bench_black_F", DEF_PROD(0)],     // Mi-290 Taru (Bench)
+	["OPT_O_Heli_Transport_02_F", DEF_PROD(100000)],            // CH-49 Mohawk (Transport+Lift)
     ["OPT_O_UAV_02_light_F", DEF_PROD(300000)],                 // Ababil unbewaffnet
     ["OPT_O_UAV_02_CAS_F", DEF_PROD(0)],                        // Ababil GBU-12
     ["OPT_O_UAV_02_F", DEF_PROD(0)],                            // Ababil Scalpel
@@ -278,7 +278,6 @@ GVAR(csat_supplies) =
     ["OPT_O_UGV_01_F", DEF_PROD(2000)],                                     // UGV Saif    
     ["OPT_O_UAV_01_F", DEF_PROD(0)],                                        // Tayran AR-2
     ["OPT_FlexibleTank_01_sand_F", DEF_PROD(1000)],                         // Treibstoff-Fass
-    ["OPT4_ACE_Box_82mm_Mo_HE", DEF_PROD(100000)],                          // Mörsermuni
     ["OPT_Land_Pod_Heli_Transport_04_fuel_F", DEF_PROD(8000)],              // Fuelcontainer
     ["OPT_Land_Pod_Heli_Transport_04_fuel_black_F", DEF_PROD(0)],           // Fuelcontainer (schwarz)
     ["OPT_Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0],         // Munitionscontainer

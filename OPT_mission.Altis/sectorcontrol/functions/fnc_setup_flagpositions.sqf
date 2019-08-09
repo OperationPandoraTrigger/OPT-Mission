@@ -11,21 +11,21 @@ GVARMAIN(nato_flags_pos) = [
 
 // Basis 
 	   [4913, 21907, west,"1 - Throns castel",false], // 1 - Throns_castel
-	   [4618, 21363, west,"2 - Oreokastro",false], // 2 - Oreokastro
+	   [4618, 21363, west,"2 - A_Hortlers_Residenz",false], // 2 - A_Hortlers_Residenz
 	   [4872, 19455, west,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
 	   [3354, 18329, west,"4 - Villa Constans",false], // 4 - Villa_Constans
 
 	   [5398, 17888, west,"5 - Mine Gore",false], // 5 - Mine_Gore
-	   [6210, 16240, west,"6 - Kore Fabrik",false], // 6 - Kore_Fabrik
-	   [4264, 13929, west,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
-	   [3739, 12997, west,"8 - Kavala Hospital",false], // 8 - Kavala_Hospital
+	   [6210, 16240, west,"6 - Pennerhotel",true], // 6 - Pennerhotel
+	   [4264, 13929, west,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
+	   [3739, 12997, west,"8 - Die_Dächer_von_Kavalla",true], // 8 - Die_Dächer_von_Kavalla
 
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
-	   [12608, 14284, west,"10 - Edessa",false], // 10 - Edessa
+	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, west,"11 - Krya Nera",false], // 11 - Krya_Nera
 	   [8560, 20883, west,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
-	   [9423, 20273, west,"13 - Abdera Rathaus",false], // 13 - Abdera_Rathaus
+	   [9423, 20273, west,"13 - Trinkertreff",false], // 13 - Trinkertreff
 	   [10351, 19030, west,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
 	   [7515, 18333, west,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
@@ -49,27 +49,27 @@ GVARMAIN(nato_flags_pos) = [
   
 	   [14283, 22224, west,"29 - Hanf Plantage Frini",false], // 29 - Hanf_Plantage_Frini 
 	   [14752, 20733, west,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
-	   [14325, 18928, west,"31 - Athira Factory",false], // 31 - Athira_Factory
+	   [14325, 18928, west,"31 - Mannis_Wurstbude",false], // 31 - Mannis_Wurstbude
 	   
 	   [14920, 17172, west,"32 - Airbase Altis",false], // 32 - Airbase_Altis
-	   [13591, 15188, west,"33 - xxxxxxxxxxxxx",false], // 33 - xxxxxxxxxxxxx
+	   [13591, 15188, west,"33 - Pool_party",false], // 33 - Pool_party
 	   [11922, 9722, west,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
 	   [16603, 19042, west,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 	   
 	   [16459, 17202, west,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
 	   [16654, 16122, west,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
-	   [16720, 13548, west,"38 - xxxxxxxxxxx",false], // 38 _ xxxxxxxxxxxxxx
+	   [16720, 13548, west,"38 - D_Day",false], // 38 _ D_Day
 
-	   [16589, 12635, west,"39 - Pyrgos Zentrum",true], // 39 - Pyrgos_Zentrum
+	   [16589, 12635, west,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
 	   [17806, 10596, west,"40 - Ekali Stones",false], // 40 - Ekali Stones 
 	   [19422, 7972, west,"41 - Lonely",false], // 42 - Lonely
 
 	   [18897, 16660, west,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
-	   [18374, 15529, west,"43 - Charkia Storage",false], // 43 - Charkia Storage
+	   [18374, 15529, west,"43 - Ursulas_Truckstop",false], // 43 - Ursulas_Truckstop
 	   [18116, 15218, west,"44 - Charkia",false], // 44 - Charkia
 
-	   [19677, 12998, west,"45 - Dorida Woods",true], // 45 - Dorida Woods
+	   [19677, 12998, west,"45 - Dorida Woods",false], // 45 - Dorida Woods
 	   [20166, 11710, west,"46 - Chalikea",false], // 46 - Chalikea
 	   [20546, 9003, west,"47 - Panagia",false], // 47 - Panagia
 	   
@@ -77,13 +77,13 @@ GVARMAIN(nato_flags_pos) = [
 	   [20077, 20064, west,"49 - Pefka Colloseum",false], // 49 - Pefka Colloseum
 	   [20923, 19242, west,"50 - Pefkas Lab",false], // 50 - Pefkas Lab
 	   
-	   [20940, 17008, west,"51 - Paros",true], // 51 - Paros
-	   [21365, 16285, west,"52 - Kalochori",true], // 52 - Kalochori
-	   [21154, 14594, west,"53 - Limni Swamp",true], // 53 - Limni Swamp
+	   [20940, 17008, west,"51 - Paros",false], // 51 - Paros
+	   [21365, 16285, west,"52 - Kalochori",false], // 52 - Kalochori
+	   [21154, 14594, west,"53 - Limni Swamp",false], // 53 - Limni Swamp
 	   
 	   [21980, 21035, west,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
 	   [22303, 18491, west,"55 - Almyra West",false], // 55 - Almyra West
-	   [22627, 16807, west,"56 - Almyra South",true], // 56 - Almyra South
+	   [22627, 16807, west,"56 - Almyra South",false], // 56 - Almyra South
 	   
 	   [23346, 24195, west,"57 - Sideras",false], // 57 - Sideras
 	   [23467, 21158, west,"58 - Delfinaki Military",false], // 58 - Delfinaki Military
@@ -99,27 +99,27 @@ GVARMAIN(csat_flags_pos) = [
 //Basis 
 
 	   [4913, 21907, east,"1 - Throns castel",false], // 1 - Throns_castel
-	   [4618, 21363, east,"2 - Oreokastro",false], // 2 - Oreokastro
+	   [4618, 21363, east,"2 - A_Hortlers_Residenz",false], // 2 - A_Hortlers_Residenz
 	   [4872, 19455, east,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
 	   [3354, 18329, east,"4 - Villa Constans",false], // 4 - Villa_Constans
 
 	   [5398, 17888, east,"5 - Mine Gore",false], // 5 - Mine_Gore
-	   [6210, 16240, east,"6 - Kore Fabrik",false], // 6 - Kore_Fabrik
+	   [6210, 16240, east,"6 - Pennerhotel",false], // 6 - Pennerhotel
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
-	   [3739, 12997, east,"8 - Kavala Hospital",false], // 8 - Kavala_Hospital
+	   [3739, 12997, east,"8 - Die_Dächer_von_Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
-	   [5924, 12469, east,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
-	   [12608, 14284, east,"10 - Edessa",false], // 10 - Edessa
+	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
+	   [7285, 11034, east,"10 - Edessa",true], // 10 - Edessa
 	   [9710, 22282, east,"11 - Krya Nera",false], // 11 - Krya_Nera
 	   [8560, 20883, east,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
-	   [9423, 20273, east,"13 - Abdera Rathaus",false], // 13 - Abdera_Rathaus
+	   [9423, 20273, east,"13 - Trinkertreff",false], // 13 - Trinkertreff
 	   [10351, 19030, east,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
 	   [7515, 18333, east,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
 	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
 	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
-	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
+	   [9321, 13699, east,"18 - Xirolimni Damm",true], // 18 - Xirolimni_Damm",false
 	   
 	   [9489, 8236, east,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
@@ -137,25 +137,25 @@ GVARMAIN(csat_flags_pos) = [
   
 	   [14283, 22224, east,"29 - Hanf Plantage Frini",false], // 29 - Hanf_Plantage_Frini 
 	   [14752, 20733, east,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
-	   [14325, 18928, east,"31 - Athira Factory",false], // 31 - Athira_Factory
+	   [14325, 18928, east,"31 -  Mannis_Wurstbude",false], // 31 -  Mannis_Wurstbude
 	   
 	   [14920, 17172, east,"32 - Airbase_Altis",false], // 32 - Airbase_Altis
-	   [13591, 15188, east,"33 - xxxxxxxxxxxxx",false], // 33 - xxxxxxxxxxxxx
+	   [13591, 15188, east,"33 - Pool_party",false], // 33 - Pool_party
 	   [11922, 9722, east,"34 - Alpaka_Residenz",false], // 34 - Alpaka_Residenz
 	   
 	   [16603, 19042, east,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 
-	   [16459, 17202, east,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
-	   [16654, 16122, east,"37 - Athira Kirchplatz",true], // 37 - Athira_Kirchplatz
-	   [16720, 13548, east,"38 - xxxxxxxxxxx",true], // 38 _ xxxxxxxxxxxxxx
+	   [16459, 17202, east,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
+	   [16654, 16122, east,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
+	   [16720, 13548, east,"38 - D_Day",false], // 38 _ D_Day
 
 	   [16589, 12635, east,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
 	   [17806, 10596, east,"40 - Ekali Stones",false], // 40 - Ekali Stones 
 	   [19422, 7972, east,"41 - Lonely",false], // 42 - Lonely
 
-	   [18897, 16660, east,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
-	   [18374, 15529, east,"43 - Charkia Storage",true], // 43 - Charkia Storage
-	   [18116, 15218, east,"44 - Charkia",true], // 44 - Charkia
+	   [18897, 16660, east,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
+	   [18374, 15529, east,"43 - Ursulas_Truckstop",false], // 43 - Ursulas_Truckstop
+	   [18116, 15218, east,"44 - Charkia",false], // 44 - Charkia
 
 	   [19677, 12998, east,"45 - Dorida Woods",false], // 45 - Dorida Woods
 	   [20166, 11710, east,"46 - Chalikea",false], // 46 - Chalikea

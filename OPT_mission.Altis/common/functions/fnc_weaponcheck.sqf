@@ -80,6 +80,16 @@ if !(_typeOfPlayer in GVARMAIN(snipers)) then {
     } forEach (weapons _unit);
 };
 
+// check DMR Sniper
+if !(_typeOfPlayer in GVARMAIN(DMRsnipers)) then {
+    {
+        if (_x in GVARMAIN(DMRsniperRifles)) then {
+            _unit removeWeapon _x;
+            _bad_item_used = true;
+        };
+    } forEach (weapons _unit);
+};
+
 // check MG
 if !(_typeOfPlayer in GVARMAIN(soldatMG)) then {
     {

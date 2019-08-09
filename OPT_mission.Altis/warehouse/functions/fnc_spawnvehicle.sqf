@@ -94,7 +94,7 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 			systemChat format ["shop CilbEV B:%1",(isNil "CLib_fnc_globalEvent")];
 			
 			//Drohnen marker erstellung für Clib
-			["OPTAddMarkerDrohneGPS",_vec] call CLib_fnc_globalEvent;
+			//["OPTAddMarkerDrohneGPS",_vec] call CLib_fnc_globalEvent;
 
 		};
 
@@ -105,7 +105,12 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 		// update budget initialized by server!
 		[UNIT_NAME(_unit), UNIT_SIDE(_unit), _vecType, _unitCost, "-"] call EFUNC(common,updateBudget);
 		[] remoteExecCall [QFUNC(updateBudget), _unit, false];
-
+		
+		if ((_vec isKindOf "OPT_B_Heli_Light_01_F") or (_vec isKindOf "OPT_O_Heli_Light_01_F")) then 
+		{
+			_vec removeWeapon "CMFlareLauncher";
+		};
+		
 		breakOut "scan";
 	};
 };
