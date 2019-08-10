@@ -26,11 +26,11 @@ GVAR(spawnInProgress) = true;
 private _heightOffset = 0.1;
 private _placed = 0; 
 
-// Komplette Liste aller möglichen Kaufgegenstände erstellen
+// Komplette Liste aller mï¿½glichen Kaufgegenstï¿½nde erstellen
 private _items = [];
 { _items append (_x select [0,1]); } forEach OPT_warehouse_all;
 
-// Fahrzeug schonmal spawnen (notwendig für Größenermittlung)
+// Fahrzeug schonmal spawnen (notwendig fï¿½r Grï¿½ï¿½enermittlung)
 _vec = createVehicle [_vecType, [(random 100) - 50, (random 100) - 50, 1000 + random 100], [], 0, "NONE"];
 if (typeName _spawnObj == "OBJECT") then { _vec setDir (getDir _spawnObj); };
 private _scanRadius = sizeOf _vecType;
@@ -38,16 +38,16 @@ private _scanRadius = sizeOf _vecType;
 // debug...
 // hintSilent str _scanRadius;
 
-// Kleine Gegenstände nicht zu nah beisammen spawnen
+// Kleine Gegenstï¿½nde nicht zu nah beisammen spawnen
 if (_scanRadius < 2) then { _scanRadius = 2; };
 
-// Große Gegenstände (wie z.B. der Huron) sollen ihren Platzbedarf mal nicht so übertreiben
+// Groï¿½e Gegenstï¿½nde (wie z.B. der Huron) sollen ihren Platzbedarf mal nicht so ï¿½bertreiben
 if (_scanRadius > 20) then { _scanRadius = 20; };
 
 private _spiralMaxPoints = 100; 
 private _spiralDistance = 0.005;
 
-// Spiralförmig vom Mittelpunkt aus nach Freifläche suchen
+// Spiralfï¿½rmig vom Mittelpunkt aus nach Freiflï¿½che suchen
 for "_i" from 0 to _spiralMaxPoints step 1 do 
 { 
 	scopeName "scan"; 
@@ -56,7 +56,7 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 	private _y = _spiralDistance * _angle * sin _angle; 
 	private _posi = getPosASL _spawnObj vectorAdd [_x, _y, _heightOffset];
 
-	// Ist etwas gefährliches im Weg?
+	// Ist etwas gefï¿½hrliches im Weg?
 	// Liste aller Basis-Klassen: https://forums.bohemia.net/forums/topic/202400-list-of-vehicle-base-classes/?do=findComment&comment=3157238
 	private _objList = nearestObjects [_posi, _items, _scanRadius];
 	if (isNil {_objList select 0}) then 
@@ -93,7 +93,7 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 			
 			systemChat format ["shop CilbEV B:%1",(isNil "CLib_fnc_globalEvent")];
 			
-			//Drohnen marker erstellung für Clib
+			//Drohnen marker erstellung fï¿½r Clib
 			//["OPTAddMarkerDrohneGPS",_vec] call CLib_fnc_globalEvent;
 
 		};
@@ -105,11 +105,6 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 		// update budget initialized by server!
 		[UNIT_NAME(_unit), UNIT_SIDE(_unit), _vecType, _unitCost, "-"] call EFUNC(common,updateBudget);
 		[] remoteExecCall [QFUNC(updateBudget), _unit, false];
-		
-		if ((_vec isKindOf "OPT_B_Heli_Light_01_F") or (_vec isKindOf "OPT_O_Heli_Light_01_F")) then 
-		{
-			_vec removeWeapon "CMFlareLauncher";
-		};
 		
 		breakOut "scan";
 	};
