@@ -26,11 +26,11 @@ GVAR(spawnInProgress) = true;
 private _heightOffset = 0.1;
 private _placed = 0; 
 
-// Komplette Liste aller m�glichen Kaufgegenst�nde erstellen
+// Komplette Liste aller möglichen Kaufgegenstände erstellen
 private _items = [];
 { _items append (_x select [0,1]); } forEach OPT_warehouse_all;
 
-// Fahrzeug schonmal spawnen (notwendig f�r Gr��enermittlung)
+// Fahrzeug schonmal spawnen (notwendig für Größenermittlung)
 _vec = createVehicle [_vecType, [(random 100) - 50, (random 100) - 50, 1000 + random 100], [], 0, "NONE"];
 if (typeName _spawnObj == "OBJECT") then { _vec setDir (getDir _spawnObj); };
 private _scanRadius = sizeOf _vecType;
@@ -38,16 +38,16 @@ private _scanRadius = sizeOf _vecType;
 // debug...
 // hintSilent str _scanRadius;
 
-// Kleine Gegenst�nde nicht zu nah beisammen spawnen
+// Kleine Gegenstände nicht zu nah beisammen spawnen
 if (_scanRadius < 2) then { _scanRadius = 2; };
 
-// Gro�e Gegenst�nde (wie z.B. der Huron) sollen ihren Platzbedarf mal nicht so �bertreiben
+// Große Gegenstände (wie z.B. der Huron) sollen ihren Platzbedarf mal nicht so übertreiben
 if (_scanRadius > 20) then { _scanRadius = 20; };
 
 private _spiralMaxPoints = 100; 
 private _spiralDistance = 0.005;
 
-// Spiralf�rmig vom Mittelpunkt aus nach Freifl�che suchen
+// Spiralförmig vom Mittelpunkt aus nach Freifläche suchen
 for "_i" from 0 to _spiralMaxPoints step 1 do 
 { 
 	scopeName "scan"; 
@@ -56,7 +56,7 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 	private _y = _spiralDistance * _angle * sin _angle; 
 	private _posi = getPosASL _spawnObj vectorAdd [_x, _y, _heightOffset];
 
-	// Ist etwas gef�hrliches im Weg?
+	// Ist etwas gefährliches im Weg?
 	// Liste aller Basis-Klassen: https://forums.bohemia.net/forums/topic/202400-list-of-vehicle-base-classes/?do=findComment&comment=3157238
 	private _objList = nearestObjects [_posi, _items, _scanRadius];
 	if (isNil {_objList select 0}) then 
@@ -93,7 +93,7 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 			
 			systemChat format ["shop CilbEV B:%1",(isNil "CLib_fnc_globalEvent")];
 			
-			//Drohnen marker erstellung f�r Clib
+			//Drohnen marker erstellung für Clib
 			//["OPTAddMarkerDrohneGPS",_vec] call CLib_fnc_globalEvent;
 
 		};
