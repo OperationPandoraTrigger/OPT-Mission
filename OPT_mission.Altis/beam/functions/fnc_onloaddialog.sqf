@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * initialize beam dialog and fill listbox with available options
 * if component is disabled, only options with level -1 are available
@@ -6,6 +6,9 @@
 *
 * Author:
 * Lord
+*
+* Edit by:
+* Manu
 *
 * Arguments:
 * None
@@ -29,6 +32,7 @@
 * Example:
 * [] call EFUNC(beam,onLoadDialog);
 */
+
 #include "script_component.hpp"
 
 /* PARAMS */
@@ -36,13 +40,14 @@
 /* VALIDATION */
 
 /* CODE BODY */
+
 disableSerialization;
 
 private _display = findDisplay DIALOG_BEAM_IDD;
 private _lb = _display displayCtrl DIALOG_BEAM_LB_IDC;
 
-//Zeitabgelaufen check
 private _orte = [];
+
 if (PLAYER_SIDE == east) then
 {
     _orte = GVAR(locations_east);
