@@ -55,7 +55,7 @@
 /* CODE BODY */
 
 
-//BLUFOR
+//West (BLUFOR)
 GVAR(locations_west) =
 [
     [[3723,0,17576], "Landung_alpha", 0],
@@ -65,14 +65,14 @@ GVAR(locations_west) =
     [[8570,0,7349], "FOB", 0],
 
        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
 	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",0], // 5 - Mine_Gore
-	   [[6181.8838,43.000999,16256.253], "6 - Kore Fabrik",0], // 6 - Kore_Fabrik
-	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",0], // 7 - Checkpoint_charlie
-	   [[3723.6956,18.555311,12999.2], "8 - Kavala Hospital",0], // 8 - Kavala_Hospital
+	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",1], // 6 - Pennerhotel
+	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",1], // 7 - Checkpoint_charlie
+	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",1], // 8 - Die Dächer von Kavala
 
 	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
 	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
@@ -106,16 +106,16 @@ GVAR(locations_west) =
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
 	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
-	   [[13589.743,16.363777,12166.921], "33 - xxxxxxxxxxxxx",0], // 33 - xxxxxxxxxxxxx
+ 	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - xxxxxxxxxxx",0], // 38 _ xxxxxxxxxxxxxx
+ 	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 - D_Day
 
-	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",1], // 39 - Pyrgos_Zentrum
+	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
@@ -123,7 +123,7 @@ GVAR(locations_west) =
 	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
-	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",1], // 45 - Dorida Woods
+	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
 	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
 	   [[20555.693,39.293385,9022.5293], "47 - Panagia",0], // 47 - Panagia
 	   
@@ -131,13 +131,13 @@ GVAR(locations_west) =
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
 	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",0], // 50 - Pefkas Lab
 	   
-	   [[50940,0,17008], "51 - Paros",1], // 51 - Paros
-	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
-	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",1], // 53 - Limni Swamp
+	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
+	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
 	   [[22283.615,14.165822,18499.398], "55 - Almyra West",0], // 55 - Almyra West
-	   [[22599.842,13.634861,16825.371], "56 - Almyra South",1], // 56 - Almyra South
+	   [[22599.842,13.634861,16825.371], "56 - Almyra South",0], // 56 - Almyra South
 	   
 	   [[23371.816,3.9426758,24183.539], "57 - Sideras",0], // 57 - Sideras
 	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",0], // 58 - Delfinaki Military
@@ -148,7 +148,7 @@ GVAR(locations_west) =
 	   [[25420.861,10.028322,20338.611], "62 - Refinery",0] // 62 - Refinery
 ];
 
-//OPFOR
+//East (OPFOR)
 GVAR(locations_east) =
 [
     [[7282,0,10998], "Landung_alpha", 0],
@@ -157,18 +157,18 @@ GVAR(locations_east) =
     [[7147,0,10947], "Marine Basis", 0],
     [[13769,0,6378], "FOB", 0],
 	
-        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",-1], // 2 - Oreokastro
+       [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
 	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",0], // 5 - Mine_Gore
-	   [[6181.8838,43.000999,16256.253], "6 - Kore Fabrik",0], // 6 - Kore_Fabrik
+	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",0], // 6 - Pennerhotel
 	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",0], // 7 - Checkpoint_charlie
-	   [[3723.6956,18.555311,12999.2], "8 - Kavala Hospital",0], // 8 - Kavala_Hospital
+	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",0], // 8 - Die Dächer von Kavala
 
-	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
-	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
+	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",1], // 9 - Lager_Panagiotis
+	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",1], // 10 - Edessa
 	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",0], // 11 - Krya_Nera
 	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",0], // 12 - Abdera_Farm
 	   
@@ -178,7 +178,7 @@ GVAR(locations_east) =
 
 	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
 	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",0], // 17 - Checkpoint Agios Dionisos
-	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",0], // 18 - Xirolimni_Damm",1
+	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",1], // 18 - Xirolimni_Damm"
 	   
 	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",0], // 19 - Hühnerfarm_Sfaka
 
@@ -199,22 +199,22 @@ GVAR(locations_east) =
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
 	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
-	   [[13589.743,16.363777,12166.921], "33 - xxxxxxxxxxxxx",0], // 33 - xxxxxxxxxxxxx
+ 	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
-	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
-	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",1], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - xxxxxxxxxxx",1], // 38 _ xxxxxxxxxxxxxx
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
+	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
+ 	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 - D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
-	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
-	   [[18147.764,25.077732,15225.152], "44 - Charkia",1], // 44 - Charkia
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
+	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
 	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
@@ -224,7 +224,7 @@ GVAR(locations_east) =
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
 	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",0], // 50 - Pefkas Lab
 	   
-	   [[50940,0,17008], "51 - Paros",0], // 51 - Paros
+	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
 	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
