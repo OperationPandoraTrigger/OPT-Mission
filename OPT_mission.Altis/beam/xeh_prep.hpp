@@ -1,5 +1,6 @@
 
 PREP(beam);
+PREP(beam_zer);
 PREP(beamMapmove);
 PREP(initCBASettings);
 PREP(onLoadDialog);
