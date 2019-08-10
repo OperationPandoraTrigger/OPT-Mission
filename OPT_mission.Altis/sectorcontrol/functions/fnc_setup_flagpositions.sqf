@@ -99,14 +99,14 @@ GVARMAIN(csat_flags_pos) = [
 //Basis 
 
 	   [4913, 21907, east,"1 - Throns castel",false], // 1 - Throns_castel
-	   [4618, 21363, east,"2 - A_Hortlers_Residenz",false], // 2 - A_Hortlers_Residenz
+	   [4618, 21363, east,"2 - A Hortlers Residenz",false], // 2 - A_Hortlers_Residenz
 	   [4872, 19455, east,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
 	   [3354, 18329, east,"4 - Villa Constans",false], // 4 - Villa_Constans
 
 	   [5398, 17888, east,"5 - Mine Gore",false], // 5 - Mine_Gore
 	   [6210, 16240, east,"6 - Pennerhotel",false], // 6 - Pennerhotel
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
-	   [3739, 12997, east,"8 - Die_Dächer_von_Kavalla",false], // 8 - Die_Dächer_von_Kavalla
+	   [3739, 12997, east,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
 	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
 	   [7285, 11034, east,"10 - Edessa",true], // 10 - Edessa
@@ -137,24 +137,24 @@ GVARMAIN(csat_flags_pos) = [
   
 	   [14283, 22224, east,"29 - Hanf Plantage Frini",false], // 29 - Hanf_Plantage_Frini 
 	   [14752, 20733, east,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
-	   [14325, 18928, east,"31 -  Mannis_Wurstbude",false], // 31 -  Mannis_Wurstbude
+	   [14325, 18928, east,"31 -  Mannis Wurstbude",false], // 31 -  Mannis_Wurstbude
 	   
-	   [14920, 17172, east,"32 - Airbase_Altis",false], // 32 - Airbase_Altis
-	   [13591, 15188, east,"33 - Pool_party",false], // 33 - Pool_party
-	   [11922, 9722, east,"34 - Alpaka_Residenz",false], // 34 - Alpaka_Residenz
+	   [14920, 17172, east,"32 - Airbase Altis",false], // 32 - Airbase_Altis
+	   [13591, 15188, east,"33 - Pool Party",false], // 33 - Pool_party
+	   [11922, 9722, east,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
 	   [16603, 19042, east,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 
 	   [16459, 17202, east,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
 	   [16654, 16122, east,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
-	   [16720, 13548, east,"38 - D_Day",false], // 38 _ D_Day
+	   [16720, 13548, east,"38 - D-Day",false], // 38 _ D_Day
 
 	   [16589, 12635, east,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
 	   [17806, 10596, east,"40 - Ekali Stones",false], // 40 - Ekali Stones 
 	   [19422, 7972, east,"41 - Lonely",false], // 42 - Lonely
 
 	   [18897, 16660, east,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
-	   [18374, 15529, east,"43 - Ursulas_Truckstop",false], // 43 - Ursulas_Truckstop
+	   [18374, 15529, east,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
 	   [18116, 15218, east,"44 - Charkia",false], // 44 - Charkia
 
 	   [19677, 12998, east,"45 - Dorida Woods",false], // 45 - Dorida Woods
