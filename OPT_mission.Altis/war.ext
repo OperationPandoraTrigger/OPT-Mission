@@ -2,10 +2,10 @@
 author = __MADE_BY__;
 onLoadName = __MISSION_NAME__;
 onLoadMission = __VERSION__;
-loadScreen = "opt_core\bilder\opt4_logo.paa";
+loadScreen = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 
 overviewTextLocked = __MISSION_NAME__;
-overviewPicture = "opt_core\bilder\opt4_logo.paa";
+overviewPicture = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 overviewText = __MISSION_DESCRIPTION__;
 
 onLoadIntro = "Prepare yourself...";
@@ -37,22 +37,21 @@ class Header {
 };
 
 #ifdef __DISABLE_CHAT_CHANNELS__
-disableChannels[] = __DISABLE_CHAT_CHANNELS__;
+	disableChannels[] = __DISABLE_CHAT_CHANNELS__;
 #endif
-
 
 class CfgDebriefing { 
 	class END1 {
 		subtitle = "NATO hat die Schlacht gewonnen!";
 		description = "Die NATO Truppen eroberten weitere Gebiete in diesem Krieg.";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "flag_NATO";
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 	class END2 {
 		subtitle = "CSAT hat die Schlacht gewonnen!";
 		description = "Die CSAT Truppen eroberten weitere Gebiete in diesem Krieg.";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "flag_CSAT";
 		pictureColor[] = {0.6,0.1,0.2,1};
 	};
@@ -60,28 +59,28 @@ class CfgDebriefing {
 		title = "Untentschieden";
 		subtitle = "Knappe Kiste ohne einen klaren Sieger!";
 		description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "KIA";
 		//pictureColor[] = {};
 	};
 	class Loser {
 		subtitle = "Player Init Error";
 		description = "Bad profile or error during initialization - try to restart";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "KIA";
 		//pictureColor[] = {0.0,0.3,0.6,1};
 	};
 	class balanceBLUFOR {
 		subtitle = "Überhangregel";
 		description = "Zu viele Nato Spieler - Überhangregel greift";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "flag_NATO";
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 	class balanceOPFOR {
 		subtitle = "Ueberhangregel";
 		description = "Zu viele CSAT Spieler - Überhangregel greift.";
-		pictureBackground = "opt_core\bilder\opt4_logo.paa";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 		picture = "flag_CSAT";
 		pictureColor[] = {0.6,0.1,0.2,1};
 	};
