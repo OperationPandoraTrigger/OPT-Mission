@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=29657;
+		nextID=29777;
 	};
 	class Camera
 	{
-		pos[]={298.17001,42.904739,15987.806};
-		dir[]={0.92296225,-0.37107334,0.10238861};
-		up[]={0.36882803,0.92860079,0.040916007};
-		aside[]={0.11026102,1.0880467e-007,-0.99392587};
+		pos[]={8150.4917,289.58301,25355.924};
+		dir[]={0.62994659,-0.71504998,-0.30322814};
+		up[]={0.64430809,0.69905776,-0.31014037};
+		aside[]={-0.43374065,4.0326267e-007,-0.90108043};
 	};
 };
 binarizationWanted=0;
@@ -120,14 +120,13 @@ addons[]=
 	"A3_Structures_F_Exp_Infrastructure_Pavements",
 	"A3_Structures_F_Exp_Naval_Piers",
 	"A3_Structures_F_Exp_Infrastructure_Airports",
-	"A3_Data_F_Exp_A_Virtual",
-	"opt_modcheck_283"
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=51;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -480,17 +479,16 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
-		{
-			className="opt_modcheck_283";
-			name="opt_modcheck_283";
-		};
 	};
 };
 randomSeed=15809659;
 class ScenarioData
 {
 	author="oppa-schneutzel";
+	class Header
+	{
+		gameType="CTI";
+	};
 };
 class CustomAttributes
 {
@@ -14776,7 +14774,7 @@ class CustomAttributes
 																"STRING"
 															};
 														};
-														value="[""CLib"",""Streamator"",""PerformanceMonitor""]";
+														value="[""CLib"",""Streamator"",""PerformanceMonitor"", ""opt""]";
 													};
 												};
 												class Item1
@@ -14865,7 +14863,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=6;
 		class Item0
 		{
 			dataType="Layer";
@@ -78978,17 +78976,6 @@ class Mission
 		};
 		class Item4
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8434.1885,23.660645,25241.303};
-			};
-			id=8396;
-			type="OPT_Mod_Check";
-			atlOffset=-57.670799;
-		};
-		class Item5
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -79004,7 +78991,7 @@ class Mission
 			type="Flag_NATO_F";
 			atlOffset=0.17626476;
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Object";
 			class PositionInfo

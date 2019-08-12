@@ -7,6 +7,9 @@
 * Author:
 * Lord & James
 *
+* Edit by:
+* Manu
+*
 * Arguments:
 * None
 *
@@ -24,11 +27,25 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
+*
+* Usage:
+* Position=[0, 0, 0] 
+* Name = "ABC"
+* Level = {-1; 0; 1; 2; 3}
+* [[Position], Name, Level]
+* 
+* Level:
+* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
+* 0 = not available
+* 1 = infantry only
+* 2 = infantry + light vehicles
+* 3 = infantry + light vehicles + heavy vehicles
 */
+
 #include "script_component.hpp"
 
 /* PARAMS */
@@ -38,21 +55,14 @@
 /* CODE BODY */
 
 
-// Position=[0, 0, 0]
-// Name = "ABC"
-// Stufe = -1-0-1-2-3 // -1 nach Waffenruhe wählbar, 0 Nicht Wählbar,  1 Inf,  2 inf + leichte Fahrzeuge,  3 inf + Schwere Fahrzeuge
-//
-// Bsp [[Position], Name, Stufe], 
-
-
-//West
+//West (BLUFOR)
 GVAR(locations_west) =
 [
-    [[9006.612,0,13093.991], "Beampunkt 1", -1],
-    [[8921.066,0,14724.813], "Beampunkt 2", -1],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis",0],
-    [[0,0,0], "FOB", 0],
+    [[3723,0,17576], "Landung_alpha", 0],
+    [[9470,0,8942], "Landung_bravo", 0],
+    [[9863,0,9728], "Landung_charly", 0],
+    [[3003,0,18176], "Marine Basis", 0],
+    [[8570,0,7349], "FOB", 0],
 
        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
 	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
@@ -96,14 +106,14 @@ GVAR(locations_west) =
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
 	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
-	   [[13589.743,16.363777,12166.921], "33 - Pool_party",0], // 33 - Pool_party
+ 	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
+ 	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 - D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
@@ -138,16 +148,16 @@ GVAR(locations_west) =
 	   [[25420.861,10.028322,20338.611], "62 - Refinery",0] // 62 - Refinery
 ];
 
-//East
+//East (OPFOR)
 GVAR(locations_east) =
 [
-    [[9006.612,0,13093.991], "Beampunkt 1", -1],
-    [[8921.066,0,14724.813], "Beampunkt 2", -1],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis", 0],
-    [[0,0,0], "FOB", 0],
+    [[7282,0,10998], "Landung_alpha", 0],
+    [[12922,0,7989], "Landung_bravo", 0],
+    [[12664,0,9651], "Landung_charly", 0],
+    [[7147,0,10947], "Marine Basis", 0],
+    [[13769,0,6378], "FOB", 0],
 	
-        [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
+       [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
 	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
@@ -168,7 +178,7 @@ GVAR(locations_east) =
 
 	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
 	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",0], // 17 - Checkpoint Agios Dionisos
-	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",1], // 18 - Xirolimni_Damm",1
+	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",1], // 18 - Xirolimni_Damm"
 	   
 	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",0], // 19 - Hühnerfarm_Sfaka
 
@@ -189,14 +199,14 @@ GVAR(locations_east) =
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
 	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
-	   [[13589.743,16.363777,12166.921], "33 - Pool_party",0], // 33 - Pool_party
+ 	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
+ 	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 - D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
@@ -269,16 +279,19 @@ GVAR(beam_vehicles) =
 	"OPT_B_Truck_01_covered_F",						//HEMTT Abgedeckt
 	"OPT_B_Truck_01_Repair_F",						//HEMTT Reparatur
 	"OPT_B_Truck_01_medical_F", 					//HEMTT Medic
+	"OPT_B_Truck_01_transport_F",					//HEMTT
 	"OPT_B_Quadbike_01_F",							//Quadbike NATO
 	//OPFOR hextarn
 	"OPT_O_Truck_03_covered_F",						//Tempest Abgedeckt
 	"OPT_O_Truck_03_repair_F",						//Tempest Reparatur
 	"OPT_O_Truck_03_medical_F",						//Tempest Medic
+	"OPT_O_Truck_03_transport_F",					//Tempest
 	"OPT_O_Quadbike_01_F",							//Quadbike CSAT
 	//OPFOR tropentarn
 	"OPT_O_T_Truck_03_covered_ghex_F",				//Tempest Abgedeckt
 	"OPT_O_T_Truck_03_repair_ghex_F",				//Tempest Reparatur
 	"OPT_O_T_Truck_03_medical_ghex_F",				//Tempest Medic
+	"OPT_O_T_Truck_03_transport_ghex_F",			//Tempest
 	"OPT_O_T_Quadbike_01_ghex_F"					//Quadbike CSAT
 ];	
 
