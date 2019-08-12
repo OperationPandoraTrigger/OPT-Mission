@@ -83,7 +83,8 @@ GVAR(canTransportCargo) =
 	["OPT_B_MBT_01_Arty_F", 1],                       // M4 Scorcher
     ["OPT4_B_MBT_01_mlrs_F", 1],                      // M5 Sandstorm    
     ["OPT4_B_MBT_01_arty_F", 1],                 // M4 Scorcher
-    ["OPT_B_MBT_01_mlrs_F", 1],                  // M5 Sandstorm  
+    ["OPT_B_MBT_01_mlrs_F", 1],                  // M5 Sandstorm 
+	["OPT4_B_APC_Tracked_01_AA_F", 1],           // IFV-6a Cheetah	
 // NATO Helicopters	
 	["OPT_B_Heli_Light_01_F", 4],				    	// MH-9 Hummingbird
 	["OPT_B_Heli_light_03_unarmed_green_F", 4],				    	// Hellcat unbew
@@ -213,7 +214,8 @@ GVAR(canBeTransported) =
 	["OPT_B_MBT_01_Arty_F", 10],                       // M4 Scorcher
     ["OPT4_B_MBT_01_mlrs_F", 10],                      // M5 Sandstorm    
     ["OPT4_B_MBT_01_arty_F", 10],                 // M4 Scorcher
-    ["OPT_B_MBT_01_mlrs_F", 10],                  // M5 Sandstorm    
+    ["OPT_B_MBT_01_mlrs_F", 10],                  // M5 Sandstorm  
+	["OPT4_B_APC_Tracked_01_AA_F", 10],           // IFV-6a Cheetah		
 // NATO supplies/drohnen	
 	["OPT_B_UGV_01_F", 4],		
 // NATO supplies
