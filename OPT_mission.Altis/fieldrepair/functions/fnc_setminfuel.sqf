@@ -17,8 +17,9 @@
 
 params ["_vec"];
 
-if (fuel _vec < 0.1) then {
-    [_vec, 0.1] remoteExecCall ["setFuel", _vec, false];
+private _fuel = fuel _vec;
+if (_fuel < 0.1) then {
+    [_vec, _fuel + 0.1] remoteExecCall ["setFuel", _vec, false];
 };
 
 true
