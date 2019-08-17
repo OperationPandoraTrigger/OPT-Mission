@@ -47,7 +47,7 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; [_target] call %1 and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ()[_target] call %1 || damage _target > 0.1)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
     ];
 
 
