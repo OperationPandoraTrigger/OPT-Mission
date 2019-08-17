@@ -40,16 +40,15 @@
     ];
 
     _vec addAction [
-        "<t color='#ff0000'>" + STR_SERIOUS_REPAIR + "</t>", 
+        "<t color='#008507'>" + STR_SERIOUS_REPAIR + "</t>", 
         {[_this select 0] call FUNC(heavyRepair)},
         [], 
         -1, 
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; ()[_target] call %1 || damage _target > 0.1)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.1)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
     ];
-
 
     if (typeOf _vec  == "OPT_O_T_Truck_03_repair_ghex_F" || typeOf _vec == "OPT_O_Truck_03_repair_F" || typeOf _vec  == "OPT_B_Truck_01_Repair_F") then {
     // if (getRepairCargo _vec > 0) then {
@@ -57,7 +56,7 @@
         _vec setVariable [QGVAR(repair_cargo), DEFAULT_REPAIR_TRUCK_USES, true];
 
         _vec addAction [
-            "<t color='#ff0000'>" + STR_CHECK_REPAIRS + "</t>", 
+            "<t color='#ffff00'>" + STR_CHECK_REPAIRS + "</t>", 
             {[_this select 0] call FUNC(checkRepairs)},
             [], 
             -1, 
@@ -85,7 +84,7 @@
     ];
 
     _vec addAction [
-        "<t color='#ff0000'>" + STR_FIELD_REFUEL + "</t>", 
+        "<t color='#dd0000'>" + STR_FIELD_REFUEL + "</t>", 
         {[_this select 0] call FUNC(refuelVehicle)},
         [], 
         -1, 

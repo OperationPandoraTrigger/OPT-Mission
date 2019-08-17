@@ -9,7 +9,7 @@
 * 0: <BOOL> true: vehicle is empty, false: not empty enough
 *
 * Example:
-* [vehicle] call fnc_vehicleNoFuel.sqf;
+* [vehicle] call fnc_checkRepairs.sqf;
 *
 */
 
