@@ -272,16 +272,19 @@ GVAR(beam_vehicles) =
 	"OPT_B_Truck_01_covered_F",						//HEMTT Abgedeckt
 	"OPT_B_Truck_01_Repair_F",						//HEMTT Reparatur
 	"OPT_B_Truck_01_medical_F", 					//HEMTT Medic
+	"OPT_B_Truck_01_transport_F",					//HEMTT
 	"OPT_B_Quadbike_01_F",							//Quadbike NATO
 	//OPFOR hextarn
 	"OPT_O_Truck_03_covered_F",						//Tempest Abgedeckt
 	"OPT_O_Truck_03_repair_F",						//Tempest Reparatur
 	"OPT_O_Truck_03_medical_F",						//Tempest Medic
+	"OPT_O_Truck_03_transport_F",					//Tempest
 	"OPT_O_Quadbike_01_F",							//Quadbike CSAT
 	//OPFOR tropentarn
 	"OPT_O_T_Truck_03_covered_ghex_F",				//Tempest Abgedeckt
 	"OPT_O_T_Truck_03_repair_ghex_F",				//Tempest Reparatur
 	"OPT_O_T_Truck_03_medical_ghex_F",				//Tempest Medic
+	"OPT_O_T_Truck_03_transport_ghex_F",			//Tempest
 	"OPT_O_T_Quadbike_01_ghex_F"					//Quadbike CSAT
 ];	
 
