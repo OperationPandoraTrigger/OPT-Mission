@@ -50,7 +50,7 @@ GVAR(canTransportCargo) =
 [
 // NATO Vehicles
     ["OPT_B_Quadbike_01_F", 0],						    // Quadbike	- checken!
-	["OPT_B_G_Offroad_01_F", 4],					    // Pickup - grad nich drin!
+	["OPT_B_G_Offroad_01_F", 0],					    // Pickup - grad nich drin!
 	["OPT_B_G_Offroad_01_armed_F", 4],				    // Pickup HMG - grad nich drin!
 	["OPT_B_T_LSV_01_unarmed_F", 4], 				    // Prowler unarmed
 	["OPT_B_T_LSV_01_armed_F", 4],                      // Prowler armed
@@ -107,7 +107,7 @@ GVAR(canTransportCargo) =
 	["OPT_O_T_LSV_02_unarmed_F", 4], 				    // Quilin unarmed
 	["OPT_O_T_LSV_02_armed_F", 4],					    // Quilin armed
 	["O_T_LSV_01_AT_F_un", 4], 						// Prowler AT - vanilla	- lord
-    ["OPT_O_G_Offroad_01_F", 4],					    // Pickup  - grad nich drin!
+    ["OPT_O_G_Offroad_01_F", 0],					    // Pickup  - grad nich drin!
     ["OPT_O_G_Offroad_01_armed_F", 4],				    // Pickup HMG  - grad nich drin!
 	["OPT_O_T_MRAP_02_ghex_F", 4],					    // Ifrit - tropentarn hinzugefügt
 	["OPT_O_T_MRAP_02_hmg_ghex_F", 4],				    // Ifrit HMG  - tropentarn hinzugefügt
