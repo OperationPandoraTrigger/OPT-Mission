@@ -63,9 +63,9 @@ GVAR(locations_west) =
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
 	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",0], // 5 - Mine_Gore
-	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",1], // 6 - Pennerhotel
-	   [[4267.708,28.040495,13902.733], "7 - Checkpoint Charlie",1], // 7 - Checkpoint_charlie
-	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",1], // 8 - Die Dächer von Kavala
+	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",0], // 6 - Pennerhotel
+	   [[4267.708,28.040495,13902.733], "7 - Checkpoint Charlie",0], // 7 - Checkpoint_charlie
+	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",0], // 8 - Die Dächer von Kavala
 
 	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
 	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
@@ -128,17 +128,17 @@ GVAR(locations_west) =
 	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
-	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
-	   [[22283.615,14.165822,18499.398], "55 - Almyra West",0], // 55 - Almyra West
+	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",1], // 54 - Pefkas Palace
+	   [[22283.615,14.165822,18499.398], "55 - Almyra West",1], // 55 - Almyra West
 	   [[22599.842,13.634861,16825.371], "56 - Almyra South",0], // 56 - Almyra South
 	   
 	   [[23371.816,3.9426758,24183.539], "57 - Sideras",0], // 57 - Sideras
-	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",0], // 58 - Delfinaki Military
-	   [[24755.986,3.8023796,19153.188], "59 - Almyra North",0], // 59 - Almyra North
+	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",1], // 58 - Delfinaki Military
+	   [[24755.986,3.8023796,19153.188], "59 - Almyra North",1], // 59 - Almyra North
 	   
 	   [[26731.115,20.005753,24638.008], "60 - Molos Airbase",0], // 60 - Molos Airbase
 	   [[26989.885,20.367672,23206.453], "61 - Molos Town",0], // 61 - Molos Town
-	   [[25420.861,10.028322,20338.611], "62 - Refinery",0] // 62 - Refinery
+	   [[25420.861,10.028322,20338.611], "62 - Refinery",1] // 62 - Refinery
 ];
 
 //East
@@ -205,7 +205,7 @@ GVAR(locations_east) =
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
-	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
 	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
@@ -214,16 +214,16 @@ GVAR(locations_east) =
 	   [[20555.693,39.293385,9022.5293], "47 - Panagia",0], // 47 - Panagia
 	   
 	   [[20907.025,34.035168,6664.6289], "48 - Selakano",0], // 48 - Selakano
-	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
-	   [[20958.469,15.521555,19261.99], "50 - Pefkas Forschungszentrum",0], // 50 - Pefkas Lab
+	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",1], // 49 - Pefka Colloseum
+	   [[20958.469,15.521555,19261.99], "50 - Pefkas Forschungszentrum",1], // 50 - Pefkas Lab
 	   
-	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
-	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
+	   [[20961.982,42.085556,16967.162], "51 - Paros",1], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
 	   [[22283.615,14.165822,18499.398], "55 - Almyra West",0], // 55 - Almyra West
-	   [[22599.842,13.634861,16825.371], "56 - Almyra South",0], // 56 - Almyra South
+	   [[22599.842,13.634861,16825.371], "56 - Almyra South",1], // 56 - Almyra South
 	   
 	   [[23371.816,3.9426758,24183.539], "57 - Sideras",0], // 57 - Sideras
 	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",0], // 58 - Delfinaki Military
