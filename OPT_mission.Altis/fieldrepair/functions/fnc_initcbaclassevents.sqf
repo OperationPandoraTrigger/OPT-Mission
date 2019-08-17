@@ -29,6 +29,17 @@
     ];
 
     _vec addAction [
+        "<t color='#ff0000'>" + STR_FIELD_REFUEL + "</t>", 
+        {[_this select 0] call FUNC(refuelVehicle)},
+        [], 
+        -1, 
+        false,
+        true, 
+        '',
+        QUOTE([_target] call FUNC(vehicleNoFuel))
+    ];
+
+    _vec addAction [
         "<t color='#ff0000'>" + STR_SERIOUS_REPAIR + "</t>", 
         {[_this select 0] call FUNC(heavyRepair)},
         [], 
@@ -36,12 +47,12 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; [_target] call %1 and _truck getVariable ['%2', -1] != -1 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; [_target] call %1 and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
     ];
 
     if (getRepairCargo _vec > 0) then {
         [_vec, 0] remoteExecCall ["setRepairCargo", _vec, true];
-        _vec setVariable [QGVAR(repair_cargo), 1, true]; 
+        _vec setVariable [QGVAR(repair_cargo), DEFAULT_REPAIR_TRUCK_USES, true]; 
     };
 
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
@@ -58,6 +69,17 @@
         true, 
         '',
         QUOTE([_target] call FUNC(needRepair))
+    ];
+
+    _vec addAction [
+        "<t color='#ff0000'>" + STR_FIELD_REFUEL + "</t>", 
+        {[_this select 0] call FUNC(refuelVehicle)},
+        [], 
+        -1, 
+        false,
+        true, 
+        '',
+        QUOTE([_target] call FUNC(vehicleNoFuel))
     ];
 
     _vec addAction [

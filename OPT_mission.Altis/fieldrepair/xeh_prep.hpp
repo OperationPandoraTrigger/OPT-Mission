@@ -11,3 +11,4 @@ PREP(removeItemFromCargo);
 PREP(repairVehicle);
 PREP(setMinFuel);
 PREP(vehicleDamaged);
+PREP(vehicleNoFuel);
