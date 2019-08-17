@@ -1,6 +1,8 @@
 #define DEFAULT_FREPAIR_VER "1P"
 
 #define STR_FIELD_REPAIR "Feldreparatur durchführen"
+#define STR_CHECK_REPAIRS "Prüfe Zahl an Ersatzteilen"
+#define STR_REPAIRS_LEFT "%1 von %2 Ersatzteilen übrig"
 #define STR_CANCEL_ACTION "Aktion abbrechen"
 #define STR_SERIOUS_REPAIR "Komplettreparatur durchführen"
 #define STR_REPAIR_CONDITIONS "Das Fahrzeug während der Arbeit nicht bewegen!"
