@@ -16,9 +16,9 @@ GVARMAIN(nato_flags_pos) = [
 	   [3354, 18329, west,"4 - Villa Constans",false], // 4 - Villa_Constans
 
 	   [5398, 17888, west,"5 - Mine Gore",false], // 5 - Mine_Gore
-	   [6210, 16240, west,"6 - Pennerhotel",true], // 6 - Pennerhotel
-	   [4264, 13929, west,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
-	   [3739, 12997, west,"8 - Die Dächer von Kavalla",true], // 8 - Die_Dächer_von_Kavalla
+	   [6210, 16240, west,"6 - Pennerhotel",false], // 6 - Pennerhotel
+	   [4264, 13929, west,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
+	   [3739, 12997, west,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
 	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
@@ -81,17 +81,17 @@ GVARMAIN(nato_flags_pos) = [
 	   [21365, 16285, west,"52 - Kalochori",false], // 52 - Kalochori
 	   [21154, 14594, west,"53 - Limni Swamp",false], // 53 - Limni Swamp
 	   
-	   [21980, 21035, west,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
-	   [22303, 18491, west,"55 - Almyra West",false], // 55 - Almyra West
-	   [22627, 16807, west,"56 - Almyra South",false], // 56 - Almyra South
+	   [21980, 21035, west,"54 - Pefkas Palace",true], // 54 - Pefkas Palace
+	   [22303, 18491, west,"55 - Almyra West",true], // 55 - Almyra West
+	   [22573, 16391, west,"56 - Almyra South",false], // 56 - Almyra South
 	   
 	   [23346, 24195, west,"57 - Sideras",false], // 57 - Sideras
-	   [23467, 21158, west,"58 - Delfinaki Military",false], // 58 - Delfinaki Military
-	   [24770, 19122, west,"59 - Almyra North",false], // 59 - Almyra North
+	   [23467, 21158, west,"58 - Delfinaki Military",true], // 58 - Delfinaki Military
+	   [24770, 19122, west,"59 - Almyra North",true], // 59 - Almyra North
 	   
 	   [26746, 24660, west,"60 - Molos Airbase",false], // 60 - Molos Airbase
 	   [26958, 23200, west,"61 - Molos Town",false], // 61 - Molos Town
-	   [25440, 20346, west,"62 - Refinery",false] // 62 - Refinery
+	   [25440, 20346, west,"62 - Refinery",true] // 62 - Refinery
 ];
 
 GVARMAIN(csat_flags_pos) = [
@@ -108,8 +108,8 @@ GVARMAIN(csat_flags_pos) = [
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
 	   [3739, 12997, east,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
-	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
-	   [7285, 11034, east,"10 - Edessa",true], // 10 - Edessa
+	   [5924, 12469, east,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
+	   [7285, 11034, east,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, east,"11 - Krya Nera",false], // 11 - Krya_Nera
 	   [8560, 20883, east,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
@@ -119,7 +119,7 @@ GVARMAIN(csat_flags_pos) = [
 
 	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
 	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
-	   [9321, 13699, east,"18 - Xirolimni Damm",true], // 18 - Xirolimni_Damm",false
+	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
 	   
 	   [9489, 8236, east,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
@@ -153,7 +153,7 @@ GVARMAIN(csat_flags_pos) = [
 	   [17806, 10596, east,"40 - Ekali Stones",false], // 40 - Ekali Stones 
 	   [19422, 7972, east,"41 - Lonely",false], // 42 - Lonely
 
-	   [18897, 16660, east,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
+	   [18897, 16660, east,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
 	   [18374, 15529, east,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
 	   [18116, 15218, east,"44 - Charkia",false], // 44 - Charkia
 
@@ -162,16 +162,16 @@ GVARMAIN(csat_flags_pos) = [
 	   [20546, 9003, east,"47 - Panagia",false], // 47 - Panagia
 	   
 	   [20897, 6643, east,"48 - Selakano",false], // 48 - Selakano
-	   [20077, 20064, east,"49 - Pefka Colloseum",false], // 49 - Pefka Colloseum
-	   [20923, 19242, east,"50 - Pefkas Lab",false], // 50 - Pefkas Lab
+	   [20077, 20064, east,"49 - Pefka Colloseum",true], // 49 - Pefka Colloseum
+	   [20923, 19242, east,"50 - Pefkas Lab",true], // 50 - Pefkas Lab
 	   
-	   [20940, 17008, east,"51 - Paros",false], // 51 - Paros
-	   [21365, 16285, east,"52 - Kalochori",false], // 52 - Kalochori
+	   [20940, 17008, east,"51 - Paros",true], // 51 - Paros
+	   [21365, 16285, east,"52 - Kalochori",true], // 52 - Kalochori
 	   [21154, 14594, east,"53 - Limni Swamp",false], // 53 - Limni Swamp
 	   
 	   [21980, 21035, east,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
 	   [22303, 18491, east,"55 - Almyra West",false], // 55 - Almyra West
-	   [22627, 16807, east,"56 - Almyra South",false], // 56 - Almyra South
+	   [22573, 16391, east,"56 - Almyra South",true], // 56 - Almyra South
 	   
 	   [23346, 24195, east,"57 - Sideras",false], // 57 - Sideras
 	   [23467, 21158, east,"58 - Delfinaki Military",false], // 58 - Delfinaki Military
