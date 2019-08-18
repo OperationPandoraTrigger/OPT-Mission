@@ -1,6 +1,6 @@
 /**
 * Author: James
-* determine if vehicle is damaged
+* determine if vehicle is lightly damaged
 *
 * Arguments:
 * 0: <OBJECT> vehicle
@@ -9,7 +9,7 @@
 * 0: <BOOL> true: vehicle is damaged, false: not damaged
 *
 * Example:
-* [vehicle] call fnc_vehicleDamaged.sqf;
+* [vehicle] call fnc_vehicleDamagedLight.sqf;
 *
 */
 #include "script_component.hpp"
@@ -21,10 +21,9 @@ if (_veh isEqualTo objNull) exitWith {false};
 private _flag = false;
 
 {
-	private _cdmg = _veh getHitPointDamage (_x);
-	if (not isNil {_cdmg} ) then {
-		if (_cdmg > 0.64) exitWith {_flag = true};
+	if (_x > 0.01) exitWith {
+		_flag = true;
 	};
-} forEach GVAR(repair_hps);
+} forEach (getAllHitPointsDamage _veh) select 2;
 
 _flag
