@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=9750;
+		nextID=9754;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31981;
+		nextID=32044;
 	};
 	class Camera
 	{
-		pos[]={22540.131,38.495129,16434.033};
-		dir[]={0.80547726,0.011693101,0.59256756};
-		up[]={-0.0093991226,0.99993438,-0.0069144452};
-		aside[]={0.59261042,8.4307976e-007,-0.80553532};
+		pos[]={22539.592,29.425425,16399.188};
+		dir[]={0.91576064,-0.28632489,-0.28221676};
+		up[]={0.27367723,0.9580723,-0.084344454};
+		aside[]={-0.29453596,-5.1025199e-007,-0.95574588};
 	};
 };
 binarizationWanted=0;
@@ -128,7 +128,6 @@ addons[]=
 	"A3_Structures_F_Exp_Naval_Piers",
 	"A3_Structures_F_Exp_Infrastructure_Airports",
 	"A3_Data_F_Exp_A_Virtual"
-
 };
 class AddonsMetaData
 {
@@ -16070,7 +16069,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -16129,7 +16128,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -16189,7 +16188,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -16289,7 +16288,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -16349,7 +16348,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -16409,7 +16408,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="opt_core\bilder\schild_muni.paa";
+											value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 										};
 									};
 								};
@@ -26808,129 +26807,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={16144.609,23.652111,14283.864};
-										angles[]={0,2.1496284,0};
-									};
-									side="East";
-									flags=5;
-									class Attributes
-									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
-										name="csat_mg";
-										description="MG-Schütze@Geko";
-										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="OPT_LMG_Zafir_F";
-												optics="optic_ACO_grn";
-												flashlight="acc_pointer_IR";
-												class primaryMuzzleMag
-												{
-													name="150Rnd_762x54_Box";
-													ammoLeft=150;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="U_O_officer_noInsignia_hex_F";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="SmokeShell";
-														count=2;
-														ammoLeft=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="OPT_V_TacVest_khk";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=2;
-													class Item0
-													{
-														name="150Rnd_762x54_Box";
-														count=1;
-														ammoLeft=150;
-													};
-													class Item1
-													{
-														name="HandGrenade";
-														count=3;
-														ammoLeft=1;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											radio="tf_fadak";
-											gps="ItemGPS";
-											headgear="OPT_H_HelmetO_ocamo";
-										};
-									};
-									id=8421;
-									type="OPT_CSAT_MG_Schuetze";
-									atlOffset=0.24694061;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male01PER";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.97000003;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item5
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={16145.333,23.652805,14285.304};
 										angles[]={0,2.1016665,0};
 									};
@@ -27075,7 +26951,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -27212,7 +27088,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -27335,7 +27211,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item8
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
@@ -27458,7 +27334,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item9
+								class Item8
 								{
 									dataType="Object";
 									class PositionInfo
@@ -27575,6 +27451,154 @@ class Mission
 														};
 													};
 													value=1;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16144.681,23.652584,14283.75};
+										angles[]={0,2.1940534,0};
+									};
+									side="East";
+									flags=5;
+									class Attributes
+									{
+										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										name="csat_spotter";
+										description="Spotter@Geko";
+										isPlayable=1;
+										class Inventory
+										{
+											class primaryWeapon
+											{
+												name="OPT_arifle_CTAR_blk_F";
+												optics="optic_Hamr";
+												flashlight="acc_pointer_IR";
+												class primaryMuzzleMag
+												{
+													name="30Rnd_580x42_Mag_F";
+													ammoLeft=30;
+												};
+											};
+											class binocular
+											{
+												name="OPT_Laserdesignator_02";
+												class primaryMuzzleMag
+												{
+													name="Laserbatteries";
+													ammoLeft=1;
+												};
+											};
+											class uniform
+											{
+												typeName="U_O_GhillieSuit";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="30Rnd_580x42_Mag_F";
+														count=3;
+														ammoLeft=30;
+													};
+												};
+											};
+											class vest
+											{
+												typeName="OPT_V_TacVest_khk";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=3;
+													class Item0
+													{
+														name="HandGrenade";
+														count=3;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="SmokeShell";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item2
+													{
+														name="30Rnd_580x42_Mag_F";
+														count=3;
+														ammoLeft=30;
+													};
+												};
+												class ItemCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="ACE_HuntIR_monitor";
+														count=1;
+													};
+												};
+											};
+											class backpack
+											{
+												typeName="TFAR_mr3000";
+												isBackpack=1;
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+											radio="tf_fadak";
+											gps="ItemGPS";
+											headgear="OPT_H_HelmetO_ocamo";
+										};
+									};
+									id=8448;
+									type="OPT_CSAT_Aufklaerung_JTAC";
+									atlOffset=0.00017929077;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male03PER";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1.03;
 												};
 											};
 										};
@@ -30187,51 +30211,46 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={16145.896,23.652611,14287.5};
-										angles[]={0,2.1940606,0};
+										position[]={16146.35,23.652607,14287.352};
+										angles[]={0,2.1496348,0};
 									};
 									side="East";
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
-										name="csat_spotter";
-										description="Spotter@Panther";
+										init="call{(group this) setGroupIdGlobal [""Panther""];}";
+										name="csat_mg";
+										description="MG-Schütze@Panther";
 										isPlayable=1;
 										class Inventory
 										{
 											class primaryWeapon
 											{
-												name="OPT_arifle_CTAR_blk_F";
-												optics="optic_Hamr";
+												name="OPT_LMG_Zafir_F";
+												optics="optic_ACO_grn";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
-													name="30Rnd_580x42_Mag_F";
-													ammoLeft=30;
+													name="150Rnd_762x54_Box";
+													ammoLeft=150;
 												};
 											};
 											class binocular
 											{
-												name="OPT_Laserdesignator_02";
-												class primaryMuzzleMag
-												{
-													name="Laserbatteries";
-													ammoLeft=1;
-												};
+												name="Binocular";
 											};
 											class uniform
 											{
-												typeName="U_O_GhillieSuit";
+												typeName="U_O_officer_noInsignia_hex_F";
 												isBackpack=0;
 												class MagazineCargo
 												{
 													items=1;
 													class Item0
 													{
-														name="30Rnd_580x42_Mag_F";
-														count=3;
-														ammoLeft=30;
+														name="SmokeShell";
+														count=2;
+														ammoLeft=1;
 													};
 												};
 											};
@@ -30241,40 +30260,20 @@ class Mission
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=3;
+													items=2;
 													class Item0
+													{
+														name="150Rnd_762x54_Box";
+														count=1;
+														ammoLeft=150;
+													};
+													class Item1
 													{
 														name="HandGrenade";
 														count=3;
 														ammoLeft=1;
 													};
-													class Item1
-													{
-														name="SmokeShell";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="30Rnd_580x42_Mag_F";
-														count=3;
-														ammoLeft=30;
-													};
 												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_HuntIR_monitor";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="TFAR_mr3000";
-												isBackpack=1;
 											};
 											map="ItemMap";
 											compass="ItemCompass";
@@ -30284,9 +30283,9 @@ class Mission
 											headgear="OPT_H_HelmetO_ocamo";
 										};
 									};
-									id=8448;
-									type="OPT_CSAT_Aufklaerung_JTAC";
-									atlOffset=0.00020599365;
+									id=8421;
+									type="OPT_CSAT_MG_Schuetze";
+									atlOffset=0.00020217896;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -30304,7 +30303,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Male03PER";
+													value="Male01PER";
 												};
 											};
 										};
@@ -30323,7 +30322,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1.03;
+													value=0.97000003;
 												};
 											};
 										};
@@ -66127,7 +66126,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\nato_sr_funke.paa";
+													value="\opt\opt_client\addons\core\bilder\nato_sr_funke.paa";
 												};
 											};
 										};
@@ -66187,7 +66186,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\nato_lr_funke.paa";
+													value="\opt\opt_client\addons\core\bilder\nato_lr_funke.paa";
 												};
 											};
 										};
@@ -66247,7 +66246,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\1csat_funktabelle.paa";
+													value="\opt\opt_client\addons\core\bilder\1csat_funktabelle.paa";
 												};
 											};
 										};
@@ -66307,7 +66306,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_A_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_A_nato.paa";
 												};
 											};
 										};
@@ -66367,7 +66366,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_A_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_A_nato.paa";
 												};
 											};
 										};
@@ -66427,7 +66426,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_V_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_V_nato.paa";
 												};
 											};
 										};
@@ -66487,7 +66486,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_V_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_V_nato.paa";
 												};
 											};
 										};
@@ -66547,7 +66546,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -66607,7 +66606,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -66667,7 +66666,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -66727,7 +66726,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -66787,7 +66786,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -66847,7 +66846,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -66907,7 +66906,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_radar.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -66967,7 +66966,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -67027,7 +67026,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -67087,7 +67086,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -67147,7 +67146,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -67207,7 +67206,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -67267,7 +67266,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -67327,7 +67326,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\opt4_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 												};
 											};
 										};
@@ -67387,7 +67386,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\n_traeger_uebersicht.paa";
+													value="\opt\opt_client\addons\core\bilder\n_traeger_uebersicht.paa";
 												};
 											};
 										};
@@ -67685,7 +67684,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_teleport.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -67745,7 +67744,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -67805,7 +67804,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -67865,7 +67864,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -67925,7 +67924,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -67985,7 +67984,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -68045,7 +68044,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_verkaufen.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_verkaufen.paa";
 												};
 											};
 										};
@@ -68105,7 +68104,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_service.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -68165,7 +68164,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_muni.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -68225,7 +68224,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_service.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_service.paa";
 												};
 											};
 										};
@@ -68285,7 +68284,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_muni.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_muni.paa";
 												};
 											};
 										};
@@ -69120,7 +69119,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\nato_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\nato_nachschub.paa";
 												};
 											};
 										};
@@ -70222,8 +70221,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -70232,10 +70231,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -70279,8 +70278,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -70289,10 +70288,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -70357,8 +70356,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -70367,10 +70366,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -70414,8 +70413,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -70424,10 +70423,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -70491,8 +70490,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -70501,10 +70500,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -70548,8 +70547,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -70558,10 +70557,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -70625,8 +70624,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -70635,10 +70634,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -70682,8 +70681,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -70692,10 +70691,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -70769,8 +70768,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -70779,10 +70778,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -70826,8 +70825,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -70836,10 +70835,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -73877,7 +73876,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\csat_sr_funke.paa";
+													value="\opt\opt_client\addons\core\bilder\csat_sr_funke.paa";
 												};
 											};
 										};
@@ -73937,7 +73936,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\csat_lr_funke.paa";
+													value="\opt\opt_client\addons\core\bilder\csat_lr_funke.paa";
 												};
 											};
 										};
@@ -74057,7 +74056,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_A_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_A_nato.paa";
 												};
 											};
 										};
@@ -74117,7 +74116,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_A_csat.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_A_csat.paa";
 												};
 											};
 										};
@@ -74177,7 +74176,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_V_nato.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_V_nato.paa";
 												};
 											};
 										};
@@ -74237,7 +74236,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_trapo_V_csat.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_trapo_V_csat.paa";
 												};
 											};
 										};
@@ -74297,7 +74296,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -74357,7 +74356,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -74417,7 +74416,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_luftwaffe.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
 												};
 											};
 										};
@@ -74477,7 +74476,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -74537,7 +74536,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -74597,7 +74596,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_panzer.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_panzer.paa";
 												};
 											};
 										};
@@ -74657,7 +74656,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_radar.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_radar.paa";
 												};
 											};
 										};
@@ -74717,7 +74716,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -74777,7 +74776,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -74837,7 +74836,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_nachschub.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_nachschub.paa";
 												};
 											};
 										};
@@ -74897,7 +74896,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -74957,7 +74956,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -75017,7 +75016,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_fahrzeuge.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_fahrzeuge.paa";
 												};
 											};
 										};
@@ -75077,7 +75076,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\schild_teleport.paa";
+													value="\opt\opt_client\addons\core\bilder\schild_teleport.paa";
 												};
 											};
 										};
@@ -75137,7 +75136,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\opt4_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 												};
 											};
 										};
@@ -77138,7 +77137,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="opt_core\bilder\csat_marine_ausruestung.paa";
+													value="\opt\opt_client\addons\core\bilder\csat_marine_ausruestung.paa";
 												};
 											};
 										};
@@ -77937,8 +77936,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -77947,10 +77946,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -77975,8 +77974,8 @@ class Mission
 														};
 														class Attribute3
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -77985,10 +77984,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -78052,8 +78051,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -78062,10 +78061,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -78109,8 +78108,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -78119,10 +78118,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -78186,8 +78185,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -78196,10 +78195,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -78224,8 +78223,8 @@ class Mission
 														};
 														class Attribute3
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -78234,10 +78233,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -78301,8 +78300,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -78311,10 +78310,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -78358,8 +78357,8 @@ class Mission
 														};
 														class Attribute4
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -78368,10 +78367,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
@@ -78445,8 +78444,8 @@ class Mission
 														};
 														class Attribute1
 														{
-															property="enableStamina";
-															expression="_this enablestamina _value;";
+															property="face";
+															expression="_this setface _value;";
 															class Value
 															{
 																class data
@@ -78455,10 +78454,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"BOOL"
+																			"STRING"
 																		};
 																	};
-																	value=0;
+																	value="Custom";
 																};
 															};
 														};
@@ -78483,8 +78482,8 @@ class Mission
 														};
 														class Attribute3
 														{
-															property="face";
-															expression="_this setface _value;";
+															property="enableStamina";
+															expression="_this enablestamina _value;";
 															class Value
 															{
 																class data
@@ -78493,10 +78492,10 @@ class Mission
 																	{
 																		type[]=
 																		{
-																			"STRING"
+																			"BOOL"
 																		};
 																	};
-																	value="Custom";
+																	value=0;
 																};
 															};
 														};
