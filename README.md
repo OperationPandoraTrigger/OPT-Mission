@@ -1,10 +1,6 @@
 ﻿# OPT-Mission
 Repo für die OPT Mission (ohne Skripts).
 
-Building
---------
-To pack the mission to a PBO simply execute `tools\scripts\buildMission.bat`.
-
 ## Dialoge
 Dialog-Klassen werden in der Mission unter `dialogs` gespeichert. Für jedes Modul wird hier ein eigener Ordner angelegt.
 Anschließend in der `dialogs\include.hpp` entweder die Datei direkt includen, wenn es nur eine Datei ist. Ansonsten eine weitere `include.hpp` im Modulordner anlegen.
