@@ -12,5 +12,6 @@ PREP(repairVehicle);
 PREP(setMinFuel);
 PREP(refuelVehicle);
 PREP(vehicleDamaged);
+PREP(vehicleDamagedLight);
 PREP(vehicleNoFuel);
 PREP(checkRepairs);

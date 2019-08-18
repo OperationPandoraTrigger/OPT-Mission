@@ -47,12 +47,10 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.1)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)]
     ];
 
     if (typeOf _vec  == "OPT_O_T_Truck_03_repair_ghex_F" || typeOf _vec == "OPT_O_Truck_03_repair_F" || typeOf _vec  == "OPT_B_Truck_01_Repair_F") then {
-    // if (getRepairCargo _vec > 0) then {
-        // [_vec, 0] remoteExecCall ["setRepairCargo", _vec, true];
         _vec setVariable [QGVAR(repair_cargo), DEFAULT_REPAIR_TRUCK_USES, true];
 
         _vec addAction [
@@ -102,6 +100,6 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.1)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamaged), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)]
     ];
     }, nil, nil, true] call CBA_fnc_addClassEventHandler;
