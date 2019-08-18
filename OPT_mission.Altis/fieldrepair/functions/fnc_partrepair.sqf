@@ -30,6 +30,4 @@ if (_veh isEqualTo objNull) exitWith {false};
 
 } foreach GVAR(repair_hps);
 
-[_veh] call FUNC(setMinFuel);
-
 true
