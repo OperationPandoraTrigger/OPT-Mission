@@ -24,7 +24,7 @@ if (GVAR(mutexAction)) exitWith {
 };
 
 // if conditions are not met
-if (not alive player or (player distance _veh) > 7 or (vehicle player != player) or speed _veh > 3) exitWith {
+if (not alive player or (player distance _veh) > 10 or (vehicle player != player) or speed _veh > 3) exitWith {
     ["Feldreparatur", STR_REPAIR_CONDITIONS, "red"] call EFUNC(gui,message);
 };
 
@@ -84,7 +84,7 @@ if (_veh getVariable [QGVAR(repTimeLeft), 0] > 0) then {
     format[STR_REPAIR_MSG_STRING, _maxlength, _vehname],
     {
         (_this select 0) params ["_veh"];
-        alive player and (player distance _veh) < 7 and 
+        alive player and (player distance _veh) < 10 and 
         player getVariable ["FAR_isUnconscious", 0] == 0 and
         isNull objectParent player and 
         speed _veh < 3

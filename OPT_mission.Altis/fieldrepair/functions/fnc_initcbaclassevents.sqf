@@ -25,7 +25,8 @@
         false,
         true, 
         '',
-        QUOTE([_target] call FUNC(needRepair))
+        QUOTE([_target] call FUNC(needRepair)),
+        10
     ];
 
     _vec addAction [
@@ -36,7 +37,8 @@
         false,
         true, 
         '',
-        QUOTE([_target] call FUNC(vehicleNoFuel))
+        QUOTE([_target] call FUNC(vehicleNoFuel)),
+        10
     ];
 
     _vec addAction [
@@ -47,7 +49,7 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3} and (_truck distance _target) < 25", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)]
     ];
 
     if (typeOf _vec  == "OPT_O_T_Truck_03_repair_ghex_F" || typeOf _vec == "OPT_O_Truck_03_repair_F" || typeOf _vec  == "OPT_B_Truck_01_Repair_F") then {
@@ -61,7 +63,8 @@
             false, 
             true, 
             '',
-            ''
+            '',
+            20
         ];
     };
 
@@ -78,7 +81,8 @@
         false,
         true, 
         '',
-        QUOTE([_target] call FUNC(needRepair))
+        QUOTE([_target] call FUNC(needRepair)),
+        10
     ];
 
     _vec addAction [
@@ -89,7 +93,8 @@
         false,
         true, 
         '',
-        QUOTE([_target] call FUNC(vehicleNoFuel))
+        QUOTE([_target] call FUNC(vehicleNoFuel)),
+        10
     ];
 
     _vec addAction [
@@ -100,6 +105,7 @@
         false, 
         true, 
         '',
-        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3}", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)]
+        format["_truck = vehicle _this; ([_target] call %1 || damage _target > 0.01)  and _truck getVariable ['%2', -1] > 0 and {alive _target} and {speed _truck < 3} and (_truck distance _target) < 20", QFUNC(vehicleDamagedLight), QGVAR(repair_cargo)
+        ]
     ];
     }, nil, nil, true] call CBA_fnc_addClassEventHandler;
