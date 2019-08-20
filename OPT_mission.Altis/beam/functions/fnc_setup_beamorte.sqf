@@ -214,7 +214,7 @@ GVAR(locations_east) =
 	   [[20555.693,39.293385,9022.5293], "47 - Panagia",0], // 47 - Panagia
 	   
 	   [[20907.025,34.035168,6664.6289], "48 - Selakano",0], // 48 - Selakano
-	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
+	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",1], // 49 - Pefka Colloseum
 	   [[20958.469,15.521555,19261.99], "50 - Pefkas Forschungszentrum",1], // 50 - Pefkas Lab
 	   
 	   [[20961.982,42.085556,16967.162], "51 - Paros",1], // 51 - Paros
