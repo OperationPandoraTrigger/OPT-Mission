@@ -64,7 +64,7 @@ GVAR(nato_choppers) =
     ["OPT_B_UAV_02_CAS_F", DEF_PROD(0)],                        // Greyhawk LGB
     ["OPT_B_UAV_02_F", DEF_PROD(0)],                            // Greyhawk Raketen
     ["OPT_B_UAV_02_AA_F", DEF_PROD(0)],                         // Greyhawk AA-Raketen    
-    ["OPT_B_Heli_Transport_02_F", DEF_PROD(100000)],            // CH-49 Mohawk (Transport+Lift)
+    ["OPT_B_Heli_Transport_02_F", DEF_PROD(0)],            // CH-49 Mohawk (Transport+Lift)
     ["OPT_B_T_UAV_03_dynamicLoadout_F", DEF_PROD(0)],           // MQ12-Falcon - noch in arbeit erstma nur testweise mit preis eingebaut
     ["OPT_B_T_VTOL_02_infantry_unarmed_F", DEF_PROD(0)],   		// VTOL Y-32 Xi'an (Inf-Transport)
     ["OPT_B_T_VTOL_01_infantry_F", DEF_PROD(0)],                // VTOL Blackfish (Inf-Transport) 200000
