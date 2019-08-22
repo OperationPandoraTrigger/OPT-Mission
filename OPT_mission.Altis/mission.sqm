@@ -26248,9 +26248,9 @@ class Mission
 									flags=7;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_gruppenfuehrer_1";
-										description="Gruppenführer@Geko";
+										description="Gruppenführer@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -26383,9 +26383,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_sani_2";
-										description="Sanitäter@Geko";
+										description="Sanitäter@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -26521,9 +26521,9 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_sprengmeister_1";
-										description="Sprengmeister@Geko";
+										description="Sprengmeister@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -26685,9 +26685,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_sniper";
-										description="Scharfschütze@Geko";
+										description="Scharfschütze@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -26820,9 +26820,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_AA";
-										description="Flugabwehrschütze@Geko";
+										description="Flugabwehrschütze@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -26969,9 +26969,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_lat";
-										description="Schwere PA@Geko";
+										description="Schwere PA@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -27106,9 +27106,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_schuetze_10";
-										description="Schütze@geko";
+										description="Schütze@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -27229,9 +27229,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_schuetze_11";
-										description="Schütze@geko";
+										description="Schütze@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -27352,9 +27352,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_schuetze_12";
-										description="Schütze@geko";
+										description="Schütze@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
@@ -27475,9 +27475,9 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Geko""];}";
+										init="call{(group this) setGroupIdGlobal [""Gecko""];}";
 										name="csat_spotter";
-										description="Spotter@Geko";
+										description="Spotter@Gecko";
 										isPlayable=1;
 										class Inventory
 										{
