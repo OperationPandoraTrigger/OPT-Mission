@@ -197,8 +197,8 @@ if (isServer) then
 			_flag setFlagTexture "\A3\Data_F\Flags\Flag_NATO_CO.paa";
 
 			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, false];        
-			_flag setVariable ["opt_flag", false, false];
+			_flag setVariable ["owner", _owner, true];        
+			_flag setVariable ["opt_flag", true, true];
 		};	
 		
 	} forEach GVARMAIN(nato_flags_pos);
