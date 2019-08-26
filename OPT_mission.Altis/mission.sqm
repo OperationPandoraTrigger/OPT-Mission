@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=100;
 	autoGroupingDist=10;
-	toggles=578;
+	toggles=586;
 	class ItemIDProvider
 	{
 		nextID=9822;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=33002;
+		nextID=33130;
 	};
 	class Camera
 	{
-		pos[]={2762.749,42.183289,24197.836};
-		dir[]={-0.77819997,-0.24322201,-0.5791924};
-		up[]={-0.19516528,0.9699356,-0.1452556};
-		aside[]={-0.59712201,-2.5556074e-007,0.80229193};
+		pos[]={2503.7292,45.362125,24353.191};
+		dir[]={-0.67890805,0.025171356,-0.73395205};
+		up[]={0.017012956,0.99966538,0.018391391};
+		aside[]={-0.73419678,-1.1357479e-006,0.67913067};
 	};
 };
 binarizationWanted=0;
@@ -62886,7 +62886,7 @@ class Mission
 									type="rectangle";
 									a=49.559002;
 									b=174.3134;
-									angle=169.96658;
+									angle=169.96655;
 									id=5816;
 									atlOffset=178.26715;
 								};
@@ -65910,7 +65910,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -65969,7 +65969,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -66028,7 +66028,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -67348,7 +67348,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\n_traeger_uebersicht.paa";
+													value="\opt\opt_client\addons\core\bilder\traeger_uebersicht.paa";
 												};
 											};
 										};
@@ -67408,7 +67408,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -67439,7 +67439,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2654.8354,32.098042,24157.738};
+										position[]={2654.8616,32.098042,24157.742};
 										angles[]={0,4.5502987,0};
 									};
 									side="Empty";
@@ -67468,7 +67468,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -67527,7 +67527,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -67586,7 +67586,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\sword_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 												};
 											};
 										};
@@ -68760,7 +68760,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\sword_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 										};
 									};
 								};
@@ -68779,7 +68779,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\sword_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 										};
 									};
 								};
@@ -68932,7 +68932,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\sword_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 										};
 									};
 								};
@@ -68951,7 +68951,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\sword_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\sword_logo.paa";
 										};
 									};
 								};
@@ -69211,7 +69211,7 @@ class Mission
 									position[]={2562.2622,-0.14448166,23777.688};
 									name="marker_43";
 									type="b_naval";
-									angle=3.3768408;
+									angle=3.3768404;
 									id=9732;
 									atlOffset=177.10851;
 								};
@@ -69240,7 +69240,7 @@ class Mission
 											name="respawn_west";
 											type="respawn_unknown";
 											colorName="ColorBlue";
-											angle=314.96268;
+											angle=314.96262;
 											id=5255;
 											atlOffset=175.68806;
 										};
@@ -69267,7 +69267,7 @@ class Mission
 											fillName="SolidBorder";
 											a=2000;
 											b=2000;
-											angle=151.73752;
+											angle=151.73749;
 											drawBorder=1;
 											id=5256;
 											atlOffset=305.53293;
@@ -69276,7 +69276,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={2649.1846,-174.25597,24069.586};
-											angle=2.8570483;
+											angle=2.857048;
 											class Attributes
 											{
 												text="CSAT Todeszone";
@@ -69310,7 +69310,7 @@ class Mission
 											position[]={2697.125,330.73126,24088.541};
 											name="marker_nato_flagge_2";
 											type="flag_NATO";
-											angle=181.59726;
+											angle=181.59723;
 											id=5259;
 											atlOffset=307.2981;
 										};
@@ -69329,7 +69329,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={2693.9009,26.591434,24011.457};
-											angle=-1.7869667;
+											angle=-1.7869664;
 											class Attributes
 											{
 												name="nato_trigger_Waffenwechsel2";
@@ -69392,7 +69392,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={2674.738,23.429146,24194.109};
-											angle=-0.2458546;
+											angle=-0.24585457;
 											class Attributes
 											{
 												name="trg_nato_repair_1";
@@ -69438,7 +69438,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={2710.8313,23.900162,24177.09};
-											angle=-0.18872714;
+											angle=-0.18872711;
 											class Attributes
 											{
 												name="trg_nato_repair_2";
@@ -73984,7 +73984,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_funktabelle.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_funktabelle.paa";
 												};
 											};
 										};
@@ -75184,7 +75184,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\c_traeger_uebersicht.paa";
+													value="\opt\opt_client\addons\core\bilder\c_traeger_uebersicht.paa";
 												};
 											};
 										};
@@ -75244,7 +75244,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -75304,7 +75304,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -75363,7 +75363,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -75481,7 +75481,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -75540,7 +75540,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -75599,7 +75599,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="logos\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 												};
 											};
 										};
@@ -76804,7 +76804,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 										};
 									};
 								};
@@ -76823,7 +76823,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 										};
 									};
 								};
@@ -76919,7 +76919,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 										};
 									};
 								};
@@ -76938,7 +76938,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="logos\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
 										};
 									};
 								};
