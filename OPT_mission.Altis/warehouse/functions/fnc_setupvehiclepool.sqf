@@ -34,7 +34,7 @@ GVAR(nato_vehicles) =
     ["OPT_B_Quadbike_01_F", DEF_PROD(1500)],                    // Quadbike
     ["OPT_B_T_LSV_01_unarmed_F", DEF_PROD(5000)],               // Prowler unarmed 
     ["OPT_B_T_LSV_01_armed_F", DEF_PROD(8000)],                 // Prowler armed
-    ["OPT_B_G_Offroad_01_F", DEF_PROD(0)],                      // Pickup, 1000, ersetzt durch Prawler
+    ["OPT_B_G_Offroad_01_F", DEF_PROD(5000)],                      // Pickup, 1000, ersetzt durch Prawler
     ["OPT_B_G_Offroad_01_armed_F", DEF_PROD(0)],                // Pickup HMG, 4000, ersetzt durch Prawler
     ["OPT_B_Truck_01_covered_F", DEF_PROD(8000)],               // HEMTT Transport
     ["OPT_B_Truck_01_Repair_F", DEF_PROD(10000)],               // HEMTT Repair, ersetzt durch Container
@@ -64,7 +64,7 @@ GVAR(nato_choppers) =
     ["OPT_B_UAV_02_CAS_F", DEF_PROD(0)],                        // Greyhawk LGB
     ["OPT_B_UAV_02_F", DEF_PROD(0)],                            // Greyhawk Raketen
     ["OPT_B_UAV_02_AA_F", DEF_PROD(0)],                         // Greyhawk AA-Raketen    
-    ["OPT_B_Heli_Transport_02_F", DEF_PROD(100000)],            // CH-49 Mohawk (Transport+Lift)
+    ["OPT_B_Heli_Transport_02_F", DEF_PROD(0)],            // CH-49 Mohawk (Transport+Lift)
     ["OPT_B_T_UAV_03_dynamicLoadout_F", DEF_PROD(0)],           // MQ12-Falcon - noch in arbeit erstma nur testweise mit preis eingebaut
     ["OPT_B_T_VTOL_02_infantry_unarmed_F", DEF_PROD(0)],   		// VTOL Y-32 Xi'an (Inf-Transport)
     ["OPT_B_T_VTOL_01_infantry_F", DEF_PROD(0)],                // VTOL Blackfish (Inf-Transport) 200000
@@ -165,7 +165,7 @@ GVAR(csat_vehicles) =
     ["OPT_O_Truck_03_repair_F", DEF_PROD(10000)],               // Tempest Repair, ersetzt durch container-
     ["OPT_O_Truck_03_medical_F", DEF_PROD(10000)],              // Tempest Medical, ersetzt durch container-
     ["OPT_O_Truck_03_transport_F", DEF_PROD(2000)],             // Tempest (fr Radar, keine Sitze auf Ladeflche)-
-    ["OPT_O_G_Offroad_01_F", DEF_PROD(0)],                      // Pickup, ersetzt durch quilin
+    ["OPT_O_G_Offroad_01_F", DEF_PROD(5000)],                      // Pickup, ersetzt durch quilin
     ["OPT_O_G_Offroad_01_armed_F", DEF_PROD(0)],                // Pickup HMG, ersetzt durch quilin
     ["OPT_O_MRAP_02_F", DEF_PROD(5500)],                        // Ifrit-
 	["OPT4_O_MRAP_02_hmg_F", DEF_PROD(21000)],                  // Ifrit HMG

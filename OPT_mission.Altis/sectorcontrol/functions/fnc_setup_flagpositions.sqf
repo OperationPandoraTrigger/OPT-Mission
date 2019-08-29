@@ -10,28 +10,28 @@ east -> Angriffsziel für NATO
 GVARMAIN(nato_flags_pos) = [
 
 // Basis 
-	   [4913, 21907, west,"1 - Throns castel",false], // 1 - Throns_castel
-	   [4618, 21363, west,"2 - A Hortlers Residenz",false], // 2 - A_Hortlers_Residenz
+	   [4913, 21907, west,"1 - Throns castel",true], // 1 - Throns_castel
+	   [4618, 21363, west,"2 - A Hortlers Residenz",true], // 2 - A_Hortlers_Residenz
 	   [4872, 19455, west,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
 	   [3354, 18329, west,"4 - Villa Constans",false], // 4 - Villa_Constans
 
 	   [5398, 17888, west,"5 - Mine Gore",false], // 5 - Mine_Gore
-	   [6210, 16240, west,"6 - Pennerhotel",true], // 6 - Pennerhotel
-	   [4264, 13929, west,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
-	   [3739, 12997, west,"8 - Die Dächer von Kavalla",true], // 8 - Die_Dächer_von_Kavalla
+	   [6210, 16240, west,"6 - Pennerhotel",false], // 6 - Pennerhotel
+	   [4264, 13929, west,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
+	   [3739, 12997, west,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
 	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, west,"11 - Krya Nera",false], // 11 - Krya_Nera
-	   [8560, 20883, west,"12 - Abdera Farm",false], // 12 - Abdera_Farm
+	   [8560, 20883, west,"12 - Abdera Farm",true], // 12 - Abdera_Farm
 	   
-	   [9423, 20273, west,"13 - Trinkertreff",false], // 13 - Trinkertreff
+	   [9423, 20273, west,"13 - Trinkertreff",true], // 13 - Trinkertreff
 	   [10351, 19030, west,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
 	   [7515, 18333, west,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
 	   [7174, 16468, west,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
 	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
-	   [9321, 13699, west,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
+	   [9321, 13699, west,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm"
 	   
 	   [9489, 8236, west,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
@@ -83,7 +83,7 @@ GVARMAIN(nato_flags_pos) = [
 	   
 	   [21980, 21035, west,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
 	   [22303, 18491, west,"55 - Almyra West",false], // 55 - Almyra West
-	   [22627, 16807, west,"56 - Almyra South",false], // 56 - Almyra South
+	   [22573, 16391, west,"56 - Almyra South",false], // 56 - Almyra South
 	   
 	   [23346, 24195, west,"57 - Sideras",false], // 57 - Sideras
 	   [23467, 21158, west,"58 - Delfinaki Military",false], // 58 - Delfinaki Military
@@ -100,26 +100,26 @@ GVARMAIN(csat_flags_pos) = [
 
 	   [4913, 21907, east,"1 - Throns castel",false], // 1 - Throns_castel
 	   [4618, 21363, east,"2 - A Hortlers Residenz",false], // 2 - A_Hortlers_Residenz
-	   [4872, 19455, east,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
-	   [3354, 18329, east,"4 - Villa Constans",false], // 4 - Villa_Constans
+	   [4872, 19455, east,"3 - Waffenlager Nord West",true], // 3 - Waffenlager_Nord_West
+	   [3354, 18329, east,"4 - Villa Constans",true], // 4 - Villa_Constans
 
-	   [5398, 17888, east,"5 - Mine Gore",false], // 5 - Mine_Gore
+	   [5398, 17888, east,"5 - Mine Gore",true], // 5 - Mine_Gore
 	   [6210, 16240, east,"6 - Pennerhotel",false], // 6 - Pennerhotel
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
 	   [3739, 12997, east,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
-	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
-	   [7285, 11034, east,"10 - Edessa",true], // 10 - Edessa
+	   [5924, 12469, east,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
+	   [7285, 11034, east,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, east,"11 - Krya Nera",false], // 11 - Krya_Nera
 	   [8560, 20883, east,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
 	   [9423, 20273, east,"13 - Trinkertreff",false], // 13 - Trinkertreff
 	   [10351, 19030, east,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
-	   [7515, 18333, east,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
+	   [7515, 18333, east,"15 - Enclave Syrta",true], // 15 - Enclave_Syrta
 
-	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
+	   [7174, 16468, east,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
 	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
-	   [9321, 13699, east,"18 - Xirolimni Damm",true], // 18 - Xirolimni_Damm",false
+	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
 	   
 	   [9489, 8236, east,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
@@ -171,7 +171,7 @@ GVARMAIN(csat_flags_pos) = [
 	   
 	   [21980, 21035, east,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
 	   [22303, 18491, east,"55 - Almyra West",false], // 55 - Almyra West
-	   [22627, 16807, east,"56 - Almyra South",false], // 56 - Almyra South
+	   [22573, 16391, east,"56 - Almyra South",false], // 56 - Almyra South
 	   
 	   [23346, 24195, east,"57 - Sideras",false], // 57 - Sideras
 	   [23467, 21158, east,"58 - Delfinaki Military",false], // 58 - Delfinaki Military

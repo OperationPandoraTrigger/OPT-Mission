@@ -14,12 +14,11 @@
 */
 #include "script_component.hpp"
 
+params [["_veh", objNull]];
 
-params ["_vec"];
-
-private _fuel = fuel _vec;
+private _fuel = fuel _veh;
 if (_fuel < 0.1) then {
-    [_vec, _fuel + 0.1] remoteExecCall ["setFuel", _vec, false];
+    [_veh, _fuel + 0.1] remoteExecCall ["setFuel", _veh, false];
 };
 
 true

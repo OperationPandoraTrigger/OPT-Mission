@@ -25,7 +25,7 @@ class RscTitles {
 
 class CLib {
     class GarbageCollector {
-        EnableGarbageCollector = 1;
+        EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
     // Modules[] = {"CLib", "PerformanceMonitor","OPT/tracker","OPT/gps"};
