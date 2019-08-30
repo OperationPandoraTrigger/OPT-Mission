@@ -34,7 +34,7 @@ GVAR(nato_vehicles) =
     ["OPT_B_Quadbike_01_F", DEF_PROD(1500)],                    // Quadbike
     ["OPT_B_T_LSV_01_unarmed_F", DEF_PROD(5000)],               // Prowler unarmed 
     ["OPT_B_T_LSV_01_armed_F", DEF_PROD(8000)],                 // Prowler armed
-    ["OPT_B_G_Offroad_01_F", DEF_PROD(0)],                      // Pickup, 1000, ersetzt durch Prawler
+    ["OPT_B_G_Offroad_01_F", DEF_PROD(5000)],                      // Pickup, 1000, ersetzt durch Prawler
     ["OPT_B_G_Offroad_01_armed_F", DEF_PROD(0)],                // Pickup HMG, 4000, ersetzt durch Prawler
     ["OPT_B_Truck_01_covered_F", DEF_PROD(8000)],               // HEMTT Transport
     ["OPT_B_Truck_01_Repair_F", DEF_PROD(10000)],               // HEMTT Repair, ersetzt durch Container
@@ -64,7 +64,7 @@ GVAR(nato_choppers) =
     ["OPT_B_UAV_02_CAS_F", DEF_PROD(0)],                        // Greyhawk LGB
     ["OPT_B_UAV_02_F", DEF_PROD(0)],                            // Greyhawk Raketen
     ["OPT_B_UAV_02_AA_F", DEF_PROD(0)],                         // Greyhawk AA-Raketen    
-    ["OPT_B_Heli_Transport_02_F", DEF_PROD(100000)],            // CH-49 Mohawk (Transport+Lift)
+    ["OPT_B_Heli_Transport_02_F", DEF_PROD(0)],            // CH-49 Mohawk (Transport+Lift)
     ["OPT_B_T_UAV_03_dynamicLoadout_F", DEF_PROD(0)],           // MQ12-Falcon - noch in arbeit erstma nur testweise mit preis eingebaut
     ["OPT_B_T_VTOL_02_infantry_unarmed_F", DEF_PROD(0)],   		// VTOL Y-32 Xi'an (Inf-Transport)
     ["OPT_B_T_VTOL_01_infantry_F", DEF_PROD(0)],                // VTOL Blackfish (Inf-Transport) 200000
@@ -114,8 +114,7 @@ GVAR(nato_supplies) =
     ["OPT_B_UGV_01_F", DEF_PROD(2000)],                         // UGV Stomper
     ["OPT_B_UAV_01_F", DEF_PROD(0)],                            // Darter AR-2
     ["OPT_FlexibleTank_01_forest_F", DEF_PROD(1000)],           // Treibstoff-Fass
-    ["OPT4_ACE_Box_82mm_Mo_HE", DEF_PROD(100000)],              // Mörsermuni
-    ["OPT_B_Slingload_01_Ammo_F", 0, 0, 0],        			 // Munitionscontainer
+	["OPT_B_Slingload_01_Ammo_F", 0, 0, 0],        			 // Munitionscontainer
     ["OPT_B_Slingload_01_Fuel_F", DEF_PROD(8000)],              // Fuelcontainer
     ["OPT_B_Slingload_01_Repair_F", DEF_PROD(8000)],            // Reparaturcontainer
     ["OPT_B_Slingload_01_Medevac_F", DEF_PROD(0)],              // Lazarettcontainer, 5000            //psycho, dieser container verursacht Probleme mit den Load-Scripts und wird durch den weien Container ersetzt welcher zum Lazarett ausgebaut werden kann
@@ -166,7 +165,7 @@ GVAR(csat_vehicles) =
     ["OPT_O_Truck_03_repair_F", DEF_PROD(10000)],               // Tempest Repair, ersetzt durch container-
     ["OPT_O_Truck_03_medical_F", DEF_PROD(10000)],              // Tempest Medical, ersetzt durch container-
     ["OPT_O_Truck_03_transport_F", DEF_PROD(2000)],             // Tempest (fr Radar, keine Sitze auf Ladeflche)-
-    ["OPT_O_G_Offroad_01_F", DEF_PROD(0)],                      // Pickup, ersetzt durch quilin
+    ["OPT_O_G_Offroad_01_F", DEF_PROD(5000)],                      // Pickup, ersetzt durch quilin
     ["OPT_O_G_Offroad_01_armed_F", DEF_PROD(0)],                // Pickup HMG, ersetzt durch quilin
     ["OPT_O_MRAP_02_F", DEF_PROD(5500)],                        // Ifrit-
 	["OPT4_O_MRAP_02_hmg_F", DEF_PROD(21000)],                  // Ifrit HMG
@@ -217,6 +216,7 @@ GVAR(csat_choppers) =
     ["OPT_O_Heli_Transport_04_covered_black_F", DEF_PROD(0)],   // Mi-290 Taru (Transport)
     ["OPT_O_Heli_Transport_04_bench_F", DEF_PROD(0)],       // Mi-290 Taru (Bench)
     ["OPT_O_Heli_Transport_04_bench_black_F", DEF_PROD(0)],     // Mi-290 Taru (Bench)
+	["OPT_O_Heli_Transport_02_F", DEF_PROD(100000)],            // CH-49 Mohawk (Transport+Lift)
     ["OPT_O_UAV_02_light_F", DEF_PROD(300000)],                 // Ababil unbewaffnet
     ["OPT_O_UAV_02_CAS_F", DEF_PROD(0)],                        // Ababil GBU-12
     ["OPT_O_UAV_02_F", DEF_PROD(0)],                            // Ababil Scalpel
@@ -278,7 +278,6 @@ GVAR(csat_supplies) =
     ["OPT_O_UGV_01_F", DEF_PROD(2000)],                                     // UGV Saif    
     ["OPT_O_UAV_01_F", DEF_PROD(0)],                                        // Tayran AR-2
     ["OPT_FlexibleTank_01_sand_F", DEF_PROD(1000)],                         // Treibstoff-Fass
-    ["OPT4_ACE_Box_82mm_Mo_HE", DEF_PROD(100000)],                          // Mörsermuni
     ["OPT_Land_Pod_Heli_Transport_04_fuel_F", DEF_PROD(8000)],              // Fuelcontainer
     ["OPT_Land_Pod_Heli_Transport_04_fuel_black_F", DEF_PROD(0)],           // Fuelcontainer (schwarz)
     ["OPT_Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0],         // Munitionscontainer

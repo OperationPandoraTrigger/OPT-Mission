@@ -18,7 +18,6 @@ params [["_veh", objNull]];
 
 if (_veh isEqualTo objNull) exitWith {false};
 
-private _type = typeOf _veh;
 private _flag = false;
 
 {

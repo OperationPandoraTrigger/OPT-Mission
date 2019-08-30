@@ -25,10 +25,11 @@ class RscTitles {
 
 class CLib {
     class GarbageCollector {
-        EnableGarbageCollector = 1;
+        EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
-    Modules[] = {"CLib", "PerformanceMonitor","OPT/tracker","OPT/gps"};
+    // Modules[] = {"CLib", "PerformanceMonitor","OPT/tracker","OPT/gps"};
+    Modules[] = {"CLib", "PerformanceMonitor"};
     useExperimentalAutoload = 0;
     useCompressedFunction = 0;
     useFallbackRemoteExecution = 0;

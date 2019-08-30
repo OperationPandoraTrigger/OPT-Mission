@@ -27,7 +27,7 @@ if (GVAR(mutexAction)) exitWith {
 if (_truck getVariable [QGVAR(repair_cargo), 0] <= 0) then {
     ["Feldreparatur", STR_REPAIR_TRUCK_DEPLETED, "yellow"] call EFUNC(gui,message);
 };    
-if (not alive player or vehicle player == player or speed _veh > 3 or _veh distance _truck > 15 ) exitWith {
+if (not alive player or vehicle player == player or speed _veh > 3 or _veh distance _truck > 20 ) exitWith {
     ["Feldreparatur", STR_REPAIR_CONDITIONS, "red"] call EFUNC(gui,message);
 };
 
@@ -56,7 +56,7 @@ private _length = _maxlength;
         [_veh] remoteExecCall [QFUNC(fullRepair), _veh, false]; // called where vehicle is local!
         _truck setVariable [
             QGVAR(repair_cargo), 
-            ((_truck getVariable [QGVAR(repair_cargo), 0]) - (1 / DEFAULT_REPAIR_TRUCK_USES)), 
+            (_truck getVariable [QGVAR(repair_cargo), 0]) - 1, 
             true
         ];
         
@@ -75,7 +75,7 @@ private _length = _maxlength;
         (not isNull (objectParent player)) and
         speed _veh <= 3 and 
         speed _truck <= 3 and
-        _veh distance _truck <= 15 
+        _veh distance _truck <= 20
     },
     ["isnotinside"]
 ] call ace_common_fnc_progressBar;
