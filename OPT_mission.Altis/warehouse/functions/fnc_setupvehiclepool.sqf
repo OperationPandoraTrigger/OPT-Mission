@@ -249,7 +249,7 @@ GVAR(csat_armored) =
     ["OPT4_O_MBT_02_arty_F", DEF_PROD(300000)],                 // 2S9 Sochor
     ["OPT_O_Truck_02_MRL_F", DEF_PROD(400000)],                 // 2S9 Sochor    
     ["OPT4_O_MRAP_02_gmg_F", DEF_PROD(0)],                  // Ifrit GMG
-	["OPT4_O_LSV_02_AT_F", DEF_PROD(80000)],                    // Quilin AT++++++++++++++++++++++++++ 20000
+	["OPT4_O_LSV_02_AT_F", DEF_PROD(80000)],                    // Quilin AT 20000
 //Tropentarn
     ["OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", DEF_PROD(0)],       // MSE-3 Marid 50000
     ["OPT_O_APC_Wheeled_03_cannon_light_F", DEF_PROD(0)],       // AFV-4 Gorgon (Leicht) 90000
