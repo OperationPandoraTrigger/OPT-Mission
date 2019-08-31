@@ -44,26 +44,27 @@ params
 if (_ix == -1) exitWith {};
 
 /* CODE BODY */
-private _beamfrei = true;
-private _SF = false;
+private _beamingAllowed = true;
+private _beamingRestrictedVehicle = false;
 private _arry = GVAR(box) select _ix;
-private _lvl = _arry select 2;
-private _beam_pos = _arry select 0;
+private _beamLevel = _arry select 2;
+private _beamPosition = _arry select 0;
 
 /* used for checking beam permissions after mission start */
 private _isBeamInMissionForbidden = true;
 
 /* prevents beaming to beampoints with level > 0 after mission start if dialog was opened before */
-if (GVARMAIN(missionStarted) and _lvl != -1) then
+if (GVARMAIN(missionStarted) and _beamLevel != -1) then
 { 
-    _beamfrei = false;
+    _beamingAllowed = false;
     
     ["Beamsystem", "Dieser Beampunkt steht nur während der Waffenruhe zur Verfügung!", "red"] call EFUNC(gui,message);
 };
 
-if ((typeOf vehicle player) in GVAR(heavy_vehicles)) then 
+/* checks if player`s vehicle is listed as heavy vehicle in fnc_setup_beamorte.sqf */
+if ((typeOf vehicle player) in GVAR(restricted_vehicles)) then 
 {
-    _SF = true;
+    _beamingRestrictedVehicle = true;
 };
 
 /* sets _isBeamInMissionForbidden to false if used vehicle is listed in GVAR(beam_vehicles) */
@@ -75,36 +76,41 @@ if ((typeOf vehicle player) in GVAR(beam_vehicles)) then
 /* denies beaming after mission start for vehicles not listed in GVAR(beam_vehicles) */
 if ( GVARMAIN(missionStarted) and _isBeamInMissionForbidden and (vehicle player != player)) then
 {
-	_beamfrei = false;
+	_beamingAllowed = false;
 	
 	["Beamsystem", "Das System steht nur noch für spezielle Beamfahrzeuge zur Verfügung!", "red"] call EFUNC(gui,message);
 };
 
-// Schwere Fahrzeuge zum Beamziel klein Stufe 3 verneinen
-if (_SF and _lvl < 3 and _lvl > -1) then 
+/* denies beaming if beaming position`s level is unsufficient for heavy vehicles */
+if (_beamingRestrictedVehicle and _beamLevel < 3) then 
 { 
-    _beamfrei = false;
+    _beamingAllowed = false;
     
     ["Beamsystem", "Der gewählte Ort ist nicht für schwere Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
 
 };
 
-if (vehicle player != player and _lvl < 2 and _lvl > -1) then 
+/* denies beaming if beaming position is not cleared for any vehicles */
+if (vehicle player != player and _beamLevel < 2) then 
 { 
-    _beamfrei = false;
+    _beamingAllowed = false;
 
     ["Beamsystem", "Der gewählte Ort ist nicht für Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
 
 };
 
-if (_beamfrei) then 
+/* initiates beaming process if all previous checks are passed ( _beamingAllowed == true )*/
+if (_beamingAllowed) then 
 { 
-    (QGVAR(rsc_layer) call BIS_fnc_rscLayer) cutText ["Teleport...", "BLACK OUT", 3]; // fade out in black
+    /* black fade out */
+    (QGVAR(rsc_layer) call BIS_fnc_rscLayer) cutText ["Teleport...", "BLACK OUT", 3];
 
     // beam vehicle and player
     // mission sqm format of x,z,y...
-    private _xPos = _beam_pos select 0;
-    private _yPos = _beam_pos select 2;
+    private _xPos = _beamPosition select 0;
+    private _yPos = _beamPosition select 2;
+
+    /* creates invisible pad for safer beaming */
     private _tempLogic = "Land_HelipadEmpty_F" createVehicle 
     [
         (_xPos) - 10 * sin(random 360), 
@@ -112,9 +118,13 @@ if (_beamfrei) then
     ]; 
     sleep 1;
 
+    /* teleports player or vehicle on the invisible pad */
     (vehicle player) setPos getPos _tempLogic;
+
+    /* deletes the invisible pad again */
     deleteVehicle _tempLogic;
 
+    /* removal of the black fade out */
     (QGVAR(rsc_layer) call BIS_fnc_rscLayer) cutText ["", "BLACK IN", 3]; // return to game
 
     private _message = format
