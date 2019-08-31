@@ -235,34 +235,29 @@ GVAR(locations_east) =
 
 ];
 
+/* vehicles requiring sufficient beam level for beaming */
 GVAR(restricted_vehicles) = 
 [
-    //Vanilla
-    "OPT4_O_APC_Wheeled_02_rcws_F",                 // MSE-3 Marid
-    "OPT_O_APC_Wheeled_03_cannon_light_F",          // AFV-4 Gorgon (Leicht)
-    "OPT4_O_APC_Wheeled_03_cannon_F",               // AFV-4 Gorgon
-    "OPT4_O_APC_Tracked_02_AA_F",                   // ZSU-39 Tigris
-    "OPT_O_APC_Tracked_02_cannon_light_F",          // BTR-K Kamysh
-    "OPT4_O_APC_Tracked_02_cannon_F",               // BTR-K Kamysh (Titan)
-    "OPT4_O_MBT_02_cannon_F",                       // T-100 Varsuk
-    "OPT4_O_MBT_02_arty_F",                         // 2S9 Sochor
-	"OPT4_O_MRAP_02_gmg_F",
-	"OPT4_O_LSV_02_AT_F",
-            
-    "OPT4_B_APC_Tracked_01_rcws_F",                 // IFV-6c Panther
-    "OPT_B_APC_Wheeled_01_cannon_light_F",          // AMV-7 Marshall (Leicht)
-    "OPT4_B_APC_Wheeled_01_cannon_F",               // AMV-7 Marshall    
-    "OPT4_B_APC_Tracked_01_AA_F",                   // IFV-6a Cheetah
-    "OPT4_B_APC_tracked_03_cannon_F",               // FV-720 Mora    
-    "OPT4_B_MBT_01_cannon_F",                       // M2A4 Slammer
-    "OPT4_B_MBT_01_TUSK_F",                         // M2A4 SlammerUp
-    "OPT_B_MBT_03_cannon_F",                        // MBT-52 Kuma, fliegt raus
-    "OPT_B_MBT_01_Arty_F",                          // M4 Scorcher
-    "OPT4_B_MBT_01_mlrs_F",                         // M4 Scorcher    
-    "OPT4_B_MBT_01_arty_F",                         // M4 Scorcher
-    "OPT_B_MBT_01_mlrs_F",                           // M5 Sandstorm    
-	"OPT4_B_MRAP_01_gmg_F",
-	"OPT4_B_LSV_01_AT_F"
+	//West
+	"OPT4_B_APC_Tracked_01_rcws_F",					// Panther
+	"OPT4_B_APC_Wheeled_01_cannon_F",				// Marshall
+	"OPT4_B_APC_Tracked_01_AA_F",					// Cheetah
+	"OPT4_B_APC_tracked_03_cannon_F",				// Mora
+	"OPT4_B_MBT_01_TUSK_F",							// Slammer UP
+	"OPT4_B_MBT_01_arty_F",							// Scorcher
+	"OPT_B_MBT_01_mlrs_F",							// Sandstorm
+	"OPT4_B_LSV_01_AT_F",							// Prowler AT
+	"OPT4_B_MRAP_01_hmg_F",							// Hunter HMG / GMG
+	//East
+	"OPT4_O_APC_Wheeled_02_rcws_F",					// Marid
+	"OPT4_O_APC_Wheeled_03_cannon_F",				// Gorgon
+	"OPT4_O_APC_Tracked_02_AA_F",					// Tigris
+	"OPT4_O_APC_Tracked_02_cannon_F",				// Kamysh 
+	"OPT4_O_MBT_02_cannon_F",						// Varsuk
+	"OPT4_O_MBT_02_arty_F",							// Sochor
+	"OPT_O_Truck_02_MRL_F",							// Zamak MRL
+	"OPT4_O_LSV_02_AT_F", 							// Qilin AT
+	"OPT4_O_MRAP_02_hmg_F"							// Ifrit HMG / GMG
  ];
 
 /* vehicles usable for beaming after mission start */
