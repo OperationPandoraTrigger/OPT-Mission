@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * setup available beam locations with their respective level
 * setup heavy vehicle classnames
@@ -27,7 +27,7 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(restricted_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
@@ -42,8 +42,8 @@
 * -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
 * 0 = not available
 * 1 = infantry only
-* 2 = infantry + light vehicles
-* 3 = infantry + light vehicles + heavy vehicles
+* 2 = infantry + vehicles
+* 3 = infantry + vehicles + restricted vehicles (defined below)
 */
 
 #include "script_component.hpp"
@@ -235,7 +235,7 @@ GVAR(locations_east) =
 
 ];
 
-GVAR(heavy_vehicles) = 
+GVAR(restricted_vehicles) = 
 [
     //Vanilla
     "OPT4_O_APC_Wheeled_02_rcws_F",                 // MSE-3 Marid
