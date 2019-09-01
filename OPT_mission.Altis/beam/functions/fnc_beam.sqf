@@ -82,7 +82,7 @@ if ( GVARMAIN(missionStarted) and _isBeamInMissionForbidden and (vehicle player 
 };
 
 /* denies beaming if beaming position`s level is unsufficient for heavy vehicles */
-if (_beamingRestrictedVehicle and _beamLevel < 3) then 
+if (_beamingRestrictedVehicle and _beamLevel < 3 and _beamLevel > -1) then 
 { 
     _beamingAllowed = false;
     
@@ -91,7 +91,7 @@ if (_beamingRestrictedVehicle and _beamLevel < 3) then
 };
 
 /* denies beaming if beaming position is not cleared for any vehicles */
-if (vehicle player != player and _beamLevel < 2) then 
+if (vehicle player != player and _beamLevel < 2 and _beamLevel > -1) then 
 { 
     _beamingAllowed = false;
 
