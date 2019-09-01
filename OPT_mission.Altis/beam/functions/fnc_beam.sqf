@@ -53,7 +53,7 @@ private _beamPosition = _arry select 0;
 /* used for checking beam permissions after mission start */
 private _isBeamInMissionForbidden = true;
 
-/* prevents beaming to beampoints with level > 0 after mission start if dialog was opened before */
+/* prevents beaming to beampoints with level > -1 after mission start if dialog was opened before */
 if (GVARMAIN(missionStarted) and _beamLevel != -1) then
 { 
     _beamingAllowed = false;
