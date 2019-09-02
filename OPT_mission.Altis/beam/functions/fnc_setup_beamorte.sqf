@@ -39,11 +39,11 @@
 * [[Position], Name, Level]
 * 
 * Level:
-* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
 * 0 = not available
 * 1 = infantry only
 * 2 = infantry + vehicles
-* 3 = infantry + vehicles + restricted vehicles (defined below)
+* 3 = infantry + vehicles + restricted vehicles 
+* 4 = available after mission start for certain beam vehicles
 */
 
 #include "script_component.hpp"
@@ -235,7 +235,7 @@ GVAR(locations_east) =
 
 ];
 
-/* vehicles requiring sufficient beam level for beaming */
+/* vehicles requiring special clearance for beaming (eg. tanks) */
 GVAR(restricted_vehicles) = 
 [
 	//West
@@ -247,7 +247,6 @@ GVAR(restricted_vehicles) =
 	"OPT4_B_MBT_01_arty_F",							// Scorcher
 	"OPT_B_MBT_01_mlrs_F",							// Sandstorm
 	"OPT4_B_LSV_01_AT_F",							// Prowler AT
-	"OPT4_B_MRAP_01_hmg_F",							// Hunter HMG / GMG
 	//East
 	"OPT4_O_APC_Wheeled_02_rcws_F",					// Marid
 	"OPT4_O_APC_Wheeled_03_cannon_F",				// Gorgon
@@ -256,9 +255,8 @@ GVAR(restricted_vehicles) =
 	"OPT4_O_MBT_02_cannon_F",						// Varsuk
 	"OPT4_O_MBT_02_arty_F",							// Sochor
 	"OPT_O_Truck_02_MRL_F",							// Zamak MRL
-	"OPT4_O_LSV_02_AT_F", 							// Qilin AT
-	"OPT4_O_MRAP_02_hmg_F"							// Ifrit HMG / GMG
- ];
+	"OPT4_O_LSV_02_AT_F"							// Qilin AT
+];
 
 /* vehicles usable for beaming after mission start */
 GVAR(beam_vehicles) =
