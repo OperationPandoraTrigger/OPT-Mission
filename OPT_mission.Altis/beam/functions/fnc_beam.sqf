@@ -81,6 +81,14 @@ if (vehicle player != player) then
 
         ["Beamsystem", "Der gewählte Ort ist nicht für Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
     };
+    
+    /* blocks usage of non-beam vehicles for beampoints with _beamLevel == 4 */
+    if (_isBeamDuringMissionForbidden and _beamLevel == 4 and (!GVARMAIN(missionStarted)) ) then
+    {
+        _beamingAllowed = false;
+	
+	["Beamsystem", "Das System steht nur für freigegebene Beamfahrzeuge zur Verfügung!", "red"] call EFUNC(gui,message);
+    };
 };
 
 
