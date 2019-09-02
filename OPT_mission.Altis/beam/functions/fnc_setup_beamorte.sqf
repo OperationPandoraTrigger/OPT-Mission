@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * setup available beam locations with their respective level
 * setup heavy vehicle classnames
@@ -27,7 +27,7 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(restricted_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
@@ -39,11 +39,11 @@
 * [[Position], Name, Level]
 * 
 * Level:
-* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
 * 0 = not available
 * 1 = infantry only
-* 2 = infantry + light vehicles
-* 3 = infantry + light vehicles + heavy vehicles
+* 2 = infantry + vehicles
+* 3 = infantry + vehicles + restricted vehicles 
+* 4 = available after mission start for certain beam vehicles
 */
 
 #include "script_component.hpp"
@@ -51,8 +51,8 @@
 //West
 GVAR(locations_west) =
 [
-    [[6531,0,20013], "Beampunkt 1", -1],
-    [[4662,0,22306], "Beampunkt 2", -1],
+    [[6531,0,20013], "Beampunkt 1", 4],
+    [[4662,0,22306], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
@@ -144,8 +144,8 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[12918,0,13397], "Beampunkt 1", -1],
-    [[12427,0,15693], "Beampunkt 2", -1],
+    [[12918,0,13397], "Beampunkt 1", 4],
+    [[12427,0,15693], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
@@ -235,35 +235,28 @@ GVAR(locations_east) =
 
 ];
 
-GVAR(heavy_vehicles) = 
+/* vehicles requiring special clearance for beaming (eg. tanks) */
+GVAR(restricted_vehicles) = 
 [
-    //Vanilla
-    "OPT4_O_APC_Wheeled_02_rcws_F",                 // MSE-3 Marid
-    "OPT_O_APC_Wheeled_03_cannon_light_F",          // AFV-4 Gorgon (Leicht)
-    "OPT4_O_APC_Wheeled_03_cannon_F",               // AFV-4 Gorgon
-    "OPT4_O_APC_Tracked_02_AA_F",                   // ZSU-39 Tigris
-    "OPT_O_APC_Tracked_02_cannon_light_F",          // BTR-K Kamysh
-    "OPT4_O_APC_Tracked_02_cannon_F",               // BTR-K Kamysh (Titan)
-    "OPT4_O_MBT_02_cannon_F",                       // T-100 Varsuk
-    "OPT4_O_MBT_02_arty_F",                         // 2S9 Sochor
-	"OPT4_O_MRAP_02_gmg_F",
-	"OPT4_O_LSV_02_AT_F",
-            
-    "OPT4_B_APC_Tracked_01_rcws_F",                 // IFV-6c Panther
-    "OPT_B_APC_Wheeled_01_cannon_light_F",          // AMV-7 Marshall (Leicht)
-    "OPT4_B_APC_Wheeled_01_cannon_F",               // AMV-7 Marshall    
-    "OPT4_B_APC_Tracked_01_AA_F",                   // IFV-6a Cheetah
-    "OPT4_B_APC_tracked_03_cannon_F",               // FV-720 Mora    
-    "OPT4_B_MBT_01_cannon_F",                       // M2A4 Slammer
-    "OPT4_B_MBT_01_TUSK_F",                         // M2A4 SlammerUp
-    "OPT_B_MBT_03_cannon_F",                        // MBT-52 Kuma, fliegt raus
-    "OPT_B_MBT_01_Arty_F",                          // M4 Scorcher
-    "OPT4_B_MBT_01_mlrs_F",                         // M4 Scorcher    
-    "OPT4_B_MBT_01_arty_F",                         // M4 Scorcher
-    "OPT_B_MBT_01_mlrs_F",                           // M5 Sandstorm    
-	"OPT4_B_MRAP_01_gmg_F",
-	"OPT4_B_LSV_01_AT_F"
- ];
+	//West
+	"OPT4_B_APC_Tracked_01_rcws_F",					// Panther
+	"OPT4_B_APC_Wheeled_01_cannon_F",				// Marshall
+	"OPT4_B_APC_Tracked_01_AA_F",					// Cheetah
+	"OPT4_B_APC_tracked_03_cannon_F",				// Mora
+	"OPT4_B_MBT_01_TUSK_F",							// Slammer UP
+	"OPT4_B_MBT_01_arty_F",							// Scorcher
+	"OPT_B_MBT_01_mlrs_F",							// Sandstorm
+	"OPT4_B_LSV_01_AT_F",							// Prowler AT
+	//East
+	"OPT4_O_APC_Wheeled_02_rcws_F",					// Marid
+	"OPT4_O_APC_Wheeled_03_cannon_F",				// Gorgon
+	"OPT4_O_APC_Tracked_02_AA_F",					// Tigris
+	"OPT4_O_APC_Tracked_02_cannon_F",				// Kamysh 
+	"OPT4_O_MBT_02_cannon_F",						// Varsuk
+	"OPT4_O_MBT_02_arty_F",							// Sochor
+	"OPT_O_Truck_02_MRL_F",							// Zamak MRL
+	"OPT4_O_LSV_02_AT_F"							// Qilin AT
+];
 
 /* vehicles usable for beaming after mission start */
 GVAR(beam_vehicles) =
