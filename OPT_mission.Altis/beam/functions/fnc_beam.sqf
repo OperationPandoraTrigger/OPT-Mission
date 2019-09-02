@@ -46,58 +46,62 @@ if (_ix == -1) exitWith {};
 /* CODE BODY */
 private _beamingAllowed = true;
 private _beamingRestrictedVehicle = false;
+private _isBeamDuringMissionForbidden = true;
 private _arry = GVAR(box) select _ix;
 private _beamLevel = _arry select 2;
 private _beamPosition = _arry select 0;
 
-/* used for checking beam permissions after mission start */
-private _isBeamInMissionForbidden = true;
 
-/* prevents beaming to beampoints with level > -1 after mission start if dialog was opened before */
-if (GVARMAIN(missionStarted) and _beamLevel != -1) then
-{ 
-    _beamingAllowed = false;
-    
-    ["Beamsystem", "Dieser Beampunkt steht nur während der Waffenruhe zur Verfügung!", "red"] call EFUNC(gui,message);
+if (vehicle player != player) then 
+{
+    /* checks if player`s vehicle is listed as restricted vehicle in fnc_setup_beamorte.sqf */
+    if ((typeOf vehicle player) in GVAR(restricted_vehicles)) then 
+    {
+        _beamingRestrictedVehicle = true;
+    };
+
+    /* checks if player`s vehicle is listed as beam vehicle in fnc_setup_beamorte.sqf */
+    if ((typeOf vehicle player) in GVAR(beam_vehicles)) then
+    {
+    	_isBeamDuringMissionForbidden = false;
+    };
+
+    /* denies beaming if beaming position`s level is not cleared for restricted vehicles */
+    if (_beamLevel != 3 and _beamingRestrictedVehicle) then
+    { 
+        _beamingAllowed = false;
+
+        ["Beamsystem", "Der gewählte Ort ist nicht für schwere Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
+    };
+
+    /* denies beaming if beaming position`s level is not cleared for any vehicles */
+    if (_beamLevel < 2) then
+    { 
+        _beamingAllowed = false;
+
+        ["Beamsystem", "Der gewählte Ort ist nicht für Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
+    };
 };
 
-/* checks if player`s vehicle is listed as heavy vehicle in fnc_setup_beamorte.sqf */
-if ((typeOf vehicle player) in GVAR(restricted_vehicles)) then 
-{
-    _beamingRestrictedVehicle = true;
-};
 
-/* sets _isBeamInMissionForbidden to false if used vehicle is listed in GVAR(beam_vehicles) */
-if ((typeOf vehicle player) in GVAR(beam_vehicles)) then
+if (GVARMAIN(missionStarted)) then 
 {
-	_isBeamInMissionForbidden = false;
-};
+    /* prevents beaming to beampoints with level != 4 after mission start (eg. if dialog was opened before start) */
+    if (_beamLevel < 4) then 
+    {
+        _beamingAllowed = false;
 
-/* denies beaming after mission start for vehicles not listed in GVAR(beam_vehicles) */
-if ( GVARMAIN(missionStarted) and _isBeamInMissionForbidden and (vehicle player != player)) then
-{
-	_beamingAllowed = false;
+        ["Beamsystem", "Dieser Beampunkt steht nur während der Waffenruhe zur Verfügung!", "red"] call EFUNC(gui,message);
+    };
+    /* blocks beaming after mission start for vehicles not listed in GVAR(beam_vehicles) */
+    if (_isBeamDuringMissionForbidden and (vehicle player != player)) then
+    {
+        _beamingAllowed = false;
 	
-	["Beamsystem", "Das System steht nur noch für spezielle Beamfahrzeuge zur Verfügung!", "red"] call EFUNC(gui,message);
+	    ["Beamsystem", "Das System steht nur noch für freigegebene Beamfahrzeuge zur Verfügung!", "red"] call EFUNC(gui,message);
+    };
 };
 
-/* denies beaming if beaming position`s level is unsufficient for heavy vehicles */
-if (_beamingRestrictedVehicle and _beamLevel < 3 and _beamLevel > -1) then 
-{ 
-    _beamingAllowed = false;
-    
-    ["Beamsystem", "Der gewählte Ort ist nicht für schwere Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
-
-};
-
-/* denies beaming if beaming position is not cleared for any vehicles */
-if (vehicle player != player and _beamLevel < 2 and _beamLevel > -1) then 
-{ 
-    _beamingAllowed = false;
-
-    ["Beamsystem", "Der gewählte Ort ist nicht für Fahrzeuge freigegeben!", "red"] call EFUNC(gui,message);
-
-};
 
 /* initiates beaming process if all previous checks are passed ( _beamingAllowed == true )*/
 if (_beamingAllowed) then 
@@ -138,7 +142,3 @@ if (_beamingAllowed) then
 };
 
 closeDialog 0;
-
-
-
-
