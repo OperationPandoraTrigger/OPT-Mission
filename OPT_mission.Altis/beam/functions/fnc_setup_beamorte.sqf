@@ -51,14 +51,14 @@
 //West
 GVAR(locations_west) =
 [
-    [[6531,0,20013], "Beampunkt 1", 4],
-    [[4662,0,22306], "Beampunkt 2", 4],
+    [[9517,0,22347], "Beampunkt 1", 4],
+    [[9553,0,22322], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
-       [[4925.6323,341.19653,21895.656], "1 - Thronos Burg",1], // 1 - Thronos_castle
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",1], // 2 - Oreokastro
+       [[4925.6323,341.19653,21895.656], "1 - Thronos Burg",0], // 1 - Thronos_castle
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
@@ -70,21 +70,21 @@ GVAR(locations_west) =
 	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
 	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
 	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",0], // 11 - Krya_Nera
-	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",1], // 12 - Abdera_Farm
+	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",0], // 12 - Abdera_Farm
 	   
-	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",1], // 13 - Abdera_Rathaus
-	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
+	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
+	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",1], // 14 - Galati_alte_Post
 	   [[7533.3193,134.73981,18346.297], "15 - Enklave Syrta",0], // 15 - Enclave_Syrta
 
 	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
-	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionysios",0], // 17 - Checkpoint Agios Dionisos
+	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionysios",1], // 17 - Checkpoint Agios Dionisos
 	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",0], // 18 - Xirolimni_Damm",1
 	   
 	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",0], // 19 - Hühnerfarm_Sfaka
 
 	   [[12318.005,20.195953,22856.318], "20 - Tonos Bucht",0], // 20 - Tonos_Bucht
-	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",0], // Checkpoint_Ifestonia
-	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",0], // 22 - Lacca_Fabrik
+	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",1], // Checkpoint_Ifestonia
+	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",1], // 22 - Lacca_Fabrik
 
 	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",0], // 23 - Stavros_Radar
 	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",0], // 24 - Neochori_Wollmarkt
@@ -96,7 +96,7 @@ GVAR(locations_west) =
   
 	   [[14266.871,43.789253,22215.367], "29 - Hanf Plantage Frini",0], // 29 - Hanf_Plantage_Frini 
 	   [[14716.515,46.701706,20735.465], "30 - Frini Polizeistation",0], // 30 - Frini_Polizeistation
-	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
+	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",1], // 31 - Athira_Factory
 	   
 	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
 	   [[13589.743,16.363777,12166.921], "33 - Pool_party",0], // 33 - Pool_party
@@ -144,18 +144,18 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[12918,0,13397], "Beampunkt 1", 4],
-    [[12427,0,15693], "Beampunkt 2", 4],
+    [[17662,0,8866], "Beampunkt 1", 4],
+    [[17691,0,8853], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 	
         [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
 	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
-	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",1], // 3 - Waffenlager_Nord_West
-	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",1], // 4 - Villa_Constans
+	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
+	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
-	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",1], // 5 - Mine_Gore
+	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",0], // 5 - Mine_Gore
 	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",0], // 6 - Pennerhotelm
 	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",0], // 7 - Checkpoint_charlie
 	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",0], // 8 - Die Dächer von Kavala
@@ -167,9 +167,9 @@ GVAR(locations_east) =
 	   
 	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
 	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
-	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",1], // 15 - Enclave_Syrta
+	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",0], // 15 - Enclave_Syrta
 
-	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",1], // 16 - Kore_Zentrum
+	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
 	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",0], // 17 - Checkpoint Agios Dionisos
 	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",0], // 18 - Xirolimni_Damm",1
 	   
@@ -179,9 +179,9 @@ GVAR(locations_east) =
 	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",0], // Checkpoint_Ifestonia
 	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",0], // 22 - Lacca_Fabrik
 
-	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",0], // 23 - Stavros_Radar
-	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",0], // 24 - Neochori_Wollmarkt
-	   [[11105.64,19.684849,13325.393], "25 - Poliakko alte Brennerei",0], // 25 - Poliakko_alte_Brennerei
+	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",1], // 23 - Stavros_Radar
+	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",1], // 24 - Neochori_Wollmarkt
+	   [[11105.64,19.684849,13325.393], "25 - Poliakko alte Brennerei",1], // 25 - Poliakko_alte_Brennerei
 	   
 	   [[10675.173,16.757935,12266.578], "26 - Therisa Markt",0], // 26 - Therisa_Markt
 	   [[10819.854,6.4413772,10859.053], "27 - Drimea Fährstation",0], // 27 - Drimea_Fährstation
@@ -191,7 +191,7 @@ GVAR(locations_east) =
 	   [[14716.515,46.701706,20735.465], "30 - Frini Polizeistation",0], // 30 - Frini_Polizeistation
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
-	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
+	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",1], // 32 - Airbase_Altis
 	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
