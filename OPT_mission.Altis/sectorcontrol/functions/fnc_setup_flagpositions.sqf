@@ -10,8 +10,8 @@ east -> Angriffsziel für NATO
 GVARMAIN(nato_flags_pos) = [
 
 // Basis 
-	   [4913, 21907, west,"1 - Throns castel",true], // 1 - Throns_castel
-	   [4618, 21363, west,"2 - A Hortlers Residenz",true], // 2 - A_Hortlers_Residenz
+	   [4913, 21907, west,"1 - Throns castel",false], // 1 - Throns_castel
+	   [4618, 21363, west,"2 - A Hortlers Residenz",false], // 2 - A_Hortlers_Residenz
 	   [4872, 19455, west,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
 	   [3354, 18329, west,"4 - Villa Constans",false], // 4 - Villa_Constans
 
@@ -23,21 +23,21 @@ GVARMAIN(nato_flags_pos) = [
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
 	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, west,"11 - Krya Nera",false], // 11 - Krya_Nera
-	   [8560, 20883, west,"12 - Abdera Farm",true], // 12 - Abdera_Farm
+	   [8560, 20883, west,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
-	   [9423, 20273, west,"13 - Trinkertreff",true], // 13 - Trinkertreff
-	   [10351, 19030, west,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
+	   [9423, 20273, west,"13 - Trinkertreff",false], // 13 - Trinkertreff
+	   [10351, 19030, west,"14 - Galati alte Post",true], // 14 - Galati_alte_Post
 	   [7515, 18333, west,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
 	   [7174, 16468, west,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
-	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
+	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",true], // 17 - Checkpoint Agios Dionisos
 	   [9321, 13699, west,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm"
 	   
 	   [9489, 8236, west,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
 	   [12346, 22844, west,"20 - Tonos Bucht",false], // 20 - Tonos_Bucht
-	   [13054, 19448, west,"21 - Checkpoint Ifestonia",false], // Checkpoint_Ifestonia
-	   [12634, 16399, west,"22 - Lacca Fabrik",false], // 22 - Lacca_Fabrik
+	   [13054, 19448, west,"21 - Checkpoint Ifestonia",true], // 21 - Checkpoint_Ifestonia
+	   [12634, 16399, west,"22 - Lacca Fabrik",true], // 22 - Lacca_Fabrik
 
 	   [13273, 14969, west,"23 - Stavros Radar",false], // 23 - Stavros_Radar
 	   [12178, 14352, west,"24 - Neochori Wollmarkt",false], // 24 - Neochori_Wollmarkt
@@ -49,7 +49,7 @@ GVARMAIN(nato_flags_pos) = [
   
 	   [14283, 22224, west,"29 - Hanf Plantage Frini",false], // 29 - Hanf_Plantage_Frini 
 	   [14752, 20733, west,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
-	   [14325, 18928, west,"31 - Mannis Wurstbude",false], // 31 - Mannis_Wurstbude
+	   [14325, 18928, west,"31 - Mannis Wurstbude",true], // 31 - Mannis_Wurstbude
 	   
 	   [14920, 17172, west,"32 - Airbase Altis",false], // 32 - Airbase_Altis
 	   [13591, 15188, west,"33 - Pool Party",false], // 33 - Pool_Party
@@ -100,10 +100,10 @@ GVARMAIN(csat_flags_pos) = [
 
 	   [4913, 21907, east,"1 - Throns castel",false], // 1 - Throns_castel
 	   [4618, 21363, east,"2 - A Hortlers Residenz",false], // 2 - A_Hortlers_Residenz
-	   [4872, 19455, east,"3 - Waffenlager Nord West",true], // 3 - Waffenlager_Nord_West
-	   [3354, 18329, east,"4 - Villa Constans",true], // 4 - Villa_Constans
+	   [4872, 19455, east,"3 - Waffenlager Nord West",false], // 3 - Waffenlager_Nord_West
+	   [3354, 18329, east,"4 - Villa Constans",false], // 4 - Villa_Constans
 
-	   [5398, 17888, east,"5 - Mine Gore",true], // 5 - Mine_Gore
+	   [5398, 17888, east,"5 - Mine Gore",false], // 5 - Mine_Gore
 	   [6210, 16240, east,"6 - Pennerhotel",false], // 6 - Pennerhotel
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
 	   [3739, 12997, east,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
@@ -115,9 +115,9 @@ GVARMAIN(csat_flags_pos) = [
 	   
 	   [9423, 20273, east,"13 - Trinkertreff",false], // 13 - Trinkertreff
 	   [10351, 19030, east,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
-	   [7515, 18333, east,"15 - Enclave Syrta",true], // 15 - Enclave_Syrta
+	   [7515, 18333, east,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
-	   [7174, 16468, east,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
+	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
 	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
 	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
 	   
@@ -127,9 +127,9 @@ GVARMAIN(csat_flags_pos) = [
 	   [13054, 19448, east,"21 - Checkpoint Ifestonia",false], // Checkpoint_Ifestonia
 	   [12634, 16399, east,"22 - Lacca Fabrik",false], // 22 - Lacca_Fabrik
 
-	   [13273, 14969, east,"23 - Stavros Radar",false], // 23 - Stavros_Radar
-	   [12178, 14352, east,"24 - Neochori Wollmarkt",false], // 24 - Neochori_Wollmarkt
-	   [11083, 13363, east,"25 - Poliakko alte Brennerei",false], // 25 - Poliakko_alte_Brennerei
+	   [13273, 14969, east,"23 - Stavros Radar",true], // 23 - Stavros_Radar
+	   [12178, 14352, east,"24 - Neochori Wollmarkt",true], // 24 - Neochori_Wollmarkt
+	   [11083, 13363, east,"25 - Poliakko alte Brennerei",true], // 25 - Poliakko_alte_Brennerei
 	   
 	   [10676, 12234, east,"26 - Therisa Markt",false], // 26 - Therisa_Markt
 	   [10795, 10868, east,"27 - Drimea Fährstation",false], // 27 - Drimea_Fährstation
@@ -139,7 +139,7 @@ GVARMAIN(csat_flags_pos) = [
 	   [14752, 20733, east,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
 	   [14325, 18928, east,"31 -  Mannis Wurstbude",false], // 31 -  Mannis_Wurstbude
 	   
-	   [14920, 17172, east,"32 - Airbase Altis",false], // 32 - Airbase_Altis
+	   [14920, 17172, east,"32 - Airbase Altis",true], // 32 - Airbase_Altis
 	   [13591, 15188, east,"33 - Pool Party",false], // 33 - Pool_party
 	   [11922, 9722, east,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
