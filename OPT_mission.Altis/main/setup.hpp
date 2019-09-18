@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Ein goldener Thron"
+#define __MISSION_NAME__ "Homerisches Gelächter"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ Complete new build 1.MAJOR.MINOR.BUILD
 // made by
