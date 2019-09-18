@@ -35,6 +35,9 @@ class CLib {
     useFallbackRemoteExecution = 0;
 };
 
+// #define MISSION_SETTINGS_FILE = "cba_settings_train.sqf"
+cba_settings_hasSettingsFile = 1;
+
 //#include "war.ext"
 #include "train.ext"
 
