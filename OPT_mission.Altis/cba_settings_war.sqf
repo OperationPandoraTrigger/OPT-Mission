@@ -4,7 +4,6 @@ force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "[""CLib"",""Streamator"",""PerformanceMonitor"", ""opt""]";
 force ace_noradio_enabled = true;
-ace_parachute_hideAltimeter = false;
 
 // ACE BenutzeroberflÃ¤che
 force ace_ui_allowSelectiveUI = true;
@@ -20,8 +19,6 @@ force ace_cookoff_probabilityCoef = 0.2;
 force ace_advanced_throwing_enabled = true;
 force ace_advanced_throwing_enablePickUp = true;
 force ace_advanced_throwing_enablePickUpAttached = true;
-ace_advanced_throwing_showMouseControls = false;
-ace_advanced_throwing_showThrowArc = false;
 
 // ACE Fingerzeig
 force ace_finger_enabled = true;
@@ -86,9 +83,6 @@ force ace_respawn_savePreDeathGear = true;
 force ace_viewdistance_enabled = true;
 force ace_viewdistance_limitViewDistance = 4000;
 force ace_viewdistance_objectViewDistanceCoeff = 0;
-ace_viewdistance_viewDistanceAirVehicle = 8;
-ace_viewdistance_viewDistanceLandVehicle = 8;
-ace_viewdistance_viewDistanceOnFoot = 8;
 
 // ACE Sprengstoffe
 force ace_explosives_explodeOnDefuse = false;
@@ -101,7 +95,6 @@ force ace_microdagr_mapDataAvailable = 0;
 force ace_microdagr_waypointPrecision = 3;
 
 // ACE Waffen
-ace_common_persistentLaserEnabled = true;
 force ace_laserpointer_enabled = true;
 
 // ACE Wetter
@@ -124,8 +117,7 @@ force ace_spectator_restrictVisions = 0;
 force cba_disposable_replaceDisposableLauncher = true;
 
 // DUI - Squad Radar - Radar
-force diwako_dui_radar_sortType = "none";
-force diwako_dui_radar_sqlFirst = false;
+diwako_dui_radar_sqlFirst = true; // Recommended/Default , but not enforced
 
 // OPT Feldreparatur
 force DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
@@ -134,7 +126,7 @@ force DEFAULT_FIELDREPAIR_MAX_REP_TIME = 240;
 force DEFAULT_FREE_REFUELS = 1;
 force DEFAULT_FREE_REFUELS_DURATION = 60;
 force DEFAULT_FREE_REPAIRS = 1;
-force DEFAULT_FULLREPAIR_LENGTH = 120;
+force DEFAULT_FULLREPAIR_LENGTH = 60;
 force DEFAULT_REPAIR_TRUCK_USES = 10;
 
 // OPT GPS
@@ -240,12 +232,12 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "40,50,60,41,42,43,51,61,62";
+force TFAR_setting_defaultFrequencies_lr_east = "41,42,43,44,45,46,47,48,49";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "41,42,43,44,45,46,47,48,49";
-force TFAR_setting_defaultFrequencies_sr_east = "41,42,43,60,61,62,50,51";
+force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
+force TFAR_setting_defaultFrequencies_sr_east = "71,72,73,74,75,76,77,78";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "71,72,73,74,75,76,77,78";
+force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
