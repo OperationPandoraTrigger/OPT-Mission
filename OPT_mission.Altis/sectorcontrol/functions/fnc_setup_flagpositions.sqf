@@ -57,8 +57,8 @@ GVARMAIN(nato_flags_pos) = [
 	   
 	   [16603, 19042, west,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 	   
-	   [16459, 17202, west,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
-	   [16654, 16122, west,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
+	   [16459, 17202, west,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
+	   [16654, 16122, west,"37 - Athira Kirchplatz",true], // 37 - Athira_Kirchplatz
 	   [16720, 13548, west,"38 - D-Day",false], // 38 - D-Day
 
 	   [16589, 12635, west,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
@@ -66,7 +66,7 @@ GVARMAIN(nato_flags_pos) = [
 	   [19422, 7972, west,"41 - Lonely",false], // 42 - Lonely
 
 	   [18897, 16660, west,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
-	   [18374, 15529, west,"43 - Ursulas Truckstop",true], // 43 - Ursulas_Truckstop
+	   [18374, 15529, west,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
 	   [18116, 15218, west,"44 - Charkia",false], // 44 - Charkia
 
 	   [19677, 12998, west,"45 - Dorida Woods",false], // 45 - Dorida Woods
@@ -75,10 +75,10 @@ GVARMAIN(nato_flags_pos) = [
 	   
 	   [20897, 6643, west,"48 - Selakano",false], // 48 - Selakano
 	   [20077, 20064, west,"49 - Pefka Colloseum",false], // 49 - Pefka Colloseum
-	   [20923, 19242, west,"50 - Pefkas Lab",true], // 50 - Pefkas Lab
+	   [20923, 19242, west,"50 - Pefkas Lab",false], // 50 - Pefkas Lab
 	   
-	   [20940, 17008, west,"51 - Paros",false], // 51 - Paros
-	   [21365, 16285, west,"52 - Kalochori",false], // 52 - Kalochori
+	   [20940, 17008, west,"51 - Paros",true], // 51 - Paros
+	   [21365, 16285, west,"52 - Kalochori",true], // 52 - Kalochori
 	   [21154, 14594, west,"53 - Limni Swamp",false], // 53 - Limni Swamp
 	   
 	   [21980, 21035, west,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
@@ -147,17 +147,17 @@ GVARMAIN(csat_flags_pos) = [
 
 	   [16459, 17202, east,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
 	   [16654, 16122, east,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
-	   [16720, 13548, east,"38 - D-Day",false], // 38 _ D_Day
+	   [16720, 13548, east,"38 - D-Day",true], // 38 _ D_Day
 
 	   [16589, 12635, east,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
 	   [17806, 10596, east,"40 - Ekali Stones",false], // 40 - Ekali Stones 
 	   [19422, 7972, east,"41 - Lonely",false], // 42 - Lonely
 
 	   [18897, 16660, east,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
-	   [18374, 15529, east,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
+	   [18374, 15529, east,"43 - Ursulas Truckstop",true], // 43 - Ursulas_Truckstop
 	   [18116, 15218, east,"44 - Charkia",false], // 44 - Charkia
 
-	   [19677, 12998, east,"45 - Dorida Woods",true], // 45 - Dorida Woods
+	   [19677, 12998, east,"45 - Dorida Woods",false], // 45 - Dorida Woods
 	   [20166, 11710, east,"46 - Chalikea",false], // 46 - Chalikea
 	   [20546, 9003, east,"47 - Panagia",false], // 47 - Panagia
 	   
@@ -165,8 +165,8 @@ GVARMAIN(csat_flags_pos) = [
 	   [20077, 20064, east,"49 - Pefka Colloseum",false], // 49 - Pefka Colloseum
 	   [20923, 19242, east,"50 - Pefkas Lab",false], // 50 - Pefkas Lab
 	   
-	   [20940, 17008, east,"51 - Paros",true], // 51 - Paros
-	   [21365, 16285, east,"52 - Kalochori",true], // 52 - Kalochori
+	   [20940, 17008, east,"51 - Paros",false], // 51 - Paros
+	   [21365, 16285, east,"52 - Kalochori",false], // 52 - Kalochori
 	   [21154, 14594, east,"53 - Limni Swamp",true], // 53 - Limni Swamp
 	   
 	   [21980, 21035, east,"54 - Pefkas Palace",false], // 54 - Pefkas Palace
