@@ -35,6 +35,8 @@ class CLib {
     useFallbackRemoteExecution = 0;
 };
 
+cba_settings_hasSettingsFile = 1;
+
 //#include "war.ext"
 #include "train.ext"
 
