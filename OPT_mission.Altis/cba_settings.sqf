@@ -1,9 +1,4 @@
-// ACE Advanced Throwing
-force ace_advanced_throwing_enabled = true;
-force ace_advanced_throwing_enablePickUp = true;
-force ace_advanced_throwing_enablePickUpAttached = true;
-
-// ACE Common
+// ACE Allgemein
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
@@ -11,23 +6,50 @@ force ace_common_checkPBOsWhitelist = "[""CLib"",""Streamator"",""PerformanceMon
 force ace_noradio_enabled = true;
 ace_parachute_hideAltimeter = false;
 
-// ACE Cook off
+// ACE BenutzeroberflÃ¤che
+force ace_ui_allowSelectiveUI = true;
+
+// ACE DurchzÃ¼ndung
 force ace_cookoff_ammoCookoffDuration = 0.2;
 force ace_cookoff_enable = false;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_probabilityCoef = 0.2;
 
-// ACE Explosives
-force ace_explosives_explodeOnDefuse = false;
-force ace_explosives_punishNonSpecialists = false;
-force ace_explosives_requireSpecialist = false;
+// ACE Erweitertes Wurfsystem
+force ace_advanced_throwing_enabled = true;
+force ace_advanced_throwing_enablePickUp = true;
+force ace_advanced_throwing_enablePickUpAttached = true;
+ace_advanced_throwing_showMouseControls = false;
+ace_advanced_throwing_showThrowArc = false;
 
-// ACE Interaction
+// ACE Fingerzeig
+force ace_finger_enabled = true;
+force ace_finger_maxRange = 4;
+
+// ACE Interaktion
 force ace_interaction_disableNegativeRating = true;
 force ace_interaction_enableTeamManagement = false;
 
-// ACE Logistics
+// ACE Karte
+force ace_map_BFT_Enabled = false;
+force ace_map_BFT_HideAiGroups = false;
+force ace_map_BFT_Interval = 1;
+force ace_map_BFT_ShowPlayerNames = false;
+force ace_map_DefaultChannel = 1;
+force ace_map_mapGlow = false;
+force ace_map_mapIllumination = false;
+force ace_map_mapLimitZoom = false;
+force ace_map_mapShake = false;
+force ace_map_mapShowCursorCoordinates = true;
+force ace_markers_moveRestriction = -1;
+
+// ACE Kartenzeichen
+force ace_map_gestures_enabled = true;
+force ace_map_gestures_interval = 0.03;
+force ace_map_gestures_maxRange = 7;
+
+// ACE Logistik
 force ace_cargo_enable = true;
 force ace_cargo_loadTimeCoefficient = 1;
 force ace_cargo_paradropTimeCoefficent = 0.4;
@@ -50,72 +72,52 @@ force ace_magazinerepack_timePerAmmo = 1.5;
 force ace_magazinerepack_timePerBeltLink = 8;
 force ace_magazinerepack_timePerMagazine = 2;
 
-// ACE Map
-force ace_map_BFT_Enabled = false;
-force ace_map_BFT_HideAiGroups = false;
-force ace_map_BFT_Interval = 1;
-force ace_map_BFT_ShowPlayerNames = false;
-force ace_map_DefaultChannel = 1;
-force ace_map_mapGlow = false;
-force ace_map_mapIllumination = false;
-force ace_map_mapLimitZoom = false;
-force ace_map_mapShake = false;
-force ace_map_mapShowCursorCoordinates = true;
-force ace_markers_moveRestriction = -1;
-
-// ACE Map Gestures
-force ace_map_gestures_enabled = true;
-force ace_map_gestures_interval = 0.03;
-force ace_map_gestures_maxRange = 7;
-
-// ACE Mk6 Mortar
+// ACE Mk6 MÃ¶rser
 force ace_mk6mortar_airResistanceEnabled = false;
 force ace_mk6mortar_allowCompass = false;
 force ace_mk6mortar_allowComputerRangefinder = true;
 force ace_mk6mortar_useAmmoHandling = false;
 
-// ACE Name Tags
-force ace_nametags_playerNamesMaxAlpha = 0.8;
-force ace_nametags_playerNamesViewDistance = 5;
-force ace_nametags_showCursorTagForVehicles = false;
-force ace_nametags_showPlayerNames = 2;
-
-// ACE Pointing
-force ace_finger_enabled = true;
-force ace_finger_maxRange = 4;
-
 // ACE Respawn
 force ace_respawn_removeDeadBodiesDisconnected = false;
 force ace_respawn_savePreDeathGear = true;
 
-// ACE Spectator
-force ace_spectator_enableAI = false;
-force ace_spectator_restrictModes = 0;
-force ace_spectator_restrictVisions = 0;
+// ACE Sichtweitenbegrenzung
+force ace_viewdistance_enabled = true;
+force ace_viewdistance_limitViewDistance = 4000;
+force ace_viewdistance_objectViewDistanceCoeff = 0;
+ace_viewdistance_viewDistanceAirVehicle = 8;
+ace_viewdistance_viewDistanceLandVehicle = 8;
+ace_viewdistance_viewDistanceOnFoot = 8;
+
+// ACE Sprengstoffe
+force ace_explosives_explodeOnDefuse = false;
+force ace_explosives_punishNonSpecialists = false;
+force ace_explosives_requireSpecialist = false;
 
 // ACE Uncategorized
 force ace_microdagr_mapDataAvailable = 0;
 force ace_microdagr_waypointPrecision = 3;
 
-// ACE User Interface
-force ace_ui_allowSelectiveUI = true;
-
-// ACE View Distance Limiter
-force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 4000;
-force ace_viewdistance_objectViewDistanceCoeff = 0;
-force ace_viewdistance_viewDistanceAirVehicle = 8;
-force ace_viewdistance_viewDistanceLandVehicle = 8;
-force ace_viewdistance_viewDistanceOnFoot = 8;
-
-// ACE Weapons
+// ACE Waffen
 ace_common_persistentLaserEnabled = true;
 force ace_laserpointer_enabled = true;
 
-// ACE Weather
+// ACE Wetter
 force ace_weather_enabled = false;
 force ace_weather_updateInterval = 60;
 force ace_weather_windSimulation = false;
+
+// ACE Zeige Spielernamen
+force ace_nametags_playerNamesMaxAlpha = 0.8;
+force ace_nametags_playerNamesViewDistance = 5;
+force ace_nametags_showCursorTagForVehicles = false;
+force ace_nametags_showPlayerNames = 2;
+
+// ACE Zuschauer
+force ace_spectator_enableAI = false;
+force ace_spectator_restrictModes = 0;
+force ace_spectator_restrictVisions = 0;
 
 // OPT Feldreparatur
 force DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
@@ -208,7 +210,7 @@ force OPT_training_zeus = true;
 // OPT Waffenwechselsystem
 force OPT_waffenwechsel_WWloadout = true;
 
-// TFAR - global settings
+// TFAR - Allgemeine Einstellungen
 force TFAR_AICanHearPlayer = false;
 force TFAR_AICanHearSpeaker = false;
 force TFAR_defaultIntercomSlot = 0;
@@ -226,12 +228,12 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
+force TFAR_setting_defaultFrequencies_lr_east = "41,42,43,44,45,46,47,48,49";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
 force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
-force TFAR_setting_defaultFrequencies_lr_east = "41,42,43,44,45,46,47,48,49";
 force TFAR_setting_defaultFrequencies_sr_east = "71,72,73,74,75,76,77,78";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
+force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
@@ -246,7 +248,7 @@ force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
 force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
 force TFAR_spectatorCanHearEnemyUnits = true;
 force TFAR_spectatorCanHearFriendlies = true;
-force TFAR_takingRadio = 0;
+force TFAR_takingRadio = 2;
 force TFAR_Teamspeak_Channel_Name = "2302";
 force TFAR_Teamspeak_Channel_Password = "war";
 force tfar_terrain_interception_coefficient = 1;

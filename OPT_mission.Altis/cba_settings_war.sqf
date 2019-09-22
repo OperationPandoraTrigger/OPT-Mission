@@ -1,9 +1,4 @@
-// ACE Advanced Throwing
-force ace_advanced_throwing_enabled = true;
-force ace_advanced_throwing_enablePickUp = true;
-force ace_advanced_throwing_enablePickUpAttached = true;
-
-// ACE Common
+// ACE Allgemein
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
@@ -11,23 +6,50 @@ force ace_common_checkPBOsWhitelist = "[""CLib"",""Streamator"",""PerformanceMon
 force ace_noradio_enabled = true;
 ace_parachute_hideAltimeter = false;
 
-// ACE Cook off
+// ACE BenutzeroberflÃ¤che
+force ace_ui_allowSelectiveUI = true;
+
+// ACE DurchzÃ¼ndung
 force ace_cookoff_ammoCookoffDuration = 0.2;
 force ace_cookoff_enable = false;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_probabilityCoef = 0.2;
 
-// ACE Explosives
-force ace_explosives_explodeOnDefuse = false;
-force ace_explosives_punishNonSpecialists = false;
-force ace_explosives_requireSpecialist = false;
+// ACE Erweitertes Wurfsystem
+force ace_advanced_throwing_enabled = true;
+force ace_advanced_throwing_enablePickUp = true;
+force ace_advanced_throwing_enablePickUpAttached = true;
+ace_advanced_throwing_showMouseControls = false;
+ace_advanced_throwing_showThrowArc = false;
 
-// ACE Interaction
+// ACE Fingerzeig
+force ace_finger_enabled = true;
+force ace_finger_maxRange = 4;
+
+// ACE Interaktion
 force ace_interaction_disableNegativeRating = true;
 force ace_interaction_enableTeamManagement = false;
 
-// ACE Logistics
+// ACE Karte
+force ace_map_BFT_Enabled = false;
+force ace_map_BFT_HideAiGroups = false;
+force ace_map_BFT_Interval = 1;
+force ace_map_BFT_ShowPlayerNames = false;
+force ace_map_DefaultChannel = 1;
+force ace_map_mapGlow = false;
+force ace_map_mapIllumination = false;
+force ace_map_mapLimitZoom = false;
+force ace_map_mapShake = false;
+force ace_map_mapShowCursorCoordinates = true;
+force ace_markers_moveRestriction = -1;
+
+// ACE Kartenzeichen
+force ace_map_gestures_enabled = true;
+force ace_map_gestures_interval = 0.03;
+force ace_map_gestures_maxRange = 7;
+
+// ACE Logistik
 force ace_cargo_enable = true;
 force ace_cargo_loadTimeCoefficient = 1;
 force ace_cargo_paradropTimeCoefficent = 0.4;
@@ -50,80 +72,58 @@ force ace_magazinerepack_timePerAmmo = 1.5;
 force ace_magazinerepack_timePerBeltLink = 8;
 force ace_magazinerepack_timePerMagazine = 2;
 
-// ACE Map
-force ace_map_BFT_Enabled = false;
-force ace_map_BFT_HideAiGroups = false;
-force ace_map_BFT_Interval = 1;
-force ace_map_BFT_ShowPlayerNames = false;
-force ace_map_DefaultChannel = 1;
-force ace_map_mapGlow = false;
-force ace_map_mapIllumination = false;
-force ace_map_mapLimitZoom = false;
-force ace_map_mapShake = false;
-force ace_map_mapShowCursorCoordinates = true;
-force ace_markers_moveRestriction = -1;
-
-// ACE Map Gestures
-force ace_map_gestures_enabled = true;
-force ace_map_gestures_interval = 0.03;
-force ace_map_gestures_maxRange = 7;
-
-// ACE Mk6 Mortar
+// ACE Mk6 MÃ¶rser
 force ace_mk6mortar_airResistanceEnabled = false;
 force ace_mk6mortar_allowCompass = false;
 force ace_mk6mortar_allowComputerRangefinder = true;
 force ace_mk6mortar_useAmmoHandling = false;
 
-// ACE Name Tags
-force ace_nametags_playerNamesMaxAlpha = 0.8;
-force ace_nametags_playerNamesViewDistance = 5;
-force ace_nametags_showCursorTagForVehicles = false;
-force ace_nametags_showPlayerNames = 2;
-
-// ACE Pointing
-force ace_finger_enabled = true;
-force ace_finger_maxRange = 4;
-
 // ACE Respawn
 force ace_respawn_removeDeadBodiesDisconnected = false;
 force ace_respawn_savePreDeathGear = true;
 
-// ACE Spectator
-force ace_spectator_enableAI = false;
-force ace_spectator_restrictModes = 0;
-force ace_spectator_restrictVisions = 0;
+// ACE Sichtweitenbegrenzung
+force ace_viewdistance_enabled = true;
+force ace_viewdistance_limitViewDistance = 4000;
+force ace_viewdistance_objectViewDistanceCoeff = 0;
+ace_viewdistance_viewDistanceAirVehicle = 8;
+ace_viewdistance_viewDistanceLandVehicle = 8;
+ace_viewdistance_viewDistanceOnFoot = 8;
+
+// ACE Sprengstoffe
+force ace_explosives_explodeOnDefuse = false;
+force ace_explosives_punishNonSpecialists = false;
+force ace_explosives_requireSpecialist = false;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;
 force ace_microdagr_mapDataAvailable = 0;
 force ace_microdagr_waypointPrecision = 3;
 
-// ACE User Interface
-force ace_ui_allowSelectiveUI = true;
-
-// ACE View Distance Limiter
-force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 4000;
-force ace_viewdistance_objectViewDistanceCoeff = 0;
-force ace_viewdistance_viewDistanceAirVehicle = 8;
-force ace_viewdistance_viewDistanceLandVehicle = 8;
-force ace_viewdistance_viewDistanceOnFoot = 8;
-
-// ACE Weapons
+// ACE Waffen
 ace_common_persistentLaserEnabled = true;
 force ace_laserpointer_enabled = true;
 
-// ACE Weather
+// ACE Wetter
 force ace_weather_enabled = false;
 force ace_weather_updateInterval = 60;
 force ace_weather_windSimulation = false;
 
-// CBA Weapons
+// ACE Zeige Spielernamen
+force ace_nametags_playerNamesMaxAlpha = 0.8;
+force ace_nametags_playerNamesViewDistance = 5;
+force ace_nametags_showCursorTagForVehicles = false;
+force ace_nametags_showPlayerNames = 2;
+
+// ACE Zuschauer
+force ace_spectator_enableAI = false;
+force ace_spectator_restrictModes = 0;
+force ace_spectator_restrictVisions = 0;
+
+// CBA Waffen
 force cba_disposable_replaceDisposableLauncher = true;
 
 // DUI - Squad Radar - Radar
-diwako_dui_hudScaling = 1.33333;
-diwako_dui_namelist_size = 1.5396;
 force diwako_dui_radar_sortType = "none";
 force diwako_dui_radar_sqlFirst = false;
 
@@ -220,7 +220,7 @@ force OPT_training_zeus = true;
 // OPT Waffenwechselsystem
 force OPT_waffenwechsel_WWloadout = true;
 
-// TFAR - global settings
+// TFAR - Allgemeine Einstellungen
 force TFAR_AICanHearPlayer = false;
 force TFAR_AICanHearSpeaker = false;
 force TFAR_defaultIntercomSlot = 0;
