@@ -1,33 +1,11 @@
 ﻿# OPT-Mission
 Repo für die OPT Mission (ohne Skripts).
 
-## Dialoge
-Dialog-Klassen werden in der Mission unter `dialogs` gespeichert. Für jedes Modul wird hier ein eigener Ordner angelegt.
-Anschließend in der `dialogs\include.hpp` entweder die Datei direkt includen, wenn es nur eine Datei ist. Ansonsten eine weitere `include.hpp` im Modulordner anlegen.
+## CBA-Settings
 
+CBA-Settings werden in der **cba_settings.sqf** konfiguriert.
+Hier gibt es zwei Profile, die immer aktuell gehalten werden müssen:
+**cba_settings.sqf** (Trainingsversion) und
+**cba_settings_war.sqf** (Schlachtversion)
 
-### OPTDef.hpp
-Hier werden alle OPT-Konstanten gespeichert.
-Diese müssen - wann immer möglich - verwendet werden.
-- Farben für Controls
-- IDDs und IDCs (sofern benötigt). Hier bitte immer einen neuen 100er Block anfangen.
-
-### VanillaDef.hpp
-Dies beinhaltet die Vanilla-Basisklassen, die man in seinen Dialogen einfach erben kann.
-Diese Datei wird **NIE** von Hand bearbeitet!
-
-Die Datei wird durch  [BIS_fnc_exportGUIBaseClasses](https://community.bistudio.com/wiki/BIS_fnc_exportGUIBaseClasses) erzeugt.
-In der Debug-Konsole einfach
-````
-"Default" call BIS_fnc_exportGUIBaseClasses;
-````
-ausführen und via Copy & Paste ersetzen. Wenn man etwas ganz Außergewöhnliches braucht, kann es sein, dass man mit `"all"` aufrufen muss.
-
-Wenn nur eine einzelne Konfig benötigt wird, kann man auch mit
-````
-utils 2
-````
-und dem Klassennamen (z.B. `"RscStructuredText"`) spezifische Konfigs abfragen.
-
-
-Diese Datei nur updaten, wenn es absolut notwendig ist! Wenn sich Klassen unerwartet ändern, kann das vielfältige Auswirkungen auf alle Dialoge haben!
+Diese können entweder direkt in der Datei bearbeitet werden, oder auch ingame. Dort hat man den Vorteil, dass statt der kryptischen Variablennamen der volle Name und ggf. Beschreibungstext verfügbar ist. Hierzu einfach in eine beliebige Mission oder auch den leeren Editor gehen. Dort dann die "Addon Options" öffnen. In diesem Dialog gibt es unten einen "Import/Export"-Funktion, mit der man mittels Copy+Paste den Inhalt der Datei importieren kann. Anschließend kann man die Settings hier beliebig ändern und anschließend wieder exportieren. Hierbei wichtig: Das Häkchen bei "include defaults" entfernen, so dass nur die tatsächlich angepassten Werte exportiert werden.
