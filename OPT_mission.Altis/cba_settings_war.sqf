@@ -129,9 +129,6 @@ force DEFAULT_FREE_REPAIRS = 1;
 force DEFAULT_FULLREPAIR_LENGTH = 60;
 force DEFAULT_REPAIR_TRUCK_USES = 10;
 
-// OPT GPS
-force OPT_gps_maxMarkerNo = 80;
-
 // OPT Kaufsystem
 force OPT_PARAM_ONLY_CREW = true;
 force OPT_PARAM_ONLY_PILOTS = true;
@@ -146,7 +143,6 @@ force OPT_warehouse_saleReturnValueForOwn = 0.75;
 force OPT_beam_on = true;
 force OPT_cargo_on = true;
 force OPT_fieldrepair_on = true;
-force OPT_gps_on = true;
 force OPT_hud_on = true;
 force OPT_marker_on = true;
 force OPT_mhq_on = false;
