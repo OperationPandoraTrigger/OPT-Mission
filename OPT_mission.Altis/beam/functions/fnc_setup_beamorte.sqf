@@ -104,8 +104,8 @@ GVAR(locations_west) =
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
-	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
-	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
+	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",1], // 37 - Athira_Kirchplatz
 	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
@@ -113,7 +113,7 @@ GVAR(locations_west) =
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
 	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
@@ -122,10 +122,10 @@ GVAR(locations_west) =
 	   
 	   [[20907.025,34.035168,6664.6289], "48 - Selakano",0], // 48 - Selakano
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
-	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",1], // 50 - Pefkas Lab
+	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",0], // 50 - Pefkas Lab
 	   
-	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
-	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
+	   [[20961.982,42.085556,16967.162], "51 - Paros",1], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
@@ -199,17 +199,17 @@ GVAR(locations_east) =
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 _ D_Day
+	   [[16703.346,10.311413,13522.601], "38 - D-Day",1], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
 	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
-	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",1], // 45 - Dorida Woods
+	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
 	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
 	   [[20555.693,39.293385,9022.5293], "47 - Panagia",0], // 47 - Panagia
 	   
@@ -217,8 +217,8 @@ GVAR(locations_east) =
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
 	   [[20958.469,15.521555,19261.99], "50 - Pefkas Forschungszentrum",0], // 50 - Pefkas Lab
 	   
-	   [[20961.982,42.085556,16967.162], "51 - Paros",1], // 51 - Paros
-	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
+	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",1], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
