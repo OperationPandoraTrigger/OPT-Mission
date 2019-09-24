@@ -4,7 +4,6 @@ force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "[""CLib"",""Streamator"",""PerformanceMonitor"", ""opt""]";
 force ace_noradio_enabled = true;
-ace_parachute_hideAltimeter = false;
 
 // ACE BenutzeroberflÃ¤che
 force ace_ui_allowSelectiveUI = true;
@@ -20,8 +19,6 @@ force ace_cookoff_probabilityCoef = 0.2;
 force ace_advanced_throwing_enabled = true;
 force ace_advanced_throwing_enablePickUp = true;
 force ace_advanced_throwing_enablePickUpAttached = true;
-ace_advanced_throwing_showMouseControls = false;
-ace_advanced_throwing_showThrowArc = false;
 
 // ACE Fingerzeig
 force ace_finger_enabled = true;
@@ -86,9 +83,6 @@ force ace_respawn_savePreDeathGear = true;
 force ace_viewdistance_enabled = true;
 force ace_viewdistance_limitViewDistance = 4000;
 force ace_viewdistance_objectViewDistanceCoeff = 0;
-ace_viewdistance_viewDistanceAirVehicle = 8;
-ace_viewdistance_viewDistanceLandVehicle = 8;
-ace_viewdistance_viewDistanceOnFoot = 8;
 
 // ACE Sprengstoffe
 force ace_explosives_explodeOnDefuse = false;
@@ -96,11 +90,11 @@ force ace_explosives_punishNonSpecialists = false;
 force ace_explosives_requireSpecialist = false;
 
 // ACE Uncategorized
+force ace_fastroping_requireRopeItems = false;
 force ace_microdagr_mapDataAvailable = 0;
 force ace_microdagr_waypointPrecision = 3;
 
 // ACE Waffen
-ace_common_persistentLaserEnabled = true;
 force ace_laserpointer_enabled = true;
 
 // ACE Wetter
@@ -119,10 +113,18 @@ force ace_spectator_enableAI = false;
 force ace_spectator_restrictModes = 0;
 force ace_spectator_restrictVisions = 0;
 
+// CBA Waffen
+force cba_disposable_replaceDisposableLauncher = true;
+
+// DUI - Squad Radar - Radar
+diwako_dui_radar_sqlFirst = true; // Recommended/Default , but not enforced
+
 // OPT Feldreparatur
 force DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
 force DEFAULT_FIELDREPAIR_EACH_PART_TIME = 15;
 force DEFAULT_FIELDREPAIR_MAX_REP_TIME = 240;
+force DEFAULT_FREE_REFUELS = 1;
+force DEFAULT_FREE_REFUELS_DURATION = 60;
 force DEFAULT_FREE_REPAIRS = 1;
 force DEFAULT_FULLREPAIR_LENGTH = 60;
 force DEFAULT_REPAIR_TRUCK_USES = 10;
@@ -215,6 +217,7 @@ force TFAR_AICanHearPlayer = false;
 force TFAR_AICanHearSpeaker = false;
 force TFAR_defaultIntercomSlot = 0;
 force TFAR_enableIntercom = true;
+force TFAR_experimentalVehicleIsolation = true;
 force TFAR_fullDuplex = true;
 force TFAR_giveLongRangeRadioToGroupLeaders = false;
 force TFAR_giveMicroDagrToSoldier = true;
@@ -222,6 +225,7 @@ force TFAR_givePersonalRadioToRegularSoldier = false;
 force TFAR_globalRadioRangeCoef = 1.5;
 force TFAR_instantiate_instantiateAtBriefing = false;
 force TFAR_objectInterceptionEnabled = true;
+force TFAR_objectInterceptionStrength = 400;
 force tfar_radiocode_east = "_opfor";
 force tfar_radiocode_independent = "_independent";
 force tfar_radiocode_west = "_bluefor";
@@ -252,3 +256,4 @@ force TFAR_takingRadio = 2;
 force TFAR_Teamspeak_Channel_Name = "2302";
 force TFAR_Teamspeak_Channel_Password = "war";
 force tfar_terrain_interception_coefficient = 1;
+force TFAR_voiceCone = true;
