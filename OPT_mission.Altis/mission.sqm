@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=100;
 	autoGroupingDist=10;
-	toggles=577;
+	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=9916;
+		nextID=9917;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=34900;
+		nextID=35164;
 	};
 	class Camera
 	{
-		pos[]={19688.762,200.09329,12858.557};
-		dir[]={-0.13331829,-0.67104834,0.72933602};
-		up[]={-0.12066485,0.74141276,0.66011345};
-		aside[]={0.98370558,-1.7914863e-007,0.17981629};
+		pos[]={14962.504,40.588062,12452.587};
+		dir[]={0.55353659,-0.70911133,-0.43683839};
+		up[]={0.55666286,0.70507407,-0.43930551};
+		aside[]={-0.61952406,8.0734026e-007,-0.78502512};
 	};
 };
 binarizationWanted=0;
@@ -557,7 +557,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -569,11 +569,11 @@ class Mission
 	class Intel
 	{
 		timeOfChanges=7200;
-		startWeather=0;
+		startWeather=0.44069785;
 		startWind=0;
 		startWaves=0.48305666;
 		startGust=1;
-		forecastWeather=0.44493365;
+		forecastWeather=0;
 		forecastWind=0;
 		forecastWaves=0.47882089;
 		forecastGust=0.57624549;
@@ -584,8 +584,8 @@ class Mission
 		year=2019;
 		month=9;
 		day=19;
-		hour=9;
-		minute=0;
+		hour=12;
+		minute=-30;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -10384,7 +10384,7 @@ class Mission
 							side="East";
 							class Entities
 							{
-								items=2;
+								items=1;
 								class Item0
 								{
 									dataType="Object";
@@ -10513,129 +10513,6 @@ class Mission
 														};
 													};
 													value=0.95999998;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={14968.973,23.565708,12444.778};
-										angles[]={0,2.0282331,0};
-									};
-									side="East";
-									flags=5;
-									class Attributes
-									{
-										init="call{(group this) setGroupIdGlobal [""Adler""];}";
-										name="csat_schuetze_15";
-										description="Schütze @Adler";
-										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="OPT_arifle_CTAR_blk_F";
-												optics="optic_Aco";
-												flashlight="acc_pointer_IR";
-												class primaryMuzzleMag
-												{
-													name="30Rnd_580x42_Mag_F";
-													ammoLeft=30;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="U_O_officer_noInsignia_hex_F";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="30Rnd_580x42_Mag_F";
-														count=3;
-														ammoLeft=30;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="OPT_V_TacVest_khk";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=2;
-													class Item0
-													{
-														name="HandGrenade";
-														count=3;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="SmokeShell";
-														count=2;
-														ammoLeft=1;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											radio="tf_fadak";
-											gps="ItemGPS";
-											headgear="OPT_H_HelmetO_ocamo";
-										};
-									};
-									id=8415;
-									type="OPT_CSAT_Soldat";
-									atlOffset=0.00072860718;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male01PER";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
 												};
 											};
 										};
@@ -10805,7 +10682,7 @@ class Mission
 							side="East";
 							class Entities
 							{
-								items=9;
+								items=10;
 								class Item0
 								{
 									dataType="Object";
@@ -11935,6 +11812,129 @@ class Mission
 									id=8432;
 									type="OPT_CSAT_Soldat";
 									atlOffset=0.41160583;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male01PER";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14968.973,23.565708,12444.778};
+										angles[]={0,2.0282331,0};
+									};
+									side="East";
+									flags=5;
+									class Attributes
+									{
+										init="call{(group this) setGroupIdGlobal [""Adler""];}";
+										name="csat_schuetze_15";
+										description="Schütze @Adler";
+										isPlayable=1;
+										class Inventory
+										{
+											class primaryWeapon
+											{
+												name="OPT_arifle_CTAR_blk_F";
+												optics="optic_Aco";
+												flashlight="acc_pointer_IR";
+												class primaryMuzzleMag
+												{
+													name="30Rnd_580x42_Mag_F";
+													ammoLeft=30;
+												};
+											};
+											class binocular
+											{
+												name="Binocular";
+											};
+											class uniform
+											{
+												typeName="U_O_officer_noInsignia_hex_F";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="30Rnd_580x42_Mag_F";
+														count=3;
+														ammoLeft=30;
+													};
+												};
+											};
+											class vest
+											{
+												typeName="OPT_V_TacVest_khk";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=2;
+													class Item0
+													{
+														name="HandGrenade";
+														count=3;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="SmokeShell";
+														count=2;
+														ammoLeft=1;
+													};
+												};
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+											radio="tf_fadak";
+											gps="ItemGPS";
+											headgear="OPT_H_HelmetO_ocamo";
+										};
+									};
+									id=8415;
+									type="OPT_CSAT_Soldat";
+									atlOffset=0.00072860718;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -39451,7 +39451,7 @@ class Mission
 									};
 									id=7026;
 									type="Land_CzechHedgehog_01_new_F";
-									atlOffset=-0.0027046204;
+									atlOffset=0.13694;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -49470,7 +49470,7 @@ class Mission
 							colorName="ColorRed";
 							a=15.832;
 							b=15697.289;
-							angle=78.671936;
+							angle=78.671921;
 							id=9748;
 							atlOffset=-6.9485912;
 						};
@@ -49648,7 +49648,7 @@ class Mission
 									type="rectangle";
 									a=109.08534;
 									b=19.220396;
-									angle=222.54256;
+									angle=222.5425;
 									id=5819;
 									atlOffset=56.195812;
 								};
@@ -55849,7 +55849,7 @@ class Mission
 									position[]={17826.307,-0.14435005,20087.145};
 									name="marker_43";
 									type="b_naval";
-									angle=359.02518;
+									angle=359.02512;
 									id=9732;
 									atlOffset=58.618088;
 								};
@@ -57641,7 +57641,7 @@ class Mission
 							position[]={17549.771,-0.049632549,21593.053};
 							name="marker_203";
 							type="b_plane";
-							angle=307.75052;
+							angle=307.75043;
 							id=9911;
 							atlOffset=64.121346;
 						};
@@ -57651,7 +57651,7 @@ class Mission
 							position[]={17417.084,-0.038598984,21492.672};
 							name="marker_201";
 							type="b_Ordnance";
-							angle=309.72903;
+							angle=309.72891;
 							id=9909;
 							atlOffset=67.359306;
 						};
@@ -57661,7 +57661,7 @@ class Mission
 							position[]={17442.703,0.15151687,21560.734};
 							name="marker_199";
 							type="b_motor_inf";
-							angle=310.0853;
+							angle=310.08517;
 							id=9907;
 							atlOffset=60.722446;
 						};
@@ -62486,7 +62486,7 @@ class Mission
 									type="rectangle";
 									a=19.156418;
 									b=10.26421;
-									angle=119.60696;
+									angle=119.60695;
 									id=6068;
 									atlOffset=85.655983;
 								};
@@ -62499,7 +62499,7 @@ class Mission
 									type="rectangle";
 									a=64.534431;
 									b=32.28862;
-									angle=300.91644;
+									angle=300.91641;
 									id=6069;
 									atlOffset=86.218887;
 								};
@@ -62512,7 +62512,7 @@ class Mission
 									type="rectangle";
 									a=10.244446;
 									b=32.28862;
-									angle=300.91644;
+									angle=300.91641;
 									id=6070;
 									atlOffset=67.111374;
 								};
@@ -62525,7 +62525,7 @@ class Mission
 									type="rectangle";
 									a=49.559002;
 									b=174.3134;
-									angle=30.430485;
+									angle=30.430483;
 									id=6071;
 									atlOffset=96.467293;
 								};
@@ -62538,7 +62538,7 @@ class Mission
 									type="rectangle";
 									a=109.08534;
 									b=19.220396;
-									angle=303.18683;
+									angle=303.18677;
 									id=6074;
 									atlOffset=112.1277;
 								};
@@ -64080,7 +64080,7 @@ class Mission
 									position[]={14095.205,0.38612366,11120.811};
 									name="marker_42";
 									type="o_naval";
-									angle=359.69107;
+									angle=359.69098;
 									id=9731;
 									atlOffset=114.97571;
 								};
@@ -64106,7 +64106,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={14874.735,-185.97015,12349.325};
-											angle=1.5804323;
+											angle=1.5804319;
 											class Attributes
 											{
 												text="NATO Todeszone";
@@ -64283,7 +64283,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={14927.735,23.563843,12398.578};
-											angle=3.5269196;
+											angle=3.5269191;
 											class Attributes
 											{
 												name="csat_trigger_Waffenwechsel1";
@@ -64305,7 +64305,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={14927.688,23.563843,12398.488};
-											angle=5.1135435;
+											angle=5.1135426;
 											class Attributes
 											{
 												name="trg_csat_repair_1";
@@ -65798,7 +65798,7 @@ class Mission
 							name="marker_198";
 							type="b_uav";
 							colorName="ColorEAST";
-							angle=300.94095;
+							angle=300.94092;
 							id=9906;
 							atlOffset=84.17627;
 						};
@@ -65820,7 +65820,7 @@ class Mission
 							name="marker_197";
 							type="b_Ordnance";
 							colorName="ColorEAST";
-							angle=303.0885;
+							angle=303.08844;
 							id=9905;
 							atlOffset=95.73748;
 						};
@@ -65842,7 +65842,7 @@ class Mission
 							name="marker_193";
 							type="b_armor";
 							colorName="ColorEAST";
-							angle=301.23547;
+							angle=301.23538;
 							id=9901;
 							atlOffset=98.718971;
 						};
