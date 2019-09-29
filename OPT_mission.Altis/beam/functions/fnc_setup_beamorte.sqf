@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Description:
 * setup available beam locations with their respective level
 * setup heavy vehicle classnames
@@ -27,7 +27,7 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(heavy_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
+* GVAR(locations_west), GVAR(locations_east), GVAR(restricted_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
@@ -39,11 +39,11 @@
 * [[Position], Name, Level]
 * 
 * Level:
-* -1 = available after mission start for vehicles defined in GVAR(beam_vehicles) [see below]
 * 0 = not available
 * 1 = infantry only
-* 2 = infantry + light vehicles
-* 3 = infantry + light vehicles + heavy vehicles
+* 2 = infantry + vehicles
+* 3 = infantry + vehicles + restricted vehicles 
+* 4 = available after mission start for certain beam vehicles
 */
 
 #include "script_component.hpp"
@@ -51,14 +51,14 @@
 //West
 GVAR(locations_west) =
 [
-    [[6531,0,20013], "Beampunkt 1", -1],
-    [[4662,0,22306], "Beampunkt 2", -1],
+    [[9517,0,22347], "Beampunkt 1", 4],
+    [[9553,0,22322], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
-       [[4925.6323,341.19653,21895.656], "1 - Thronos Burg",1], // 1 - Thronos_castle
-	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",1], // 2 - Oreokastro
+       [[4925.6323,341.19653,21895.656], "1 - Thronos Burg",0], // 1 - Thronos_castle
+	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
 	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
 	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
@@ -70,9 +70,9 @@ GVAR(locations_west) =
 	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
 	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
 	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",0], // 11 - Krya_Nera
-	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",1], // 12 - Abdera_Farm
+	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",0], // 12 - Abdera_Farm
 	   
-	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",1], // 13 - Abdera_Rathaus
+	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
 	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
 	   [[7533.3193,134.73981,18346.297], "15 - Enklave Syrta",0], // 15 - Enclave_Syrta
 
@@ -104,15 +104,15 @@ GVAR(locations_west) =
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
-	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
-	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
+	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",1], // 37 - Athira_Kirchplatz
 	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
-	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
 	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
@@ -124,8 +124,8 @@ GVAR(locations_west) =
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
 	   [[20958.469,15.521555,19261.99], "50 - Pefkas Lab",0], // 50 - Pefkas Lab
 	   
-	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
-	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
+	   [[20961.982,42.085556,16967.162], "51 - Paros",1], // 51 - Paros
+	   [[21373.045,18.855602,16254.126], "52 - Kalochori",1], // 52 - Kalochori
 	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
@@ -144,18 +144,18 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[12918,0,13397], "Beampunkt 1", -1],
-    [[12427,0,15693], "Beampunkt 2", -1],
+    [[17662,0,8866], "Beampunkt 1", 4],
+    [[17691,0,8853], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 	
         [[4925.6323,341.19653,21895.656], "1 - Throns castel",0], // 1 - Throns_castel
 	   [[4582.2017,299.6069,21385.365], "2 - Oreokastro",0], // 2 - Oreokastro
-	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",1], // 3 - Waffenlager_Nord_West
-	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",1], // 4 - Villa_Constans
+	   [[4910.3472,197.1022,19458.254], "3 - Waffenlager Nord West",0], // 3 - Waffenlager_Nord_West
+	   [[3360.3782,67.56945,18310.93], "4 - Villa Constans",0], // 4 - Villa_Constans
 
-	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",1], // 5 - Mine_Gore
+	   [[5410.8721,76.737549,17909.359], "5 - Mine Gore",0], // 5 - Mine_Gore
 	   [[6181.8838,43.000999,16256.253], "6 - Pennerhotel",0], // 6 - Pennerhotelm
 	   [[4267.708,28.040495,13902.733], "7 - Checkpoint charlie",0], // 7 - Checkpoint_charlie
 	   [[3723.6956,18.555311,12999.2], "8 - Die Dächer von Kavala",0], // 8 - Die Dächer von Kavala
@@ -167,9 +167,9 @@ GVAR(locations_east) =
 	   
 	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
 	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
-	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",1], // 15 - Enclave_Syrta
+	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",0], // 15 - Enclave_Syrta
 
-	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",1], // 16 - Kore_Zentrum
+	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
 	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",0], // 17 - Checkpoint Agios Dionisos
 	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",0], // 18 - Xirolimni_Damm",1
 	   
@@ -199,14 +199,14 @@ GVAR(locations_east) =
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 _ D_Day
+	   [[16703.346,10.311413,13522.601], "38 - D-Day",1], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
 	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
 	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
@@ -219,11 +219,11 @@ GVAR(locations_east) =
 	   
 	   [[20961.982,42.085556,16967.162], "51 - Paros",0], // 51 - Paros
 	   [[21373.045,18.855602,16254.126], "52 - Kalochori",0], // 52 - Kalochori
-	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",0], // 53 - Limni Swamp
+	   [[21185.318,2.11974,14617.707], "53 - Limni Swamp",1], // 53 - Limni Swamp
 	   
 	   [[22010.072,29.125452,21064.441], "54 - Pefkas Palace",0], // 54 - Pefkas Palace
 	   [[22283.615,14.165822,18499.398], "55 - Almyra West",0], // 55 - Almyra West
-	   [[22541.662,13.056,16464.963], "56 - Almyra South",0], // 56 - Almyra South
+	   [[22541.662,13.056,16464.963], "56 - Almyra South",1], // 56 - Almyra South
 	   
 	   [[23371.816,3.9426758,24183.539], "57 - Sideras",0], // 57 - Sideras
 	   [[23466.807,90.535362,21137.943], "58 - Delfinaki Military",0], // 58 - Delfinaki Military
@@ -235,35 +235,28 @@ GVAR(locations_east) =
 
 ];
 
-GVAR(heavy_vehicles) = 
+/* vehicles requiring special clearance for beaming (eg. tanks) */
+GVAR(restricted_vehicles) = 
 [
-    //Vanilla
-    "OPT4_O_APC_Wheeled_02_rcws_F",                 // MSE-3 Marid
-    "OPT_O_APC_Wheeled_03_cannon_light_F",          // AFV-4 Gorgon (Leicht)
-    "OPT4_O_APC_Wheeled_03_cannon_F",               // AFV-4 Gorgon
-    "OPT4_O_APC_Tracked_02_AA_F",                   // ZSU-39 Tigris
-    "OPT_O_APC_Tracked_02_cannon_light_F",          // BTR-K Kamysh
-    "OPT4_O_APC_Tracked_02_cannon_F",               // BTR-K Kamysh (Titan)
-    "OPT4_O_MBT_02_cannon_F",                       // T-100 Varsuk
-    "OPT4_O_MBT_02_arty_F",                         // 2S9 Sochor
-	"OPT4_O_MRAP_02_gmg_F",
-	"OPT4_O_LSV_02_AT_F",
-            
-    "OPT4_B_APC_Tracked_01_rcws_F",                 // IFV-6c Panther
-    "OPT_B_APC_Wheeled_01_cannon_light_F",          // AMV-7 Marshall (Leicht)
-    "OPT4_B_APC_Wheeled_01_cannon_F",               // AMV-7 Marshall    
-    "OPT4_B_APC_Tracked_01_AA_F",                   // IFV-6a Cheetah
-    "OPT4_B_APC_tracked_03_cannon_F",               // FV-720 Mora    
-    "OPT4_B_MBT_01_cannon_F",                       // M2A4 Slammer
-    "OPT4_B_MBT_01_TUSK_F",                         // M2A4 SlammerUp
-    "OPT_B_MBT_03_cannon_F",                        // MBT-52 Kuma, fliegt raus
-    "OPT_B_MBT_01_Arty_F",                          // M4 Scorcher
-    "OPT4_B_MBT_01_mlrs_F",                         // M4 Scorcher    
-    "OPT4_B_MBT_01_arty_F",                         // M4 Scorcher
-    "OPT_B_MBT_01_mlrs_F",                           // M5 Sandstorm    
-	"OPT4_B_MRAP_01_gmg_F",
-	"OPT4_B_LSV_01_AT_F"
- ];
+	//West
+	"OPT4_B_APC_Tracked_01_rcws_F",					// Panther
+	"OPT4_B_APC_Wheeled_01_cannon_F",				// Marshall
+	"OPT4_B_APC_Tracked_01_AA_F",					// Cheetah
+	"OPT4_B_APC_tracked_03_cannon_F",				// Mora
+	"OPT4_B_MBT_01_TUSK_F",							// Slammer UP
+	"OPT4_B_MBT_01_arty_F",							// Scorcher
+	"OPT_B_MBT_01_mlrs_F",							// Sandstorm
+	"OPT4_B_LSV_01_AT_F",							// Prowler AT
+	//East
+	"OPT4_O_APC_Wheeled_02_rcws_F",					// Marid
+	"OPT4_O_APC_Wheeled_03_cannon_F",				// Gorgon
+	"OPT4_O_APC_Tracked_02_AA_F",					// Tigris
+	"OPT4_O_APC_Tracked_02_cannon_F",				// Kamysh 
+	"OPT4_O_MBT_02_cannon_F",						// Varsuk
+	"OPT4_O_MBT_02_arty_F",							// Sochor
+	"OPT_O_Truck_02_MRL_F",							// Zamak MRL
+	"OPT4_O_LSV_02_AT_F"							// Qilin AT
+];
 
 /* vehicles usable for beaming after mission start */
 GVAR(beam_vehicles) =

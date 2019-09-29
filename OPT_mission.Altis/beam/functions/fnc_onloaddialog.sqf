@@ -59,18 +59,21 @@ else
 
 };
 
-// if component is disabled -> only allow locations with level equal -1
-GVAR(box) = _orte select {(_x select 2) == -1};
+
 if (GVAR(on)) then
 {
-    // nach Waffenruhe nur noch Orte mit -1
+    /* loads beampoints before and after mission start if component is in use */
     if (!GVARMAIN(missionStarted)) then
     {
-        GVAR(box) append (_orte select {(_x select 2) > 0}); // only locations with level greater 0 (1,2,3 possible)
+        GVAR(box) = (_orte select {(_x select 2) != 0}); // only positions with beaming possibility
+    }
+    else 
+    {
+        GVAR(box) = (_orte select {(_x select 2) == 4}); // only positions with beaming option after mission start
     };
 };
 
-//Boxen mit Orte füllen
+/* writing out box elements in level corresponding colors */
 GVAR(box) apply
 {
     private _loc = _x;

@@ -21,48 +21,28 @@ player addEventHandler ["GetInMan", {
     vehicle: Object - Vehicle the unit entered
     turret: Array - turret path
     */
-    params ["_unit", "_pos", "_vec", "_turret"];
+    params ["_unit", "_pos", "_veh", "_turret"];
 
-    if ((_vec call TFAR_fnc_getVehicleSide) != PLAYER_SIDE) then {
-        // check if there is a radio in the vehicle
-        _LRinside = _vec call TFAR_fnc_hasVehicleRadio;
-        if (_LRinside) then {
-            _VehicleLR = player call TFAR_fnc_VehicleLR;
-            _encryption = _VehicleLR call TFAR_fnc_getLrRadioCode;
-            
-            switch (PLAYER_SIDE) do  {
-                case west: {
-                    if (toLower(_encryption) == "_opfor") then {
-                        If (OPT_PARAM_TFAR_INTERCEPTION) then {
-                            [_VehicleLR, "_bluefor"] call TFAR_fnc_setLrRadioCode;
-                            systemChat "Die Funk-Verschlüsselung wurde geändert.";
-                        } else {
-                            for "_i" from 0 to 8 do {
-                                [_VehicleLR, _i] call TFAR_fnc_setLrChannel;
-                                [_VehicleLR, "30.00"] call TFAR_fnc_setLrFrequency;
-                            };
-                            systemChat "Frequenz auf Beginn des Frequenzbandes gestellt";
-                        };
-                    };
-                };
-                case east:  {
-                    if (toLower(_encryption) == "_bluefor") then {
-                        If (OPT_PARAM_TFAR_INTERCEPTION) then {
-                            [_VehicleLR, "_opfor"] call TFAR_fnc_setLrRadioCode;
-                            systemChat "Die Funk-Verschlüsselung wurde geändert.";
-                        } else {
-                            for "_i" from 0 to 8 do {
-                                [_VehicleLR, _i] call TFAR_fnc_setLrChannel;
-                                [_VehicleLR, "30.00"] call TFAR_fnc_setLrFrequency;
-                            };
-                            systemChat "Frequenz auf Beginn des Frequenzbandes gestellt";
-                        };
-                    };            
+    // check if there is a radio in the vehicle
+    if (_veh call TFAR_fnc_hasVehicleRadio) then {
+        _VehicleLR = player call TFAR_fnc_VehicleLR;
+        _encryption = _VehicleLR call TFAR_fnc_getLrRadioCode;
+        
+        // Check if vehicle was occupied by other team. IF so, we change the encryption to match the team again.
+        switch (PLAYER_SIDE) do {
+            case west: {
+                if (toLower(_encryption) == "_opfor") then {
+                    [_VehicleLR, "_bluefor"] call TFAR_fnc_setLrRadioCode;
+                    systemChat "Die Funk-Verschlüsselung wurde geändert.";
                 };
             };
+            case east:  {
+                if (toLower(_encryption) == "_bluefor") then {
+                    [_VehicleLR, "_opfor"] call TFAR_fnc_setLrRadioCode;
+                    systemChat "Die Funk-Verschlüsselung wurde geändert.";
+                };            
+            };
         };
-    } else {
-        [_vec] call FUNC(setTFARFrequencies);
     };
 
 }];

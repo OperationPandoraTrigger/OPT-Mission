@@ -249,7 +249,7 @@ GVAR(csat_armored) =
     ["OPT4_O_MBT_02_arty_F", DEF_PROD(300000)],                 // 2S9 Sochor
     ["OPT_O_Truck_02_MRL_F", DEF_PROD(400000)],                 // 2S9 Sochor    
     ["OPT4_O_MRAP_02_gmg_F", DEF_PROD(0)],                  // Ifrit GMG
-	["OPT4_O_LSV_02_AT_F", DEF_PROD(80000)],                    // Quilin AT++++++++++++++++++++++++++ 20000
+	["OPT4_O_LSV_02_AT_F", DEF_PROD(80000)],                    // Quilin AT 20000
 //Tropentarn
     ["OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", DEF_PROD(0)],       // MSE-3 Marid 50000
     ["OPT_O_APC_Wheeled_03_cannon_light_F", DEF_PROD(0)],       // AFV-4 Gorgon (Leicht) 90000
@@ -271,7 +271,7 @@ GVAR(csat_supplies) =
 	["OPT_Box_East_WpsSpecial_AT_L2", 150000, 10000, 20000],                  // AT Raketenkiste (RPG-7)
 	["OPT_Box_East_WpsSpecial_AT_H1", 350000, 10000, 20000],                  // AT Raketenkiste (9M135 Vorona)
     ["OPT_Box_East_WpsSpecial_AA_F", 140000, 10000, 20000],                  // AA Raketenkiste
-    ["OPT_O_supplyCrate_F", DEF_PROD(500)],                                 // Transportkiste
+    ["OPT_O_supplyCrate_F", DEF_PROD(0)],                                 // Transportkiste
     ["OPT_O_CargoNet_01_ammo_F", DEF_PROD(5000)],                           // Ausrstungskiste
     ["OPT_Box_East_WpsSpecial_Diver_F", DEF_PROD(5000)],                    // Taucherkiste
     ["OPT_O_T_UGV_01_ghex_F", DEF_PROD(0)],                                 // UGV Saif    
