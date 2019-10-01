@@ -51,8 +51,8 @@
 //West
 GVAR(locations_west) =
 [
-    [[9517,0,22347], "Beampunkt 1", 4],
-    [[9553,0,22322], "Beampunkt 2", 4],
+    [[25680,0,20031], "Beampunkt 1", 4],
+    [[13643,0,18620], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
@@ -144,8 +144,8 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[17662,0,8866], "Beampunkt 1", 4],
-    [[17691,0,8853], "Beampunkt 2", 4],
+    [[12763,0,14473], "Beampunkt 1", 4],
+    [[20652,0,9023], "Beampunkt 2", 4],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
