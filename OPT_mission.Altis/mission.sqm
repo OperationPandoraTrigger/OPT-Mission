@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=9917;
+		nextID=9926;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=35164;
+		nextID=35296;
 	};
 	class Camera
 	{
-		pos[]={14962.504,40.588062,12452.587};
-		dir[]={0.55353659,-0.70911133,-0.43683839};
-		up[]={0.55666286,0.70507407,-0.43930551};
-		aside[]={-0.61952406,8.0734026e-007,-0.78502512};
+		pos[]={17497.383,27.559189,21592.002};
+		dir[]={-0.88305044,-0.40908191,0.23040555};
+		up[]={-0.39601341,0.91239995,0.10332856};
+		aside[]={0.25249085,9.8219607e-007,0.96771264};
 	};
 };
 binarizationWanted=0;
@@ -7455,8 +7455,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17489.77,23.42033,21592.414};
-										angles[]={0,5.3938737,0};
+										position[]={17489.65,23.420078,21597.135};
+										angles[]={0,5.4600182,0};
 									};
 									side="West";
 									flags=3;
@@ -7464,118 +7464,7 @@ class Mission
 									{
 										init="call{ (group this) setGroupIdGlobal [""Echo""];}";
 										name="nato_gruppenfuehrer_3";
-										description="Gruppenführer@Echo";
-										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="OPT_arifle_SPAR_01_blk_F";
-												optics="optic_Arco_blk_F";
-												muzzle="ACE_muzzle_mzls_L";
-												flashlight="acc_pointer_IR";
-												class primaryMuzzleMag
-												{
-													name="30Rnd_556x45_Stanag";
-													ammoLeft=30;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="U_B_CTRG_1";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="30Rnd_556x45_Stanag";
-														count=3;
-														ammoLeft=30;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="OPT_V_PlateCarrierL_CTRG";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=2;
-													class Item0
-													{
-														name="HandGrenade";
-														count=3;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="SmokeShell";
-														count=2;
-														ammoLeft=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="TFAR_rt1523g_big_bwmod";
-												isBackpack=1;
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											radio="tf_anprc152";
-											gps="ItemGPS";
-											goggles="G_Tactical_Clear";
-											headgear="OPT_H_HelmetB_snakeskin";
-										};
-									};
-									id=8520;
-									type="OPT_NATO_Gruppenfuehrer";
-									atlOffset=0.2796936;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={17492.352,23.420155,21589.271};
-										angles[]={0,5.4600244,0};
-									};
-									side="West";
-									flags=1;
-									class Attributes
-									{
-										init="call{ (group this) setGroupIdGlobal [""Echo""];}";
-										name="nato_aa_1";
-										description="Flugabwehrschütze@Echo";
+										description="AA_Gruppenführer@Echo";
 										isPlayable=1;
 										class Inventory
 										{
@@ -7667,7 +7556,7 @@ class Mission
 									};
 									id=8521;
 									type="OPT_NATO_Luftabwehrspezialist";
-									atlOffset=0.27951813;
+									atlOffset=0.28618431;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7692,12 +7581,123 @@ class Mission
 										nAttributes=1;
 									};
 								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17492.688,23.420425,21592.105};
+										angles[]={0,5.3938699,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										init="call{ (group this) setGroupIdGlobal [""Echo""];}";
+										name="nato_gruppenfuehrer_13";
+										description="2ter_Gruppenführer@Echo";
+										isPlayable=1;
+										class Inventory
+										{
+											class primaryWeapon
+											{
+												name="OPT_arifle_SPAR_01_blk_F";
+												optics="optic_Arco_blk_F";
+												muzzle="ACE_muzzle_mzls_L";
+												flashlight="acc_pointer_IR";
+												class primaryMuzzleMag
+												{
+													name="30Rnd_556x45_Stanag";
+													ammoLeft=30;
+												};
+											};
+											class binocular
+											{
+												name="Binocular";
+											};
+											class uniform
+											{
+												typeName="U_B_CTRG_1";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="30Rnd_556x45_Stanag";
+														count=3;
+														ammoLeft=30;
+													};
+												};
+											};
+											class vest
+											{
+												typeName="OPT_V_PlateCarrierL_CTRG";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=2;
+													class Item0
+													{
+														name="HandGrenade";
+														count=3;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="SmokeShell";
+														count=2;
+														ammoLeft=1;
+													};
+												};
+											};
+											class backpack
+											{
+												typeName="TFAR_rt1523g_big_bwmod";
+												isBackpack=1;
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+											radio="tf_anprc152";
+											gps="ItemGPS";
+											goggles="G_Tactical_Clear";
+											headgear="OPT_H_HelmetB_snakeskin";
+										};
+									};
+									id=8520;
+									type="OPT_NATO_Gruppenfuehrer";
+									atlOffset=8.392334e-005;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17493.148,23.420574,21590.053};
+										position[]={17494.576,23.420574,21591.377};
 										angles[]={0,5.433372,0};
 									};
 									side="West";
@@ -7862,7 +7862,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17490.568,23.420055,21589.818};
+										position[]={17491.846,23.420055,21591.164};
 										angles[]={0,5.4311008,0};
 									};
 									side="West";
@@ -7991,7 +7991,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17491.902,23.420116,21591.473};
+										position[]={17493.438,23.420116,21592.904};
 										angles[]={0,5.3636827,0};
 									};
 									side="West";
@@ -8078,7 +8078,7 @@ class Mission
 									};
 									id=8524;
 									type="OPT_NATO_PA_Schuetze_Heavy";
-									atlOffset=0.27947998;
+									atlOffset=0.28622246;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8108,7 +8108,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17492.934,23.421953,21586.842};
+										position[]={17494.361,23.421953,21588.166};
 										angles[]={0,5.3866334,0};
 									};
 									side="West";
@@ -8239,7 +8239,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17491.182,23.419842,21590.588};
+										position[]={17493.846,23.419842,21590.451};
 										angles[]={0,5.4530191,0};
 									};
 									side="West";
@@ -8340,7 +8340,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17494.84,23.421772,21589.252};
+										position[]={17496.268,23.421772,21590.576};
 										angles[]={0,5.4219952,0};
 									};
 									side="West";
@@ -8450,7 +8450,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17493.957,23.421892,21588.025};
+										position[]={17495.385,23.421892,21589.35};
 										angles[]={0,5.4219952,0};
 									};
 									side="West";
@@ -8560,7 +8560,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={17491.523,23.420343,21588.088};
+										position[]={17492.951,23.420343,21589.412};
 										angles[]={0,5.4885087,0};
 									};
 									side="West";
@@ -8674,7 +8674,7 @@ class Mission
 								behaviour="CARELESS";
 							};
 							id=8519;
-							atlOffset=0.2796936;
+							atlOffset=0.28618431;
 						};
 						class Item7
 						{
@@ -10369,7 +10369,7 @@ class Mission
 						};
 					};
 					id=2709;
-					atlOffset=1.9631615;
+					atlOffset=1.9312515;
 				};
 				class Item2
 				{
@@ -49648,7 +49648,7 @@ class Mission
 									type="rectangle";
 									a=109.08534;
 									b=19.220396;
-									angle=222.5425;
+									angle=222.54243;
 									id=5819;
 									atlOffset=56.195812;
 								};
