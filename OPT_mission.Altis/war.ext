@@ -35,6 +35,15 @@ class Header {
 	maxPlayers = __PLNUM__;
 	playerCountMultipleOf = 1;
 };
+// wenn nicht auskommentiert mit // dann werden die in der Klammer definierten Channels blockiert und sind nur für den Admin frei
+// 	0 = 	Global
+// 	1 = 	Side
+// 	2 = 	Command
+// 	3 = 	Group
+// 	4 = 	Vehicle
+// 	5 = 	Direct
+// 	6 = 	System
+#define __DISABLE_CHAT_CHANNELS__ {0}
 
 #ifdef __DISABLE_CHAT_CHANNELS__
 	disableChannels[] = __DISABLE_CHAT_CHANNELS__;
