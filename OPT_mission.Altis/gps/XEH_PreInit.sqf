@@ -11,4 +11,4 @@ ADDON = true;
 /* INITIALIZE GLOBAL VARS */
 
 
-[] call FUNC(initCBASettings);
+[] call FUNC(initCBASettings_old);
