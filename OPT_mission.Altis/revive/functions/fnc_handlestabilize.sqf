@@ -70,6 +70,7 @@ sleep 1;
         (_this select 0) params ["_healer", "_patient"];
 
         _patient setVariable ["FAR_isStabilized", 1, true];
+        ["opt_unitStabilized",_patient] call CLib_fnc_localEvent;
         _patient setVariable ["FAR_isDragged", 0, true];
 
         private _name1 = UNIT_NAME(_patient);

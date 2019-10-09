@@ -20,6 +20,7 @@ params ["_unit", "_killer"];
 if (_unit getVariable ["FAR_isUnconscious", 0] == 1) exitWith {};
 
 _unit setVariable ["FAR_isUnconscious", 1, true];
+["opt_unitUnconscious", _unit] call CLib_fnc_localEvent;
 GVAR(bleedOut) = time + FAR_REVIVE_BLEEDOUT;
 FAR_bleedoutMessage = format ["Ausgeblutet in %1 Sekunden", round (GVAR(bleedOut) - time)];
 FAR_bleedoutTimer = round (GVAR(bleedOut) - time);
@@ -73,6 +74,7 @@ _unit allowDamage false;
 _unit playMove "AinjPpneMstpSnonWrflDnon_rolltoback";
 //_unit playActionNow "Down"; // verursacht ragdoll problem -> Stehaufmännchen
 _unit setUnconscious true;
+
 
 _unit switchMove "AinjPpneMstpSnonWrflDnon";
 
@@ -133,8 +135,6 @@ if (FAR_REVIVE_BLEEDOUT > 0 && {time > GVAR(bleedOut)} && {_unit getVariable ["F
 
     _unit action ["WeaponInHand", player];
 	
-	//Signal zu ändern des Markers in Clib
-	//["OPTRemoveMarkerTextRevive",_unit] call CLib_fnc_globalEvent;
 
     if (dialog) then {
         [] spawn {
