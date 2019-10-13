@@ -23,10 +23,10 @@ GVARMAIN(nato_flags_pos) = [
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
 	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
 	   [9710, 22282, west,"11 - Krya Nera",false], // 11 - Krya_Nera
-	   [8560, 20883, west,"12 - Abdera Farm",false], // 12 - Abdera_Farm
+	   [8560, 20883, west,"12 - Abdera Farm",true], // 12 - Abdera_Farm
 	   
 	   [9423, 20273, west,"13 - Trinkertreff",false], // 13 - Trinkertreff
-	   [10351, 19030, west,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
+	   [10351, 19030, west,"14 - Galati alte Post",true], // 14 - Galati_alte_Post
 	   [7515, 18333, west,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
 	   [7174, 16468, west,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
@@ -36,7 +36,7 @@ GVARMAIN(nato_flags_pos) = [
 	   [9489, 8236, west,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
 	   [12346, 22844, west,"20 - Tonos Bucht",false], // 20 - Tonos_Bucht
-	   [13054, 19448, west,"21 - Checkpoint Ifestonia",false], // 21 - Checkpoint_Ifestonia
+	   [13054, 19448, west,"21 - Checkpoint Ifestonia",true], // 21 - Checkpoint_Ifestonia
 	   [12634, 16399, west,"22 - Lacca Fabrik",false], // 22 - Lacca_Fabrik
 
 	   [13273, 14969, west,"23 - Stavros Radar",false], // 23 - Stavros_Radar
@@ -52,14 +52,14 @@ GVARMAIN(nato_flags_pos) = [
 	   [14325, 18928, west,"31 - Mannis Wurstbude",false], // 31 - Mannis_Wurstbude
 	   
 	   [14920, 17172, west,"32 - Airbase Altis",false], // 32 - Airbase_Altis
-	   [13591, 12188, west,"33 - Pool Party",true], // 33 - Pool_Party
+	   [13591, 12188, west,"33 - Pool Party",false], // 33 - Pool_Party
 	   [11922, 9722, west,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
 	   [16603, 19042, west,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 	   
-	   [16459, 17202, west,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
-	   [16654, 16122, west,"37 - Athira Kirchplatz",true], // 37 - Athira_Kirchplatz
-	   [16720, 13548, west,"38 - D-Day",true], // 38 - D-Day
+	   [16459, 17202, west,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
+	   [16654, 16122, west,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
+	   [16720, 13548, west,"38 - D-Day",false], // 38 - D-Day
 
 	   [16589, 12635, west,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
 	   [17806, 10596, west,"40 - Ekali Stones",false], // 40 - Ekali Stones 
@@ -115,21 +115,21 @@ GVARMAIN(csat_flags_pos) = [
 	   
 	   [9423, 20273, east,"13 - Trinkertreff",false], // 13 - Trinkertreff
 	   [10351, 19030, east,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
-	   [7515, 18333, east,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
+	   [7515, 18333, east,"15 - Enclave Syrta",true], // 15 - Enclave_Syrta
 
-	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
-	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
+	   [7174, 16468, east,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
+	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",true], // 17 - Checkpoint Agios Dionisos
 	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
 	   
 	   [9489, 8236, east,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
 
 	   [12346, 22844, east,"20 - Tonos Bucht",false], // 20 - Tonos_Bucht
-	   [13054, 19448, east,"21 - Checkpoint Ifestonia",true], // Checkpoint_Ifestonia
+	   [13054, 19448, east,"21 - Checkpoint Ifestonia",false], // Checkpoint_Ifestonia
 	   [12634, 16399, east,"22 - Lacca Fabrik",false], // 22 - Lacca_Fabrik
 
 	   [13273, 14969, east,"23 - Stavros Radar",false], // 23 - Stavros_Radar
-	   [12178, 14352, east,"24 - Neochori Wollmarkt",true], // 24 - Neochori_Wollmarkt
-	   [11083, 13363, east,"25 - Poliakko alte Brennerei",true], // 25 - Poliakko_alte_Brennerei
+	   [12178, 14352, east,"24 - Neochori Wollmarkt",false], // 24 - Neochori_Wollmarkt
+	   [11083, 13363, east,"25 - Poliakko alte Brennerei",false], // 25 - Poliakko_alte_Brennerei
 	   
 	   [10676, 12234, east,"26 - Therisa Markt",false], // 26 - Therisa_Markt
 	   [10795, 10868, east,"27 - Drimea Fährstation",false], // 27 - Drimea_Fährstation
@@ -137,9 +137,9 @@ GVARMAIN(csat_flags_pos) = [
   
 	   [14283, 22224, east,"29 - Hanf Plantage Frini",false], // 29 - Hanf_Plantage_Frini 
 	   [14752, 20733, east,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
-	   [14325, 18928, east,"31 -  Mannis Wurstbude",true], // 31 -  Mannis_Wurstbude
+	   [14325, 18928, east,"31 -  Mannis Wurstbude",false], // 31 -  Mannis_Wurstbude
 	   
-	   [14920, 17172, east,"32 - Airbase Altis",true], // 32 - Airbase_Altis
+	   [14920, 17172, east,"32 - Airbase Altis",false], // 32 - Airbase_Altis
 	   [13591, 12188, east,"33 - Pool Party",false], // 33 - Pool_party
 	   [11922, 9722, east,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
