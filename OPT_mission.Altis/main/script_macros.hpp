@@ -2,6 +2,7 @@
 // copy the things you need:
 /* https://github.com/CBATeam/CBA_A3/blob/master/addons/main/script_macros_common.hpp */
 #include "cba_macros_common.hpp"
+#include "compat_events.hpp"
 
 #include "script_debug.hpp"
 
