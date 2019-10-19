@@ -112,7 +112,7 @@ sleep 1;
         // -> aktualisiere Fortschrittsbalken
         alive _healer and
         alive _patient and
-        (_healer distance _patient) < 2 and
+//        (_healer distance _patient) < 2 and
         _healer getVariable "FAR_isUnconscious" == 0
 
     }
