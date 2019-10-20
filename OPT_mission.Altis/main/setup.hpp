@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Schmiedegesellen Bia u Kratos"
+#define __MISSION_NAME__ "Der ruhmreiche Hinkfuß"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ v MAJOR.MINOR.BUILD
 // made by
