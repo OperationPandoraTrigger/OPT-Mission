@@ -70,10 +70,10 @@ GVAR(locations_west) =
 	   [[5940.9346,101.7437,12461.137], "9 - Lager Panagiotis",0], // 9 - Lager_Panagiotis
 	   [[7233.4165,4.3041649,11030.594], "10 - Edessa",0], // 10 - Edessa
 	   [[9684.7617,3.5207906,22269.395], "11 - Krya Nera",0], // 11 - Krya_Nera
-	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",1], // 12 - Abdera_Farm
+	   [[8532.0986,68.093964,20879.943], "12 - Abdera Farm",0], // 12 - Abdera_Farm
 	   
 	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
-	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",1], // 14 - Galati_alte_Post
+	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
 	   [[7533.3193,134.73981,18346.297], "15 - Enklave Syrta",0], // 15 - Enclave_Syrta
 
 	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
@@ -83,7 +83,7 @@ GVAR(locations_west) =
 	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",0], // 19 - Hühnerfarm_Sfaka
 
 	   [[12318.005,20.195953,22856.318], "20 - Tonos Bucht",0], // 20 - Tonos_Bucht
-	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",1], // Checkpoint_Ifestonia
+	   [[13013.089,32.230129,19448.695], "21 - Checkpoint Ifestonia",0], // Checkpoint_Ifestonia
 	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",0], // 22 - Lacca_Fabrik
 
 	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",0], // 23 - Stavros_Radar
@@ -109,8 +109,8 @@ GVAR(locations_west) =
 	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
-	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
-	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
+	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",1], // 40 - Ekali Stones 
+	   [[19406.996,50.685932,7955.5903], "41 - Lonely",1], // 42 - Lonely
 
 	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
 	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
@@ -167,10 +167,10 @@ GVAR(locations_east) =
 	   
 	   [[9410.1563,118.25887,20300.502], "13 - Abdera Rathaus",0], // 13 - Abdera_Rathaus
 	   [[10405.196,120.67762,19023.145], "14 - Galati Alte Post",0], // 14 - Galati_alte_Post
-	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",1], // 15 - Enclave_Syrta
+	   [[7533.3193,134.73981,18346.297], "15 - Enclave Syrta",0], // 15 - Enclave_Syrta
 
-	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",1], // 16 - Kore_Zentrum
-	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",1], // 17 - Checkpoint Agios Dionisos
+	   [[7111.4897,111.96675,16438.803], "16 - Kore Zentrum",0], // 16 - Kore_Zentrum
+	   [[9196.6797,120.77501,15821.593], "17 - Checkpoint Agios Dionisos",0], // 17 - Checkpoint Agios Dionisos
 	   [[9301.5342,30.298265,13664.528], "18 - Xirolimni Damm",0], // 18 - Xirolimni_Damm",1
 	   
 	   [[9468.4805,26.262537,8236.5488], "19 - Hühnerfarm Sfaka",0], // 19 - Hühnerfarm_Sfaka
@@ -210,8 +210,8 @@ GVAR(locations_east) =
 	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
-	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
-	   [[20555.693,39.293385,9022.5293], "47 - Panagia",0], // 47 - Panagia
+	   [[20155.959,41.908695,11718.664], "46 - Chalikea",1], // 46 - Chalikea
+	   [[20555.693,39.293385,9022.5293], "47 - Panagia",1], // 47 - Panagia
 	   
 	   [[20907.025,34.035168,6664.6289], "48 - Selakano",0], // 48 - Selakano
 	   [[20092.324,17.621887,20026.533], "49 - Pefka Colloseum",0], // 49 - Pefka Colloseum
