@@ -10,3 +10,6 @@ ADDON = true;
 
 GVAR(msg_waiting) = [];
 GVAR(msg_cur) = [];
+
+// CBA settings
+[] call FUNC(initCBASettings);
