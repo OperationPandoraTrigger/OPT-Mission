@@ -17,8 +17,8 @@ GVARMAIN(nato_flags_pos) = [
 
 	   [5398, 17888, west,"5 - Mine Gore",false], // 5 - Mine_Gore
 	   [6210, 16240, west,"6 - Pennerhotel",false], // 6 - Pennerhotel
-	   [4264, 13929, west,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
-	   [3739, 12997, west,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
+	   [4264, 13929, west,"7 - Checkpoint charlie",true], // 7 - Checkpoint_charlie
+	   [3739, 12997, west,"8 - Die Dächer von Kavalla",true], // 8 - Die_Dächer_von_Kavalla
 
 	   [5924, 12469, west,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
 	   [7285, 11034, west,"10 - Edessa",false], // 10 - Edessa
@@ -62,8 +62,8 @@ GVARMAIN(nato_flags_pos) = [
 	   [16720, 13548, west,"38 - D-Day",false], // 38 - D-Day
 
 	   [16589, 12635, west,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
-	   [17806, 10596, west,"40 - Ekali Stones",true], // 40 - Ekali Stones 
-	   [19422, 7972, west,"41 - Lonely",true], // 42 - Lonely
+	   [17806, 10596, west,"40 - Ekali Stones",false], // 40 - Ekali Stones 
+	   [19422, 7972, west,"41 - Lonely",false], // 42 - Lonely
 
 	   [18897, 16660, west,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
 	   [18374, 15529, west,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
@@ -108,8 +108,8 @@ GVARMAIN(csat_flags_pos) = [
 	   [4264, 13929, east,"7 - Checkpoint charlie",false], // 7 - Checkpoint_charlie
 	   [3739, 12997, east,"8 - Die Dächer von Kavalla",false], // 8 - Die_Dächer_von_Kavalla
 
-	   [5924, 12469, east,"9 - Lager Panagiotis",false], // 9 - Lager_Panagiotis
-	   [7285, 11034, east,"10 - Edessa",false], // 10 - Edessa
+	   [5924, 12469, east,"9 - Lager Panagiotis",true], // 9 - Lager_Panagiotis
+	   [7285, 11034, east,"10 - Edessa",true], // 10 - Edessa
 	   [9710, 22282, east,"11 - Krya Nera",false], // 11 - Krya_Nera
 	   [8560, 20883, east,"12 - Abdera Farm",false], // 12 - Abdera_Farm
 	   
@@ -117,7 +117,7 @@ GVARMAIN(csat_flags_pos) = [
 	   [10351, 19030, east,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
 	   [7515, 18333, east,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
-	   [7174, 16468, east,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
+	   [7174, 16468, east,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
 	   [9239, 15829, east,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
 	   [9321, 13699, east,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm",false
 	   
@@ -158,8 +158,8 @@ GVARMAIN(csat_flags_pos) = [
 	   [18116, 15218, east,"44 - Charkia",false], // 44 - Charkia
 
 	   [19677, 12998, east,"45 - Dorida Woods",false], // 45 - Dorida Woods
-	   [20166, 11710, east,"46 - Chalikea",true], // 46 - Chalikea
-	   [20546, 9003, east,"47 - Panagia",true], // 47 - Panagia
+	   [20166, 11710, east,"46 - Chalikea",false], // 46 - Chalikea
+	   [20546, 9003, east,"47 - Panagia",false], // 47 - Panagia
 	   
 	   [20897, 6643, east,"48 - Selakano",false], // 48 - Selakano
 	   [20077, 20064, east,"49 - Pefka Colloseum",false], // 49 - Pefka Colloseum
