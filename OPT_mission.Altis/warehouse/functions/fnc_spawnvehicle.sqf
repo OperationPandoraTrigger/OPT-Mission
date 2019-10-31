@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Author: James
 * spawn a vehicle 
 *
@@ -113,7 +113,9 @@ for "_i" from 0 to _spiralMaxPoints step 1 do
 if (_placed < 1) then
 {
 	deleteVehicle _vec;
-	hintSilent "Nicht genug Platz vorhanden!";
+	private _displayName = getText (configFile >> "CfgVehicles" >> _vecType >> "displayName");
+	private _txt = format["Nicht genug Platz für %1 vorhanden!",_displayName];
+	["Bestellung", _txt, "red"] remoteExecCall [QEFUNC(gui,message), _unit, false];
 };
 
 GVAR(spawnInProgress) = false;
