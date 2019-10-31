@@ -18,19 +18,6 @@
 
 #include "script_component.hpp"
 
-getGuiX = { // input: GUI-IDC --> output: X-coordinate (based on left/right CBA-setting)
-    private _return = -1;
-    switch (_this) do
-    {
-        case IDC_MSG_background;
-        case IDC_MSG_stripe:        { _return = GUI_MSG_X + GUI_MSG_X_DIFF; };
-        case IDC_MSG_header;
-        case IDC_MSG_content:       { _return = GUI_MSG_X + GUI_MSG_COL + GUI_MSG_X_DIFF; };
-        default                     { _return = -1 };
-    };
-    _return;
-};
-
 If !(hasInterface) exitWith {};
 
 params [
@@ -85,7 +72,7 @@ If (GVAR(msg_cur) isEqualTo []) then {
 
     { // update coordinates of every GUI-IDD because it could have changed (left/right CBA-setting)
         private _pos = ctrlPosition (_display displayCtrl _x);
-        _pos set [0, _x call getGuiX];
+        _pos set [0, _x call FUNC(getguix)];
         (_display displayCtrl _x) ctrlSetPosition _pos;
         (_display displayCtrl _x) ctrlCommit 0;
     } forEach [IDC_MSG_background, IDC_MSG_stripe, IDC_MSG_header, IDC_MSG_content];
@@ -138,7 +125,7 @@ If (GVAR(msg_cur) isEqualTo []) then {
                     private _display = _x;
                     {
                         private _pos = ctrlPosition (_display displayCtrl _x);
-                        (_display displayCtrl _x) ctrlSetPosition [_x call getGuiX, ((_pos select 1) + _move)];
+                        (_display displayCtrl _x) ctrlSetPosition [_x call FUNC(getguix), ((_pos select 1) + _move)];
                         (_display displayCtrl _x) ctrlCommit MOVINGTIME;
                     }forEach [IDC_MSG_background, IDC_MSG_stripe, IDC_MSG_header, IDC_MSG_content];
                 } forEach GVAR(msg_cur);
@@ -154,7 +141,7 @@ If (GVAR(msg_cur) isEqualTo []) then {
 
                 { // update coordinates of every GUI-IDD because it could have changed (left/right CBA-setting)
                     private _pos = ctrlPosition (_display displayCtrl _x);
-                    _pos set [0, _x call getGuiX];
+                    _pos set [0, _x call FUNC(getguix)];
                     (_display displayCtrl _x) ctrlSetPosition _pos;
                     (_display displayCtrl _x) ctrlCommit 0;
                 } forEach [IDC_MSG_background, IDC_MSG_stripe, IDC_MSG_header, IDC_MSG_content];
@@ -166,16 +153,16 @@ If (GVAR(msg_cur) isEqualTo []) then {
                     /// content & background
                     private _curPos = ctrlPosition(_display displayCtrl IDC_MSG_background);
                     _curPos set [3, (ctrlPosition(_display displayCtrl IDC_MSG_content)) select 3];
-                    _curPos set [0, IDC_MSG_background call getGuiX];
+                    _curPos set [0, IDC_MSG_background call FUNC(getguix)];
                     (_display displayCtrl IDC_MSG_background) ctrlSetPosition _curPos;
                     (_display displayCtrl IDC_MSG_background) ctrlCommit 0;
-                    _curPos set [0, IDC_MSG_content call getGuiX];
+                    _curPos set [0, IDC_MSG_content call FUNC(getguix)];
                     (_display displayCtrl IDC_MSG_content) ctrlSetPosition _curPos;
                     (_display displayCtrl IDC_MSG_content) ctrlCommit 0;
                     /// color
                     private _curPos = ctrlPosition(_display displayCtrl IDC_MSG_stripe);
                     _curPos set [3, (ctrlPosition(_display displayCtrl IDC_MSG_content)) select 3];
-                    _curPos set [0, IDC_MSG_stripe call getGuiX];
+                    _curPos set [0, IDC_MSG_stripe call FUNC(getguix)];
                     (_display displayCtrl IDC_MSG_stripe) ctrlSetPosition _curPos;
                     (_display displayCtrl IDC_MSG_stripe) ctrlCommit 0;
                 };
@@ -183,13 +170,13 @@ If (GVAR(msg_cur) isEqualTo []) then {
                     /// background
                     private _curPos = ctrlPosition(_display displayCtrl IDC_MSG_background);
                     _curPos set [3, (ctrlPosition(_display displayCtrl IDC_MSG_header)) select 3];
-                    _curPos set [0, IDC_MSG_background call getGuiX];
+                    _curPos set [0, IDC_MSG_background call FUNC(getguix)];
                     (_display displayCtrl IDC_MSG_background) ctrlSetPosition _curPos;
                     (_display displayCtrl IDC_MSG_background) ctrlCommit 0;
                     /// color
                     private _curPos = ctrlPosition(_display displayCtrl IDC_MSG_stripe);
                     _curPos set [3, (ctrlPosition(_display displayCtrl IDC_MSG_header)) select 3];
-                    _curPos set [0, IDC_MSG_stripe call getGuiX];
+                    _curPos set [0, IDC_MSG_stripe call FUNC(getguix)];
                     (_display displayCtrl IDC_MSG_stripe) ctrlSetPosition _curPos;
                     (_display displayCtrl IDC_MSG_stripe) ctrlCommit 0;
                 };
