@@ -7,7 +7,7 @@ class APP(message_1) {
     w = GUI_MSG_W;
     h = GUI_MSG_H;
     fade = 1;
-    duration = 15;
+    duration = 7;
     onLoad = QUOTE(with missionnameSpace do {disableSerialization; GVAR(msg_cur) - [_this select 0];GVAR(msg_cur) pushBack (_this select 0);};);
     class controls {
         class background : RSC(BaseText) {
