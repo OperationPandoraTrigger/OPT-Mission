@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Author: James
 * reformat budget text and write it in the control field
 *
@@ -19,7 +19,7 @@ params ["_budget_field"];
 private _side = PLAYER_SIDE;
 private _side_Budget = if (_side == west) then {GVARMAIN(nato_budget)} else {GVARMAIN(csat_budget)};
 
-private _txt = if (_side_Budget > 1e6-1) then {
+private _txt = if (_side_Budget >= 1e6) then {
     format ["Budget: %1 Mio. €", str(_side_Budget / 1e6)];    // psycho: budget muss numerisch reduziert werden um Darstellung aufrecht zu erhalten
 } else {
     format ["Budget: %1 €", str(_side_Budget)];
@@ -34,6 +34,11 @@ if (_side_Budget < 4e5) then {
 if (_side_Budget < 0) then {
     _txt = format["Dispo: %1 €", str(_side_Budget)];
     _budget_field ctrlSetTextColor [1,0,0,1];
+};
+
+// Falls Budget sehr negativ: Zeige Dispo in Mio.
+if (_side_Budget <= -1e6) then {
+    _txt = format ["Dispo: %1 Mio. €", str(_side_Budget / 1e6)];
 };
 
 _budget_field ctrlSetText _txt;
