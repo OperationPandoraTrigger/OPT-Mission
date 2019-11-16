@@ -29,8 +29,8 @@ GVARMAIN(nato_flags_pos) = [
 	   [10351, 19030, west,"14 - Galati alte Post",false], // 14 - Galati_alte_Post
 	   [7515, 18333, west,"15 - Enclave Syrta",false], // 15 - Enclave_Syrta
 
-	   [7174, 16468, west,"16 - Kore Zentrum",true], // 16 - Kore_Zentrum
-	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",true], // 17 - Checkpoint Agios Dionisos
+	   [7174, 16468, west,"16 - Kore Zentrum",false], // 16 - Kore_Zentrum
+	   [9239, 15829, west,"17 - Checkpoint Agios Dionisos",false], // 17 - Checkpoint Agios Dionisos
 	   [9321, 13699, west,"18 - Xirolimni Damm",false], // 18 - Xirolimni_Damm"
 	   
 	   [9489, 8236, west,"19 - Hühnerfarm Sfaka",false], // 19 - Hühnerfarm_Sfaka
@@ -59,14 +59,14 @@ GVARMAIN(nato_flags_pos) = [
 	   
 	   [16459, 17202, west,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
 	   [16654, 16122, west,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
-	   [16720, 13548, west,"38 - D-Day",false], // 38 - D-Day
+	   [16720, 13548, west,"38 - D-Day",true], // 38 - D-Day
 
 	   [16589, 12635, west,"39 - Pyrgos Zentrum",false], // 39 - Pyrgos_Zentrum
-	   [17806, 10596, west,"40 - Ekali Stones",false], // 40 - Ekali Stones 
+	   [17806, 10596, west,"40 - Ekali Stones",true], // 40 - Ekali Stones 
 	   [19422, 7972, west,"41 - Lonely",false], // 42 - Lonely
 
-	   [18897, 16660, west,"42 - Rodopoli Graveyard",false], // 42 - Rodopoli Graveyard
-	   [18374, 15529, west,"43 - Ursulas Truckstop",false], // 43 - Ursulas_Truckstop
+	   [18897, 16660, west,"42 - Rodopoli Graveyard",true], // 42 - Rodopoli Graveyard
+	   [18374, 15529, west,"43 - Ursulas Truckstop",true], // 43 - Ursulas_Truckstop
 	   [18116, 15218, west,"44 - Charkia",false], // 44 - Charkia
 
 	   [19677, 12998, west,"45 - Dorida Woods",false], // 45 - Dorida Woods
@@ -131,7 +131,7 @@ GVARMAIN(csat_flags_pos) = [
 	   [12178, 14352, east,"24 - Neochori Wollmarkt",true], // 24 - Neochori_Wollmarkt
 	   [11083, 13363, east,"25 - Poliakko alte Brennerei",false], // 25 - Poliakko_alte_Brennerei
 	   
-	   [10676, 12234, east,"26 - Therisa Markt",true], // 26 - Therisa_Markt
+	   [10676, 12234, east,"26 - Therisa Markt",false], // 26 - Therisa_Markt
 	   [10795, 10868, east,"27 - Drimea Fährstation",false], // 27 - Drimea_Fährstation
 	   [11536, 7047, east,"28 - Egino Farmhaus",false], // 28 - Egino_Farmhaus
   
@@ -139,13 +139,13 @@ GVARMAIN(csat_flags_pos) = [
 	   [14752, 20733, east,"30 - Frini Polizeistation",false], // 30 - Frini_Polizeistation
 	   [14325, 18928, east,"31 -  Mannis Wurstbude",false], // 31 -  Mannis_Wurstbude
 	   
-	   [14920, 17172, east,"32 - Airbase Altis",false], // 32 - Airbase_Altis
-	   [13591, 12188, east,"33 - Pool Party",false], // 33 - Pool_party
+	   [14920, 17172, east,"32 - Airbase Altis",true], // 32 - Airbase_Altis
+	   [13591, 12188, east,"33 - Pool Party",true], // 33 - Pool_party
 	   [11922, 9722, east,"34 - Alpaka Residenz",false], // 34 - Alpaka_Residenz
 	   
 	   [16603, 19042, east,"35 - Kalithea Kontrolltower",false], // 35 - Kalithea_Kontrolltower
 
-	   [16459, 17202, east,"36 - Thelos Zentrum",false], // 36 - Thelos_Zentrum
+	   [16459, 17202, east,"36 - Thelos Zentrum",true], // 36 - Thelos_Zentrum
 	   [16654, 16122, east,"37 - Athira Kirchplatz",false], // 37 - Athira_Kirchplatz
 	   [16720, 13548, east,"38 - D-Day",false], // 38 _ D_Day
 
