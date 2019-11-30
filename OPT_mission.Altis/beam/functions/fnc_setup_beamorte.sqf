@@ -106,15 +106,15 @@ GVAR(locations_west) =
 	   
 	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
-	   [[16703.346,10.311413,13522.601], "38 - D_Day",1], // 38 _ D_Day
+	   [[16703.346,10.311413,13522.601], "38 - D_Day",0], // 38 _ D_Day
 
 	   [[16611.455,13.550769,12640.338], "39 - Pyrgos Zentrum",0], // 39 - Pyrgos_Zentrum
-	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",1], // 40 - Ekali Stones 
+	   [[17769.818,41.113083,10566.192], "40 - Ekali Stones",0], // 40 - Ekali Stones 
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
-	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",1], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
-	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
+	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
+	   [[18215.266,27.873819,15283.528], "44 - Charkia",1], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
 	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
@@ -180,7 +180,7 @@ GVAR(locations_east) =
 	   [[12672.666,34.210361,16390.48], "22 - Lacca Fabrik",0], // 22 - Lacca_Fabrik
 
 	   [[13248.13,13.200888,14947.823], "23 - Stavros Radar",0], // 23 - Stavros_Radar
-	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",1], // 24 - Neochori_Wollmarkt
+	   [[12151.891,9.668313,14330.698], "24 - Neochori Wollmarkt",0], // 24 - Neochori_Wollmarkt
 	   [[11105.64,19.684849,13325.393], "25 - Poliakko alte Brennerei",0], // 25 - Poliakko_alte_Brennerei
 	   
 	   [[10675.173,16.757935,12266.578], "26 - Therisa Markt",0], // 26 - Therisa_Markt
@@ -191,13 +191,13 @@ GVAR(locations_east) =
 	   [[14716.515,46.701706,20735.465], "30 - Frini Polizeistation",0], // 30 - Frini_Polizeistation
 	   [[14320.399,36.900391,18909.221], "31 - Athira Factory",0], // 31 - Athira_Factory
 	   
-	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",1], // 32 - Airbase_Altis
-	   [[13589.743,16.363777,12166.921], "33 - Pool Party",1], // 33 - Pool_party
+	   [[14937.858,17.528454,17153.338], "32 - Airbase Altis",0], // 32 - Airbase_Altis
+	   [[13589.743,16.363777,12166.921], "33 - Pool Party",0], // 33 - Pool_party
 	   [[11908.478,15.18861,9707.3877], "34 - Alpaka Residenz",0], // 34 - Alpaka_Residenz
 	   
 	   [[16587.895,35.317459,19002.33], "35 - Kalithea Kontrolltower",0], // 35 - Kalithea_Kontrolltower
 	   
-	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",1], // 36 - Thelos_Zentrum
+	   [[16451.031,24.131969,17237.797], "36 - Thelos Zentrum",0], // 36 - Thelos_Zentrum
 	   [[16681.539,18.231377,16143.08], "37 - Athira Kirchplatz",0], // 37 - Athira_Kirchplatz
 	   [[16703.346,10.311413,13522.601], "38 - D-Day",0], // 38 _ D_Day
 
@@ -206,8 +206,8 @@ GVAR(locations_east) =
 	   [[19406.996,50.685932,7955.5903], "41 - Lonely",0], // 42 - Lonely
 
 	   [[18943.773,28.606129,16660.947], "42 - Rodopoli Graveyard",0], // 42 - Rodopoli Graveyard
-	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",0], // 43 - Charkia Storage
-	   [[18147.764,25.077732,15225.152], "44 - Charkia",0], // 44 - Charkia
+	   [[18420.234,49.431179,15511.571], "43 - Charkia Storage",1], // 43 - Charkia Storage
+	   [[18215.266,27.873819,15283.528], "44 - Charkia",0], // 44 - Charkia
 
 	   [[19702.965,89.270676,12960.619], "45 - Dorida Woods",0], // 45 - Dorida Woods
 	   [[20155.959,41.908695,11718.664], "46 - Chalikea",0], // 46 - Chalikea
