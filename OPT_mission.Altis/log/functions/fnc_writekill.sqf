@@ -78,32 +78,27 @@ if (_victim isKindOf "Man") then {
     };
 
     // projectile known?
-    if !(_projectile isEqualTo "") then
-    {
-
+    if !(_projectile isEqualTo "") then {
+        
         // find display name of magazine
         private _name = "";
-        ([configFile >> "CfgMagazines", 0, true] call BIS_fnc_returnChildren) apply
         {
-            if (getText (_x >> "ammo") isEqualTo _projectile) exitWith
-            {
+            if (getText (_x >> "ammo") isEqualTo _projectile) exitWith {
                 // find upmost parent that is not too generic
                 private _parent = _x;
-                while {!(getText ((inheritsFrom _parent) >> "displayName") isEqualTo "")} do
-                {
+                while {!(getText ((inheritsFrom _parent) >> "displayName") isEqualTo "")} do {
                     _parent = inheritsFrom _x;
                 };
                 _name = getText (_parent >> "displayName");
 
-                if !(_name isEqualTo "") then
-                {
+                if !(_name isEqualTo "") then {
                     _message = format["%1 (magazine: %2)", _message, _name];
                 };
-
-            };
-
-        };
-
+                
+            };  
+        
+        } forEach ([configFile >> "CfgMagazines", 0, true] call BIS_fnc_returnChildren);
+        
     };
 
 } else {

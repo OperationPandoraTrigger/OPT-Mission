@@ -70,6 +70,7 @@ sleep 1;
         (_this select 0) params ["_healer", "_patient"];
 
         _patient setVariable ["FAR_isStabilized", 1, true];
+        [EVENT_MEDIC_STABILIZED,_patient] call CLib_fnc_localEvent;
         _patient setVariable ["FAR_isDragged", 0, true];
 
         private _name1 = UNIT_NAME(_patient);
@@ -111,7 +112,7 @@ sleep 1;
         // -> aktualisiere Fortschrittsbalken
         alive _healer and
         alive _patient and
-        (_healer distance _patient) < 2 and
+//        (_healer distance _patient) < 2 and
         _healer getVariable "FAR_isUnconscious" == 0
 
     }

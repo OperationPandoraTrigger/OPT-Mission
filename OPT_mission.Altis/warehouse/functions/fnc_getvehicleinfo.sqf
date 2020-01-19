@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Author: James
 * read out vehicle info from config
 *
@@ -126,7 +126,7 @@ if (_class isKindOf "AllVehicles" and !(_class isKindOf "StaticWeapon")) then {
     private _armor = getNumber(configFile >> "cfgVehicles" >> _class >> "armor");
 
     _return = format [
-"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2</t><br/>
+"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2 €</t><br/>
 <t align='left'>Waffen:</t><br/>
 <t align='left' color='#00ff00'>%3</t><br/>
 <t align='left'>Sitzplätze:</t> <t align='right' color='#00ff00'>%4</t><br/>
@@ -182,7 +182,7 @@ if (_class isKindOf "StaticWeapon") then {
     private _model = getText(configFile >> "cfgVehicles" >> _class >> "model");
 
     _return = format [
-"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2</t><br/>
+"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2 €</t><br/>
 <t align='left'>Waffen:</t><br/>
 <t align='left' color='#00ff00'>%3</t><br/>
 <t align='left'>Sitzplätze:</t> <t align='right' color='#00ff00'>%4</t><br/>
@@ -237,7 +237,7 @@ if (_class isKindOf "ThingX") then {
 	//systemChat format ["IB:%1 MB:%2 WB:%3",_transportItems,_transportMagazines,_transportWeapons];
 
     _return = format [
-"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2</t><br/>
+"<t size='0.9'><t align='left'>%1:</t> <t align='right' color='#00ff00'>%2 €</t><br/>
 <t align='left'>Volumen:</t> <t align='right' color='#00ff00'>%6 l</t><br/>
 <t align='left'>Bewegbarkeit:</t> <t align='right' color='#00ff00'>%7</t><br/>
 <t align='left'>Waffen:</t> <t align='right' color='#00ff00'>%3</t><br/>

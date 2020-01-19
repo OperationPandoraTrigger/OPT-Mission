@@ -8,8 +8,7 @@ PREP_RECOMPILE_END;
 
 ADDON = true;
 
-GVAR(msg_waiting) = [];
-GVAR(msg_cur) = [];
+/* INITIALIZE GLOBAL VARS */
 
-// CBA settings
-[] call FUNC(initCBASettings);
+
+[] call FUNC(initCBASettings_old);

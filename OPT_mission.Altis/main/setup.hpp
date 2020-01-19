@@ -9,13 +9,13 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Auf den Schenkeln der Göttin"
+#define __MISSION_NAME__ "Zweizack des Hades"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
-#define __VERSION__ Complete new build 1.MAJOR.MINOR.BUILD
+#define __VERSION__ v MAJOR.MINOR.BUILD
 // made by
-#define __MADE_BY__ "James & Lord-MDB"
+#define __MADE_BY__ "Oppa, Lord, Senshi"
 // short description
-#define __MISSION_DESCRIPTION__ "This is an Operation Pandora Trigger Mission"
+#define __MISSION_DESCRIPTION__ "This is the Operation Pandora Trigger Mission"
 
 // festlegen des Respawn Typs:
 // 0 = No Respawn (NONE)

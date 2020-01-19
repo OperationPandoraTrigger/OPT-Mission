@@ -139,10 +139,16 @@ force OPT_warehouse_saleRadius = 15;
 force OPT_warehouse_saleReturnValueForEnemy = 1.5;
 force OPT_warehouse_saleReturnValueForOwn = 0.75;
 
+// OPT GPS
+
+force OPT_gps_maxMarkerNo = 80;
+
+
 // OPT Komponenten
 force OPT_beam_on = true;
 force OPT_cargo_on = true;
 force OPT_fieldrepair_on = true;
+force OPT_gps_on = false;
 force OPT_hud_on = true;
 force OPT_marker_on = true;
 force OPT_mhq_on = false;
@@ -182,7 +188,7 @@ force FAR_REVIVE_3D_ICONS = true;
 force FAR_REVIVE_BLEEDOUT = 600;
 force FAR_REVIVE_CALL_NEARBY_MEDICS = true;
 force FAR_REVIVE_DEATH_MESSAGE = true;
-force FAR_REVIVE_DOWN_MARKER = true;
+force FAR_REVIVE_DOWN_MARKER = false;
 force FAR_REVIVE_FIRST_AID_MIN_DAMAGE = 0.3;
 force FAR_REVIVE_FIRST_AID_MULTIPLIER = 0.05;
 force FAR_REVIVE_FIRST_AID_TIME = 25;
@@ -228,12 +234,12 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "41,42,43,44,45,46,47,48,49";
+force TFAR_setting_defaultFrequencies_lr_east = "40,50,60,41,42,43,51,61,62";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_sr_east = "71,72,73,74,75,76,77,78";
+force TFAR_setting_defaultFrequencies_lr_west = "71,42,43,74,45,46,47,48,49";
+force TFAR_setting_defaultFrequencies_sr_east = "41,42,43,60,61,62,50,51";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
+force TFAR_setting_defaultFrequencies_sr_west = "71,72,73,74,75,76,77,78";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";

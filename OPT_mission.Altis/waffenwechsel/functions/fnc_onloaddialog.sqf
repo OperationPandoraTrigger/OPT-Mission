@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Funktion Dialog Waffenwechsel
 * 
 * Author:
@@ -45,7 +45,7 @@ ctrlShow [10033, false ];
 ctrlShow [10034, false ];
 ctrlShow [10035, false ];
 ctrlShow [10036, false ];
-ctrlSetText [10001, "$:0"];
+ctrlSetText [10001, "0 €"];
 
 //Fahrzeugfeststellung
 _veh = vehicle player;
@@ -368,7 +368,7 @@ private _bewaffnungpreis = 0;
 if (_side isEqualTo civilian) then 
 {
     //Box7 füllen
-    private _index = lbAdd [10016, format ["Datalink $%1", GVAR(preisDatalink)]];    
+    private _index = lbAdd [10016, format ["Datalink %1 €", GVAR(preisDatalink)]];    
     _index = lbAdd [10016, "Leer"];    
 
     ctrlSetText [10043, "Datalink"];
@@ -405,13 +405,13 @@ else
             _index = lbAdd 
 			[
                 10010, 
-                format["%1 $%2", _heli select _x select 4, _heli select _x select 3]     
+                format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]     
             ];
 
             _index = lbAdd 
 			[
                 10011, 
-                format["%1 $%2", _heli select _x select 4, _heli select _x select 3]
+                format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]
             ];
 
         } forEach (_boxArry select 1);     
@@ -439,13 +439,13 @@ else
             _index = lbAdd 
 			[
                 10012,
-                format["%1 $%2", _heli select _x select 4, _heli select _x select 3]
+                format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]
             ];
 
             _index = lbAdd 
 			[
                 10013, 
-                format["%1 $%2", _heli select _x select 4, _heli select _x select 3]
+                format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]
             ];
 
         } forEach (_boxArry select 0);
@@ -475,13 +475,13 @@ else
                 _index = lbAdd 
 				[
                     10014, 
-                    format["%1 $%2", _heli select _x select 4, _heli select _x select 3]
+                    format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]
                 ];
 
                 _index = lbAdd 
 				[
                     10015, 
-                    format["%1 $%2", _heli select _x select 4, _heli select _x select 3]
+                    format["%1 %2 €", _heli select _x select 4, _heli select _x select 3]
                 ];
 
             } forEach (_boxArry select 0);
@@ -511,13 +511,13 @@ else
             _index = lbAdd 
 			[
                 10010, 
-                format["%1 $%2", _vehSelect select _x select 4,_vehSelect select _x select 3]
+                format["%1 %2 €", _vehSelect select _x select 4,_vehSelect select _x select 3]
             ];
 
             _index = lbAdd 
 			[
                 10011, 
-                format["%1 $%2", _vehSelect select _x select 4, _vehSelect select _x select 3]
+                format["%1 %2 €", _vehSelect select _x select 4, _vehSelect select _x select 3]
             ];
 
         } forEach (_boxArry select 1);
@@ -546,12 +546,12 @@ else
             _index = lbAdd 
 			[
                 10012, 
-                format["%1 $%2", _vehSelect select _x select 4, _vehSelect select _x select 3]
+                format["%1 %2 €", _vehSelect select _x select 4, _vehSelect select _x select 3]
             ];
 
             _index = lbAdd 
 			[
-                10013, format["%1 $%2", _vehSelect select _x select 4, _vehSelect select _x select 3]
+                10013, format["%1 %2 €", _vehSelect select _x select 4, _vehSelect select _x select 3]
             ];
 
         } forEach (_boxArry select 1);
@@ -569,7 +569,7 @@ else
             _index = lbAdd 
 			[
                 10014, 
-                format ["Drahtkäfig $%1", GVAR(preisDrahtkafig)]
+                format ["Drahtkäfig %1 €", GVAR(preisDrahtkafig)]
             ];
 
             _index = lbAdd [10014,"Leer"];
@@ -583,7 +583,7 @@ else
             _index = lbAdd 
 			[
                 10015,
-				format ["Tarnung $%1", GVAR(preisTarnung)]
+				format ["Tarnung %1 €", GVAR(preisTarnung)]
             ];
 
             _index = lbAdd [10015,"Leer"];    
@@ -598,7 +598,7 @@ else
         _index = lbAdd 
 		[
             10016,
-            format ["Datalink $%1", GVAR(preisDatalink)]
+            format ["Datalink %1 €", GVAR(preisDatalink)]
         ];  
 
         _index = lbAdd [10016,"Leer"]; 
@@ -606,7 +606,7 @@ else
         ctrlSetText [10043, "Datalink"];
     };
 	
-    ctrlSetText [10001, format["$:%1", _bewaffnungpreis]];	
+    ctrlSetText [10001, format["%1 €", _bewaffnungpreis]];	
 };     
 
 // Abfrage Laden Loadouts
@@ -954,7 +954,7 @@ while {((OPTWWbuygo == 0) and (OPTWWlostgo == 0) and dialog)} do
         };
     };        
                                     
-    ctrlSetText [10001, format["$:%1", (_bewaffnungpreis -_wert)]];    
+    ctrlSetText [10001, format["%1 €", (_bewaffnungpreis -_wert)]];    
 };
 
 (gunner _veh) action ["getout", _veh];

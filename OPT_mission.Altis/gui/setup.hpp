@@ -1,1 +1,1 @@
-#define MOVINGTIME (3 * _move)
+#define MOVINGTIME (1 * _move)

@@ -90,6 +90,7 @@ sleep 1;
         _patient setVariable ["FAR_firstAidMultiplicator", 0, true];
                 
         _patient setVariable ["FAR_isUnconscious", 0, true];
+        [EVENT_MEDIC_REVIVED,_patient] call CLib_fnc_localEvent;
         _patient setVariable ["FAR_isDragged", 0, true];
 
         private _name1 = UNIT_NAME(_patient);
