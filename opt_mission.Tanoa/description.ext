@@ -1,0 +1,42 @@
+//Respawn = 3;
+//respawnOnStart=-1;
+
+#define EXCLUDE_CBA_MACROS
+#include "main\script_component.hpp"
+
+MISSION_VERSION;
+
+#include "CfgEventhandlers.hpp"
+
+#include "main\config.hpp"      // for all basic definitions
+
+/* COMPONENT DIALOGS */
+#include "beam\config.hpp"      // Beam dialog for players
+#include "revive\config.hpp"    // dialog for bleed out overlay
+#include "training\config.hpp"  // dialog for changing flag positions in training mode
+#include "warehouse\config.hpp" // economic system for buying and selling
+#include "waffenwechsel\config.hpp" // Waffenwechselsystem
+
+/* COMPONENT RESOURCES */
+class RscTitles {
+    #include "gui\rsc.hpp"
+    #include "hud\rsc.hpp"
+};
+
+class CLib {
+    class GarbageCollector {
+        EnableGarbageCollector = 0;
+        GarbageCollectorTime = 300;
+    };
+    // Modules[] = {"CLib", "PerformanceMonitor","OPT/tracker","OPT/gps"};
+    Modules[] = {"CLib", "PerformanceMonitor", "OPT"};
+    useExperimentalAutoload = 0;
+    useCompressedFunction = 0;
+    useFallbackRemoteExecution = 0;
+};
+
+cba_settings_hasSettingsFile = 1;
+
+//#include "war.ext"
+#include "train.ext"
+
