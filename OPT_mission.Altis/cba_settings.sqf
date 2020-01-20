@@ -130,8 +130,8 @@ force DEFAULT_FULLREPAIR_LENGTH = 60;
 force DEFAULT_REPAIR_TRUCK_USES = 10;
 
 // OPT Kaufsystem
-force OPT_PARAM_ONLY_CREW = false;
-force OPT_PARAM_ONLY_PILOTS = false;
+force OPT_PARAM_ONLY_CREW = true;
+force OPT_PARAM_ONLY_PILOTS = true;
 force OPT_warehouse_allowSale = true;
 force OPT_warehouse_blockedVehiclePositions = ["driver"];
 force OPT_warehouse_orderSpawnRadius = 15;

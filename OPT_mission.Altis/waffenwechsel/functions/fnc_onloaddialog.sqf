@@ -165,6 +165,83 @@ if (_vehType in (GVAR(vehclasswestWW) + GVAR(vehclasseastWW))) then
             _pylon = [];
 			_loadouts = GVAR(Scorcherloadout);
         }; 
+		case "OPT4_B_MRAP_01_hmg_ghex_F": 
+		{
+            _boxArry = GVAR(HunterHMG);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(HunterHMGloadout);
+        };
+        case "OPT4_B_MRAP_01_gmg_ghex_F": 
+		{
+            _boxArry = GVAR(HunterGMG);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(HunterGMGloadout);
+        };
+        case "OPT4_B_MRAP_03_gmg_ghex_F": 
+		{
+            _boxArry = GVAR(StriderGMG);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(StriderGMGloadout);
+        };
+        case "OPT_B_T_LSV_01_armed_ghex_F": 
+		{
+            _boxArry = GVAR(ProwlerHMG);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(ProwlerHMGloadout);
+        };
+        case "OPT4_B_LSV_01_AT_ghex_F": 
+		{
+            _boxArry = GVAR(ProwlerAT);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(ProwlerATloadout);
+        };
+        case "OPT4_B_APC_Tracked_01_rcws_ghex_F": 
+		{
+            _boxArry = GVAR(Panther);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(Pantherloadout);
+        };
+        case "OPT4_B_APC_Wheeled_01_cannon_ghex_F": 
+		{
+            _boxArry = GVAR(Marshall);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(Marshallloadout);
+        };
+        case "OPT4_B_APC_tracked_03_cannon_ghex_F": 
+		{
+            _boxArry = GVAR(Mora);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(Moraloadout);
+        };
+        case "OPT4_B_APC_Tracked_01_AA_ghex_F": 
+		{
+            _boxArry = GVAR(Cheetah);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(Cheetahloadout);
+        };
+        case "OPT4_B_MBT_01_TUSK_ghex_F": 
+		{
+            _boxArry = GVAR(SlammerUp);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(SlammerUploadout);
+        };    
+        case "OPT4_B_MBT_01_arty_ghex_F": 
+		{
+            _boxArry = GVAR(Scorcher);
+            _side = west;
+            _pylon = [];
+			_loadouts = GVAR(Scorcherloadout);
+        }; 
         
         // EAST
         case "OPT4_O_Heli_Light_02_F": 
@@ -258,6 +335,69 @@ if (_vehType in (GVAR(vehclasswestWW) + GVAR(vehclasseastWW))) then
             _pylon = [];
 			_loadouts = GVAR(Sochorloadout);
         }; 
+		case "OPT4_O_T_MRAP_02_hmg_ghex_F": 
+		{
+            _boxArry = GVAR(irifHMG);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(irifHMGloadout);
+        };
+        case "OPT4_O_T_MRAP_02_gmg_ghex_F": 
+		{
+            _boxArry = GVAR(irifGMG);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(irifGMGloadout);
+        };
+        case "OPT_O_T_LSV_02_armed_ghex_F": 
+		{
+            _boxArry = GVAR(QuilinHMG);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(QuilinHMGloadout);
+        };
+        case "OPT4_O_LSV_02_AT_ghex_F": 
+		{
+            _boxArry = GVAR(QuilinAT);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(QuilinATloadout);
+        };
+        case "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F": 
+		{
+            _boxArry = GVAR(Marid);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(Maridloadout);
+        };
+        case "OPT4_O_APC_Wheeled_03_cannon_ghex_F": 
+		{
+            _boxArry = GVAR(Gorgon);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(Gorgonloadout);
+        };
+        case "OPT4_O_T_APC_Tracked_02_cannon_ghex_F": 
+		{
+            _boxArry = GVAR(Kamysh);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(Kamyshloadout);
+        };
+        case "OPT4_O_T_APC_Tracked_02_AA_ghex_F": 
+		{
+            _boxArry = GVAR(Tigris);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(Tigrisloadout);
+        };    
+        case "OPT4_O_T_MBT_02_cannon_ghex_F": 
+		{
+            _boxArry = GVAR(Varsuk);
+            _side = east;
+            _pylon = [];
+			_loadouts = GVAR(Varsukloadout);
+        };		
         case "OPT4_O_T_MBT_02_arty_ghex_F": 
 		{
             _boxArry = GVAR(Sochor);

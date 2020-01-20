@@ -44,11 +44,6 @@ if (_scanRadius < 2) then { _scanRadius = 2; };
 // Große Gegenstände (wie z.B. der Huron) sollen ihren Platzbedarf mal nicht so übertreiben
 if (_scanRadius > 20) then { _scanRadius = 20; };
 
-//Pawnee-DAR-Entfernung für Heli-tvText
-if (_vecType == "B_Heli_Light_01_dynamicLoadout_F") then {
-	_vec removeWeaponTurret ["missiles_DAR", [-1]];
-};
-
 private _spiralMaxPoints = 100; 
 private _spiralDistance = 0.005;
 

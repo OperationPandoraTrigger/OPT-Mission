@@ -251,47 +251,61 @@ GVAR(Sochor) = [[], [40, 41, 42], [0, 0], [1], [0, 4]];
 //Fahrzeuge die zugelassen sind
 GVAR(vehclasswestWW) = 
 [
-    "OPT4_B_MBT_03_cannon_F",
     "OPT4_B_MRAP_01_gmg_F",
     "OPT4_B_MRAP_01_hmg_F",
-    "OPT4_B_Heli_Attack_01_F",
-    "OPT4_B_Heli_Attack_01_F",
+	"OPT4_B_LSV_01_AT_F",
     "OPT4_B_Heli_Light_01_armed_F",
+    "OPT4_B_Heli_light_03_green_F",
+    "OPT4_B_Heli_Attack_01_F",
     "OPT4_B_APC_tracked_03_cannon_F",
-    "OPT4_B_APC_Wheeled_01_cannon_F",
     "OPT4_B_APC_Wheeled_01_cannon_F",
     "OPT4_B_APC_Tracked_01_rcws_F",
     "OPT4_B_APC_Tracked_01_AA_F",
     "OPT4_B_MBT_01_cannon_F",
     "OPT4_B_MBT_01_TUSK_F",
     "OPT4_B_MBT_01_arty_F",
-    "OPT4_B_MRAP_03_gmg_F",
+    "OPT4_B_MBT_03_cannon_F",
+	//Tropentarn
+    "OPT4_B_MRAP_01_gmg_ghex_F",
+    "OPT4_B_MRAP_01_hmg_ghex_F",
+	"OPT4_B_LSV_01_AT_ghex_F",
+    "OPT4_B_Heli_Light_01_armed_F",
     "OPT4_B_Heli_light_03_green_F",
-    "OPT4_B_MRAP_03_gmg_F",
-    "OPT4_B_LSV_01_AT_F"
+    "OPT4_B_Heli_Attack_01_F",
+    "OPT4_B_APC_tracked_03_cannon_ghex_F",
+    "OPT4_B_APC_Wheeled_01_cannon_ghex_F",
+    "OPT4_B_APC_Tracked_01_rcws_ghex_F",
+    "OPT4_B_APC_Tracked_01_AA_ghex_F",
+    "OPT4_B_MBT_01_cannon_ghex_F",
+    "OPT4_B_MBT_01_TUSK_ghex_F",
+    "OPT4_B_MBT_01_arty_ghex_F",
+    "OPT4_B_MBT_03_cannon_ghex_F"		
 ];
 
 GVAR(vehclasseastWW) = 
 [
     "OPT4_O_MRAP_02_hmg_F", 
     "OPT4_O_MRAP_02_gmg_F",
+	"OPT4_O_LSV_02_AT_F",	
     "OPT4_O_Heli_light_03_F",
     "OPT4_O_Heli_Light_02_F",
-    "OPT4_O_Heli_Light_02_black_F",
-    "OPT4_O_Heli_Attack_02_F",
-    "OPT4_O_Heli_Attack_02_black_F",
+    "OPT4_O_Heli_Attack_02_F",	
     "OPT4_O_APC_Wheeled_02_rcws_F",
+	"OPT4_O_APC_Wheeled_03_cannon_F",
+	"OPT4_O_APC_Tracked_02_cannon_F",
+	"OPT4_O_APC_Tracked_02_AA_F",
+	"OPT4_O_MBT_02_cannon_F",
+	"OPT4_O_MBT_02_arty_F",
+	//Tropentarn
+	"OPT4_O_MRAP_02_hmg_ghex_F", 
+    "OPT4_O_MRAP_02_gmg_ghex_F",
+	"OPT4_O_LSV_02_AT_ghex_F",
     "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F",
-    "OPT4_O_APC_Tracked_02_cannon_F",
+	"OPT4_O_APC_Wheeled_03_cannon_ghex_F",
     "OPT4_O_T_APC_Tracked_02_cannon_ghex_F",
-    "OPT4_O_APC_Tracked_02_AA_F",
     "OPT4_O_T_APC_Tracked_02_AA_ghex_F",
-    "OPT4_O_MBT_02_cannon_F",
-    "OPT4_O_T_MBT_02_cannon_ghex_F",
-    "OPT4_O_MBT_02_arty_F",
-    "OPT4_O_T_MBT_02_arty_ghex_F",
-    "OPT4_O_APC_Wheeled_03_cannon_F",
-    "OPT4_O_LSV_02_AT_F"
+    "OPT4_O_T_MBT_02_cannon_ghex_F",	
+    "OPT4_O_T_MBT_02_arty_ghex_F"	
 ];
 
 GVAR(textslotwest) = 
