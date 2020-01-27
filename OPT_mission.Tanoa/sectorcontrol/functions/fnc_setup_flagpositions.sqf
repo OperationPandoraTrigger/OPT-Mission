@@ -11,13 +11,12 @@ GVARMAIN(nato_flags_pos) = [
 
 // Basis 
 	   
-	   [9336, 13416, west,"T2 - Panschbude",true], //
-	   [12053, 9700, west,"2 - Vagalala Schlafmoon-Plantage",false], // 
-	   [24770, 19122, west,"59 - Almyra North",false], // 
+	   [2304,13243, west,"87 - Flugschule",true], //
+	   [2706,12336, west,"85 - Funkturm Whiskey",true], // 
+	   [1774,11999, west,"88 - Manus Pizzaria",true], // 
 	   
-	   [26746, 24660, west,"60 - Molos Airbase",false], //
-	   [26958, 23200, west,"61 - Molos Town",false], // 
-	   [25440, 20346, west,"62 - Refinery",false] // 
+	   [2191,11213, west,"116 - oppas cassino",true], //
+	   [3074,11092, west,"89 - Belford Bank",true] // 
 ];
 
 GVARMAIN(csat_flags_pos) = [
@@ -25,13 +24,12 @@ GVARMAIN(csat_flags_pos) = [
 //Basis 
 
 	   
-	   [9829, 13385, east,"T2 - Tacobar",true], // 
-	   [13763, 10808, east,"4 - Checkpoint Bravo",false], //
-	   [24770, 19122, east,"59 - Almyra North",false], // 
+	   [4060,11760, east,"118 - neue nato bruecke",true], // 
+	   [3733,12346, east,"59 - Battery Müller 2",true], //
+	   [2938,13086, east,"86 - GSM Station",true], // 
 	   
-	   [26746, 24660, east,"60 - Molos Airbase",false], // 
-	   [26958, 23200, east,"61 - Molos Town",false], // 
-	   [25440, 20346, east,"62 - Refinery",false] //
+	   [4015,13570, east,"27 - Panzerteststrecke",true], // 
+	   [3973,13840, east,"19 - alter Militaerkomplex",true] // 
 ];
 
 

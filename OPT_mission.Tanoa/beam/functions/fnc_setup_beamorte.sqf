@@ -51,39 +51,37 @@
 //West
 GVAR(locations_west) =
 [
-    [[6916,0,12438], "Beampunkt 1", 4],
+    [[2262,0,8585], "Beampunkt 1", 4],
     [[20429,0,9569], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
-      
-	   [[9343,0,13455], "-T2 - OPT Panschbude",1], 
-	   [[2953,0,9435], "098 - Sosovu Graben",0], 
-	   [[4278,0,8433], "058 - Altes BDepot",0],
+    	[[2304,0,13243],"87 - Flugschule",1], //
+		[[2706,0,12336],"85 - Funkturm Whiskey",1], // 
+		[[1774,0,11999],"88 - Manus Pizzaria",1], // 
 	   
-	   [[26731,0,24638], "60 - Molos Airbase",0], 
-	   [[26989,0,23206], "61 - Molos Town",0], 
-	   [[25420,0,20338], "62 - Refinery",0] 
+		[[2191,0,11213],"116 - oppas cassino",1], //
+		[[3074,0,11092],"89 - Belford Bank",1] // 
+
 ];
 
 //East
 GVAR(locations_east) =
 [
-    [[11778,0,11517], "Beampunkt 1", 4],
+    [[6956,0,13280], "Beampunkt 1", 4],
     [[23652,0,20038], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 	
        
-	   [[9880,0,13377], "T2 - Tackobar",1],
-	   [[2191,0,11213], "116 - Oppas Kassino",0],
-	   [[4060,0,11760], "118 - neue Nato Brücke",0],
+	   [[4060,0,11760],"118 - neue nato bruecke",1], // 
+	   [[3733,0,12346],"59 - Battery Müller 2",1], //
+	   [[2938,0,13086],"86 - GSM Station",1], // 
 	   
-	   [[26731,0,24638], "60 - Molos Airbase",0],
-	   [[26989,0,23206], "61 - Molos Town",0],
-	   [[25420,0,20338], "62 - Refinery",0]
+	   [[4015,0,13570],"27 - Panzerteststrecke",1], // 
+	   [[3973,0,13840],"19 - alter Militaerkomplex",1] //
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */

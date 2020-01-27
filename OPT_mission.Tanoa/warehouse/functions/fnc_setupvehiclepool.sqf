@@ -184,7 +184,7 @@ GVAR(csat_vehicles) =
     ["OPT_O_T_Truck_03_covered_ghex_F", DEF_PROD(8000)],           // Tempest Transport 
 	["OPT_O_T_Truck_03_transport_ghex_F", DEF_PROD(2000)],         // Tempest 
     ["OPT_O_T_Truck_03_repair_ghex_F", DEF_PROD(10000)],            // Tempest Repair
-    ["OPT_O_T_Truck_03_medical_ghex_F", DEF_PROD(0)]          // Tempest Medical
+    ["OPT_O_T_Truck_03_medical_ghex_F", DEF_PROD(10000)]          // Tempest Medical
 
 ];
 
