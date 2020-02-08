@@ -58,7 +58,7 @@ private _flagMarker = [];
 // add EH for mouse action
 /* _this ([<units>,<pos>,<alt>,<shift>]) and in special variables _units, _pos, _alt, _shift */
 ["sectorMap", "onMapSingleClick", {
-    private _flag = nearestObjects [_pos, ["FlagPole_F"], 35];
+    private _flag = nearestObjects [_pos, ["FlagPole_F"], 50];
 
     if (count _flag > 0) then {
         _flag = _flag select 0;
