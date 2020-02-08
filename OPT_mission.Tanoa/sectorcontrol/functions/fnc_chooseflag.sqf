@@ -58,7 +58,7 @@ private _flagMarker = [];
 // add EH for mouse action
 /* _this ([<units>,<pos>,<alt>,<shift>]) and in special variables _units, _pos, _alt, _shift */
 ["sectorMap", "onMapSingleClick", {
-    private _flag = nearestObjects [_pos, ["FlagPole_F"], 50];
+    private _flag = nearestObjects [_pos, ["FlagPole_F"], 100];
 
     if (count _flag > 0) then {
         _flag = _flag select 0;
@@ -66,22 +66,68 @@ private _flagMarker = [];
         // bugfix if enemy flag was chosen
         if ((_flag getVariable ["owner", sideUnknown]) == PLAYER_SIDE) exitWith{};
 
-        deleteMarkerLocal "marker_active_flag";
-        
-        private _markerName = format["marker_active_flag"];
-        private _marker = createMarkerLocal [_markerName, getPos _flag];
-        _marker setMarkerTypeLocal "selector_selectedMission";
-        _marker setMarkerSizeLocal [2,2];
+        _markerName = str [_flag];
 
-        switch (PLAYER_SIDE) do {
-            case west: {
-                _marker setMarkerColorLocal "ColorBLUFOR"; GVARMAIN(csat_flags) = [_flag]; publicVariable QGVARMAIN(csat_flags);
+        switch (PLAYER_SIDE) do
+        {
+            case west:
+            {
+                private _index = GVARMAIN(csat_flags) find [_flag];
+
+                // flagge schon aktiv gewesen? -> löschen
+                if (_index >= 0) then
+                {
+                    deleteMarkerLocal str (GVARMAIN(csat_flags) select _index);
+                    GVARMAIN(csat_flags) deleteAt _index;
+                    publicVariable QGVARMAIN(csat_flags);
+                }
+
+                // neue flagge? -> hinzufügen
+                else
+                { 
+                    // noch genügend flaggen erlaubt?
+                    if (count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountPerSide) then
+                    {
+                        private _marker = createMarkerLocal [_markerName, getPos _flag];
+                        _marker setMarkerTypeLocal "selector_selectedMission";
+                        _marker setMarkerSizeLocal [2,2];
+                        _marker setMarkerColorLocal "ColorBLUFOR";
+                        GVARMAIN(csat_flags) pushBack [_flag];
+                        publicVariable QGVARMAIN(csat_flags);
+                    };
+                };
             };
-            case east: {
-                _marker setMarkerColorLocal "ColorOPFOR"; GVARMAIN(nato_flags) = [_flag]; publicVariable QGVARMAIN(nato_flags);
+
+            case east:
+            {
+                private _index = GVARMAIN(nato_flags) find [_flag];
+
+                // flagge schon aktiv gewesen? -> löschen
+                if (_index >= 0) then
+                {
+                    deleteMarkerLocal str (GVARMAIN(nato_flags) select _index);
+                    GVARMAIN(nato_flags) deleteAt _index;
+                    publicVariable QGVARMAIN(nato_flags);
+                }
+
+                // neue flagge? -> hinzufügen
+                else
+                { 
+                    // noch genügend flaggen erlaubt?
+                    if (count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountPerSide) then
+                    {
+                        private _marker = createMarkerLocal [_markerName, getPos _flag];
+                        _marker setMarkerTypeLocal "selector_selectedMission";
+                        _marker setMarkerSizeLocal [2,2];
+                        _marker setMarkerColorLocal "ColorOPFOR";
+                        GVARMAIN(nato_flags) pushBack [_flag];
+                        publicVariable QGVARMAIN(nato_flags);
+                    };
+                };
             };
         };
 
+       systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(nato_flags), round OPT_sectorcontrol_flagCountPerSide];
     };
     
 }] call BIS_fnc_addStackedEventHandler;
