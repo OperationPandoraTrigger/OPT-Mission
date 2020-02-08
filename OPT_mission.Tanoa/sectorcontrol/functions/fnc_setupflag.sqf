@@ -19,15 +19,17 @@
 // siehe mission\functions\fnc_chooseFlag für Details
 
 // fallback if no flag was chosen -> random war!
-if (count GVARMAIN(nato_flags) == 0) then { 
-    GVARMAIN(nato_flags) = [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == west})];
-    publicVariable QGVARMAIN(nato_flags);
+while {count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountPerSide} do
+{
+    GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == west})];
 };
+publicVariable QGVARMAIN(nato_flags);
 
-if (count GVARMAIN(csat_flags) == 0) then { 
-    GVARMAIN(csat_flags) = [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == east})];
-    publicVariable QGVARMAIN(csat_flags);
+while {count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountPerSide} do
+{
+    GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == east})];
 };
+publicVariable QGVARMAIN(csat_flags);
 
 /*
 Fuer jede Flagge in einem Sektor: 
@@ -36,23 +38,27 @@ Marker für Minensperre falls Minensperre an
 unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 */
 {
-    // erzeuge fr jede gefundene Flagge einen Marker auf der Karte
-    if (GVAR(flagMarkerOn)) then {
-        private _markerName = format["marker_%1_%2", _x, _forEachIndex];
-        private _marker = createMarker [_markerName, getPos _x];
+    private _flag = _x select 0;
+    _markerName = str _flag;
 
-        if (_x in GVARMAIN(csat_flags)) then {
+    // alte lokale flaggenauswahl-marker löschen
+    deleteMarkerLocal str _x select 0;
+
+    // erzeuge fuer jede gefundene Flagge einen Marker auf der Karte
+    if (GVAR(flagMarkerOn)) then {
+        private _marker = createMarker [_markerName, getPos _flag];
+
+        if (GVARMAIN(csat_flags) find _x >= 0) then {
             _marker setMarkerType "flag_CSAT";
         } else {
             _marker setMarkerType "flag_NATO";
         };
-        _x setVariable [QGVAR(flagMarker), _marker, true];
+        _flag setVariable [QGVAR(flagMarker), _marker, true];
     };
 
     // mark free mine zone around flag
     if (GVAR(flagFreeMineZoneMarkerOn)) then {
-        private _markerName = format["marker_%1_%2_free_mine_zone", _x, _forEachIndex];
-        private _marker = createMarker [_markerName, getPos _x];
+        private _marker = createMarker [_markerName, getPos _flag];
         _marker setMarkerShape "ELLIPSE";
         _marker setMarkerBrush "Border";
         _marker setMarkerColor "ColorRed";
@@ -61,7 +67,7 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
     };
     
     [
-        _x,
+        _flag,
         [
             SECTORCONTROL_ACTION_FLAG call XRedText,     // Anzeigetext
             {[_this select 0, _this select 1] call FUNC(captureFlag);},  // Skript
@@ -75,6 +81,6 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
         ]
     ] remoteExecCall ["addAction", 0, true];
    
-    _x allowDamage false;  // Flagge kann nicht beschaedigt werden
+    _flag allowDamage false;  // Flagge kann nicht beschaedigt werden
 
 } foreach (GVARMAIN(csat_flags) + GVARMAIN(nato_flags));

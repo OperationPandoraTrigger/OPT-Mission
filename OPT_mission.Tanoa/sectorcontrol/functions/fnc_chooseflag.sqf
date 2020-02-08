@@ -96,6 +96,7 @@ private _flagMarker = [];
                         publicVariable QGVARMAIN(csat_flags);
                     };
                 };
+                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(csat_flags), round OPT_sectorcontrol_flagCountPerSide];
             };
 
             case east:
@@ -124,10 +125,9 @@ private _flagMarker = [];
                         publicVariable QGVARMAIN(nato_flags);
                     };
                 };
+                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(nato_flags), round OPT_sectorcontrol_flagCountPerSide];
             };
         };
-
-       systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(nato_flags), round OPT_sectorcontrol_flagCountPerSide];
     };
     
 }] call BIS_fnc_addStackedEventHandler;
@@ -138,4 +138,3 @@ waitUntil {!visibleMap};
 {
     deleteMarker _x;
 } forEach _flagMarker;
-deleteMarker "marker_active_flag";
