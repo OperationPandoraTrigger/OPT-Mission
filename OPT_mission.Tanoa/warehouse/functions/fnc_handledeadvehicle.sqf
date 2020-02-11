@@ -42,3 +42,25 @@ if (!(_vec isKindOf "CAManBase") and ((_vec distance2D (getmarkerPos "respawn_we
         ["Unfall", _txt, "red"] remoteExecCall [QEFUNC(gui,message), playableUnits select {_x distance _vec < 200}, false];
     };
 };
+
+// delete all wrecks within the bridges zone
+
+private _triggerUnits = 
+			  (list opt_garbage_collector_bridges_1)
+			+ (list opt_garbage_collector_bridges_2) 
+			+ (list opt_garbage_collector_bridges_3)
+			+ (list opt_garbage_collector_bridges_4)
+			+ (list opt_garbage_collector_bridges_5)
+			+ (list opt_garbage_collector_bridges_6)
+			+ (list opt_garbage_collector_bridges_7)
+			+ (list opt_garbage_collector_bridges_8)
+			+ (list opt_garbage_collector_bridges_9);
+
+
+if (!(_vec isKindOf "CAManBase") and (_vec in _triggerUnits)) then {
+    [_vec] spawn {
+        params ["_vec"];
+        sleep 300;
+        deleteVehicle _vec;
+    };
+};

@@ -356,7 +356,7 @@ if (_vehType in (GVAR(vehclasswestWW) + GVAR(vehclasseastWW))) then
             _pylon = [];
 			_loadouts = GVAR(QuilinHMGloadout);
         };
-        case "OPT4_O_LSV_02_AT_ghex_F": 
+        case "OPT4_O_LSV_02_AT_GHEX_F": 
 		{
             _boxArry = GVAR(QuilinAT);
             _side = east;
