@@ -10,26 +10,34 @@ east -> Angriffsziel für NATO
 GVARMAIN(nato_flags_pos) = [
 
 // Basis 
+
+
+	   [10534,10576, west,"37 - Imone",true], //
+	   [11803,10192, west,"001 - Tagebau Werkhalle",true], // 
+	   [11072,9852, west,"75 - Vagalala Hotel",true], // 
 	   
-	   [2304,13243, west,"87 - Flugschule",true], //
-	   [2706,12336, west,"85 - Funkturm Whiskey",true], // 
-	   [1774,11999, west,"88 - Manus Pizzaria",true], // 
-	   
-	   [2191,11213, west,"116 - oppas cassino",true], //
-	   [3074,11092, west,"89 - Belford Bank",true] // 
+	   [11195,9753, west,"77 - vag Minen",true], //
+	   [12053,9700, west,"112 - Schlafmoon Plantage",true], // 
+	   [12233,9061, west,"000 - Checkpoint Alpha",true] // 
+    
+
 ];
 
 GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
+	   [10280,10337, east,"117 - Certains Hanfplantage",true], // 
+	   [9664,9882, east,"007 - Checkpoint Vagalalaroad",true], //
+	   [10919,9826, east,"76 - Alte Feuerwache",true], // 
 	   
-	   [4060,11760, east,"118 - neue nato bruecke",true], // 
-	   [3733,12346, east,"59 - Battery Müller 2",true], //
-	   [2938,13086, east,"86 - GSM Station",true], // 
+	   [11086,9583, east,"78 - Vagalala ZRG",true], // 
+	   [11926,8702, east,"003 - Checkpoint Charlie",true], // 
+	   [10382,8529, east,"062 - Kreutzzug",true], // 
+	   [10670,8706, east,"123 - Radio Chidon",true], // 
+	   [11056,8426, east,"030 - Schatztempel",true] // 
+
 	   
-	   [4015,13570, east,"27 - Panzerteststrecke",true], // 
-	   [3973,13840, east,"19 - alter Militaerkomplex",true] // 
 ];
 
 

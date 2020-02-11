@@ -130,17 +130,19 @@ force DEFAULT_FULLREPAIR_LENGTH = 60;
 force DEFAULT_REPAIR_TRUCK_USES = 10;
 
 // OPT Kaufsystem
-force OPT_PARAM_ONLY_CREW = true;
-force OPT_PARAM_ONLY_PILOTS = true;
+force OPT_PARAM_ONLY_CREW = false;
+force OPT_PARAM_ONLY_PILOTS = false;
 force OPT_warehouse_allowSale = true;
 force OPT_warehouse_blockedVehiclePositions = ["driver"];
 force OPT_warehouse_orderSpawnRadius = 15;
 force OPT_warehouse_saleRadius = 15;
 force OPT_warehouse_saleReturnValueForEnemy = 1.5;
 force OPT_warehouse_saleReturnValueForOwn = 0.75;
+
 // OPT GPS
 
 force OPT_gps_maxMarkerNo = 80;
+
 
 // OPT Komponenten
 force OPT_beam_on = true;
@@ -154,7 +156,7 @@ force OPT_persistence_on = false;
 force OPT_radar_on = false;
 force OPT_revive_on = true;
 force OPT_tfar_on = true;
-force OPT_training_on = false;
+force OPT_training_on = true;
 force OPT_uav_on = true;
 force OPT_Waffenruhemarker_on = true;
 force OPT_waffenwechsel_on = true;
@@ -168,14 +170,14 @@ force OPT_marker_customMarkerTxt = "#z";
 force OPT_marker_useRealTime = false;
 
 // OPT Mission
-force OPT_csat_budget = "7140000";
-force OPT_dispo = "3000000";
-force OPT_nato_budget = "7140000";
-force OPT_PARAM_FREEZE_TIME = 30;
-force OPT_PARAM_PLAYTIME = 9000;
-force OPT_PARAM_SHOW_INTRO = true;
-force OPT_PARAM_TEAMBALANCE = 5.10248;
-force OPT_PARAM_TRUCETIME = 420;
+force OPT_csat_budget = "9000000";
+force OPT_dispo = "100000";
+force OPT_nato_budget = "9000000";
+force OPT_PARAM_FREEZE_TIME = 0;
+force OPT_PARAM_PLAYTIME = 10800;
+force OPT_PARAM_SHOW_INTRO = false;
+force OPT_PARAM_TEAMBALANCE = 0;
+force OPT_PARAM_TRUCETIME = 120;
 force OPT_repairSystem_refuelCost = "1000";
 force OPT_repairSystem_repairCost = "1000";
 force OPT_respawn_cost_max = "3000";
@@ -241,9 +243,9 @@ force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
-force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
+force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000_bwmod";
 force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
-force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
+force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g_big_bwmod";
 force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
 force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
 force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
@@ -257,3 +259,4 @@ force TFAR_Teamspeak_Channel_Name = "2302";
 force TFAR_Teamspeak_Channel_Password = "war";
 force tfar_terrain_interception_coefficient = 1;
 force TFAR_voiceCone = true;
+
