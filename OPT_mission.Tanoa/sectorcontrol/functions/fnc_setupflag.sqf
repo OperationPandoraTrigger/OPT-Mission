@@ -31,6 +31,9 @@ while {count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountPerSide} do
 };
 publicVariable QGVARMAIN(csat_flags);
 
+// Delete all Flagmarkers set during Waffenruhe
+remoteExecCall [QFUNC(deleteMarkers)];
+
 /*
 Fuer jede Flagge in einem Sektor: 
 Marker für Flag falls Marker an
@@ -40,9 +43,6 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 {
     private _flag = _x select 0;
     _markerName = str _flag;
-
-    // alte lokale flaggenauswahl-marker löschen
-    deleteMarkerLocal str _x select 0;
 
     // erzeuge fuer jede gefundene Flagge einen Marker auf der Karte
     if (GVAR(flagMarkerOn)) then {
