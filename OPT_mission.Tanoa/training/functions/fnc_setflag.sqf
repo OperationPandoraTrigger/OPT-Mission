@@ -14,33 +14,55 @@
 */
 #include "script_component.hpp"
 
-#define NATO_X_IDC 1400
-#define NATO_Y_IDC 1401
-#define CSAT_X_IDC 1402
-#define CSAT_Y_IDC 1403
+#define FLAG_IDC 1400
 
 disableSerialization;
 
 private _dialog = uiNamespace getVariable [QGVAR(flagDialog) , displayNull];
 if (_dialog isEqualTo displayNull) exitWith {};
 
-private _edit_nato_x = _dialog displayCtrl NATO_X_IDC;
-private _edit_nato_y = _dialog displayCtrl NATO_Y_IDC;
-private _edit_csat_x = _dialog displayCtrl CSAT_X_IDC;
-private _edit_csat_y = _dialog displayCtrl CSAT_Y_IDC;
+private _edit = _dialog displayCtrl FLAG_IDC;
 
-// read in coordinates
-private _nato_flag = GVARMAIN(nato_flags) select 0;
-private _csat_flag = GVARMAIN(csat_flags) select 0;
-private _nato_flag_marker = _nato_flag getVariable [QEGVAR(sectorcontrol,flagMarker), ""];
-private _csat_flag_marker = _csat_flag getVariable [QEGVAR(sectorcontrol,flagMarker), ""];
-private _nato_flag_x = ctrlText NATO_X_IDC;
-private _nato_flag_y = ctrlText NATO_Y_IDC;
-private _csat_flag_x = ctrlText CSAT_X_IDC;
-private _csat_flag_y = ctrlText CSAT_Y_IDC;
+private _lineBreak = toString [10];
+private _dialogText = "";
 
-// set flag
-call compile format["_nato_flag setPos [%1, %2, 0]", _nato_flag_x, _nato_flag_y];
-call compile format["_csat_flag setPos [%1, %2, 0]", _csat_flag_x, _csat_flag_y];
-call compile format["_nato_flag_marker setMarkerPos [%1, %2]", _nato_flag_x, _nato_flag_y];
-call compile format["_csat_flag_marker setMarkerPos [%1, %2]", _csat_flag_x, _csat_flag_y];
+_dialogText = ctrlText FLAG_IDC;
+
+private _obj = nearestObjects [position player, ["FlagPole_F"], 100];
+if (count _obj == 0) exitWith {};
+
+private _flagList = [];
+{
+    // skip all flags that are not opt flags
+    if (_x getVariable ["opt_flag", false]) then
+    {
+		_flagList pushBack _x;
+    };
+} forEach _obj;
+
+if (count _flagList != count (_dialogText splitString _lineBreak)) exitWith {systemChat format ["Anzahl der Flaggen stimmt nicht überein: Nähe: %1 / Liste: %2", count _flagList, count (_dialogText splitString _lineBreak)];};
+
+{
+	// string -> positionsarray
+	_arr = _x splitString "[,]";
+	_pos = [];
+	_pos pushBack (parseNumber (_arr select 0));
+	_pos pushBack (parseNumber (_arr select 1));
+	_pos pushBack 0;
+
+	private _flagge = _flagList select _forEachIndex;
+
+	// marker verschieben
+	{
+		if ((getMarkerType _x isEqualTo "flag_NATO") or (getMarkerType _x isEqualTo "flag_CSAT")) then
+		{
+			if ((getMarkerPos _x) distance _flagge < 5) then
+			{
+				_x setMarkerPos _pos;
+			};
+		};
+	} forEach allMapMarkers;
+
+	// flagge verschieben
+	_flagge setPos _pos;
+} foreach (_dialogText splitString _lineBreak);
