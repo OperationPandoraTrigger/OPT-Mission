@@ -42,10 +42,10 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 */
 {
     private _flag = _x select 0;
-    _markerName = str _flag;
 
     // erzeuge fuer jede gefundene Flagge einen Marker auf der Karte
     if (GVAR(flagMarkerOn)) then {
+        private _markerName = str _flag;
         private _marker = createMarker [_markerName, getPos _flag];
 
         if (GVARMAIN(csat_flags) find _x >= 0) then {
@@ -58,6 +58,7 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 
     // mark free mine zone around flag
     if (GVAR(flagFreeMineZoneMarkerOn)) then {
+        private _markerName = (str _flag) + "_free_mine_zone";
         private _marker = createMarker [_markerName, getPos _flag];
         _marker setMarkerShape "ELLIPSE";
         _marker setMarkerBrush "Border";
