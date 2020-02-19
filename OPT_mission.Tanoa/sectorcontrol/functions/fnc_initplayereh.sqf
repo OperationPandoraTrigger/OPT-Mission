@@ -48,8 +48,14 @@ if (EGVAR(training,on)) then {
         } else {
             _flag setpos _pos;
             _flag setVariable [QGVAR(isFlagMovable), false];
+
+	        // flaggenmarker verschieben
             _marker = _flag getVariable QGVAR(flagMarker);
-            _marker setMarkerPos _pos; // global new marker
+            _marker setMarkerPos _pos;
+
+            // minenzonenmarker verschieben
+            _marker = _flag getVariable QGVAR(mineMarker);
+            _marker setMarkerPos _pos;
         };
         
     }] call BIS_fnc_addStackedEventHandler;
@@ -76,7 +82,7 @@ if (GVAR(flagFreeMineZoneOn)) then {
                 if ((typeOf _explosive) find "SatchelCharge" != -1 or (typeOf _explosive) find "DemoCharge" != -1) exitWith {};    
 
                 // only if near flag
-                if ({_explosive distance _x <= GVAR(flagFreeMineZoneRadius)} count (GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) == 0) exitWith {};
+                if ({_explosive distance (_x select 0) <= GVAR(flagFreeMineZoneRadius)} count (GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) == 0) exitWith {};
 
                 deleteVehicle _explosive;    
                 // Warnhinweis

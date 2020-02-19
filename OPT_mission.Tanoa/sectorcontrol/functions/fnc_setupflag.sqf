@@ -61,10 +61,11 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
         private _markerName = (str _flag) + "_free_mine_zone";
         private _marker = createMarker [_markerName, getPos _flag];
         _marker setMarkerShape "ELLIPSE";
-        _marker setMarkerBrush "Border";
+        _marker setMarkerBrush "Solid";
         _marker setMarkerColor "ColorRed";
         _marker setMarkerAlpha 0.5;
         _marker setMarkerSize [GVAR(flagFreeMineZoneRadius), GVAR(flagFreeMineZoneRadius)];
+        _flag setVariable [QGVAR(mineMarker), _marker, true];
     };
     
     [

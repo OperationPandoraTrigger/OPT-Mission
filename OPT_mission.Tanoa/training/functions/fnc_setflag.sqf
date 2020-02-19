@@ -52,16 +52,13 @@ if (count _flagList != count (_dialogText splitString _lineBreak)) exitWith {sys
 
 	private _flagge = _flagList select _forEachIndex;
 
-	// marker verschieben
-	{
-		if ((getMarkerType _x isEqualTo "flag_NATO") or (getMarkerType _x isEqualTo "flag_CSAT")) then
-		{
-			if ((getMarkerPos _x) distance _flagge < 5) then
-			{
-				_x setMarkerPos _pos;
-			};
-		};
-	} forEach allMapMarkers;
+	// flaggenmarker verschieben
+	_marker = _flagge getVariable "OPT_sectorcontrol_flagMarker";
+    _marker setMarkerPos _pos;
+
+	// minenzonenmarker verschieben
+	_marker = _flagge getVariable "OPT_sectorcontrol_mineMarker";
+    _marker setMarkerPos _pos;
 
 	// flagge verschieben
 	_flagge setPos _pos;
