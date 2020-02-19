@@ -37,7 +37,7 @@ if (hasInterface) then {
         ["Flagge ziehen", "Flagge ziehen, wenn anvisiert."], 
         {
             if (
-                cursorObject in (GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) and
+                [cursorObject] in (GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) and
                 [cursorObject, player] call FUNC(captureFlagCondition)
             ) then {
                 [cursorObject, player] call FUNC(captureFlag);
