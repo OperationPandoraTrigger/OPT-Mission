@@ -121,7 +121,7 @@ GVAR(nato_supplies) =
     ["OPT_Box_NATO_Grenades_F", 75000, 10000, 20000],           // granatenkiste
     ["OPT_NATO_Sprengstoffkiste", 150000, 10000, 20000],        // sprengstoffkiste
     ["OPT_Box_NATO_WpsSpecial_AT_L1", 200000, 10000, 20000],     // AT Raketenkiste (MRAWS)
-	["OPT_Box_NATO_WpsSpecial_AT_L2" ,DEF_PROD(0)],     // AT Raketenkiste (PCML)
+	["OPT_Box_NATO_WpsSpecial_AT_L2" , DEF_PROD(0)],     // AT Raketenkiste (PCML)
 	["OPT_Box_NATO_WpsSpecial_AT_H1", 350000, 10000, 20000],     // AT Raketenkiste (Titan)
     ["OPT_Box_NATO_WpsSpecial_AA_F", 140000, 10000, 20000],      // AA Raketenkiste
     ["OPT_B_supplyCrate_F", DEF_PROD(0)],                     // Transportkiste (leer)
@@ -251,7 +251,7 @@ GVAR(csat_supplies) =
     ["OPT_Box_East_WpsSpecial_F", 60000, 10000, 20000],                     // Munition spezial kiste
     ["OPT_Box_East_Grenades_F", 75000, 10000, 20000],                       // granatenkiste
     ["OPT_CSAT_Sprengstoffkiste", 150000, 10000, 20000],                    // sprengstoffkiste
-    ["OPT_Box_East_WpsSpecial_AT_L1", DEF_PROD(0)],                         // AT Raketenkiste (RPG-42)
+    ["OPT_Box_East_WpsSpecial_AT_L1", 200000, 10000, 20000],                         // AT Raketenkiste (RPG-42)
 	["OPT_Box_East_WpsSpecial_AT_L2", 150000, 10000, 20000],                  // AT Raketenkiste (RPG-7)
 	["OPT_Box_East_WpsSpecial_AT_H1", 350000, 10000, 20000],                  // AT Raketenkiste (9M135 Vorona)
     ["OPT_Box_East_WpsSpecial_AA_F", 140000, 10000, 20000],                  // AA Raketenkiste

@@ -51,20 +51,16 @@
 //West
 GVAR(locations_west) =
 [
-    [[2262,0,8585], "Beampunkt 1", 4],
+    [[14026,0,12284], "Beampunkt 1", 4],
     [[20429,0,9569], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
 
-	   [[10534,0,10576], "37 - Imone",1], //
-	   [[11803,0,10192], "001 - Tagebau Werkhalle",1], // 
-	   [[11072,0,9852], "75 - Vagalala Hotel",1], // 
-	   
-	   [[11195,0,9753], "77 - vag Minen",1], //
-	   [[12053,0,9700], "112 - Schlafmoon Plantage",1], // 
-	   [[12233,0,9061], "000 - Checkpoint Alpha",1] // 
+	   [[8762,0,7309],"33 - Old but Gold",1], //
+	   [[10217,0,5040],"113 - Lösi",1], // 
+	   [[9005,0,4668],"53 - La Foa",1] // 
 
 
 ];
@@ -72,21 +68,16 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[6956,0,13280], "Beampunkt 1", 4],
+    [[7574,0,10715], "Beampunkt 1", 4],
     [[23652,0,20038], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 
-	   [[10280,0,10337],"117 - Certains Hanfplantage",1], // 
-	   [[9664,0,9882],"007 - Checkpoint Vagalalaroad",1], //
-	   [[10919,0,9826],"76 - Alte Feuerwache",1], // 
-	   
-	   [[11086,0,9583],"78 - Vagalala ZRG",1], // 
-	   [[11926,0,8702],"003 - Checkpoint Charlie",1], // 
-	   [[10382,0,8529],"062 - Kreutzzug",1], // 
-	   [[10670,0,8706],"123 - Radio Chidon",1], // 
-	   [[11056,0,8426],"030 - Schatztempel",1] //  
+
+	   [[9243,0,7560],"63 - Holzlager",1], // 
+	   [[9891,0,6688],"83 - alte Festung",1], //
+	   [[11153,0,5101],"90 - Harcourt Zollamt",1] // 
 
        
 ];
