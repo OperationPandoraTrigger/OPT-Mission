@@ -86,7 +86,7 @@ private _flagMarker = [];
                 else
                 { 
                     // noch genügend flaggen erlaubt?
-                    if (count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountPerSide) then
+                    if (count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) then
                     {
                         private _marker = createMarkerLocal [_markerName, getPos _flag];
                         _marker setMarkerTypeLocal "selector_selectedMission";
@@ -96,7 +96,7 @@ private _flagMarker = [];
                         publicVariable QGVARMAIN(csat_flags);
                     };
                 };
-                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(csat_flags), round OPT_sectorcontrol_flagCountPerSide];
+                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(csat_flags), round OPT_sectorcontrol_flagCountCSAT];
             };
 
             case east:
@@ -115,7 +115,7 @@ private _flagMarker = [];
                 else
                 { 
                     // noch genügend flaggen erlaubt?
-                    if (count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountPerSide) then
+                    if (count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) then
                     {
                         private _marker = createMarkerLocal [_markerName, getPos _flag];
                         _marker setMarkerTypeLocal "selector_selectedMission";
@@ -125,7 +125,7 @@ private _flagMarker = [];
                         publicVariable QGVARMAIN(nato_flags);
                     };
                 };
-                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(nato_flags), round OPT_sectorcontrol_flagCountPerSide];
+                systemChat format ["%1 von %2 erlaubten Flaggen gewählt.", count GVARMAIN(nato_flags), round OPT_sectorcontrol_flagCountNATO];
             };
         };
     };

@@ -19,15 +19,15 @@
 // siehe mission\functions\fnc_chooseFlag für Details
 
 // fallback if no flag was chosen -> random war!
-while {count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountPerSide} do
+while {count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO} do
 {
-    GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == west})];
+    GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == west) || (_x getVariable "owner" == sideUnknown)})];
 };
 publicVariable QGVARMAIN(nato_flags);
 
-while {count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountPerSide} do
+while {count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT} do
 {
-    GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {_x getVariable "owner" == east})];
+    GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == east) || (_x getVariable "owner" == sideUnknown)})];
 };
 publicVariable QGVARMAIN(csat_flags);
 
@@ -84,5 +84,4 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
     ] remoteExecCall ["addAction", 0, true];
    
     _flag allowDamage false;  // Flagge kann nicht beschaedigt werden
-
 } foreach (GVARMAIN(csat_flags) + GVARMAIN(nato_flags));

@@ -14,9 +14,12 @@
 */
 #include "script_component.hpp"
 
-private _allFlags = ((GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) apply {(_x select 0) getVariable ["owner", sideUnknown]});
-private _csat_owner = {_x isEqualTo east} count _allFlags;
-private _nato_owner = {_x isEqualTo west} count _allFlags;
+private _nato_owner = 0;
+private _csat_owner = 0;
+{
+    if ((_x select 0) getVariable ["owner", sideUnknown] isEqualTo west) then { _nato_owner = _nato_owner + 1; };
+    if ((_x select 0) getVariable ["owner", sideUnknown] isEqualTo east) then { _csat_owner = _csat_owner + 1; };
+} forEach (GVARMAIN(nato_flags) + GVARMAIN(csat_flags));
 
 _side = switch (true) do {
     case (_csat_owner > _nato_owner) : {east};
@@ -24,4 +27,4 @@ _side = switch (true) do {
     case (_nato_owner == _csat_owner) : {sideUnknown};    // nobody
 };
 
-_side
+_side  
