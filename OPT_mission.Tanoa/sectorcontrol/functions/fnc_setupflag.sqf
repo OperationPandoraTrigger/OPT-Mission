@@ -19,19 +19,19 @@
 // siehe mission\functions\fnc_chooseFlag für Details
 
 // fallback if no flag was chosen -> random war!
-private _maxTries = 0;
-while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _maxTries <= 100} do
+private _maxTries = 100;
+while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _maxTries} do
 {
     GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == west) || (_x getVariable "owner" == sideUnknown)})];
-    _maxTries = _maxTries + 1;
+    _maxTries = _maxTries - 1;
 };
 publicVariable QGVARMAIN(nato_flags);
 
-private _maxTries = 0;
-while {(count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) && _maxTries <= 100} do
+private _maxTries = 100;
+while {(count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) && _maxTries} do
 {
     GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == east) || (_x getVariable "owner" == sideUnknown)})];
-    _maxTries = _maxTries + 1;
+    _maxTries = _maxTries - 1;
 };
 publicVariable QGVARMAIN(csat_flags);
 
