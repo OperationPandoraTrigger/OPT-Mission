@@ -11,48 +11,46 @@ _txt = "Die gewählte Flagge wird je nach Seite blau oder rot hervorgehoben.<br/
 // create local marker for each flag pole
 private _flagMarker = [];
 {
-    // skip all flags that are not opt flags
-    if !(_x getVariable ["opt_flag", false]) exitWith {};
+    // only process opt flags
+    if (_x getVariable ["opt_flag", false]) then
+    {
+        // only show attack flags
+        switch (PLAYER_SIDE) do {
+            case west: {
+                if (_x getVariable ["owner", sideUnknown] == east) then {
+                    private _markerName = format["marker_attackNATO_%1", _forEachIndex];
+                    private _marker = createMarkerLocal [_markerName, getPos _x];
+                    _marker setMarkerTypeLocal "hd_objective";
+                    _flagMarker pushBack _marker;
+                };
 
-    // only show attack flags
-    switch (PLAYER_SIDE) do {
-        case west: {
-            if (_x getVariable ["owner", sideUnknown] == east) then {
-                private _markerName = format["marker_attackNATO_%1", _forEachIndex];
-                private _marker = createMarkerLocal [_markerName, getPos _x];
-                _marker setMarkerTypeLocal "hd_objective";
-                _flagMarker pushBack _marker;
+                if (_x in GVARMAIN(csat_flags)) then {
+                    private _markerName = format["marker_active_flag"];
+                    private _marker = createMarkerLocal [_markerName, getPos _x];
+                    _marker setMarkerTypeLocal "selector_selectedMission";
+                    _marker setMarkerSizeLocal [2,2];
+                    _marker setMarkerColorLocal "ColorBLUFOR";
+                };
             };
 
-            if (_x in GVARMAIN(csat_flags)) then {
-                private _markerName = format["marker_active_flag"];
-                private _marker = createMarkerLocal [_markerName, getPos _x];
-                _marker setMarkerTypeLocal "selector_selectedMission";
-                _marker setMarkerSizeLocal [2,2];
-                _marker setMarkerColorLocal "ColorBLUFOR";
+            case east: {
+                if (_x getVariable ["owner", sideUnknown] == west) then {
+                    private _markerName = format["marker_attackCSAT_%1", _forEachIndex];
+                    private _marker = createMarkerLocal [_markerName, getPos _x];
+                    _marker setMarkerTypeLocal "hd_objective";
+                    _flagMarker pushBack _marker;
+                };
+
+                if (_x in GVARMAIN(nato_flags)) then {
+                    private _markerName = format["marker_active_flag"];
+                    private _marker = createMarkerLocal [_markerName, getPos _x];
+                    _marker setMarkerTypeLocal "selector_selectedMission";
+                    _marker setMarkerSizeLocal [2,2];
+                    _marker setMarkerColorLocal "ColorOPFOR";
+                };
             };
-
-        };
-
-        case east: {
-            if (_x getVariable ["owner", sideUnknown] == west) then {
-                private _markerName = format["marker_attackCSAT_%1", _forEachIndex];
-                private _marker = createMarkerLocal [_markerName, getPos _x];
-                _marker setMarkerTypeLocal "hd_objective";
-                _flagMarker pushBack _marker;
-            };
-
-            if (_x in GVARMAIN(nato_flags)) then {
-                private _markerName = format["marker_active_flag"];
-                private _marker = createMarkerLocal [_markerName, getPos _x];
-                _marker setMarkerTypeLocal "selector_selectedMission";
-                _marker setMarkerSizeLocal [2,2];
-                _marker setMarkerColorLocal "ColorOPFOR";
-            };
-
         };
     };
-    
 } forEach allMissionObjects "FlagPole_F";
 
 // add EH for mouse action
