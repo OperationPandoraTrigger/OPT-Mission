@@ -52,7 +52,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+				_flag setFlagTexture "bilder\sword_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
@@ -74,7 +74,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "\A3\Data_F\Flags\Flag_CSAT_CO.paa";
+				_flag setFlagTexture "bilder\arf_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
