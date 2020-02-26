@@ -15,9 +15,10 @@
 */
 #include "script_component.hpp"
 
+allMapMarkers apply
 {
 	if (getMarkerType _x isEqualTo "selector_selectedMission") then
 	{
 		deleteMarkerLocal _x;
 	};
-} forEach allMapMarkers;
+};

@@ -133,6 +133,4 @@ private _flagMarker = [];
 waitUntil {!visibleMap};
 ["sectorMap", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 
-{
-    deleteMarker _x;
-} forEach _flagMarker;
+_flagMarker apply { deleteMarker _x; };
