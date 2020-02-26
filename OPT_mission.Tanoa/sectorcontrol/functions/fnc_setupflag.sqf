@@ -20,7 +20,7 @@
 
 // fallback if no flag was chosen -> random war!
 private _maxTries = 100;
-while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _maxTries} do
+while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _maxTries > 0} do
 {
     GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == west) || (_x getVariable "owner" == sideUnknown)})];
     _maxTries = _maxTries - 1;
@@ -28,7 +28,7 @@ while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _
 publicVariable QGVARMAIN(nato_flags);
 
 private _maxTries = 100;
-while {(count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) && _maxTries} do
+while {(count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) && _maxTries > 0} do
 {
     GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == east) || (_x getVariable "owner" == sideUnknown)})];
     _maxTries = _maxTries - 1;
