@@ -22,7 +22,7 @@
 private _maxTries = 100;
 while {(count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) && _maxTries > 0} do
 {
-    GVARMAIN(nato_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == west) || (_x getVariable "owner" == sideUnknown)})];
+    GVARMAIN(nato_flags) pushBackUnique selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == west) || (_x getVariable "owner" == sideUnknown)});
     _maxTries = _maxTries - 1;
 };
 publicVariable QGVARMAIN(nato_flags);
@@ -30,7 +30,7 @@ publicVariable QGVARMAIN(nato_flags);
 private _maxTries = 100;
 while {(count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) && _maxTries > 0} do
 {
-    GVARMAIN(csat_flags) pushBackUnique [selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == east) || (_x getVariable "owner" == sideUnknown)})];
+    GVARMAIN(csat_flags) pushBackUnique selectRandom (allMissionObjects "FlagPole_F" select {(_x getVariable "owner" == east) || (_x getVariable "owner" == sideUnknown)});
     _maxTries = _maxTries - 1;
 };
 publicVariable QGVARMAIN(csat_flags);
@@ -45,12 +45,11 @@ Marker für Minensperre falls Minensperre an
 unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 */
 {
-    private _flag = _x select 0;
+    private _flag = _x;
 
     // erzeuge fuer jede gefundene Flagge einen Marker auf der Karte
     if (GVAR(flagMarkerOn)) then {
-        private _markerName = str _flag;
-        private _marker = createMarker [_markerName, getPos _flag];
+        private _marker = createMarker ["MapMarker_" + (str _flag), getPos _flag];
 
         if (GVARMAIN(csat_flags) find _x >= 0) then {
             _marker setMarkerType "flag_CSAT";
@@ -62,8 +61,7 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
 
     // mark free mine zone around flag
     if (GVAR(flagFreeMineZoneMarkerOn)) then {
-        private _markerName = (str _flag) + "_free_mine_zone";
-        private _marker = createMarker [_markerName, getPos _flag];
+        private _marker = createMarker ["MineFreeZone_" + (str _flag), getPos _flag];
         _marker setMarkerShape "ELLIPSE";
         _marker setMarkerBrush "Solid";
         _marker setMarkerColor "ColorRed";
@@ -88,4 +86,4 @@ unverwundbar, Logistik-Script aus sowie Actionmeneintrag fuer Spieler
     ] remoteExecCall ["addAction", 0, true];
    
     _flag allowDamage false;  // Flagge kann nicht beschaedigt werden
-} foreach (GVARMAIN(csat_flags) + GVARMAIN(nato_flags));
+} foreach GVARMAIN(csat_flags) + GVARMAIN(nato_flags);

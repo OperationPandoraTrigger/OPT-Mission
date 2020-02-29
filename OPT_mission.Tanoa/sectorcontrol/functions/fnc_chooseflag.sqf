@@ -64,13 +64,11 @@ private _flagMarker = [];
         // bugfix if enemy flag was chosen
         if ((_flag getVariable ["owner", sideUnknown]) == PLAYER_SIDE) exitWith{};
 
-        _markerName = str [_flag];
-
         switch (PLAYER_SIDE) do
         {
             case west:
             {
-                private _index = GVARMAIN(csat_flags) find [_flag];
+                private _index = GVARMAIN(csat_flags) find _flag;
 
                 // flagge schon aktiv gewesen? -> löschen
                 if (_index >= 0) then
@@ -86,11 +84,11 @@ private _flagMarker = [];
                     // noch genügend flaggen erlaubt?
                     if (count GVARMAIN(csat_flags) < round OPT_sectorcontrol_flagCountCSAT) then
                     {
-                        private _marker = createMarkerLocal [_markerName, getPos _flag];
+                        private _marker = createMarkerLocal [str _flag, getPos _flag];
                         _marker setMarkerTypeLocal "selector_selectedMission";
                         _marker setMarkerSizeLocal [2,2];
                         _marker setMarkerColorLocal "ColorBLUFOR";
-                        GVARMAIN(csat_flags) pushBack [_flag];
+                        GVARMAIN(csat_flags) pushBack _flag;
                         publicVariable QGVARMAIN(csat_flags);
                     };
                 };
@@ -99,7 +97,7 @@ private _flagMarker = [];
 
             case east:
             {
-                private _index = GVARMAIN(nato_flags) find [_flag];
+                private _index = GVARMAIN(nato_flags) find _flag;
 
                 // flagge schon aktiv gewesen? -> löschen
                 if (_index >= 0) then
@@ -115,11 +113,11 @@ private _flagMarker = [];
                     // noch genügend flaggen erlaubt?
                     if (count GVARMAIN(nato_flags) < round OPT_sectorcontrol_flagCountNATO) then
                     {
-                        private _marker = createMarkerLocal [_markerName, getPos _flag];
+                        private _marker = createMarkerLocal [str _flag, getPos _flag];
                         _marker setMarkerTypeLocal "selector_selectedMission";
                         _marker setMarkerSizeLocal [2,2];
                         _marker setMarkerColorLocal "ColorOPFOR";
-                        GVARMAIN(nato_flags) pushBack [_flag];
+                        GVARMAIN(nato_flags) pushBack _flag;
                         publicVariable QGVARMAIN(nato_flags);
                     };
                 };

@@ -17,9 +17,9 @@
 private _nato_owner = 0;
 private _csat_owner = 0;
 {
-    if ((_x select 0) getVariable ["owner", sideUnknown] isEqualTo west) then { _nato_owner = _nato_owner + 1; };
-    if ((_x select 0) getVariable ["owner", sideUnknown] isEqualTo east) then { _csat_owner = _csat_owner + 1; };
-} forEach (GVARMAIN(nato_flags) + GVARMAIN(csat_flags));
+    if (_x getVariable ["owner", sideUnknown] isEqualTo west) then { _nato_owner = _nato_owner + 1; };
+    if (_x getVariable ["owner", sideUnknown] isEqualTo east) then { _csat_owner = _csat_owner + 1; };
+} forEach GVARMAIN(nato_flags) + GVARMAIN(csat_flags);
 
 _side = switch (true) do {
     case (_csat_owner > _nato_owner) : {east};
