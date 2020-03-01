@@ -177,7 +177,7 @@ force OPT_PARAM_FREEZE_TIME = 0;
 force OPT_PARAM_PLAYTIME = 10800;
 force OPT_PARAM_SHOW_INTRO = false;
 force OPT_PARAM_TEAMBALANCE = 0;
-force OPT_PARAM_TRUCETIME = 60;
+force OPT_PARAM_TRUCETIME = 600;
 force OPT_repairSystem_refuelCost = "1000";
 force OPT_repairSystem_repairCost = "1000";
 force OPT_respawn_cost_max = "3000";
@@ -204,7 +204,7 @@ force OPT_sectorcontrol_flagFreeMineZoneRadius = 20;
 force OPT_sectorcontrol_flagMarkerOn = true;
 force OPT_sectorcontrol_flagCountNATO = 3;
 force OPT_sectorcontrol_flagCountCSAT = 3;
-force OPT_sectorcontrol_flagStartNeutral = false;
+force OPT_sectorcontrol_flagStartNeutral = true;
 
 // OPT TFAR
 force OPT_PARAM_TFAR_INTERCEPTION = false;
