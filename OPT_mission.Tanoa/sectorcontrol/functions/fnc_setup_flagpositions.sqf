@@ -10,26 +10,26 @@ east -> Angriffsziel für NATO
 GVARMAIN(nato_flags_pos) = [
 
 // Basis 
+
+
+	   [8808,7329, west,"33 - Old but Gold",true], //
+	   [10217,5040, west,"113 - Lösi",true], // 
+	   [9005,4668, west,"53 - La Foa",true] // 
 	   
-	   [2304,13243, west,"87 - Flugschule",true], //
-	   [2706,12336, west,"85 - Funkturm Whiskey",true], // 
-	   [1774,11999, west,"88 - Manus Pizzaria",true], // 
-	   
-	   [2191,11213, west,"116 - oppas cassino",true], //
-	   [3074,11092, west,"89 - Belford Bank",true] // 
+    
+
 ];
 
 GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
+	   [9243,7560, east,"63 - Holzlager",true], // 
+	   [9981,6741, east,"83 - alte Festung",true], //
+	   [11153,5101, east,"90 - Harcourt Zollamt",true] // 
 	   
-	   [4060,11760, east,"118 - neue nato bruecke",true], // 
-	   [3733,12346, east,"59 - Battery Müller 2",true], //
-	   [2938,13086, east,"86 - GSM Station",true], // 
+
 	   
-	   [4015,13570, east,"27 - Panzerteststrecke",true], // 
-	   [3973,13840, east,"19 - alter Militaerkomplex",true] // 
 ];
 
 
