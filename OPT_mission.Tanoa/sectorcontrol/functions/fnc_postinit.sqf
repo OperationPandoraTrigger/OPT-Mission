@@ -36,11 +36,12 @@ if (hasInterface) then {
         QGVAR(cba_capture_flag), 
         ["Flagge ziehen", "Flagge ziehen, wenn anvisiert."], 
         {
+            private _cursorObject = cursorObject;
             if (
-                cursorObject in (GVARMAIN(nato_flags) + GVARMAIN(csat_flags)) and
-                [cursorObject, player] call FUNC(captureFlagCondition)
+                (_cursorObject in GVARMAIN(nato_flags) or _cursorObject in GVARMAIN(csat_flags)) and
+                [_cursorObject, player] call FUNC(captureFlagCondition)
             ) then {
-                [cursorObject, player] call FUNC(captureFlag);
+                [_cursorObject, player] call FUNC(captureFlag);
             };
             
         }, 
