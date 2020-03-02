@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Green Hell Prolog"
+#define __MISSION_NAME__ "Green Hell Schlacht#2"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ v MAJOR.MINOR.BUILD
 // made by
