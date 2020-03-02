@@ -177,11 +177,7 @@ force OPT_PARAM_FREEZE_TIME = 0;
 force OPT_PARAM_PLAYTIME = 10800;
 force OPT_PARAM_SHOW_INTRO = false;
 force OPT_PARAM_TEAMBALANCE = 0;
-<<<<<<< HEAD
-force OPT_PARAM_TRUCETIME = 600;
-=======
 force OPT_PARAM_TRUCETIME = 120;
->>>>>>> upstream/tanoa_2020H1
 force OPT_repairSystem_refuelCost = "1000";
 force OPT_repairSystem_repairCost = "1000";
 force OPT_respawn_cost_max = "3000";

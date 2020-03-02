@@ -44,13 +44,6 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-<<<<<<< HEAD
-=======
-			_flag setFlagTexture "bilder\sword_fahne.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];        
->>>>>>> upstream/tanoa_2020H1
 			_flag setVariable ["opt_flag", true, true];
 			_flag setVariable ["start_owner", _owner, true];
 
@@ -74,13 +67,6 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-<<<<<<< HEAD
-=======
-			_flag setFlagTexture "bilder\arf_fahne.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];
->>>>>>> upstream/tanoa_2020H1
 			_flag setVariable ["opt_flag", true, true];
 			_flag setVariable ["start_owner", _owner, true];
 
