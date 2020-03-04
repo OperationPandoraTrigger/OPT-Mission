@@ -44,12 +44,19 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-			_flag setFlagTexture "bilder\sword_fahne.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];        
 			_flag setVariable ["opt_flag", true, true];
-		};	
+			_flag setVariable ["start_owner", _owner, true];
+
+			if (OPT_sectorcontrol_flagStartNeutral) then // Nur Fahnenmast ohne Flagge zum Start gewünscht?
+			{
+				_flag setVariable ["owner", sideUnknown, true];
+			}
+			else
+			{
+				_flag setFlagTexture "bilder\sword_fahne.paa";
+				_flag setVariable ["owner", _owner, true];
+			};
+		};
 		
 	} forEach GVARMAIN(nato_flags_pos);
 
@@ -60,11 +67,18 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-			_flag setFlagTexture "bilder\arf_fahne.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];
 			_flag setVariable ["opt_flag", true, true];
+			_flag setVariable ["start_owner", _owner, true];
+
+			if (OPT_sectorcontrol_flagStartNeutral) then // Nur Fahnenmast ohne Flagge zum Start gewünscht?
+			{
+				_flag setVariable ["owner", sideUnknown, true];
+			}
+			else
+			{
+				_flag setFlagTexture "bilder\arf_fahne.paa";
+				_flag setVariable ["owner", _owner, true];
+			};
 		};
 	} forEach GVARMAIN(csat_flags_pos);
 };

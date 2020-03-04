@@ -36,5 +36,6 @@ if (_flag isEqualTo objNull or _unit isEqualTo objNull) exitWith{false};
 // nur von der anderen Seite
 vehicle _unit == _unit and
 GVARMAIN(missionStarted) and
+(_flag distance player) <= GVAR(flagDistanceToPlayer) and
 OPT_PARAM_PLAYTIME - (serverTime - EGVAR(mission,startTime)) > 0 and
 (UNIT_SIDE(_unit) != _flag getVariable ['owner', sideUnknown])

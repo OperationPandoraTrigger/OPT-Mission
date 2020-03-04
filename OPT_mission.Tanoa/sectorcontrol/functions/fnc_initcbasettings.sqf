@@ -15,6 +15,45 @@
 #include "script_component.hpp"
 
 [
+    QGVAR(flagCountNATO), // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    [
+        "Anzahl der NATO-Flaggen",  // Pretty name shown inside the ingame settings menu. Can be stringtable entry.  
+        "Die Anzahl der NATO-Flaggen, die für die CSAT zum Angriff stehen."   // Mouse-Over description of the above
+    ],
+    "OPT Sektorkontrolle", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [0, 5, 1, 0], // [_min, _max, _default, _trailingDecimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(flagCountCSAT), // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    [
+        "Anzahl der CSAT-Flaggen",  // Pretty name shown inside the ingame settings menu. Can be stringtable entry.  
+        "Die Anzahl der CSAT-Flaggen, die für die NATO zum Angriff stehen."   // Mouse-Over description of the above
+    ],
+    "OPT Sektorkontrolle", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [0, 5, 1, 0], // [_min, _max, _default, _trailingDecimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(flagStartNeutral), // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    [
+        "Start mit neutralen Flaggen",  // Pretty name shown inside the ingame settings menu. Can be stringtable entry.  
+        "Die zu Missionsstart gewählten Flaggen tragen noch keine Fahne und müssen erst erobert werden."   // Mouse-Over description of the above
+    ],
+    "OPT Sektorkontrolle", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    false, // Default value <BOOLEAN>
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(flagMarkerOn), // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "CHECKBOX", // setting type
     "Markiere Angriffsflaggen mit Mapmarker", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.

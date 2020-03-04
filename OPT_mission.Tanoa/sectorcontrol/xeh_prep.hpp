@@ -11,3 +11,4 @@ PREP(postInit);
 PREP(setFlagOwner);
 PREP(setup_flagPositions);
 PREP(setupFlag);
+PREP(deleteMarkers);

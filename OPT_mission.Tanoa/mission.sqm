@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=642;
 	class ItemIDProvider
 	{
-		nextID=12230;
+		nextID=12231;
 	};
 	class MarkerIDProvider
 	{
-		nextID=375;
+		nextID=376;
 	};
 	class LayerIndexProvider
 	{
-		nextID=16985;
+		nextID=18035;
 	};
 	class Camera
 	{
-		pos[]={15118.369,31.649857,5386.1348};
-		dir[]={-0.76198596,-0.37433368,-0.52856386};
-		up[]={-0.30761287,0.92727697,-0.2133797};
-		aside[]={-0.5699988,1.405715e-008,0.8217243};
+		pos[]={4078.8235,32.738884,11757.646};
+		dir[]={-0.91626573,-0.2515451,0.3117592};
+		up[]={-0.23813856,0.96784544,0.081027947};
+		aside[]={0.32211688,-1.2570526e-006,0.94670516};
 	};
 };
 binarizationWanted=0;
@@ -469,8 +469,8 @@ class AddonsMetaData
 		class Item37
 		{
 			className="cba_jam";
-			name="Community Base Addons - Gemeinsame Munition und Magazine";
-			author="CBA-Team";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item38
@@ -6634,7 +6634,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15093.992,24.87466,5373.2437};
-										angles[]={0,3.3092592,-0};
+										angles[]={0,3.3092592,0};
 									};
 									side="Empty";
 									flags=4;
@@ -6673,7 +6673,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15094.631,25.126909,5373.1465};
-										angles[]={0,2.6902974,-0};
+										angles[]={0,2.6902974,0};
 									};
 									side="Empty";
 									flags=4;
@@ -6714,7 +6714,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15093.357,24.437134,5373.0938};
-										angles[]={0,1.4296211,-0};
+										angles[]={0,1.4296211,0};
 									};
 									side="Empty";
 									flags=4;
@@ -6774,7 +6774,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15092.832,24.758612,5373.0327};
-										angles[]={0,2.6902974,-0};
+										angles[]={0,2.6902974,0};
 									};
 									side="Empty";
 									flags=4;
@@ -7256,7 +7256,7 @@ class Mission
 									position[]={13313.81,1.0183105,6078.0483};
 									name="marker_42";
 									type="o_naval";
-									angle=112.59206;
+									angle=112.59183;
 									id=3999;
 									atlOffset=29.209887;
 								};
@@ -24264,7 +24264,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={4484.4375,26.122053,6888.7437};
-										angles[]={-0,0.61887878,0};
+										angles[]={0,0.61887878,0};
 									};
 									side="Empty";
 									flags=4;
@@ -24359,7 +24359,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={4485.0815,25.684526,6888.5977};
-										angles[]={-0,5.0225034,-0};
+										angles[]={0,5.0225034,0};
 									};
 									side="Empty";
 									class Attributes
@@ -25208,7 +25208,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={4482.9546,25.837709,6889.5254};
-												angles[]={-0,5.4476533,-0};
+												angles[]={0,5.4476533,0};
 											};
 											side="Empty";
 											flags=4;
@@ -25289,7 +25289,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={4483.2651,29.432985,6887.7437};
-												angles[]={-0,0.67199957,-0};
+												angles[]={0,0.67199957,0};
 											};
 											side="Empty";
 											flags=4;

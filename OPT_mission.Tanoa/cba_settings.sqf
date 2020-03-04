@@ -202,6 +202,9 @@ force OPT_sectorcontrol_flagFreeMineZoneMarkerOn = true;
 force OPT_sectorcontrol_flagFreeMineZoneOn = true;
 force OPT_sectorcontrol_flagFreeMineZoneRadius = 20;
 force OPT_sectorcontrol_flagMarkerOn = true;
+force OPT_sectorcontrol_flagCountNATO = 3;
+force OPT_sectorcontrol_flagCountCSAT = 3;
+force OPT_sectorcontrol_flagStartNeutral = true;
 
 // OPT TFAR
 force OPT_PARAM_TFAR_INTERCEPTION = false;
