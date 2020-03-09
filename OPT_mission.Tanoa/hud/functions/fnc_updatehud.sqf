@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Author: James
 * script for updating HUD information each forEachMember
 *

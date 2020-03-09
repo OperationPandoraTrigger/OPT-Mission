@@ -1,4 +1,4 @@
-﻿
+
 #define FONTSIZE (0.022 / (getResolution select 5))  // dynamische Anpassung je nach UI Schriftgröße
 
 // class RscTitles only in description.ext!
