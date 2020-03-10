@@ -12,9 +12,9 @@ GVARMAIN(nato_flags_pos) = [
 // Basis 
 
 
-	   [8808,7329, west,"33 - Old but Gold",true], //
-	   [10217,5040, west,"113 - Lösi",true], // 
-	   [9005,4668, west,"53 - La Foa",true] // 
+	   [5027,11455, west,"41 - Lands End",true], //
+	   [6040,10417, west,"57 - Sender GT",true], // 
+	   [7030,10802, west,"49 - Hbf. Hulabula",true] // 
 	   
     
 
@@ -24,9 +24,9 @@ GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
-	   [9243,7560, east,"63 - Holzlager",true], // 
-	   [9981,6741, east,"83 - alte Festung",true], //
-	   [11153,5101, east,"90 - Harcourt Zollamt",true] // 
+	   [5706,10317, east,"56 - GT Fischmarkt",true], // 
+	   [6340,9961, east,"120 - GT Oberstadt",true], //
+	   [7036,9698, east,"15 - Opfertempel",true] // 
 	   
 
 	   

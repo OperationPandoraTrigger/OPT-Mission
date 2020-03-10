@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Author: James
 * wartet die Waffenruhe ab und startet die Mission
 *

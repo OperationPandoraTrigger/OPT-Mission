@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Funktion Dialog Waffenwechsel
 * 
 * Author:

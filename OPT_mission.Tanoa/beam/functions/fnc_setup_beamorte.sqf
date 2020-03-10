@@ -51,16 +51,18 @@
 //West
 GVAR(locations_west) =
 [
-    [[14026,0,12284], "Beampunkt 1", 4],
+    [[11434,0,2383], "Beampunkt 1", 4],
     [[20429,0,9569], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
 
-	   [[8762,0,7309],"33 - Old but Gold",1], //
-	   [[10217,0,5040],"113 - Lösi",1], // 
-	   [[9005,0,4668],"53 - La Foa",1] // 
+
+	   [[5027,0,11455],"41 - Lands End",1], //
+	   [[6023,0,10406],"57 - Sender GT",1], // 
+	   [[7030,0,10802],"49 - Hbf. Hulabul",1] // 
+
 
 
 ];
@@ -68,16 +70,18 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[7574,0,10715], "Beampunkt 1", 4],
+    [[12839,0,3803], "Beampunkt 1", 4],
     [[23652,0,20038], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 
 
-	   [[9243,0,7560],"63 - Holzlager",1], // 
-	   [[9891,0,6688],"83 - alte Festung",1], //
-	   [[11153,0,5101],"90 - Harcourt Zollamt",1] // 
+
+	   [[5706,0,10317],"56 - GT Fischmarkt",1], // 
+	   [[6340,0,9961],"120 - GT Oberstadt",1], //
+	   [[7036,0,9698],"15 - Opfertempel",1] // 
+
 
        
 ];
