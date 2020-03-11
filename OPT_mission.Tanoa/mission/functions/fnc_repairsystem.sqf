@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Author: James
 * add addAction entries to vehicle that activated the triggerActivated
 * repair and rearm vehicle. If vehicle is leaving the trigger zone
