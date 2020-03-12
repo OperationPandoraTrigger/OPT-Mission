@@ -51,17 +51,17 @@
 //West
 GVAR(locations_west) =
 [
-    [[11434,0,2383], "Beampunkt 1", 4],
-    [[20429,0,9569], "Beampunkt 2", 0],
+    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
+    [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
 
 
-	   [[5027,0,11455],"41 - Lands End",1], //
-	   [[6023,0,10406],"57 - Sender GT",1], // 
-	   [[7030,0,10802],"49 - Hbf. Hulabul",1] // 
+	   [[14352,0,8600],"69 - schöne Aussicht",1], //
+	   [[13482,0,9579],"115 - Goldgrube",1], // 
+	   [[13964,0,10011],"84 - alte Mine",1] // 
 
 
 
@@ -70,17 +70,18 @@ GVAR(locations_west) =
 //East
 GVAR(locations_east) =
 [
-    [[12839,0,3803], "Beampunkt 1", 4],
-    [[23652,0,20038], "Beampunkt 2", 0],
+    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
+    [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 
 
 
-	   [[5706,0,10317],"56 - GT Fischmarkt",1], // 
-	   [[6340,0,9961],"120 - GT Oberstadt",1], //
-	   [[7036,0,9698],"15 - Opfertempel",1] // 
+	   [[13049,0,10656],"04 - Dogana Blueperl",1], // 
+	   [[13763,0,10808],"05 - Checkpoint Bravo",1], //
+	   [[13427,0,11714],"73 - Blueperl Brecheranlage",1], // 
+	   [[13784,0,11900],"71 - Trockendok",1] // 
 
 
        

@@ -12,9 +12,9 @@ GVARMAIN(nato_flags_pos) = [
 // Basis 
 
 
-	   [5027,11455, west,"41 - Lands End",true], //
-	   [6040,10417, west,"57 - Sender GT",true], // 
-	   [7030,10802, west,"49 - Hbf. Hulabula",true] // 
+	   [14352,8600, west,"69 - schöne Aussicht",true], //
+	   [13482,9579, west,"115 - Goldgrube",true], // 
+	   [13964,10011, west,"84 - alte Mine",true] // 
 	   
     
 
@@ -24,13 +24,15 @@ GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
-	   [5706,10317, east,"56 - GT Fischmarkt",true], // 
-	   [6340,9961, east,"120 - GT Oberstadt",true], //
-	   [7036,9698, east,"15 - Opfertempel",true] // 
-	   
+	   [13049,10656, east,"04 - Dogana Bluepearl",true], // 
+	   [13763,10808, east,"05 - Checkpoint Bravo",true], //
+	   [13427,11714, east,"73 - Bluepearl Brecheranlage",true], // 
+	   [13784,11900, east,"71 - Trockendock",true] // 
+
 
 	   
 ];
+
 
 
 // erzeuge für alle oben gelisteten Positionen einen Flaggenmast mit korrekter Flagge vom Server aus.
