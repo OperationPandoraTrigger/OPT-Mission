@@ -29,18 +29,38 @@ private _dialogText = ctrlText ADDBEAM_IDC;
 // parse dialogtext to array
 private _orte = [];
 {
-	_orte pushBack parseSimpleArray _x;
+	_orte pushBackUnique parseSimpleArray _x;
 
 } foreach (_dialogText splitString _lineBreak);
 
-// write updated positions back to global variables
-if (PLAYER_SIDE == east) then
+// Prüfung auf erlaubte Anzahl der Beampunkte. Definiert in beam\setup.hpp
+if (count _orte <= BEAM_MAX_LOCATIONS) then
 {
-    GVAR(locations_east) = _orte;
-	publicVariable QGVAR(locations_east);
+	// write updated positions back to global variables
+	if (PLAYER_SIDE == east) then
+	{
+	    GVAR(locations_east) = _orte;
+		publicVariable QGVAR(locations_east);
+	}
+	else
+	{
+	    GVAR(locations_west) = _orte;
+		publicVariable QGVAR(locations_west);
+	};
+
+	// Log beam position update
+	private _message = format
+	[
+		"%1 (%2) legt %3 Beampunkte fest: %4",
+		PLAYER_NAME, 
+		PLAYER_SIDE,
+		count _orte,
+		_orte
+	];
+	["Beam", _message] remoteExecCall [QEFUNC(log,write), 2, false];
 }
 else
 {
-    GVAR(locations_west) = _orte;
-	publicVariable QGVAR(locations_west);
+	private _txt = format["Es dürfen nur %1 Beampunkte angegeben werden!", BEAM_MAX_LOCATIONS];
+	["Beam", _txt, "red"] remoteExecCall [QEFUNC(gui,message), player, false];
 };

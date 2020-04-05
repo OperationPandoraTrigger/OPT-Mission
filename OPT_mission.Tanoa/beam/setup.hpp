@@ -11,3 +11,4 @@
 #define DIALOG_BEAM_LB_COLOR_LVL_TWO [ 1, 1, 0, 1 ]
 
 #define BEAM_ACTION_ADD_BEAM 'Beampunkt-Verwaltung'
+#define BEAM_MAX_LOCATIONS 5
