@@ -14,17 +14,15 @@
 */
 #include "script_component.hpp"
 
-#define ADDBEAM_IDC 1413
-
 disableSerialization;
 
 private _dialog = uiNamespace getVariable [QGVAR(AddBeamDialog) , displayNull];
-if (_dialog isEqualTo displayNull) exitWith {};
+if (_dialog isEqualTo displayNull) exitWith {ERROR_MSG("Fehler beim Aufruf von AddBeamDialog!")};
 
-private _edit = _dialog displayCtrl ADDBEAM_IDC;
+private _edit = _dialog displayCtrl DIALOG_ADDBEAM_IDC;
 
 private _lineBreak = toString [10];
-private _dialogText = ctrlText ADDBEAM_IDC;
+private _dialogText = ctrlText DIALOG_ADDBEAM_IDC;
 
 // parse dialogtext to array
 private _orte = [];
@@ -39,19 +37,19 @@ if (count _orte <= BEAM_MAX_LOCATIONS) then
 	// write updated positions back to global variables
 	if (PLAYER_SIDE == east) then
 	{
-	    GVAR(locations_east) = _orte;
+		GVAR(locations_east) = _orte;
 		publicVariable QGVAR(locations_east);
 	}
 	else
 	{
-	    GVAR(locations_west) = _orte;
+		GVAR(locations_west) = _orte;
 		publicVariable QGVAR(locations_west);
 	};
 
 	// Log beam position update
 	private _message = format
 	[
-		"%1 (%2) legt %3 Beampunkte fest: %4",
+		"%1 (%2) legt %3 Beampunkt(e) fest: %4",
 		PLAYER_NAME, 
 		PLAYER_SIDE,
 		count _orte,

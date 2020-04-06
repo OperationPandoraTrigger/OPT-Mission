@@ -14,16 +14,15 @@
 */
 #include "script_component.hpp"
 
-#define ADDBEAM_IDC 1413
-
 params [["_dialog", displayNull, [displayNull], 1]];
 
 disableSerialization;
 
-if (_dialog isEqualTo displayNull) exitWith {};
+if (_dialog isEqualTo displayNull) exitWith {ERROR_MSG("Fehler beim Aufruf von fnc_initAddBeamDialog!")};
+
 uiNamespace setVariable [QGVAR(AddBeamDialog), _dialog];
 
-private _edit = _dialog displayCtrl ADDBEAM_IDC;
+private _edit = _dialog displayCtrl DIALOG_ADDBEAM_IDC;
 
 private _lineBreak = toString [10];
 private _dialogText = "";
