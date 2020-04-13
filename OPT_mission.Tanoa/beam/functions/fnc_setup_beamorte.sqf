@@ -51,6 +51,7 @@
 //West
 GVAR(locations_west) =
 [
+ /*
     [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
     [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
@@ -64,12 +65,13 @@ GVAR(locations_west) =
 	   [[13964,0,10011],"84 - alte Mine",1] // 
 
 
-
+*/
 ];
 
 //East
 GVAR(locations_east) =
 [
+/*
     [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
     [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
@@ -84,7 +86,7 @@ GVAR(locations_east) =
 	   [[13784,0,11900],"71 - Trockendok",1] // 
 
 
-       
+*/       
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
