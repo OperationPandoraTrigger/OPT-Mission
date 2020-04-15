@@ -51,42 +51,38 @@
 //West
 GVAR(locations_west) =
 [
- /*
-    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
-    [[0,0,0], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis",0],
+    [[11851.915,4.3454065,6627.7021], "Sägewerk", 4], //black
+    [[9890.4053,79.376007,9669.0303], "Vagalala Ost", 4], //blue
+	[[9267.7344,112.65163,11344.788], "Pampa 114", 4], //cbr
+	[[6598.2588,8.2705879,12977.476], "Nicolet Ost", 4], //khk_hs
+	[[10185.185,159.12231,8217.9678], "Pampa 62", 4], //mcamo
+    [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
 
+	[[12233,97.720108,9062],"Flagge 00",1], // 
+	[[13533,41.30806,8410],"Flagge 68",1], //
+	[[14352,22.670292,8600],"Flagge 69",1] // 
+	   
 
 
-	   [[14352,0,8600],"69 - schöne Aussicht",1], //
-	   [[13482,0,9579],"115 - Goldgrube",1], // 
-	   [[13964,0,10011],"84 - alte Mine",1] // 
-
-
-*/
 ];
 
 //East
 GVAR(locations_east) =
 [
-/*
-    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
-    [[0,0,0], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis", 0],
+	[[10215.308,427.25369,11900.626], "Vulkan Ost Berg", 4], //beanie
+	[[9443.9512,240.76352,12349.516], "Vulkan West Straße", 4], //cbr
+	[[11622.643,7.0984778,13037.614], "La Rochelle Tankstelle", 4], //camo
+    [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
+    [[12384,147.11804,11246], "Flagge 70", 1],
+    [[13764,157.14282,10809], "Flagge 05", 1],
+	[[13964,120.33681,10011],"Flagge 84",1] // 
 
 
-	   [[13049,0,10656],"04 - Dogana Blueperl",1], // 
-	   [[13763,0,10808],"05 - Checkpoint Bravo",1], //
-	   [[13427,0,11714],"73 - Blueperl Brecheranlage",1], // 
-	   [[13784,0,11900],"71 - Trockendok",1] // 
 
-
-*/       
+       
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */

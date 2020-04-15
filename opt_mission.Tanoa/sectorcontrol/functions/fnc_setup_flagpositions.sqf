@@ -12,9 +12,9 @@ GVARMAIN(nato_flags_pos) = [
 // Basis 
 
 
-	   [14352,8600, west,"69 - schöne Aussicht",true], //
-	   [13482,9579, west,"115 - Goldgrube",true], // 
-	   [13964,10011, west,"84 - alte Mine",true] // 
+	   [13533,8410, west,"68 - Luganville-Farm",true], // 
+	   [14352,8600, west,"69 - Nandai-Stadtrand",true], //
+	   [12233,9062, west,"00 - Checkpoint",true]// 
 	   
     
 
@@ -24,10 +24,9 @@ GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
-	   [13049,10656, east,"04 - Dogana Bluepearl",true], // 
-	   [13763,10808, east,"05 - Checkpoint Bravo",true], //
-	   [13427,11714, east,"73 - Bluepearl Brecheranlage",true], // 
-	   [13784,11900, east,"71 - Trockendock",true] // 
+	   [13964,10011, east,"84 - Vatukoulo-Stützpunkt",true], //
+	   [13764,10809, east,"05 - Checkpoint",true], // 
+	   [12384,11246, east,"70 - Dorf",true]  // 
 
 
 	   

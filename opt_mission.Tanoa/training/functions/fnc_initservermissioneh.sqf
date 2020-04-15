@@ -45,19 +45,5 @@ GVAR(EH_EntityRespawned) = addMissionEventHandler ["EntityRespawned", {
                 "alive _target and _target == player"
             ]
         ] remoteExecCall ["addAction", _newEntity, false];
-
-        [
-            _newEntity, 
-            [
-                TRAINING_ACTION_MYPOS call XGreyText,
-                {createDialog QGVAR(dlg_mypos)}, 
-                [],
-                0, 
-                false, 
-                true, 
-                '', 
-                "alive _target and _target == player"
-            ]
-        ] remoteExecCall ["addAction", _newEntity, false];
     };
 }];

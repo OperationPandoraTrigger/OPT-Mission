@@ -29,14 +29,3 @@ if (GVAR(teleport)) then {
     ];
 
 };
-
-player addAction [
-    TRAINING_ACTION_MYPOS call XGreyText,
-    {createDialog QGVAR(dlg_mypos)}, 
-    [], 
-    0, 
-    false, 
-    true, 
-    '', 
-    "alive _target and _target == player"
-];
