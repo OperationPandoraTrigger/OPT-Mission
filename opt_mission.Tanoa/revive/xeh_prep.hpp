@@ -3,6 +3,7 @@ PREP(checkDragging);
 PREP(checkFirstAid);
 PREP(checkFirstAidMedic);
 PREP(checkForNearbyMedics);
+PREP(checkplaymove);
 PREP(checkRevive);
 PREP(checkStabilize);
 PREP(checkSuicide);
