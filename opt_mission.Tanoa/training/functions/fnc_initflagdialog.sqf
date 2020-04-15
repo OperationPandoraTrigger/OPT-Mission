@@ -14,10 +14,7 @@
 */
 #include "script_component.hpp"
 
-#define NATO_X_IDC 1400
-#define NATO_Y_IDC 1401
-#define CSAT_X_IDC 1402
-#define CSAT_Y_IDC 1403
+#define FLAG_IDC 1400
 
 params [["_dialog", displayNull, [displayNull], 1]];
 
@@ -26,27 +23,31 @@ disableSerialization;
 if (_dialog isEqualTo displayNull) exitWith {};
 uiNamespace setVariable [QGVAR(flagDialog), _dialog];
 
-private _edit_nato_x = _dialog displayCtrl NATO_X_IDC;
-private _edit_nato_y = _dialog displayCtrl NATO_Y_IDC;
-private _edit_csat_x = _dialog displayCtrl CSAT_X_IDC;
-private _edit_csat_y = _dialog displayCtrl CSAT_Y_IDC;
+private _edit = _dialog displayCtrl FLAG_IDC;
 
-// read in coordinates
-if (count GVARMAIN(nato_flags) == 0) then {
-    _edit_nato_x ctrlSetText format["%1", 0];
-    _edit_nato_y ctrlSetText format["%1", 0];
-} else {
-    private _nato_flag = GVARMAIN(nato_flags) select 0;
-    // set coordinates
-    _edit_nato_x ctrlSetText format["%1", getPos _nato_flag select 0];
-    _edit_nato_y ctrlSetText format["%1", getPos _nato_flag select 1];
-};
+// display coordinates of flagpoles nearby
 
-if (count GVARMAIN(csat_flags) == 0) then {
-    _edit_csat_x ctrlSetText format["%1", 0];
-    _edit_csat_y ctrlSetText format["%1", 0];
-} else {
-    private _csat_flag = GVARMAIN(csat_flags) select 0;
-    _edit_csat_x ctrlSetText format["%1", getPos _csat_flag select 0];
-    _edit_csat_y ctrlSetText format["%1", getPos _csat_flag select 1];
-};
+private _lineBreak = toString [10];
+private _dialogText = "";
+
+private _obj = nearestObjects [position player, ["FlagPole_F"], 100];
+if (count _obj == 0) exitWith {};
+
+private _flagList =[];
+{
+    // skip all flags that are not opt flags
+    if (_x getVariable ["opt_flag", false]) then
+    {
+        _flagList pushBack _x;
+    };
+} forEach _obj;
+
+// limit to 5 flags
+if (count _flagList > 5) then {_flagList = _flagList select [0,5];};
+
+// write positions to edit-ctrl
+{
+    _dialogText = format ["%1%2%3", _dialogText, (getPos _x) select [0,2], _lineBreak];
+} forEach _flagList;
+
+_edit ctrlSetText _dialogText;

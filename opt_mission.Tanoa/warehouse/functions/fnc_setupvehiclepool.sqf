@@ -73,7 +73,7 @@ GVAR(nato_choppers) =
     ["OPT4_B_Heli_Light_01_armed_F", DEF_PROD(0)],              // AH-9 Pawnee 
     ["OPT4_B_Heli_light_03_green_F", DEF_PROD(80000)],          // WY-55 Hellcat
     ["OPT_B_Heli_Transport_01_F", DEF_PROD(90000)],             // UH-80 Ghosthawk
-	["OPT_B_Heli_Transport_02_F", DEF_PROD(100000)],           	// CH-49 Mohawk (Transport+Lift)
+	["OPT_B_Heli_Transport_02_F", DEF_PROD(0)],           	// CH-49 Mohawk (Transport+Lift)
     ["OPT_B_Heli_Transport_03_unarmed_F", DEF_PROD(110000)],    // CH-67 Huron unarmed (Transport+Lift)
     ["OPT_B_Heli_Transport_03_F", DEF_PROD(150000)],            // CH-67 Huron armed (Transport+Lift)
     ["OPT_B_UAV_02_light_F", DEF_PROD(300000)],                 // Greyhawk unbewaffnet
@@ -121,7 +121,7 @@ GVAR(nato_supplies) =
     ["OPT_Box_NATO_Grenades_F", 75000, 10000, 20000],           // granatenkiste
     ["OPT_NATO_Sprengstoffkiste", 150000, 10000, 20000],        // sprengstoffkiste
     ["OPT_Box_NATO_WpsSpecial_AT_L1", 200000, 10000, 20000],     // AT Raketenkiste (MRAWS)
-	["OPT_Box_NATO_WpsSpecial_AT_L2", 150000, 10000, 20000],     // AT Raketenkiste (PCML)
+	["OPT_Box_NATO_WpsSpecial_AT_L2" , DEF_PROD(0)],     // AT Raketenkiste (PCML)
 	["OPT_Box_NATO_WpsSpecial_AT_H1", 350000, 10000, 20000],     // AT Raketenkiste (Titan)
     ["OPT_Box_NATO_WpsSpecial_AA_F", 140000, 10000, 20000],      // AA Raketenkiste
     ["OPT_B_supplyCrate_F", DEF_PROD(0)],                     // Transportkiste (leer)
@@ -177,14 +177,14 @@ GVAR(csat_vehicles) =
     ["OPT_O_T_Quadbike_01_ghex_F", DEF_PROD(1500)],                // Quadbike 
     ["OPT_O_T_LSV_02_unarmed_ghex_F", DEF_PROD(5000)],                  // Quilin unarmed 
     ["OPT_O_T_LSV_02_armed_ghex_F", DEF_PROD(8000)],                    // Quilin armed 
-	["OPT_O_G_Offroad_01_F", DEF_PROD(5000)],                      // Pickup
+	["OPT_O_G_Offroad_01_ghex_F", DEF_PROD(5000)],                      // Pickup
     ["OPT_O_G_Offroad_01_armed_F", DEF_PROD(0)],                // Pickup HMG
 	["OPT_O_T_MRAP_02_ghex_F", DEF_PROD(5500)],                    // Ifrit 
-    ["OPT_O_T_MRAP_02_hmg_ghex_F", DEF_PROD(21000)],                // Ifrit HMG 
+    ["OPT4_O_T_MRAP_02_hmg_ghex_F", DEF_PROD(21000)],                // Ifrit HMG 
     ["OPT_O_T_Truck_03_covered_ghex_F", DEF_PROD(8000)],           // Tempest Transport 
 	["OPT_O_T_Truck_03_transport_ghex_F", DEF_PROD(2000)],         // Tempest 
     ["OPT_O_T_Truck_03_repair_ghex_F", DEF_PROD(10000)],            // Tempest Repair
-    ["OPT_O_T_Truck_03_medical_ghex_F", DEF_PROD(0)]          // Tempest Medical
+    ["OPT_O_T_Truck_03_medical_ghex_F", DEF_PROD(10000)]          // Tempest Medical
 
 ];
 
@@ -235,7 +235,7 @@ GVAR(csat_armored) =
     ["OPT_O_Truck_02_MRL_F", DEF_PROD(0)],                 // Zamark MRL    
 	//Tropentarn
 	["OPT4_O_MRAP_02_gmg_ghex_F", DEF_PROD(0)],                  // Ifrit GMG
-	["OPT4_O_LSV_02_AT_ghex_F", DEF_PROD(80000)],                    // Quilin AT 
+	["OPT4_O_LSV_02_AT_GHEX_F", DEF_PROD(80000)],                    // Quilin AT 
     ["OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", DEF_PROD(25000)],       // MSE-3 Marid 
     ["OPT4_O_APC_Wheeled_03_cannon_ghex_F", DEF_PROD(50000)],       		// AFV-4 Gorgon
 	["OPT4_O_T_APC_Tracked_02_cannon_ghex_F", DEF_PROD(60000)],     // BTR-K Kamysh 
@@ -251,7 +251,7 @@ GVAR(csat_supplies) =
     ["OPT_Box_East_WpsSpecial_F", 60000, 10000, 20000],                     // Munition spezial kiste
     ["OPT_Box_East_Grenades_F", 75000, 10000, 20000],                       // granatenkiste
     ["OPT_CSAT_Sprengstoffkiste", 150000, 10000, 20000],                    // sprengstoffkiste
-    ["OPT_Box_East_WpsSpecial_AT_L1", 200000, 10000, 20000],                  // AT Raketenkiste (RPG-42)
+    ["OPT_Box_East_WpsSpecial_AT_L1", 200000, 10000, 20000],                         // AT Raketenkiste (RPG-42)
 	["OPT_Box_East_WpsSpecial_AT_L2", 150000, 10000, 20000],                  // AT Raketenkiste (RPG-7)
 	["OPT_Box_East_WpsSpecial_AT_H1", 350000, 10000, 20000],                  // AT Raketenkiste (9M135 Vorona)
     ["OPT_Box_East_WpsSpecial_AA_F", 140000, 10000, 20000],                  // AA Raketenkiste

@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Welcome to the Jungle Tanoa"
+#define __MISSION_NAME__ "Green Hell Jungle-Fever S#4"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ v MAJOR.MINOR.BUILD
 // made by

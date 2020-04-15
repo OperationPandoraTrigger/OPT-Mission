@@ -51,39 +51,42 @@
 //West
 GVAR(locations_west) =
 [
-    [[7824,0,7947], "Beampunkt 1", 0],
-    [[20429,0,9569], "Beampunkt 2", 0],
+ /*
+    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
+    [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis",0],
     [[0,0,0], "FOB", 0],
 
-      
-	   [[12235,0,8114], "-000 - Frozens Trinkstube",1], 
-	   [[2953,0,9435], "098 - Sosovu Graben",0], 
-	   [[4278,0,8433], "058 - Altes BDepot",0],
-	   
-	   [[26731,0,24638], "60 - Molos Airbase",0], 
-	   [[26989,0,23206], "61 - Molos Town",0], 
-	   [[25420,0,20338], "62 - Refinery",0] 
+
+
+	   [[14352,0,8600],"69 - schöne Aussicht",1], //
+	   [[13482,0,9579],"115 - Goldgrube",1], // 
+	   [[13964,0,10011],"84 - alte Mine",1] // 
+
+
+*/
 ];
 
 //East
 GVAR(locations_east) =
 [
-    [[13354,0,11422], "Beampunkt 1", 0],
-    [[23652,0,20038], "Beampunkt 2", 0],
+/*
+    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
+    [[0,0,0], "Beampunkt 2", 0],
     [[0,0,0], "Beampunkt 3", 0],
     [[0,0,0], "Marine Basis", 0],
     [[0,0,0], "FOB", 0],
-	
-       
-	   [[12288,0,8971], "000 - Checkpoint Alpha",1],
-	   [[2191,0,11213], "116 - Oppas Kassino",0],
-	   [[4060,0,11760], "118 - neue Nato Brücke",0],
-	   
-	   [[26731,0,24638], "60 - Molos Airbase",0],
-	   [[26989,0,23206], "61 - Molos Town",0],
-	   [[25420,0,20338], "62 - Refinery",0]
+
+
+
+	   [[13049,0,10656],"04 - Dogana Blueperl",1], // 
+	   [[13763,0,10808],"05 - Checkpoint Bravo",1], //
+	   [[13427,0,11714],"73 - Blueperl Brecheranlage",1], // 
+	   [[13784,0,11900],"71 - Trockendok",1] // 
+
+
+*/       
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
@@ -118,17 +121,29 @@ GVAR(beam_vehicles) =
 	"OPT_B_Truck_01_medical_F", 					//HEMTT Medic
 	"OPT_B_Quadbike_01_F",							//Quadbike NATO
 	"OPT_B_G_Offroad_01_F",							//Pickup
+
+	//Bluefor Tropentarn
+	"OPT_B_G_Offroad_01_ghex_F",					//Pickup Tropentarn
+	"OPT_B_Quadbike_01_ghex_F",						//Quadbike nato
+	"OPT_B_Truck_01_medical_ghex_F",				//HEMTT Medic
+	"OPT_B_Truck_01_transport_ghex_F",				//HEMTT offen
+	"OPT_B_T_LSV_01_unarmed_ghex_F",				//Prowler
+
+
 	//OPFOR hextarn
 	"OPT_O_Truck_03_covered_F",						//Tempest Abgedeckt
 	"OPT_O_Truck_03_repair_F",						//Tempest Reparatur
 	"OPT_O_Truck_03_medical_F",						//Tempest Medic
 	"OPT_O_Quadbike_01_F",							//Quadbike CSAT
 	"OPT_O_G_Offroad_01_F",							//Pickup
+
 	//OPFOR tropentarn
-	"OPT_O_T_Truck_03_covered_ghex_F",				//Tempest Abgedeckt
-	"OPT_O_T_Truck_03_repair_ghex_F",				//Tempest Reparatur
+	"OPT_O_G_Offroad_01_ghex_F",					//Pickup
+	"OPT_O_T_Truck_03_transport_ghex_F",			//Tempest offen
 	"OPT_O_T_Truck_03_medical_ghex_F",				//Tempest Medic
-	"OPT_O_T_Quadbike_01_ghex_F"					//Quadbike CSAT
+	"OPT_O_T_Quadbike_01_ghex_F",					//Quadbike CSAT
+	"OPT_O_T_LSV_02_unarmed_ghex_F"					//Quilin
+
 ];	
 
 /* List of triggers in Editor for beam functionality */
@@ -141,3 +156,4 @@ GVAR(beam_trigger) =
 	csat_trigger_beam_5,
 	csat_trigger_beam_6
 ];
+

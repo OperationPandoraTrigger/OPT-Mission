@@ -33,13 +33,13 @@ if (EGVAR(training,on)) then {
         // is there a flag that should be moved?
         _flag = objNull;
         {
-            if (_x getVariable [QGVAR(isFlagMovable), false]) exitWith {_flag = _x};
+            if (_x getVariable [QGVAR(isFlagMovable), false]) exitWith { _flag = _x; };
         } foreach GVARMAIN(csat_flags) + GVARMAIN(nato_flags);
 
         if (_flag isEqualTo objNull) then {
 
             // check for flag nearby
-            _obj = nearestObjects [_pos, ["FlagPole_F"], 50];
+            _obj = nearestObjects [_pos, ["FlagPole_F"], 100];
             if (count _obj == 0) exitWith {};
 
             _obj = _obj select 0;
@@ -48,8 +48,14 @@ if (EGVAR(training,on)) then {
         } else {
             _flag setpos _pos;
             _flag setVariable [QGVAR(isFlagMovable), false];
+
+	        // flaggenmarker verschieben
             _marker = _flag getVariable QGVAR(flagMarker);
-            _marker setMarkerPos _pos; // global new marker
+            _marker setMarkerPos _pos;
+
+            // minenzonenmarker verschieben
+            _marker = _flag getVariable QGVAR(mineMarker);
+            _marker setMarkerPos _pos;
         };
         
     }] call BIS_fnc_addStackedEventHandler;

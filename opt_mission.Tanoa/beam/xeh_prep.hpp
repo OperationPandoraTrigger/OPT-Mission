@@ -1,4 +1,3 @@
-
 PREP(beam);
 PREP(beam_zer);
 PREP(beamMapmove);
@@ -7,3 +6,6 @@ PREP(onLoadDialog);
 PREP(openDialog);
 PREP(postInit);
 PREP(setup_beamOrte);
+PREP(addBeamMenu);
+PREP(addBeam);
+PREP(initAddBeamDialog);
