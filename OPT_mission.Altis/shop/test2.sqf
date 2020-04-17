@@ -1,2 +1,0 @@
-
-createDialog "Dialogshopkonfig";
