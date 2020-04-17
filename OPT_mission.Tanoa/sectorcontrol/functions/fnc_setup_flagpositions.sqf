@@ -10,27 +10,29 @@ east -> Angriffsziel für NATO
 GVARMAIN(nato_flags_pos) = [
 
 // Basis 
+
+
+	   [14352,8600, west,"69 - schöne Aussicht",true], //
+	   [13482,9579, west,"115 - Goldgrube",true], // 
+	   [13964,10011, west,"84 - alte Mine",true] // 
 	   
-	   [2304,13243, west,"87 - Flugschule",true], //
-	   [2706,12336, west,"85 - Funkturm Whiskey",true], // 
-	   [1774,11999, west,"88 - Manus Pizzaria",true], // 
-	   
-	   [2191,11213, west,"116 - oppas cassino",true], //
-	   [3074,11092, west,"89 - Belford Bank",true] // 
+    
+
 ];
 
 GVARMAIN(csat_flags_pos) = [
 
 //Basis 
 
+	   [13049,10656, east,"04 - Dogana Bluepearl",true], // 
+	   [13763,10808, east,"05 - Checkpoint Bravo",true], //
+	   [13427,11714, east,"73 - Bluepearl Brecheranlage",true], // 
+	   [13784,11900, east,"71 - Trockendock",true] // 
+
+
 	   
-	   [4060,11760, east,"118 - neue nato bruecke",true], // 
-	   [3733,12346, east,"59 - Battery Müller 2",true], //
-	   [2938,13086, east,"86 - GSM Station",true], // 
-	   
-	   [4015,13570, east,"27 - Panzerteststrecke",true], // 
-	   [3973,13840, east,"19 - alter Militaerkomplex",true] // 
 ];
+
 
 
 // erzeuge für alle oben gelisteten Positionen einen Flaggenmast mit korrekter Flagge vom Server aus.
@@ -44,12 +46,19 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-			_flag setFlagTexture "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];        
 			_flag setVariable ["opt_flag", true, true];
-		};	
+			_flag setVariable ["start_owner", _owner, true];
+
+			if (OPT_sectorcontrol_flagStartNeutral) then // Nur Fahnenmast ohne Flagge zum Start gewünscht?
+			{
+				_flag setVariable ["owner", sideUnknown, true];
+			}
+			else
+			{
+				_flag setFlagTexture "bilder\sword_fahne.paa";
+				_flag setVariable ["owner", _owner, true];
+			};
+		};
 		
 	} forEach GVARMAIN(nato_flags_pos);
 
@@ -60,11 +69,18 @@ if (isServer) then
 		{
 			// Objekt erzeugen
 			private _flag = createVehicle ["FlagPole_F", [_x, _y],  [], 0, "CAN_COLLIDE"];
-			_flag setFlagTexture "\A3\Data_F\Flags\Flag_CSAT_CO.paa";
-
-			// notwendige Variablen fuer OPT
-			_flag setVariable ["owner", _owner, true];
 			_flag setVariable ["opt_flag", true, true];
+			_flag setVariable ["start_owner", _owner, true];
+
+			if (OPT_sectorcontrol_flagStartNeutral) then // Nur Fahnenmast ohne Flagge zum Start gewünscht?
+			{
+				_flag setVariable ["owner", sideUnknown, true];
+			}
+			else
+			{
+				_flag setFlagTexture "bilder\arf_fahne.paa";
+				_flag setVariable ["owner", _owner, true];
+			};
 		};
 	} forEach GVARMAIN(csat_flags_pos);
 };

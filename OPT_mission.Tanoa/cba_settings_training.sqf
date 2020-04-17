@@ -202,6 +202,9 @@ force OPT_sectorcontrol_flagFreeMineZoneMarkerOn = true;
 force OPT_sectorcontrol_flagFreeMineZoneOn = true;
 force OPT_sectorcontrol_flagFreeMineZoneRadius = 20;
 force OPT_sectorcontrol_flagMarkerOn = true;
+force OPT_sectorcontrol_flagCountNATO = 1;
+force OPT_sectorcontrol_flagCountCSAT = 1;
+force OPT_sectorcontrol_flagStartNeutral = false;
 
 // OPT TFAR
 force OPT_PARAM_TFAR_INTERCEPTION = false;
@@ -245,7 +248,7 @@ force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
 force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
 force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
-force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
+force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g_big_bwmod";
 force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
 force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
 force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";

@@ -49,40 +49,10 @@
 #include "script_component.hpp"
 
 //West
-GVAR(locations_west) =
-[
-    [[2262,0,8585], "Beampunkt 1", 4],
-    [[20429,0,9569], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis",0],
-    [[0,0,0], "FOB", 0],
-
-    	[[2304,0,13243],"87 - Flugschule",1], //
-		[[2706,0,12336],"85 - Funkturm Whiskey",1], // 
-		[[1774,0,11999],"88 - Manus Pizzaria",1], // 
-	   
-		[[2191,0,11213],"116 - oppas cassino",1], //
-		[[3074,0,11092],"89 - Belford Bank",1] // 
-
-];
+GVAR(locations_west) = [];
 
 //East
-GVAR(locations_east) =
-[
-    [[6956,0,13280], "Beampunkt 1", 4],
-    [[23652,0,20038], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis", 0],
-    [[0,0,0], "FOB", 0],
-	
-       
-	   [[4060,0,11760],"118 - neue nato bruecke",1], // 
-	   [[3733,0,12346],"59 - Battery Müller 2",1], //
-	   [[2938,0,13086],"86 - GSM Station",1], // 
-	   
-	   [[4015,0,13570],"27 - Panzerteststrecke",1], // 
-	   [[3973,0,13840],"19 - alter Militaerkomplex",1] //
-];
+GVAR(locations_east) = [];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
 GVAR(restricted_vehicles) = 
@@ -119,9 +89,11 @@ GVAR(beam_vehicles) =
 
 	//Bluefor Tropentarn
 	"OPT_B_G_Offroad_01_ghex_F",					//Pickup Tropentarn
-	"OPT_B_Quadbike_01_ghex_F",
-	"OPT_B_Truck_01_medical_ghex_F",
-	"OPT_B_Truck_01_covered_ghex_F",				//HEMTT Abgedeckt
+	"OPT_B_Quadbike_01_ghex_F",						//Quadbike nato
+	"OPT_B_Truck_01_medical_ghex_F",				//HEMTT Medic
+	"OPT_B_Truck_01_transport_ghex_F",				//HEMTT offen
+	"OPT_B_T_LSV_01_unarmed_ghex_F",				//Prowler
+
 
 	//OPFOR hextarn
 	"OPT_O_Truck_03_covered_F",						//Tempest Abgedeckt
@@ -131,10 +103,12 @@ GVAR(beam_vehicles) =
 	"OPT_O_G_Offroad_01_F",							//Pickup
 
 	//OPFOR tropentarn
-	"OPT_O_T_Truck_03_covered_ghex_F",				//Tempest Abgedeckt
-	"OPT_O_T_Truck_03_repair_ghex_F",				//Tempest Reparatur
+	"OPT_O_G_Offroad_01_ghex_F",					//Pickup
+	"OPT_O_T_Truck_03_transport_ghex_F",			//Tempest offen
 	"OPT_O_T_Truck_03_medical_ghex_F",				//Tempest Medic
-	"OPT_O_T_Quadbike_01_ghex_F"					//Quadbike CSAT
+	"OPT_O_T_Quadbike_01_ghex_F",					//Quadbike CSAT
+	"OPT_O_T_LSV_02_unarmed_ghex_F"					//Quilin
+
 ];	
 
 /* List of triggers in Editor for beam functionality */

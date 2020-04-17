@@ -297,9 +297,9 @@ GVAR(vehclasseastWW) =
 	"OPT4_O_MBT_02_cannon_F",
 	"OPT4_O_MBT_02_arty_F",
 	//Tropentarn
-	"OPT4_O_MRAP_02_hmg_ghex_F", 
+	"OPT4_O_T_MRAP_02_hmg_ghex_F", 
     "OPT4_O_MRAP_02_gmg_ghex_F",
-	"OPT4_O_LSV_02_AT_ghex_F",
+	"OPT4_O_LSV_02_AT_GHEX_F",
     "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F",
 	"OPT4_O_APC_Wheeled_03_cannon_ghex_F",
     "OPT4_O_T_APC_Tracked_02_cannon_ghex_F",

@@ -93,37 +93,55 @@ GVARMAIN(crew) = [
 	"OPT_CSAT_Besatzungsmitglied"
 ];
 
-GVARMAIN(crew_vecs) = [
-	"OPT4_B_APC_Tracked_01_rcws_F",					// IFV-6c Panther
-	"OPT_B_APC_Wheeled_01_cannon_light_F",			// AMV-7 Marshall (Leicht)
-	"OPT4_B_APC_Wheeled_01_cannon_F",				// AMV-7 Marshall	
-	"OPT4_B_APC_Tracked_01_AA_F",					// IFV-6a Cheetah
-	"OPT4_B_APC_tracked_03_cannon_F",			// FV-720 Mora	
-	"OPT4_B_MBT_01_cannon_F",					// M2A4 Slammer
-	"OPT4_B_MBT_01_TUSK_F",					    // M2A4 SlammerUp
-	"OPT_B_MBT_03_cannon_F",						    // MBT-52 Kuma, fliegt raus
-	"OPT_B_MBT_01_Arty_F",					    // M4 Scorcher
-	"OPT4_B_MBT_01_mlrs_F",					    // M4 Scorcher	
-	"OPT4_B_MBT_01_arty_F",						    // M4 Scorcher
-	"OPT_B_MBT_01_mlrs_F",							// M5 Sandstorm	
-	"OPT4_O_APC_Wheeled_02_rcws_F",		// MSE-3 Marid
-	"OPT_O_APC_Wheeled_03_cannon_light_F",		// AFV-4 Gorgon (Leicht)
-	"OPT4_O_APC_Wheeled_03_cannon_F",				// AFV-4 Gorgon
-	"OPT4_O_APC_Tracked_02_AA_F",			    // ZSU-39 Tigris
-	"OPT_O_APC_Tracked_02_cannon_light_F",	// BTR-K Kamysh
-	"OPT4_O_APC_Tracked_02_cannon_F",		    // BTR-K Kamysh (Titan)
-	"OPT4_O_MBT_02_cannon_F",				    // T-100 Varsuk
-	"OPT4_O_MBT_02_arty_F",					// 2S9 Sochor
-	"OPT4_O_T_APC_Wheeled_02_rcws_ghex_F",			// MSE-3 Marid 50000
-	"OPT_O_APC_Wheeled_03_cannon_light_F",			// AFV-4 Gorgon (Leicht) 90000
-	"OPT_O_APC_Wheeled_03_cannon_F",			// AFV-4 Gorgon 120000
-	"OPT4_O_T_APC_Tracked_02_AA_ghex_F",			    // ZSU-39 Tigris 275000
-	"OPT_O_T_APC_Tracked_02_cannon_ghex_light_F",	// BTR-K Kamysh 120000
-	"OPT4_O_T_APC_Tracked_02_cannon_ghex_F",	    // BTR-K Kamysh (Titan) 275000
-	"OPT4_O_T_MBT_02_cannon_ghex_F",				    // T-100 Varsuk 450000
-	"OPT4_O_T_MBT_02_arty_ghex_F",				// 2S9 Sochor 400000
-	"OPT4_B_LSV_01_AT_F",                   	 // Prowler AT - 20000
-	"OPT4_O_LSV_02_AT_F"                    	// Quilin AT
+GVARMAIN(crew_vecs) = [	
+	//NATO
+	"OPT4_B_MRAP_01_gmg_F",
+	"OPT4_B_LSV_01_AT_F",
+    "OPT4_B_APC_tracked_03_cannon_F",
+    "OPT4_B_APC_Wheeled_01_cannon_F",
+    "OPT4_B_APC_Tracked_01_rcws_F",
+    "OPT4_B_APC_Tracked_01_AA_F",
+    "OPT4_B_MBT_01_cannon_F",
+    "OPT4_B_MBT_01_TUSK_F",
+    "OPT4_B_MBT_01_arty_F",
+    "OPT4_B_MBT_03_cannon_F",
+	"OPT_B_MBT_01_mlrs_F",
+	//Tropentarn
+    "OPT4_B_MRAP_01_gmg_ghex_F",
+	"OPT4_B_LSV_01_AT_ghex_F",
+    "OPT4_B_Heli_Light_01_armed_F",
+    "OPT4_B_Heli_light_03_green_F",
+    "OPT4_B_Heli_Attack_01_F",
+    "OPT4_B_APC_tracked_03_cannon_ghex_F",
+    "OPT4_B_APC_Wheeled_01_cannon_ghex_F",
+    "OPT4_B_APC_Tracked_01_rcws_ghex_F",
+    "OPT4_B_APC_Tracked_01_AA_ghex_F",
+    "OPT4_B_MBT_01_cannon_ghex_F",
+    "OPT4_B_MBT_01_TUSK_ghex_F",
+    "OPT4_B_MBT_01_arty_ghex_F",
+    "OPT4_B_MBT_03_cannon_ghex_F",
+	"OPT_B_MBT_01_mlrs_ghex_F",
+	
+	//CSAT 
+    "OPT4_O_MRAP_02_gmg_F",
+	"OPT4_O_LSV_02_AT_F",	
+    "OPT4_O_APC_Wheeled_02_rcws_F",
+	"OPT4_O_APC_Wheeled_03_cannon_F",
+	"OPT4_O_APC_Tracked_02_cannon_F",
+	"OPT4_O_APC_Tracked_02_AA_F",
+	"OPT4_O_MBT_02_cannon_F",
+	"OPT4_O_MBT_02_arty_F",
+	"OPT_O_Truck_02_MRL_F",
+	//Tropentarn
+    "OPT4_O_MRAP_02_gmg_ghex_F",
+	"OPT4_O_LSV_02_AT_GHEX_F",
+    "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F",
+	"OPT4_O_APC_Wheeled_03_cannon_ghex_F",
+    "OPT4_O_T_APC_Tracked_02_cannon_ghex_F",
+    "OPT4_O_T_APC_Tracked_02_AA_ghex_F",
+    "OPT4_O_T_MBT_02_cannon_ghex_F",	
+    "OPT4_O_T_MBT_02_arty_ghex_F",
+	"OPT_O_Truck_02_MRL_ghex_F"		
 ];
 
 /* Waffenabfrage Offizier/Pilot/Crew*/

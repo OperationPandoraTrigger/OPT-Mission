@@ -151,7 +151,7 @@ GVAR(canTransportCargo) =
 	["OPT_O_G_Offroad_01_F", 0],                      // Pickup
     ["OPT_O_G_Offroad_01_armed_F", 4],                // Pickup HMG
 	["OPT_O_T_MRAP_02_ghex_F", 4],                    // Ifrit 
-    ["OPT_O_T_MRAP_02_hmg_ghex_F", 4],                // Ifrit HMG 
+    ["OPT4_O_T_MRAP_02_hmg_ghex_F", 4],                // Ifrit HMG 
     ["OPT_O_T_Truck_03_covered_ghex_F", 0],           // Tempest Transport 
 	["OPT_O_T_Truck_03_transport_ghex_F", 10],         // Tempest 
     ["OPT_O_T_Truck_03_repair_ghex_F", 2],            // Tempest Repair
@@ -328,7 +328,7 @@ GVAR(canBeTransported) =
 	["OPT_O_G_Offroad_01_F", 6],                      // Pickup
     ["OPT_O_G_Offroad_01_armed_F", 6],                // Pickup HMG
 	["OPT_O_T_MRAP_02_ghex_F", 6],                    // Ifrit 
-    ["OPT_O_T_MRAP_02_hmg_ghex_F", 6],                // Ifrit HMG 
+    ["OPT4_O_T_MRAP_02_hmg_ghex_F", 6],                // Ifrit HMG 
     ["OPT_O_T_Truck_03_covered_ghex_F", 10],           // Tempest Transport 
 	["OPT_O_T_Truck_03_transport_ghex_F", 10],         // Tempest 
     ["OPT_O_T_Truck_03_repair_ghex_F", 10],            // Tempest Repair
