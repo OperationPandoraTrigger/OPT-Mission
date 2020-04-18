@@ -121,8 +121,8 @@ if (_victim isKindOf "Man") then {
                 "Flug"
             } else {
                 if (toLower (typeOf _vec) in _boat) then {
-					"Boot"
-				} else {
+                    "Boot"
+                } else {
                     "Unbekannt"
                 }                
             };
