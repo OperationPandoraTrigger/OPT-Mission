@@ -49,45 +49,10 @@
 #include "script_component.hpp"
 
 //West
-GVAR(locations_west) =
-[
- /*
-    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
-    [[0,0,0], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis",0],
-    [[0,0,0], "FOB", 0],
-
-
-
-	   [[14352,0,8600],"69 - schöne Aussicht",1], //
-	   [[13482,0,9579],"115 - Goldgrube",1], // 
-	   [[13964,0,10011],"84 - alte Mine",1] // 
-
-
-*/
-];
+GVAR(locations_west) = [];
 
 //East
-GVAR(locations_east) =
-[
-/*
-    [[11151,0,10123], "Zum Durchgeknallten Taliban 1", 4],
-    [[0,0,0], "Beampunkt 2", 0],
-    [[0,0,0], "Beampunkt 3", 0],
-    [[0,0,0], "Marine Basis", 0],
-    [[0,0,0], "FOB", 0],
-
-
-
-	   [[13049,0,10656],"04 - Dogana Blueperl",1], // 
-	   [[13763,0,10808],"05 - Checkpoint Bravo",1], //
-	   [[13427,0,11714],"73 - Blueperl Brecheranlage",1], // 
-	   [[13784,0,11900],"71 - Trockendok",1] // 
-
-
-*/       
-];
+GVAR(locations_east) = [];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
 GVAR(restricted_vehicles) = 
