@@ -49,10 +49,18 @@
 #include "script_component.hpp"
 
 //West
-GVAR(locations_west) = [];
+GVAR(locations_west) = [
+	[[6529,0,11111],"44 - Frozens Folterkammer",1],
+	[[8258,0,11148],"52 - Großmeisters Tempel",1],
+	[[8841,0,10210],"54 - Tanuka Mail",1]
+];
 
 //East
-GVAR(locations_east) = [];
+GVAR(locations_east) = [
+	[[8119,0,9406],"06 - Checkpoint Airport",1],
+	[[7444,0,8552],"35 - Kraftwerk",1],
+	[[6040,0,10417],"57 - Sender GT",1]
+];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
 GVAR(restricted_vehicles) = 
