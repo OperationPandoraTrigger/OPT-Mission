@@ -28,7 +28,6 @@ class CLib {
         EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
-    // Modules[] = {"CLib", "PerformanceMonitor","OPT/tracker","OPT/gps"};
     Modules[] = {"CLib", "PerformanceMonitor", "OPT"};
     useExperimentalAutoload = 0;
     useCompressedFunction = 0;

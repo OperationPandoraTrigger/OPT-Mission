@@ -71,3 +71,7 @@ This event happens every time a soldier enters a vehicle.
 
 }] call CBA_fnc_addClassEventHandler;
 
+["Ship", "killed", {
+    _this remoteExecCall [QFUNC(handleDeadVehicle), 2, false];
+
+}] call CBA_fnc_addClassEventHandler;

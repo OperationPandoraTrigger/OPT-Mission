@@ -4,6 +4,7 @@ PREP(checkFirstAid);
 PREP(checkFirstAidMedic);
 PREP(checkForNearbyMedics);
 PREP(checkRevive);
+PREP(checkplaymove);
 PREP(checkStabilize);
 PREP(checkSuicide);
 PREP(clearGarbage);

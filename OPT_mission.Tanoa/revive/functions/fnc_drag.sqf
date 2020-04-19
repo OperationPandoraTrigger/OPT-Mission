@@ -37,6 +37,10 @@ _id = player addAction [
 ];
 hintSilent "Drücke 'C', falls du dich nicht bewegen kannst.";
 
+
+//Playmove check
+player addEventHandler ["AnimChanged", {[_this select 0] call FUNC(checkplaymove)}];
+
 // Wait until release action is used
 waitUntil {
 	!alive player || player getVariable "FAR_isUnconscious" == 1 || !alive _target || _target getVariable "FAR_isUnconscious" == 0 || !FAR_isDragging || _target getVariable "FAR_isDragged" == 0 
@@ -49,6 +53,9 @@ if (FAR_REVIVE_DOWN_MARKER) then {
 
 // Handle release action
 FAR_isDragging = false;
+
+//EH entfernen
+player removeEventHandler ["AnimChanged", 0];
 	
 if (!isNull _target && alive _target) then {
 	//_target switchMove "AinjPpneMstpSnonWrflDnon";
