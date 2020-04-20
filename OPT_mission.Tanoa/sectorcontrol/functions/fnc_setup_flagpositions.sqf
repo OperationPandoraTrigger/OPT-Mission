@@ -33,7 +33,9 @@ GVARMAIN(csat_flags_pos) = [
 	   
 ];
 
-
+// Arrays öffentlich machen - Wichtig für fnc_addbeam
+publicVariable QGVARMAIN(nato_flags_pos);
+publicVariable QGVARMAIN(csat_flags_pos);
 
 // erzeuge für alle oben gelisteten Positionen einen Flaggenmast mit korrekter Flagge vom Server aus.
 
