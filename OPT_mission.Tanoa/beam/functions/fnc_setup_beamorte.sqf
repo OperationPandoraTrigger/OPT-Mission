@@ -1,6 +1,5 @@
 /**
 * Description:
-* setup available beam locations with their respective level
 * setup heavy vehicle classnames
 * setup beam trigger variable names
 *
@@ -8,7 +7,7 @@
 * Lord & James
 *
 * Edit by:
-* Manu
+* Manu & form
 *
 * Arguments:
 * None
@@ -27,7 +26,7 @@
 *
 * Sideeffects:
 * Define global variables
-* GVAR(locations_west), GVAR(locations_east), GVAR(restricted_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
+* GVAR(restricted_vehicles), GVAR(beam_vehicles), GVAR(beam_trigger) 
 *
 * Example:
 * [parameter] call EFUNC(fnc_setup_beamOrte.sqf);
@@ -47,12 +46,6 @@
 */
 
 #include "script_component.hpp"
-
-//West
-GVAR(locations_west) = [];
-
-//East
-GVAR(locations_east) = [];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
 GVAR(restricted_vehicles) = 
