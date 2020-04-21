@@ -39,33 +39,19 @@ private _orte = [];
 
 } foreach (_dialogText splitString _lineBreak);
 
-// Ermittle die erlaubte Anzahl der
-// Beampunkte (Definiert in beam\setup.hpp)
-// +
-// Anzahl der Flaggen, die dem Gegner für den Angriff zur Auswahl stehen. (Definiert in sectorcontrol\functions\fnc_setup_flagpositions.sqf)
-private _MAX_LOCATIONS = 0;
-if (PLAYER_SIDE == east) then
-{
-	_MAX_LOCATIONS = BEAM_MAX_LOCATIONS + count GVARMAIN(csat_flags_pos);
-}
-else
-{
-	_MAX_LOCATIONS = BEAM_MAX_LOCATIONS + count GVARMAIN(nato_flags_pos);
-};
-
-// Prüfung auf erlaubte Anzahl der Beampunkte.
-if (count _orte <= _MAX_LOCATIONS) then
+// Prüfung auf erlaubte Anzahl der Beampunkte (Definiert in beam\setup.hpp)
+if (count _orte <= BEAM_MAX_LOCATIONS) then
 {
 	// write updated positions back to global variables
 	if (PLAYER_SIDE == east) then
 	{
-		GVAR(locations_east) = _orte;
-		publicVariable QGVAR(locations_east);
+		GVAR(custom_beam_east) = _orte;
+		publicVariable QGVAR(custom_beam_east);
 	}
 	else
 	{
-		GVAR(locations_west) = _orte;
-		publicVariable QGVAR(locations_west);
+		GVAR(custom_beam_west) = _orte;
+		publicVariable QGVAR(custom_beam_west);
 	};
 
 	// Log beam position update
@@ -81,7 +67,7 @@ if (count _orte <= _MAX_LOCATIONS) then
 }
 else
 {
-	private _txt = format["Es dürfen nur %1 Beampunkte angegeben werden!", _MAX_LOCATIONS];
+	private _txt = format["Es dürfen nur %1 Beampunkte angegeben werden!", BEAM_MAX_LOCATIONS];
 	["Beam", _txt, "red"] remoteExecCall [QEFUNC(gui,message), player, false];
 };
 

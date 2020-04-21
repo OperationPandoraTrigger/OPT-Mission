@@ -50,13 +50,11 @@ private _orte = [];
 
 if (PLAYER_SIDE == east) then
 {
-    _orte = GVAR(locations_east);
-
+    _orte = GVAR(locations_east) + GVAR(custom_beam_east);
 }
 else
 {
-    _orte = GVAR(locations_west);
-
+    _orte = GVAR(locations_west) + GVAR(custom_beam_west);
 };
 
 
