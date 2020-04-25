@@ -75,7 +75,7 @@
         {
             params ["_target", "_player", "_params"];
 
-            [_target, _player] call FUNC(checkFirstAidMedic);
+            [_player] call FUNC(isMedic);
         }
     ] call ace_interact_menu_fnc_createAction;
 

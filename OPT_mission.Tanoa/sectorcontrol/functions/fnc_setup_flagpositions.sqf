@@ -8,29 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-
-// Basis 
-
-
-	   [14352,8600, west,"69 - schöne Aussicht",true], //
-	   [13482,9579, west,"115 - Goldgrube",true], // 
-	   [13964,10011, west,"84 - alte Mine",true] // 
-	   
-    
-
+	[6529,11111, west,"44 - Frozens Folterkammer",true],
+	[8258,11148, west,"52 - Großmeisters Tempel",true],
+	[8841,10210, west,"54 - Tanuka Mail",true]
 ];
 
 GVARMAIN(csat_flags_pos) = [
-
-//Basis 
-
-	   [13049,10656, east,"04 - Dogana Bluepearl",true], // 
-	   [13763,10808, east,"05 - Checkpoint Bravo",true], //
-	   [13427,11714, east,"73 - Bluepearl Brecheranlage",true], // 
-	   [13784,11900, east,"71 - Trockendock",true] // 
-
-
-	   
+	[8119,9406, east,"06 - Checkpoint Airport",true],
+	[7444,8552, east,"35 - Kraftwerk",true],
+	[6040,10417, east,"57 - Sender GT",true]   
 ];
 
 

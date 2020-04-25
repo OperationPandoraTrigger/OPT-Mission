@@ -47,7 +47,7 @@ class GVAR(dlg_addbeam)
             font = DEFAULTFONT;
             colorText[] = {1,1,1,1};
             colorBackground[] = {0,0,0,0};
-            text = "Aktuelle Liste aller Beampunkte: (editierbar)<br/>(Einfügen mit STRG+V. Neue Zeile mit SHIFT+ENTER.)<br/>Format: [[Pos_X, 0, Pos_Y], Name, Level]<br/>Level 1: Inf, 2: Inf+KFZ, 3: Alles, 4: Nach Missionsstart";
+            text = "Aktuelle Liste zusätzlicher Beampunkte: (editierbar)<br/>(Einfügen mit STRG+V. Neue Zeile mit SHIFT+ENTER.)<br/>Format: [[Pos_X, 0, Pos_Y], Name, Level]<br/>Level 1: Inf, 2: Inf+KFZ, 3: Alles, 4: Nach Missionsstart";
             x = 6 * GUI_GRID_W + GUI_GRID_X;
             y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
             w = 30 * GUI_GRID_W;
