@@ -50,16 +50,16 @@
 
 //West
 GVAR(locations_west) = [
-	[[6529,0,11111],"44 - Frozens Folterkammer",1],
-	[[8258,0,11148],"52 - Großmeisters Tempel",1],
-	[[8841,0,10210],"54 - Tanuka Mail",1]
+	[[8501,0,12446],"28 - Raststätte",1],
+	[[7293,0,12824],"61 - Batterie Dora",1],
+	[[8229,0,11985],"111 - Tomahawk Stellung",1]  
 ];
 
 //East
 GVAR(locations_east) = [
-	[[8119,0,9406],"06 - Checkpoint Airport",1],
-	[[7444,0,8552],"35 - Kraftwerk",1],
-	[[6040,0,10417],"57 - Sender GT",1]
+	[[6696,0,12354],"48 - Legales Waffenlager",1],
+	[[7030,0,10802],"49 - Hbf. Hulabula",1],
+	[[8258,0,11148],"52 - Großmeisters Tempel",1]
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
