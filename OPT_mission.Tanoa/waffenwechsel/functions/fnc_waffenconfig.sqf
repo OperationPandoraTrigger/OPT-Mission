@@ -32,22 +32,22 @@
 //[Magazinename, Waffenname, Preis/Schuss, Preis Magazin, Boxname, Waffenkontrolle Pilot KHS]
 GVAR(Raktenheliwest) =  
 [
-    ["OPT_PylonRack_1Rnd_Missile_AGM_02_F", "OPT_Missile_AGM_02_Plane_CAS_01_F", 150000, 150000, "1xMacer", 0],  // 0.1xMacer
-    ["OPT_PylonMissile_Missile_AMRAAM_D_INT_x1", "OPT_weapon_AMRAAMLauncher", 100000, 100000, "1xAMRAAM", 0],  //      1.1xAMRAAM
-    ["OPT_PylonRack_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 200000, "1xScalpel", 0],  //      2.1xScalpel AH9, Orca
-    ["OPT_PylonRack_3Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 600000, "3xScalpel", 0],  //      3.3xScalpel
-    ["OPT_PylonRack_12Rnd_missiles", "OPT_missiles_DAR", 4000, 48000, "12xDAR", -1],  //      4.12xDAR
-    ["OPT_PylonRack_12Rnd_PG_missiles", "OPT_missiles_DAGR", 10000, 120000, "12xDAGR", -1],  //      5.12xDAGR
-    ["OPT_PylonRack_19Rnd_Rocket_Skyfire", "OPT_rockets_Skyfire", 2500, 47500, "19xSkyfire", -1],  //      6.19xSkyfire
-    ["OPT_PylonRack_4Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 800000, "4xScalpel", 0],  //      7.4xScalpel
-    ["PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 2500, 17500, "7xShrieker HE", -1],  //      8.7xShrieker HE
-    ["PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 5000, 35000, "7xShrieker AP", -1],  //      9.7xShrieker AP
-    ["PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 2500, 50000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
-    ["PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 5000, 100000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
-    ["OPT_PylonMissile_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 200000, "1xScalpel", 0],  //      12.1xScalpel Hellcat, Kajman, Blackfoot
-    ["OPT_PylonRack_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 25000, 25000, "1xASRAAM", 0],  //      13.1xASRAAM AH9, Orca, Hellcat
-    ["OPT_PylonRack_Missile_AGM_02_x1", "OPT_weapon_AGM_65Launcher", 150000, 150000, "1xMacer II", 0],  // 14.1xMacer II
-    ["OPT_PylonMissile_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 25000, 25000, "1xASRAAM", 0]  //      15.1xASRAAM Blackfoot
+    ["OPT_PylonRack_1Rnd_Missile_AGM_02_F", "OPT_Missile_AGM_02_Plane_CAS_01_F", 195000, 195000, "1xMacer", 0],  // 0.1xMacer
+    ["OPT_PylonMissile_Missile_AMRAAM_D_INT_x1", "OPT_weapon_AMRAAMLauncher", 130000, 130000, "1xAMRAAM", 0],  //      1.1xAMRAAM
+    ["OPT_PylonRack_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 260000, "1xScalpel", 0],  //      2.1xScalpel AH9, Orca
+    ["OPT_PylonRack_3Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 780000, "3xScalpel", 0],  //      3.3xScalpel
+    ["OPT_PylonRack_12Rnd_missiles", "OPT_missiles_DAR", 5200, 62400, "12xDAR", -1],  //      4.12xDAR
+    ["OPT_PylonRack_12Rnd_PG_missiles", "OPT_missiles_DAGR", 13000, 156000, "12xDAGR", -1],  //      5.12xDAGR
+    ["OPT_PylonRack_19Rnd_Rocket_Skyfire", "OPT_rockets_Skyfire", 3250, 61750, "19xSkyfire", -1],  //      6.19xSkyfire
+    ["OPT_PylonRack_4Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 1040000, "4xScalpel", 0],  //      7.4xScalpel
+    ["PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 3250, 22750, "7xShrieker HE", -1],  //      8.7xShrieker HE
+    ["PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 6500, 45500, "7xShrieker AP", -1],  //      9.7xShrieker AP
+    ["PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 3250, 65000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
+    ["PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 6500, 130000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
+    ["OPT_PylonMissile_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 260000, "1xScalpel", 0],  //      12.1xScalpel Hellcat, Kajman, Blackfoot
+    ["OPT_PylonRack_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 32500, 32500, "1xASRAAM", 0],  //      13.1xASRAAM AH9, Orca, Hellcat
+    ["OPT_PylonRack_Missile_AGM_02_x1", "OPT_weapon_AGM_65Launcher", 195000, 195000, "1xMacer II", 0],  // 14.1xMacer II
+    ["OPT_PylonMissile_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 32500, 32500, "1xASRAAM", 0]  //      15.1xASRAAM Blackfoot
 ];
 
 //Gun Heli Nato
@@ -123,22 +123,22 @@ GVAR(Gunvehwest) =
 //[Magazinename, Waffenname, Preis/Schuss, Preis Magazin, Boxname, Waffenkontrolle Pilot KHS]
 GVAR(Raktenhelieast) = 
 [
-    ["OPT_PylonRack_1Rnd_Missile_AGM_02_F", "OPT_Missile_AGM_02_Plane_CAS_01_F", 150000, 150000, "1xMacer", 0],  // 0.1xMacer
-    ["OPT_PylonMissile_Missile_AMRAAM_D_INT_x1", "OPT_weapon_AMRAAMLauncher", 100000, 100000, "1xAMRAAM", 0],  //      1.1xAMRAAM
-    ["OPT_PylonRack_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 200000, "1xScalpel", 0],  //      2.1xScalpel AH9, Orca
-    ["OPT_PylonRack_3Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 600000, "3xScalpel", 0],  //      3.3xScalpel
-    ["OPT_PylonRack_12Rnd_missiles", "OPT_missiles_DAR", 4000, 48000, "12xDAR", -1],  //      4.12xDAR
-    ["OPT_PylonRack_12Rnd_PG_missiles", "OPT_missiles_DAGR", 10000, 120000, "12xDAGR", -1],  //      5.12xDAGR
-    ["OPT_PylonRack_19Rnd_Rocket_Skyfire", "OPT_rockets_Skyfire", 2500, 47500, "19xSkyfire", -1],  //      6.19xSkyfire
-    ["OPT_PylonRack_4Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 800000, "4xScalpel", 0],  //      7.4xScalpel
-    ["PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 2500, 17500, "7xShrieker HE", -1],  //      8.7xShrieker HE
-    ["PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 5000, 35000, "7xShrieker AP", -1],  //      9.7xShrieker AP
-    ["PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 2500, 50000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
-    ["PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 5000, 100000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
-    ["OPT_PylonMissile_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 200000, 200000, "1xScalpel", 0],  //      12.1xScalpel Hellcat, Kajman, Blackfoot
-    ["OPT_PylonRack_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 25000, 25000, "1xASRAAM", 0],  //      13.1xASRAAM AH9, Orca, Hellcat
-    ["OPT_PylonMissile_Missile_AGM_KH25_x1", "OPT_weapon_AGM_KH25Launcher", 25000, 25000, "1xAGM KH25", 0],  //      14.1xKH25 Kedge
-    ["OPT_PylonRack_1Rnd_Missile_AA_03_F", "OPT_Missile_AA_03_F", 25000, 25000, "1xSahr-3", 0]  //      15.1xSahr-3 Kajman
+    ["OPT_PylonRack_1Rnd_Missile_AGM_02_F", "OPT_Missile_AGM_02_Plane_CAS_01_F", 195000, 195000, "1xMacer", 0],  // 0.1xMacer
+    ["OPT_PylonMissile_Missile_AMRAAM_D_INT_x1", "OPT_weapon_AMRAAMLauncher", 130000, 130000, "1xAMRAAM", 0],  //      1.1xAMRAAM
+    ["OPT_PylonRack_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 260000, "1xScalpel", 0],  //      2.1xScalpel AH9, Orca
+    ["OPT_PylonRack_3Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 780000, "3xScalpel", 0],  //      3.3xScalpel
+    ["OPT_PylonRack_12Rnd_missiles", "OPT_missiles_DAR", 5200, 62400, "12xDAR", -1],  //      4.12xDAR
+    ["OPT_PylonRack_12Rnd_PG_missiles", "OPT_missiles_DAGR", 13000, 156000, "12xDAGR", -1],  //      5.12xDAGR
+    ["OPT_PylonRack_19Rnd_Rocket_Skyfire", "OPT_rockets_Skyfire", 3250, 61750, "19xSkyfire", -1],  //      6.19xSkyfire
+    ["OPT_PylonRack_4Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 1040000, "4xScalpel", 0],  //      7.4xScalpel
+    ["PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 3250, 22400, "7xShrieker HE", -1],  //      8.7xShrieker HE
+    ["PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 6500, 45500, "7xShrieker AP", -1],  //      9.7xShrieker AP
+    ["PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 3250, 65000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
+    ["PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 6500, 130000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
+    ["OPT_PylonMissile_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 260000, "1xScalpel", 0],  //      12.1xScalpel Hellcat, Kajman, Blackfoot
+    ["OPT_PylonRack_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 32500, 32500, "1xASRAAM", 0],  //      13.1xASRAAM AH9, Orca, Hellcat
+    ["OPT_PylonMissile_Missile_AGM_KH25_x1", "OPT_weapon_AGM_KH25Launcher", 195000, 195000, "1xAGM KH25", 0],  //      14.1xKH25 Kedge
+    ["OPT_PylonRack_1Rnd_Missile_AA_03_F", "OPT_Missile_AA_03_F", 32500, 32500, "1xSahr-3", 0]  //      15.1xSahr-3 Kajman
 ];
 
 //Gun CSAT
