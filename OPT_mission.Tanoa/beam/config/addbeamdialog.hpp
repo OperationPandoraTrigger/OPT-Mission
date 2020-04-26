@@ -47,7 +47,7 @@ class GVAR(dlg_addbeam)
             font = DEFAULTFONT;
             colorText[] = {1,1,1,1};
             colorBackground[] = {0,0,0,0};
-            text = "Aktuelle Liste aller Beampunkte: (editierbar)<br/>(Einfügen mit STRG+V. Neue Zeile mit SHIFT+ENTER.)<br/>Format: [[Pos_X, 0, Pos_Y], Name, Level]<br/>Level 1: Inf, 2: Inf+KFZ, 3: Alles, 4: Nach Missionsstart";
+            text = "Aktuelle Liste zusätzlicher Beampunkte: (editierbar)<br/>(Einfügen mit STRG+V. Neue Zeile mit SHIFT+ENTER.)<br/>Format: [[Pos_X, 0, Pos_Y], Name, Level]<br/>Level 1: Inf, 2: Inf+KFZ, 3: Alles, 4: Nach Missionsstart";
             x = 6 * GUI_GRID_W + GUI_GRID_X;
             y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
             w = 30 * GUI_GRID_W;
@@ -67,24 +67,12 @@ class GVAR(dlg_addbeam)
             idc = 1613;
             style = ST_CENTER + ST_VCENTER;
             text = "Übernehmen"; //--- ToDo: Localize;
-            x = 5.5 * GUI_GRID_W + GUI_GRID_X;
+            x = 16.5 * GUI_GRID_W + GUI_GRID_X;
             y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
             w = 8 * GUI_GRID_W;
             h = 1.5 * GUI_GRID_H;
             sizeEx = (0.023 / (getResolution select 5));
             action = QUOTE([] call FUNC(addBeam););
-        };
-        class RscButton_1713: RscButton
-        {
-            idc = 1713;
-            style = ST_CENTER + ST_VCENTER;
-            text = "Schließen"; //--- ToDo: Localize;
-            x = 27.5 * GUI_GRID_W + GUI_GRID_X;
-            y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
-            w = 8 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            sizeEx = (0.023 / (getResolution select 5));
-            action = "closeDialog 0";
         };
     };
 };

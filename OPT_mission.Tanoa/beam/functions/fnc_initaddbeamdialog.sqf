@@ -31,11 +31,11 @@ private _orte = [];
 
 if (PLAYER_SIDE == east) then
 {
-    _orte = GVAR(locations_east);
+    _orte = GVAR(custom_beam_east);
 }
 else
 {
-    _orte = GVAR(locations_west);
+    _orte = GVAR(custom_beam_west);
 };
 
 // write positions to edit-ctrl
