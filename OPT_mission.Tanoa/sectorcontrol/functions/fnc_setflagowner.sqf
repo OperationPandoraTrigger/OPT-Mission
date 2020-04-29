@@ -19,12 +19,12 @@ params ["_side","_flag"];
 
 switch (_side) do {
     case (west) : { //wenn spieler der zieht NATO ist
-        _flag setFlagTexture "bilder\sword_fahne.paa";
+        _flag setFlagTexture "bilder\arf_fahne.paa";
         _flag setVariable ["owner", _side, true];
 
     };
     case (east) : {
-        _flag setFlagTexture "bilder\arf_fahne.paa";
+        _flag setFlagTexture "bilder\sword_fahne.paa";
         _flag setVariable ["owner", _side, true];
 
     };
