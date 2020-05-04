@@ -109,9 +109,6 @@ GVARMAIN(crew_vecs) = [
 	//Tropentarn
     "OPT4_B_MRAP_01_gmg_ghex_F",
 	"OPT4_B_LSV_01_AT_ghex_F",
-    "OPT4_B_Heli_Light_01_armed_F",
-    "OPT4_B_Heli_light_03_green_F",
-    "OPT4_B_Heli_Attack_01_F",
     "OPT4_B_APC_tracked_03_cannon_ghex_F",
     "OPT4_B_APC_Wheeled_01_cannon_ghex_F",
     "OPT4_B_APC_Tracked_01_rcws_ghex_F",
