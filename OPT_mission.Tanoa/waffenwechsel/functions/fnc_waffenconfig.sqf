@@ -317,33 +317,33 @@ GVAR(textsloteast) =
 
 //West Einheiten Loadouts (Arrystelle von Einheitconfig als Boxindex)
 //[[Raketen], [Gun], [Drahtkäfig, Tranung], [Datalink]] 
-GVAR(Pawneeloadout) = [[1,1], [0], [0, 0], [0]];    
-GVAR(hellcat1loadout) = [[1, 1], [0], [0, 0], [0]]; 
-GVAR(Blackfootloadout) = [[2 , 2, 8, 9], [0], [0, 0], [0]];
-GVAR(HunterHMGloadout) = [[], [0], [0, 0], [0]];
-GVAR(HunterGMGloadout) = [[], [3], [0, 0], [0]];
-GVAR(ProwlerHMGloadout) = [[], [0], [0, 0], [0]];
-GVAR(ProwlerATloadout) = [[], [0, 0], [0, 0], [0]];
-GVAR(Pantherloadout) = [[], [0, 7], [0, 0], [0]]; 
-GVAR(Marshallloadout) = [[], [0, 4, 5], [0, 0], [0]]; 
-GVAR(Moraloadout) = [[], [0, 4, 5], [0, 0], [0]]; 
-GVAR(Cheetahloadout) = [[], [0, 1], [0, 0], [0]];
-GVAR(SlammerUploadout) = [[], [0, 4, 7, 10], [0, 0], [0]];
-GVAR(Scorcherloadout) = [[], [0,0], [0, 0], [0]];
+GVAR(Pawneeloadout) = [[1,1], [0], [0, 0], [1]];    
+GVAR(hellcat1loadout) = [[1, 1], [0], [0, 0], [1]]; 
+GVAR(Blackfootloadout) = [[2 , 2, 8, 9], [0], [0, 0], [1]];
+GVAR(HunterHMGloadout) = [[], [0], [0, 0], [1]];
+GVAR(HunterGMGloadout) = [[], [3], [0, 0], [1]];
+GVAR(ProwlerHMGloadout) = [[], [0], [0, 0], [1]];
+GVAR(ProwlerATloadout) = [[], [0, 0], [0, 0], [1]];
+GVAR(Pantherloadout) = [[], [0, 7], [0, 0], [1]]; 
+GVAR(Marshallloadout) = [[], [0, 4, 5], [0, 0], [1]]; 
+GVAR(Moraloadout) = [[], [0, 4, 5], [0, 0], [1]]; 
+GVAR(Cheetahloadout) = [[], [0, 1], [0, 0], [1]];
+GVAR(SlammerUploadout) = [[], [0, 4, 7, 10], [0, 0], [1]];
+GVAR(Scorcherloadout) = [[], [0,0], [0, 0], [1]];
 
 //EAST Einheiten Loadouts
-GVAR(Orcaloadout) = [[1,1], [0], [0, 0], [0]]; 
-GVAR(hellcatloadout)  =  [[1,1], [0], [0, 0], [0]]; 
-GVAR(Kajmanloadout) = [[2, 2, 8, 9], [0], [0, 0], [0]];
-GVAR(irifHMGloadout) = [[], [0], [0, 0], [0]];
-GVAR(irifGMGloadout) = [[], [3], [0, 0], [0]];
-GVAR(StriderGMGloadout)  =  [[], [3], [0, 0], [0]];
-GVAR(QuilinHMGloadout) = [[], [0], [0, 0], [0]];
-GVAR(QuilinATloadout) = [[], [0, 0], [0, 0], [0]];
-GVAR(Maridloadout) = [[], [0, 7], [0, 0], [0]]; 
-GVAR(Gorgonloadout) = [[], [0, 4, 5], [0, 0], [0]]; 
-GVAR(Kamyshloadout) = [[], [0, 4, 5], [0, 0], [0]]; 
-GVAR(Tigrisloadout) = [[], [0, 1], [0, 0], [0]];
-GVAR(Varsukloadout) = [[], [0, 4, 7, 9], [0, 0], [0]];
-GVAR(Sochorloadout) = [[], [0,0], [0, 0], [0]];
+GVAR(Orcaloadout) = [[1,1], [0], [0, 0], [1]]; 
+GVAR(hellcatloadout)  =  [[1,1], [0], [0, 0], [1]]; 
+GVAR(Kajmanloadout) = [[2, 2, 8, 9], [0], [0, 0], [1]];
+GVAR(irifHMGloadout) = [[], [0], [0, 0], [1]];
+GVAR(irifGMGloadout) = [[], [3], [0, 0], [1]];
+GVAR(StriderGMGloadout)  =  [[], [3], [0, 0], [1]];
+GVAR(QuilinHMGloadout) = [[], [0], [0, 0], [1]];
+GVAR(QuilinATloadout) = [[], [0, 0], [0, 0], [1]];
+GVAR(Maridloadout) = [[], [0, 7], [0, 0], [1]]; 
+GVAR(Gorgonloadout) = [[], [0, 4, 5], [0, 0], [1]]; 
+GVAR(Kamyshloadout) = [[], [0, 4, 5], [0, 0], [1]]; 
+GVAR(Tigrisloadout) = [[], [0, 1], [0, 0], [1]];
+GVAR(Varsukloadout) = [[], [0, 4, 7, 9], [0, 0], [1]];
+GVAR(Sochorloadout) = [[], [0,0], [0, 0], [1]];
 
