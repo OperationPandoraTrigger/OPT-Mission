@@ -35,8 +35,6 @@ _id = player addAction [
 	"", 
 	"true"
 ];
-hintSilent "Drücke 'C', falls du dich nicht bewegen kannst.";
-
 
 //Playmove check
 player addEventHandler ["AnimChanged", {[_this select 0] call FUNC(checkplaymove)}];
