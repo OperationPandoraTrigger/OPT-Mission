@@ -81,7 +81,7 @@ force ace_respawn_savePreDeathGear = true;
 
 // ACE Sichtweitenbegrenzung
 force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 4000;
+force ace_viewdistance_limitViewDistance = 3000;
 force ace_viewdistance_objectViewDistanceCoeff = 0;
 
 // ACE Sprengstoffe

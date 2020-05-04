@@ -8,15 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-	[6529,11111, west,"44 - Frozens Folterkammer",true],
-	[8258,11148, west,"52 - Großmeisters Tempel",true],
-	[8841,10210, west,"54 - Tanuka Mail",true]
+	[8501,12446, west,"28 - Raststätte",true],
+	[7293,12824, west,"61 - Batterie Dora",true],
+	[8229,11985, west,"111 - Tomahawk Stellung",true]  
 ];
 
 GVARMAIN(csat_flags_pos) = [
-	[8119,9406, east,"06 - Checkpoint Airport",true],
-	[7444,8552, east,"35 - Kraftwerk",true],
-	[6040,10417, east,"57 - Sender GT",true]   
+	[6696,12354, east,"48 - Legales Waffenlager",true],
+	[7030,10802, east,"49 - Hbf. Hulabula",true],
+	[8258,11148, east,"52 - Großmeisters Tempel",true]
 ];
 
 
@@ -41,7 +41,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "bilder\sword_fahne.paa";
+				_flag setFlagTexture "bilder\arf_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
@@ -64,7 +64,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "bilder\arf_fahne.paa";
+				_flag setFlagTexture "bilder\sword_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
