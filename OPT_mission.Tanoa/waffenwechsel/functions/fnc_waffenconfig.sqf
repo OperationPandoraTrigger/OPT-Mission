@@ -124,17 +124,14 @@ GVAR(Raktenhelieast) =
     ["OPT_PylonRack_12Rnd_PG_missiles", "OPT_missiles_DAGR", 13000, 156000, "12xDAGR", -1],  //      5.12xDAGR
     ["OPT_PylonRack_19Rnd_Rocket_Skyfire", "OPT_rockets_Skyfire", 3250, 61750, "19xSkyfire", -1],  //      6.19xSkyfire
     ["OPT_PylonRack_4Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 1040000, "4xScalpel", 0],  //      7.4xScalpel
-<<<<<<< HEAD
     ["PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 3250, 22400, "7xShrieker HE", -1],  //      8.7xShrieker HE
     ["PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 6500, 45500, "7xShrieker AP", -1],  //      9.7xShrieker AP
     ["PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 3250, 65000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
     ["PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 6500, 130000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
-=======
     ["OPT_PylonRack_7Rnd_Rocket_04_HE_F", "OPT_Rocket_04_HE_Plane_CAS_01_F", 3250, 22400, "7xShrieker HE", -1],  //      8.7xShrieker HE
     ["OPT_PylonRack_7Rnd_Rocket_04_AP_F", "OPT_Rocket_04_AP_Plane_CAS_01_F", 6500, 45500, "7xShrieker AP", -1],  //      9.7xShrieker AP
     ["OPT_PylonRack_20Rnd_Rocket_03_HE_F", "OPT_Rocket_03_HE_Plane_CAS_02_F", 3250, 65000, "20xTratnyr HE", -1],  //      10.20xTratnyr HE
     ["OPT_PylonRack_20Rnd_Rocket_03_AP_F", "OPT_Rocket_03_AP_Plane_CAS_02_F", 6500, 130000, "20xTratnyr AP", -1],  //      11.20xTratnyr AP
->>>>>>> 8d4d0d1411243d7be8f75cc3898e67bfb9682439
     ["OPT_PylonMissile_1Rnd_LG_scalpel", "OPT_missiles_SCALPEL", 260000, 260000, "1xScalpel", 0],  //      12.1xScalpel Hellcat, Kajman, Blackfoot
     ["OPT_PylonRack_1Rnd_AAA_missiles", "OPT_missiles_ASRAAM", 32500, 32500, "1xASRAAM", 0],  //      13.1xASRAAM AH9, Orca, Hellcat
     ["OPT_PylonMissile_Missile_AGM_KH25_x1", "OPT_weapon_AGM_KH25Launcher", 195000, 195000, "1xAGM KH25", 0],  //      14.1xKH25 Kedge
