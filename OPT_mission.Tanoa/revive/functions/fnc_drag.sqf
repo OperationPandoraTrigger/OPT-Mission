@@ -54,6 +54,9 @@ FAR_isDragging = false;
 
 //EH entfernen
 player removeEventHandler ["AnimChanged", 0];
+
+//Löschen der letzen Animation 
+player playMoveNow "";
 	
 if (!isNull _target && alive _target) then {
 	//_target switchMove "AinjPpneMstpSnonWrflDnon";
