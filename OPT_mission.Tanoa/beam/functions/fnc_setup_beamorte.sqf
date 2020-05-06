@@ -50,16 +50,16 @@
 
 //West
 GVAR(locations_west) = [
-	[[8501,0,12446],"28 - Raststätte",1],
-	[[7293,0,12824],"61 - Batterie Dora",1],
-	[[8229,0,11985],"111 - Tomahawk Stellung",1]  
+	[[12233,0,9061],"000 - Checkpoint Alpha",1],
+	[[11088,0,11494],"003/2 - Radar Bravo",1],
+	[[11195,0,9753],"077 - Vagal Minen AG",1]  
 ];
 
 //East
 GVAR(locations_east) = [
-	[[6696,0,12354],"48 - Legales Waffenlager",1],
-	[[7030,0,10802],"49 - Hbf. Hulabula",1],
-	[[8258,0,11148],"52 - Großmeisters Tempel",1]
+	[[11926,0,8702],"003 - Checkpoint Charlie",1],
+	[[9664,0,9882],"007 - Checkpoint Vaglala Road",1],
+	[[10382,0,8529],"062 - Kreuzung",1]
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
