@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12002.294,544.77234,8276.9248};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={7025.6191,52.637341,6081.208};
+		dir[]={0.62075096,-0.71630287,-0.31872413};
+		up[]={0.63721669,0.69778711,-0.32717833};
+		aside[]={-0.45676002,-3.5390258e-008,-0.88959175};
 	};
 };
 binarizationWanted=0;
@@ -10981,7 +10981,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={7063.686,24.131336,6086.4551};
+										position[]={7063.686,24.188282,6086.4551};
 										angles[]={0,5.2690639,0};
 									};
 									side="East";
@@ -11068,7 +11068,7 @@ class Mission
 									};
 									id=12559;
 									type="OPT_CSAT_Grenadier";
-									atlOffset=0.32861328;
+									atlOffset=0.38555908;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -11668,14 +11668,14 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={7064.4033,24.197132,6083.6377};
-										angles[]={0,5.3016977,0};
+										position[]={7064.4028,24.196724,6083.6377};
+										angles[]={0,5.3016996,0};
 									};
 									side="East";
 									flags=4;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Wolf_ARF""];}";
+										init="call{(group this) setGroupIdGlobal [""Alpaka_SWORD""];}";
 										name="csat_MAAWS_2";
 										description="Leichte PA@Alpaka_SWORD";
 										isPlayable=1;
@@ -11748,7 +11748,7 @@ class Mission
 									};
 									id=12647;
 									type="OPT_CSAT_PA_Schuetze";
-									atlOffset=0.031799316;
+									atlOffset=0.031391144;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -14246,13 +14246,14 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={7054.4146,24.197132,6071.707};
-										angles[]={0,5.3016977,0};
+										position[]={7054.415,24.197353,6071.707};
+										angles[]={0,5.3016996,0};
 									};
 									side="East";
+									flags=4;
 									class Attributes
 									{
-										init="call{(group this) setGroupIdGlobal [""Wolf_ARF""];}";
+										init="call{(group this) setGroupIdGlobal [""Charlie_SWORD""];}";
 										name="csat_MAAWS_3";
 										description="Leichte PA@Charlie_SWORD";
 										isPlayable=1;
@@ -14325,7 +14326,7 @@ class Mission
 									};
 									id=12649;
 									type="OPT_CSAT_PA_Schuetze";
-									atlOffset=0.41162109;
+									atlOffset=0.00021743774;
 									class CustomAttributes
 									{
 										class Attribute0
