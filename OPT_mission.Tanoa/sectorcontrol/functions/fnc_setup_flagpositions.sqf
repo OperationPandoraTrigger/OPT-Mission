@@ -8,15 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-	[8501,12446, west,"28 - Raststätte",true],
-	[7293,12824, west,"61 - Batterie Dora",true],
-	[8229,11985, west,"111 - Tomahawk Stellung",true]  
+	[12233,9061, west,"000 - Checkpoint Alpha",true],
+	[11088,11494, west,"003/2 - Radar Bravo",true],
+	[11195,9753, west,"077 - Vagal Minen AG",true]  
 ];
 
 GVARMAIN(csat_flags_pos) = [
-	[6696,12354, east,"48 - Legales Waffenlager",true],
-	[7030,10802, east,"49 - Hbf. Hulabula",true],
-	[8258,11148, east,"52 - Großmeisters Tempel",true]
+	[11926,8702, east,"003 - Checkpoint Charlie",true],
+	[9664,9882, east,"007 - Checkpoint Vaglala Road",true],
+	[10382,8529, east,"062 - Kreuzung",true]
 ];
 
 
