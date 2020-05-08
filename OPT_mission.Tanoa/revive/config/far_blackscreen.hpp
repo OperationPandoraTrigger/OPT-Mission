@@ -31,7 +31,7 @@
 			w = 0.4 * safezoneW;
 			y = 0.2 * safezoneH + safezoneY;
 			h = 0.6 * safezoneH;
-			text = "revive\rsc\skull.paa";
+			text = "\opt\opt_client\addons\core\bilder\skull.paa";
 		};
 		
 		class GREUH_WoundedLabel {
