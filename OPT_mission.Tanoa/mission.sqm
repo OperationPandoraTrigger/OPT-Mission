@@ -4283,7 +4283,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -4403,7 +4403,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -4699,7 +4699,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -4758,7 +4758,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -6420,7 +6420,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -6439,7 +6439,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -6538,7 +6538,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -6576,7 +6576,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -6870,7 +6870,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 										};
 									};
 								};
@@ -6889,7 +6889,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="bilder\arf_fahne.paa";
+											value="\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 										};
 									};
 								};
@@ -6985,7 +6985,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="bilder\arf_fahne.paa";
+											value="\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 										};
 									};
 								};
@@ -7004,7 +7004,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+											value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 										};
 									};
 								};
@@ -7148,7 +7148,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\arf_fahne.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 												};
 											};
 										};
@@ -7551,7 +7551,7 @@ class Mission
 											class Attributes
 											{
 												skill=0.60000002;
-												init="call{this allowDamage false; [this, west] spawn opt_mhq_fnc_init;  this addAction [""<t color='#00ff00' size='1.25'>Beam-System benutzen</t>"", {[] call opt_beam_fnc_openDialog}, false, 5, false, true, """"];  this addAction [""<t color='#00ff0f' size='1.25'>Beam zum Zerstörer</t>"", {[] call opt_beam_fnc_beam_zer}, false, 5, false, true, """"]; this setFlagTexture ""bilder\sword_fahne.paa"";}";
+												init="call{this allowDamage false; [this, west] spawn opt_mhq_fnc_init;  this addAction [""<t color='#00ff00' size='1.25'>Beam-System benutzen</t>"", {[] call opt_beam_fnc_openDialog}, false, 5, false, true, """"];  this addAction [""<t color='#00ff0f' size='1.25'>Beam zum Zerstörer</t>"", {[] call opt_beam_fnc_beam_zer}, false, 5, false, true, """"]; this setFlagTexture ""\opt\opt_client\addons\core\bilder\sword_fahne.paa"";}";
 												name="homeflag_east";
 											};
 											id=12233;
@@ -20863,7 +20863,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -20922,7 +20922,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -21640,7 +21640,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -23581,7 +23581,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\sword_fahne.paa";
+													value="\opt\opt_client\addons\core\bilder\sword_fahne.paa";
 												};
 											};
 										};
@@ -24116,7 +24116,7 @@ class Mission
 											class Attributes
 											{
 												skill=0.60000002;
-												init="call{this allowDamage false;  [this, west] spawn opt_mhq_fnc_init; this addAction [""<t color='#00ff00' size='1.25'>Beam-System benutzen</t>"", {[] call opt_beam_fnc_openDialog}, false, 5, false, true, """"]; this addAction [""<t color='#00ff0f' size='1.25'>Beam zum Zerstörer</t>"", {[] call opt_beam_fnc_beam_zer}, false, 5, false, true, """"]; this setFlagTexture ""bilder\arf_fahne.paa"";}";
+												init="call{this allowDamage false;  [this, west] spawn opt_mhq_fnc_init; this addAction [""<t color='#00ff00' size='1.25'>Beam-System benutzen</t>"", {[] call opt_beam_fnc_openDialog}, false, 5, false, true, """"]; this addAction [""<t color='#00ff0f' size='1.25'>Beam zum Zerstörer</t>"", {[] call opt_beam_fnc_beam_zer}, false, 5, false, true, """"]; this setFlagTexture ""\opt\opt_client\addons\core\bilder\arf_fahne.paa"";}";
 												name="homeflag_west";
 											};
 											id=12234;
@@ -100099,7 +100099,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\kalleks_bar_werbeschild.paa";
+													value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 												};
 											};
 										};
@@ -100159,7 +100159,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\kalleks_bar_werbeschild.paa";
+													value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 												};
 											};
 										};
@@ -107453,7 +107453,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107513,7 +107513,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107573,7 +107573,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107633,7 +107633,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107693,7 +107693,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107753,7 +107753,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107813,7 +107813,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107873,7 +107873,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107933,7 +107933,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -107992,7 +107992,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\1_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\1_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108093,7 +108093,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -108152,7 +108152,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\1_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\1_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108251,7 +108251,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\1_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\1_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108331,7 +108331,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\1_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\1_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108413,7 +108413,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -108471,7 +108471,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\1_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\1_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108551,7 +108551,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\2_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\2_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108631,7 +108631,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\2_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\2_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108711,7 +108711,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\2_wegweiser_kallek.paa";
+															value="\opt\opt_client\addons\core\bilder\2_wegweiser_kallek.paa";
 														};
 													};
 												};
@@ -108793,7 +108793,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -108852,7 +108852,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -108912,7 +108912,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -108972,7 +108972,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -109032,7 +109032,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -109092,7 +109092,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="bilder\kalleks_bar_werbeschild.paa";
+															value="\opt\opt_client\addons\core\bilder\kalleks_bar_werbeschild.paa";
 														};
 													};
 												};
@@ -109433,7 +109433,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\grab_kallek.paa";
+													value="\opt\opt_client\addons\core\bilder\grab_kallek.paa";
 												};
 											};
 										};
@@ -110049,7 +110049,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\grab_kallek.paa";
+													value="\opt\opt_client\addons\core\bilder\grab_kallek.paa";
 												};
 											};
 										};
@@ -110108,7 +110108,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\grab_kallek.paa";
+													value="\opt\opt_client\addons\core\bilder\grab_kallek.paa";
 												};
 											};
 										};
@@ -110546,7 +110546,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\grab_kallek.paa";
+													value="\opt\opt_client\addons\core\bilder\grab_kallek.paa";
 												};
 											};
 										};
@@ -110565,7 +110565,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\opt\opt_client\addons\core\bilder\afr_logo.paa";
+													value="\opt\opt_client\addons\core\bilder\arf_logo.paa";
 												};
 											};
 										};
@@ -111027,7 +111027,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\kalleks_bar.paa";
+													value="\opt\opt_client\addons\core\bilder\kalleks_bar.paa";
 												};
 											};
 										};
@@ -112376,7 +112376,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="bilder\kalleks_bar.paa";
+													value="\opt\opt_client\addons\core\bilder\kalleks_bar.paa";
 												};
 											};
 										};

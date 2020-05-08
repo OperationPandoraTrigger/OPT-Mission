@@ -41,7 +41,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "bilder\arf_fahne.paa";
+				_flag setFlagTexture "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
@@ -64,7 +64,7 @@ if (isServer) then
 			}
 			else
 			{
-				_flag setFlagTexture "bilder\sword_fahne.paa";
+				_flag setFlagTexture "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
 				_flag setVariable ["owner", _owner, true];
 			};
 		};
