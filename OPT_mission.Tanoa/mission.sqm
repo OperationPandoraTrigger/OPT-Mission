@@ -2321,7 +2321,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=3859;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=0.00091362;
 											class CustomAttributes
 											{
@@ -7188,7 +7188,7 @@ class Mission
 										skill=0.60000002;
 									};
 									id=3996;
-									type="Land_HelipadCircle_F";
+									type="Land_HelipadEmpty_F";
 									atlOffset=20.103439;
 								};
 								class Item2
@@ -7339,7 +7339,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4011;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=0.41162109;
 											class CustomAttributes
 											{
@@ -7379,7 +7379,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4012;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=1.4932079;
 											class CustomAttributes
 											{
@@ -7419,7 +7419,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4013;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=2.4009266;
 										};
 										class Item3
@@ -7496,7 +7496,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4016;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=0.62626839;
 										};
 										class Item5
@@ -23544,7 +23544,7 @@ class Mission
 										skill=0.60000002;
 									};
 									id=4294;
-									type="Land_HelipadCircle_F";
+									type="Land_HelipadEmpty_F";
 									atlOffset=25.217447;
 								};
 								class Item1
@@ -23921,7 +23921,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4316;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=1.426693;
 										};
 										class Item1
@@ -23938,7 +23938,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4317;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=1.5906296;
 											class CustomAttributes
 											{
@@ -23978,7 +23978,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4318;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=0.94545364;
 											class CustomAttributes
 											{
@@ -24018,7 +24018,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4319;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=1.7255955;
 										};
 										class Item4
@@ -24077,7 +24077,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4322;
-											type="Land_HelipadCircle_F";
+											type="Land_HelipadEmpty_F";
 											atlOffset=0.24761963;
 											class CustomAttributes
 											{

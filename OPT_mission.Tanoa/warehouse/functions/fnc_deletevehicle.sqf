@@ -15,7 +15,7 @@
 #include "script_component.hpp"
 
 // alle Objekte im Radius von GVAR(saleRadius) Metern um das Pad -> im Idealfall nur das zu verkaufende Fahrzeug
-_spawnpos = nearestObject [player, "Land_HelipadCircle_F"];
+_spawnpos = nearestObject [player, "Land_HelipadEmpty_F"];
 _objs = nearestObjects [_spawnpos, ["AllVehicles", "Thing"], GVAR(orderSpawnRadius)];
 
 // now delete
