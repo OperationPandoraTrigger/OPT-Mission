@@ -19,7 +19,7 @@ FAR_isDragging = true;
 
 _target attachTo [player, [0, 1.1, 0.092]];
 _target setVariable ["FAR_isDragged", 1, true];
-player playMoveNow "AcinPknlMstpSrasWrflDnon";
+player playMove "AcinPknlMwlkSnonWnonDb";
 
 // Rotation fix
 [_target, 180] remoteExecCall ["setDir", -2, false];
@@ -35,8 +35,6 @@ _id = player addAction [
 	"", 
 	"true"
 ];
-hintSilent "Drücke 'C', falls du dich nicht bewegen kannst.";
-
 
 //Playmove check
 player addEventHandler ["AnimChanged", {[_this select 0] call FUNC(checkplaymove)}];
@@ -56,6 +54,9 @@ FAR_isDragging = false;
 
 //EH entfernen
 player removeEventHandler ["AnimChanged", 0];
+
+//Löschen der letzen Animation 
+player switchMove ""; 
 	
 if (!isNull _target && alive _target) then {
 	//_target switchMove "AinjPpneMstpSnonWrflDnon";

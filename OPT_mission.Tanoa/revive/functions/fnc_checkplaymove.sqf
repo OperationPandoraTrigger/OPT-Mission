@@ -16,9 +16,9 @@
 
 params ["_target"];
 
-if !((animationState _target == "acinpknlmwlksraswrfldb") or (animationState _target == "acinpknlmstpsraswrfldnon")) then 
+if !(animationState _target == "AcinPknlMwlkSnonWnonDb") then 
 {
-	_target playMoveNow "AcinPknlMstpSrasWrflDnon";
+	_target playMove "AcinPknlMwlkSnonWnonDb";
 };
 
 
