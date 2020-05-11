@@ -9,7 +9,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Green Hell Seitenwechsel S#1"
+#define __MISSION_NAME__ "Green Hell Vagalalalala S#2"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ v MAJOR.MINOR.BUILD
 // made by
