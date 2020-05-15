@@ -8,15 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-	[12233,9061, west,"000 - Checkpoint Alpha",true],
-	[11088,11494, west,"003/2 - Radar Bravo",true],
-	[11195,9753, west,"077 - Vagal Minen AG",true]  
+	[7876,13504, west,"022 - Pauls Werkstatt",true],
+	[7827,12491, west,"029 - alter Pass",true],
+	[7293,12824, west,"061 - Batterie Dora",true]  
 ];
 
 GVARMAIN(csat_flags_pos) = [
-	[11926,8702, east,"003 - Checkpoint Charlie",true],
-	[9664,9882, east,"007 - Checkpoint Vaglala Road",true],
-	[10382,8529, east,"062 - Kreuzung",true]
+	[9936,12104, east,"002 - Mordor",true],
+	[9574,13472, east,"024 - LR Katedrale",true],
+	[9016,13272, east,"026 - Batterie Anton",true]
 ];
 
 
