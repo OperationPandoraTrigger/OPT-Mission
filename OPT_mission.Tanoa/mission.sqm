@@ -2320,7 +2320,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=3859;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=0.00091362;
 											class CustomAttributes
 											{
@@ -6798,7 +6798,7 @@ class Mission
 							{
 							};
 							id=3989;
-							type="Land_HelipadEmpty_F";
+							type="UserTexture1m_F";
 							atlOffset=43.512012;
 						};
 						class Item6
@@ -7187,7 +7187,7 @@ class Mission
 										skill=0.60000002;
 									};
 									id=3996;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=20.103439;
 								};
 								class Item2
@@ -7338,7 +7338,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4011;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=0.41162109;
 											class CustomAttributes
 											{
@@ -7378,7 +7378,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4012;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=1.4932079;
 											class CustomAttributes
 											{
@@ -7418,7 +7418,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4013;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=2.4009266;
 										};
 										class Item3
@@ -7495,7 +7495,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4016;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=0.62626839;
 										};
 										class Item5
@@ -23543,7 +23543,7 @@ class Mission
 										skill=0.60000002;
 									};
 									id=4294;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=25.217447;
 								};
 								class Item1
@@ -23920,7 +23920,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4316;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=1.426693;
 										};
 										class Item1
@@ -23937,7 +23937,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4317;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=1.5906296;
 											class CustomAttributes
 											{
@@ -23977,7 +23977,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4318;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=0.94545364;
 											class CustomAttributes
 											{
@@ -24017,7 +24017,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4319;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=1.7255955;
 										};
 										class Item4
@@ -24075,7 +24075,7 @@ class Mission
 												skill=0.60000002;
 											};
 											id=4322;
-											type="Land_HelipadEmpty_F";
+											type="UserTexture1m_F";
 											atlOffset=0.24761963;
 											class CustomAttributes
 											{
@@ -35274,7 +35274,7 @@ class Mission
 						skill=0.60000002;
 					};
 					id=4434;
-					type="Land_HelipadEmpty_F";
+					type="UserTexture1m_F";
 					atlOffset=1.3735852;
 					class CustomAttributes
 					{
@@ -35494,7 +35494,7 @@ class Mission
 						skill=0.60000002;
 					};
 					id=4438;
-					type="Land_HelipadEmpty_F";
+					type="UserTexture1m_F";
 					atlOffset=0.54801464;
 					class CustomAttributes
 					{
@@ -35853,7 +35853,7 @@ class Mission
 									{
 									};
 									id=4449;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=-8.8757572;
 								};
 							};
@@ -100469,7 +100469,7 @@ class Mission
 										name="opt_garbage_collector_bridges_1";
 									};
 									id=11810;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=27.505899;
 								};
 								class Item1
@@ -100485,7 +100485,7 @@ class Mission
 										name="opt_garbage_collector_bridges_2";
 									};
 									id=11811;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=5.0191517;
 								};
 								class Item2
@@ -100501,7 +100501,7 @@ class Mission
 										name="opt_garbage_collector_bridges_3";
 									};
 									id=11812;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=9.1349955;
 								};
 								class Item3
@@ -100517,7 +100517,7 @@ class Mission
 										name="opt_garbage_collector_bridges_4";
 									};
 									id=11813;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=20.310059;
 								};
 								class Item4
@@ -100533,7 +100533,7 @@ class Mission
 										name="opt_garbage_collector_bridges_5";
 									};
 									id=11814;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=6.9371572;
 								};
 								class Item5
@@ -100549,7 +100549,7 @@ class Mission
 										name="opt_garbage_collector_bridges_6";
 									};
 									id=11815;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=17.807362;
 								};
 								class Item6
@@ -100565,7 +100565,7 @@ class Mission
 										name="opt_garbage_collector_bridges_7";
 									};
 									id=11816;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=0.92041987;
 								};
 								class Item7
@@ -100581,7 +100581,7 @@ class Mission
 										name="opt_garbage_collector_bridges_8";
 									};
 									id=11817;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=8.3129129;
 								};
 								class Item8
@@ -100597,7 +100597,7 @@ class Mission
 										name="opt_garbage_collector_bridges_9";
 									};
 									id=11818;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=0.66123044;
 								};
 								class Item9
@@ -100613,7 +100613,7 @@ class Mission
 										name="opt_garbage_collector_bridges_10";
 									};
 									id=11819;
-									type="Land_HelipadEmpty_F";
+									type="UserTexture1m_F";
 									atlOffset=4.7764702;
 								};
 							};
