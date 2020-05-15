@@ -58,7 +58,7 @@ GVAR(locations_west) = [
 //East
 GVAR(locations_east) = [
 	[[9936,0,12104],"002 - Mordor",1],
-	[[9574,0,13472],"024 - LR Katedrale,1],
+	[[9574,0,13472],"024 - LR Katedrale",1],
 	[[9016,0,13272],"026 - Batterie Anton",1]
 ];
 
