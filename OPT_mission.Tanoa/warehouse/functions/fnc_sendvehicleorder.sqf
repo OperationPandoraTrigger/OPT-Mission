@@ -46,7 +46,7 @@ if (_unitCost > (_side_Budget + GVARMAIN(dispo))) exitWith {
     ["Budget unzureichend", _txt, "red"] call EFUNC(gui,message);
 };
 
-private _spawnObj = nearestObject [player, "Land_HelipadEmpty_F"];
+private _spawnObj = nearestObject [player, "UserTexture1m_F"];
 
 [player, _unitType, _spawnObj, _unitCost] remoteExec [QFUNC(spawnVehicle), 2, false]; // sheduled environment
 //systemChat format ["VT:%1 SO:%2 OSR:%3",_unitType, _spawnObj,(position _spawnObj)];

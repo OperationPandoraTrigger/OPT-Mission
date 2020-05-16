@@ -123,7 +123,7 @@ if (_beamingAllowed) then
     private _yPos = _beamPosition select 2;
 
     /* creates invisible pad for safer beaming */
-    private _tempLogic = "Land_HelipadEmpty_F" createVehicle 
+    private _tempLogic = "UserTexture1m_F" createVehicle 
     [
         (_xPos) - 10 * sin(random 360), 
         (_yPos) - 10 * cos(random 360)

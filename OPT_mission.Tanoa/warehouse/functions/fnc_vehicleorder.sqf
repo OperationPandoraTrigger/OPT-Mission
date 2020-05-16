@@ -123,7 +123,7 @@ if (count GVAR(orderDialogObjects) != 0) then {
 
 	// im Falle des Verkaufsbuttons -> Liste aller gefundenen Fahrzeuge
 	// alle Objekte im Radius von GVAR(saleRadius) Metern um das Pad -> im Idealfall nur das zu verkaufende Fahrzeug
-	_spawnpos = nearestObject [player, "Land_HelipadEmpty_F"];
+	_spawnpos = nearestObject [player, "UserTexture1m_F"];
 	_objs = nearestObjects [_spawnpos, ["AllVehicles", "Thing"], GVAR(saleRadius)];
 
 	// gehe alle gefundenen Objekte durch und lösche sie, falls nicht in pool, oder ergänze um Verkaufspreis
