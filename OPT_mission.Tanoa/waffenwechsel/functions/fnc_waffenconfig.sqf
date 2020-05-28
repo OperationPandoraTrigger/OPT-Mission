@@ -54,14 +54,14 @@ GVAR(Raktenheliwest) =
 //[Magazinename, Waffenname, Preis/Schuss, Preis Magazin, Boxname]
 GVAR(Gunheliwest) = 
 [
-    ["5000Rnd_762x51_Yellow_Belt", "OPT_M134_minigun", 10, 50000, "5000x7.62 mm"],       // 0.5000x7.62 mm Minigun 
-    ["1000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 10, 10000, "1000x6.5 mm mm"],  // 1.1000x6.5 mm mm Minigun 
-    ["2000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 10, 20000, "2000x6.5 mm mm"],  // 2.2000x6.5 mm mm Minigun 
-    ["1000Rnd_20mm_shells", "OPT_gatling_20mm", 100, 100000, "1000x20 mm"],      // 3.1000x20 mm Minigun
-    ["2000Rnd_20mm_shells", "OPT_gatling_20mm", 100, 200000, "2000x20 mm"],      // 4.2000x20 mm Minigun 
-    ["300Rnd_20mm_shells", "OPT_gatling_20mm", 100, 30000, "300x20 mm"],         // 5.300x20 mm Minigun 
-    ["250Rnd_30mm_HE_shells", "OPT_gatling_30mm", 300, 50000, "250x30 mm HE"],   // 6.250x30 mm HE Cannon Caseless 
-    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 200, 75000, "250x30 mm APDS"]// 7.250x30 mm APSD Cannon Caseless 
+    ["5000Rnd_762x51_Yellow_Belt", "OPT_M134_minigun", 9, 45000, "5000x7.62 mm"],       // 0.5000x7.62 mm Minigun 
+    ["1000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 9, 9000, "1000x6.5 mm mm"],  // 1.1000x6.5 mm mm Minigun 
+    ["2000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 9, 18000, "2000x6.5 mm mm"],  // 2.2000x6.5 mm mm Minigun 
+    ["1000Rnd_20mm_shells", "OPT_gatling_20mm", 90, 90000, "1000x20 mm"],      // 3.1000x20 mm Minigun
+    ["2000Rnd_20mm_shells", "OPT_gatling_20mm", 90, 180000, "2000x20 mm"],      // 4.2000x20 mm Minigun 
+    ["300Rnd_20mm_shells", "OPT_gatling_20mm", 90, 27000, "300x20 mm"],         // 5.300x20 mm Minigun 
+    ["250Rnd_30mm_HE_shells", "OPT_gatling_30mm", 270, 67500, "250x30 mm HE"],   // 6.250x30 mm HE Cannon Caseless 
+    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 180, 45000, "250x30 mm APDS"]// 7.250x30 mm APSD Cannon Caseless 
 ];
 
 //Gun Fahrzeuge Nato
@@ -145,15 +145,15 @@ GVAR(Raktenhelieast) =
 //[Magazinename, Waffenname, Preis/Schuss, Preis Magazin, Boxname]
 GVAR(Gunhelieast) = 
 [
-    ["5000Rnd_762x51_Yellow_Belt", "OPT_M134_minigun", 10, 50000, "5000x7.62 mm"],  // 0.5000x7.62 mm Minigun 
-    ["1000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 10, 10000, "1000x6.5 mm"],  // 1.1000x6.5 mm Minigun 
-    ["2000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 10, 20000, "2000x6.5 mm"],  // 2.2000x6.5 mm Minigun 
-    ["1000Rnd_20mm_shells", "OPT_gatling_20mm", 100, 100000, "1000x20 mm"],  // 3.1000x20 mm Minigun
-    ["2000Rnd_20mm_shells", "OPT_gatling_20mm", 100, 200000, "2000x20 mm"],  // 4.2000x20 mm Minigun 
-    ["300Rnd_20mm_shells", "OPT_gatling_20mm", 100, 30000, "300x20 mm"],  //      5.300x20 mm Minigun 
-    ["250Rnd_30mm_HE_shells", "OPT_gatling_30mm", 300, 50000, "250x30 mm HE"],  // 6.250x30 mm HE Cannon Caseless 
-    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 200, 75000, "250x30 mm APDS"],  // 7.250x30 mm APSD Cannon Caseless 
-    ["OPT_PylonWeapon_300Rnd_20mm_shells", "OPT_Twin_Cannon_20mm", 100, 30000, "300xTwin 20mm"]  // 8.300xTwin 20mm Cannon 
+    ["5000Rnd_762x51_Yellow_Belt", "OPT_M134_minigun", 9, 45000, "5000x7.62 mm"],       // 0.5000x7.62 mm Minigun 
+    ["1000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 9, 9000, "1000x6.5 mm mm"],  // 1.1000x6.5 mm mm Minigun 
+    ["2000Rnd_65x39_Belt_Yellow", "LMG_Minigun_heli", 9, 18000, "2000x6.5 mm mm"],  // 2.2000x6.5 mm mm Minigun 
+    ["1000Rnd_20mm_shells", "OPT_gatling_20mm", 90, 90000, "1000x20 mm"],      // 3.1000x20 mm Minigun
+    ["2000Rnd_20mm_shells", "OPT_gatling_20mm", 90, 180000, "2000x20 mm"],      // 4.2000x20 mm Minigun 
+    ["300Rnd_20mm_shells", "OPT_gatling_20mm", 90, 27000, "300x20 mm"],         // 5.300x20 mm Minigun 
+    ["250Rnd_30mm_HE_shells", "OPT_gatling_30mm", 270, 67500, "250x30 mm HE"],   // 6.250x30 mm HE Cannon Caseless 
+    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 180, 45000, "250x30 mm APDS"]// 7.250x30 mm APSD Cannon Caseless 
+    ["OPT_PylonWeapon_300Rnd_20mm_shells", "OPT_Twin_Cannon_20mm", 90, 27000, "300xTwin 20mm"]  // 8.300xTwin 20mm Cannon 
 ];
 
 //Gun Fahrzeuge CSAT
