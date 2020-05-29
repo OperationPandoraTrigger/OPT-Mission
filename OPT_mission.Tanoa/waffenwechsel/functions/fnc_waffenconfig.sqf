@@ -152,7 +152,7 @@ GVAR(Gunhelieast) =
     ["2000Rnd_20mm_shells", "OPT_gatling_20mm", 90, 180000, "2000x20 mm"],      // 4.2000x20 mm Minigun 
     ["300Rnd_20mm_shells", "OPT_gatling_20mm", 90, 27000, "300x20 mm"],         // 5.300x20 mm Minigun 
     ["250Rnd_30mm_HE_shells", "OPT_gatling_30mm", 270, 67500, "250x30 mm HE"],   // 6.250x30 mm HE Cannon Caseless 
-    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 180, 45000, "250x30 mm APDS"]// 7.250x30 mm APSD Cannon Caseless 
+    ["250Rnd_30mm_APDS_shells", "OPT_gatling_30mm", 180, 45000, "250x30 mm APDS"],// 7.250x30 mm APSD Cannon Caseless 
     ["OPT_PylonWeapon_300Rnd_20mm_shells", "OPT_Twin_Cannon_20mm", 90, 27000, "300xTwin 20mm"]  // 8.300xTwin 20mm Cannon 
 ];
 
