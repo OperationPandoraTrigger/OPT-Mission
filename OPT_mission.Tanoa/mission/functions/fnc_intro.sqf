@@ -68,27 +68,26 @@ sleep 3;
 
 private _quotes =
 [
-    ["Man kann einen Krieg beginnen, aber niemals beenden, wenn man will.", "Niccoló Machiavelli"],
-    ["Je stärker wir sind, desto unwahrscheinlicher ist der Krieg.", "Otto v. Bismarck"],
-    ["Wenn die Österreicher von uns Reparationen verlangen sollten, dann werde ich Ihnen die Gebeine A. Hitlers schicken.", "Konrad Adenauer"],
-    ["Lieber fünf Minuten lang feig als ein ganzes Leben lang tot.", "Scott"],
-    ["Aber wenn es etwas gibt, was ich verachte, ist das ein fairer Kampf.", "Lord Helmchen, Spaceballs"],
-    ["Freude liegt im Kampf, im Wagnis, in der Leidensbereitschaft, nicht im Siegen.", "Mahatma Gandhi"],
-    ["Flieht, ihr Narren!", "Gandalf, Der Herr der Ringe"],
-    ["Ran an die Waffen, laden und schießen!", "Lieutenant Commander Data, Star Trek"],
-    ["Auf geht´s, Ihr Luschen! Flip-Flops aus, Springerstiefel an!", "Ausbilder Schmidt"],
-    ["Ich bin Mandalorianer. Waffen sind Teil meiner Religion.", "Din Djarin, Star Wars"],
-    ["Das ist der Weg.", "Din Djarin, Star Wars"],
-    ["Wenn du einem Mann alles nimmst, bist du derjenige der tot ist.", "Rainer Winkler"],
-    ["Es hat nur Vorteile wenn man fett ist. Man benötigt weniger Wasser..... beim Baden.", "Vitaly Kaminsky"],
-    ["Sterben? Das ist das Letzte, was ich tun werde.", "Groucho Marx "],
-    ["Menschlich seid Ihr alle ok!", "Mercurat"],
-    ["The only winning move is not to play!", "W.O.P.R. (Wargames)"]
+    ["Man kann einen Krieg beginnen, aber niemals beenden, wenn man will.", "Niccoló Machiavelli", "Mercurat"],
+    ["Je stärker wir sind, desto unwahrscheinlicher ist der Krieg.", "Otto v. Bismarck", "Scott"],
+    ["Wenn die Österreicher von uns Reparationen verlangen sollten, dann werde ich Ihnen die Gebeine A. Hitlers schicken.", "Konrad Adenauer", "Scott"],
+    ["Lieber fünf Minuten lang feig als ein ganzes Leben lang tot.", "Scott", "Scott"],
+    ["Aber wenn es etwas gibt, was ich verachte, ist das ein fairer Kampf.", "Lord Helmchen, Spaceballs", "oldeurope"],
+    ["Freude liegt im Kampf, im Wagnis, in der Leidensbereitschaft, nicht im Siegen.", "Mahatma Gandhi", "oldeurope"],
+    ["Flieht, ihr Narren!", "Gandalf, Der Herr der Ringe", "oldeurope"],
+    ["Ran an die Waffen, laden und schießen!", "Lieutenant Commander Data, Star Trek", "[GNC]-Lord-MDB"],
+    ["Auf geht´s, Ihr Luschen! Flip-Flops aus, Springerstiefel an!", "Ausbilder Schmidt", "Zocker"],
+    ["Ich bin Mandalorianer. Waffen sind Teil meiner Religion.", "Din Djarin, Star Wars", "Zocker"],
+    ["Das ist der Weg.", "Din Djarin, Star Wars", "Zocker"],
+    ["Wenn du einem Mann alles nimmst, bist du derjenige der tot ist.", "Rainer Winkler", "Joernrich"],
+    ["Es hat nur Vorteile wenn man fett ist. Man benötigt weniger Wasser..... beim Baden.", "Vitaly Kaminsky", "Zitateliste Chernaruskampagne (Mercurat)"],
+    ["Sterben? Das ist das Letzte, was ich tun werde.", "Groucho Marx ", "Mercurat"],
+    ["Menschlich seid Ihr alle ok!", "Mercurat", "Frozen_byte"],
+    ["The only winning move is not to play!", "W.O.P.R. (Wargames)", "form"]
 ];
 
 _quote = _quotes select (floor random (count _quotes));
-
-private _txt = format["<t size='1.3' align='center'>%1</t><br/><t size='1.2' align='right' color='#cccccc'>%2</t>", _quote select 0, _quote select 1];
+private _txt = format["<t size='1.0' align='left' color='#aaaaaa'>Eingereicht von: %1</t><br/><t size='1.3' align='center'>%2</t><br/><t size='1.2' align='right' color='#cccccc'>- %3</t>", _quote select 2, _quote select 0, _quote select 1];
 [_txt,0,0,8,3,0,3010] spawn bis_fnc_dynamicText;
 sleep 13;
 
