@@ -66,16 +66,27 @@ sleep 8;
 titlecut["","BLACK OUT",3];
 sleep 3;
 
-// Zufallsauswahl eines von 40 Quotes
-private _quotes = [];
-for "_i" from 0 to 23 do {
-	_quotes pushBack format["STR_A3_Campaign_Quote_%1", _i];
-};
-for "_i" from 30 to 44 do {
-	_quotes pushBack format["STR_A3_Campaign_Quote_%1", _i];
-};
-_quote = localize (_quotes select (floor random (count _quotes)));
-_quote = _quote splitString "-";
+private _quotes =
+[
+    ["Man kann einen Krieg beginnen, aber niemals beenden, wenn man will.", "Niccoló Machiavelli"],
+    ["Je stärker wir sind, desto unwahrscheinlicher ist der Krieg.", "Otto v. Bismarck"],
+    ["Wenn die Österreicher von uns Reparationen verlangen sollten, dann werde ich Ihnen die Gebeine A. Hitlers schicken.", "Konrad Adenauer"],
+    ["Lieber fünf Minuten lang feig als ein ganzes Leben lang tot.", "Scott"],
+    ["Aber wenn es etwas gibt, was ich verachte, ist das ein fairer Kampf.", "Lord Helmchen, Spaceballs"],
+    ["Freude liegt im Kampf, im Wagnis, in der Leidensbereitschaft, nicht im Siegen.", "Mahatma Gandhi"],
+    ["Flieht, ihr Narren!", "Gandalf, Der Herr der Ringe"],
+    ["Ran an die Waffen, laden und schießen!", "Lieutenant Commander Data, Star Trek"],
+    ["Auf geht´s, Ihr Luschen! Flip-Flops aus, Springerstiefel an!", "Ausbilder Schmidt"],
+    ["Ich bin Mandalorianer. Waffen sind Teil meiner Religion.", "Din Djarin, Star Wars"],
+    ["Das ist der Weg.", "Din Djarin, Star Wars"],
+    ["Wenn du einem Mann alles nimmst, bist du derjenige der tot ist.", "Rainer Winkler"],
+    ["Es hat nur Vorteile wenn man fett ist. Man benötigt weniger Wasser..... beim Baden.", "Vitaly Kaminsky"],
+    ["Sterben? Das ist das Letzte, was ich tun werde.", "Groucho Marx "],
+    ["Menschlich seid Ihr alle ok!", "Mercurat"],
+    ["The only winning move is not to play!", "W.O.P.R. (Wargames)"]
+];
+
+_quote = _quotes select (floor random (count _quotes));
 
 private _txt = format["<t size='1.3' align='center'>%1</t><br/><t size='1.2' align='right' color='#cccccc'>%2</t>", _quote select 0, _quote select 1];
 [_txt,0,0,8,3,0,3010] spawn bis_fnc_dynamicText;
