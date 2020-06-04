@@ -8,15 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-	[10382,8529, west,"062 - Kreuzung",true],
-	[11737,6947, west,"065 - Sägemühle",true],
-	[11330,7609, west,"067 - Schprox Studentenbude",true]  
+	[6855,13335, west,"021 - Haus des Bahnhofwärter",true],
+	[7827,12491, west,"029 - alter Pass",true],
+	[7293,12824, west,"061 - Batterie Dora",true]  
 ];
 
 GVARMAIN(csat_flags_pos) = [
-	[9243,7560, east,"063 - Holzlager",true],
-	[10871,6367, east,"064 - Crackküche Kotomo",true],
-	[9981,6741, east,"083 - alte Festung",true]
+	[6504,12858, east,"020 - Nicolet Busstop",true],
+	[5764,12268, east,"047 - MFD",true],
+	[6696,12354, east,"048 - Legales Waffenlager",true]
 ];
 
 

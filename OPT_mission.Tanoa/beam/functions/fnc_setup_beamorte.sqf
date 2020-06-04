@@ -50,16 +50,16 @@
 
 //West
 GVAR(locations_west) = [
-	[[10382,0,8529],"062 - Kreuzung",1],
-	[[11737,0,6947],"065 - Sägemühle",1],
-	[[11330,0,7609],"067 - Schprox Studentenbude",1]  
+	[[6855,0,13335],"021 - Haus des Bahnhofwärter",1],
+	[[7827,0,12491],"029 - alter Pass",1],
+	[[7293,0,12824],"061 - Batterie Dora",1]  
 ];
 
 //East
 GVAR(locations_east) = [
-	[[9243,0,7560],"063 - Holzlager",1],
-	[[10871,0,6367],"064 - Crackküche Kotomo",1],
-	[[9981,0,6741],"083 - alte Festung",1]
+	[[6504,0,12858],"020 - Nicolet Busstop",1],
+	[[5764,0,12268],"047 - MFD",1],
+	[[6696,0,12354],"048 - Legales Waffenlager",1]
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
