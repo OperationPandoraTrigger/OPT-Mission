@@ -50,16 +50,16 @@
 
 //West
 GVAR(locations_west) = [
-	[[6855,0,13335],"021 - Haus des Bahnhofwärter",1],
-	[[7827,0,12491],"029 - alter Pass",1],
-	[[7293,0,12824],"061 - Batterie Dora",1]  
+	[[11803,0,10192],"001 - Tagebau Werkhalle",1],
+	[[11088,0,11494],"003 - Radar Bravo",1],
+	[[10919,0,9826],"076 - Vagal alte Feuerwache",1]  
 ];
 
 //East
 GVAR(locations_east) = [
-	[[6504,0,12858],"020 - Nicolet Busstop",1],
-	[[5764,0,12268],"047 - MFD",1],
-	[[6696,0,12354],"048 - Legales Waffenlager",1]
+	[[9664,0,9882],"007 - Checkpoint Vaglala Road",1],
+	[[8841,0,10210],"054 - Tanuka Mail",1],
+	[[9066,0,11263],"114 - Sägewerk",1]
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
