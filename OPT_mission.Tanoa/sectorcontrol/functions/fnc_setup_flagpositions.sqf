@@ -8,15 +8,15 @@ east -> Angriffsziel für NATO
 #include "script_component.hpp"
 
 GVARMAIN(nato_flags_pos) = [
-	[11803,10192, west,"001 - Tagebau Werkhalle",true],
-	[11088,11494, west,"003 - Radar Bravo",true],
-	[10919,9826, west,"076 - Vagal alte Feuerwache",true]  
+	[11663,2696, west,"092 - Lijn- Hafen",true],
+	[10382,2656, west,"093 - Blerick",true],
+	[12250,1849, west,"124 - Taga",true]  
 ];
 
 GVARMAIN(csat_flags_pos) = [
-	[9664,9882, east,"007 - Checkpoint Vaglala Road",true],
-	[8841,10210, east,"054 - Tanuka Mail",true],
-	[9066,11263, east,"114 - Sägewerk",true]
+	[11355,4204, east,"012 - Checkpoint Papa Tango",true],
+	[12487,3997, east,"050 - Forest Clearing",true],
+	[13248,2930, east,"110 - Bua Bua",true]
 ];
 
 
