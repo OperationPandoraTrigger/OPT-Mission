@@ -50,16 +50,16 @@
 
 //West
 GVAR(locations_west) = [
-	[[11803,0,10192],"001 - Tagebau Werkhalle",1],
-	[[11088,0,11494],"003 - Radar Bravo",1],
-	[[10919,0,9826],"076 - Vagal alte Feuerwache",1]  
+	[[11663,0,2696],"092 - Lijn- Hafen",1],
+	[[10382,0,2656],"093 - Blerick",1],
+	[[12250,0,1849],"124 - Taga",1]  
 ];
 
 //East
 GVAR(locations_east) = [
-	[[9664,0,9882],"007 - Checkpoint Vaglala Road",1],
-	[[8841,0,10210],"054 - Tanuka Mail",1],
-	[[9066,0,11263],"114 - Sägewerk",1]
+	[[11355,0,4204],"012 - Checkpoint Papa Tango",1],
+	[[12487,0,3997],"050 - Forest Clearing",1],
+	[[13248,0,2930],"110 - Bua Bua",1]
 ];
 
 /* vehicles requiring special clearance for beaming (eg. tanks) */
