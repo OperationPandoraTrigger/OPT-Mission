@@ -1,0 +1,20 @@
+#define EXCLUDE_CBA_MACROS
+
+#include "setup.hpp"
+
+class CLib {
+    class GarbageCollector {
+        EnableGarbageCollector = 0;
+        GarbageCollectorTime = 300;
+    };
+    Modules[] = {"CLib", "PerformanceMonitor", "OPT"};
+    useExperimentalAutoload = 0;
+    useCompressedFunction = 0;
+    useFallbackRemoteExecution = 0;
+};
+
+cba_settings_hasSettingsFile = 1;
+
+//#include "war.ext"
+#include "train.ext"
+
