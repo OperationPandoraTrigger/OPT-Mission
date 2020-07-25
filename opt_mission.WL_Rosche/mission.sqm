@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1290;
+		nextID=1295;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=395;
+		nextID=371;
 	};
 	class Camera
 	{
-		pos[]={10277.813,62.725006,6906.2998};
-		dir[]={-0.19559108,-0.36514422,0.91017622};
-		up[]={-0.07671608,0.93094844,0.35699546};
-		aside[]={0.97768193,5.3398253e-008,0.21009748};
+		pos[]={14359.085,95.100174,15136.749};
+		dir[]={0.75658011,-0.51645178,-0.40127149};
+		up[]={0.45629102,0.85627753,-0.24200629};
+		aside[]={-0.46858796,-5.0099334e-007,-0.88350195};
 	};
 };
 binarizationWanted=0;
@@ -204,8 +204,8 @@ class AddonsMetaData
 		class Item20
 		{
 			className="cba_jam";
-			name="Community Base Addons - Gemeinsame Munition und Magazine";
-			author="CBA-Team";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item21
@@ -1255,68 +1255,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={7265.6548,23.682623,8819.0928};
-										angles[]={0,1.0565176,0};
-									};
-									side="Empty";
-									flags=5;
-									class Attributes
-									{
-										name="f13_1";
-										presenceCondition="false";
-										disableSimulation=1;
-									};
-									id=793;
-									type="FlagPole_F";
-									atlOffset=1.9073486e-006;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="allowDamage";
-											expression="_this allowdamage _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item3
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={8884.5234,41.976807,7698.1528};
 										angles[]={0,1.0565176,0};
 									};
@@ -1373,9 +1311,71 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={7265.6548,23.682623,8819.0928};
+										angles[]={0,1.0565176,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="f13_1";
+										presenceCondition="false";
+										disableSimulation=1;
+									};
+									id=1291;
+									type="FlagPole_F";
+									atlOffset=1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=64;
-							atlOffset=-2.0071201;
+							atlOffset=-1.3564663;
 						};
 						class Item1
 						{
@@ -1446,11 +1446,11 @@ class Mission
 						};
 					};
 					id=63;
-					atlOffset=20.497841;
+					atlOffset=21.207207;
 				};
 			};
 			id=62;
-			atlOffset=20.497841;
+			atlOffset=21.207207;
 		};
 		class Item2
 		{
@@ -7746,11 +7746,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14271.588,30.659595,15196.042};
-						angles[]={0,2.2652564,0};
+						position[]={14271.588,30.659304,15196.042};
+						angles[]={6.2794991,2.2652626,6.1584697};
 					};
 					side="East";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						description="DMR";
@@ -7809,9 +7809,8 @@ class Mission
 							gps="ItemGPS";
 						};
 					};
-					id=471;
-					type="O_sniper_F";
-					atlOffset=0.00029182434;
+					id=1294;
+					type="O_recon_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7860,7 +7859,6 @@ class Mission
 			{
 			};
 			id=470;
-			atlOffset=0.00029182434;
 		};
 		class Item29
 		{
@@ -7956,7 +7954,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14270.351,30.837967,15197.08};
+						position[]={14270.351,30.804344,15197.08};
 						angles[]={0,2.2652564,0};
 					};
 					side="East";
@@ -8020,14 +8018,12 @@ class Mission
 					};
 					id=474;
 					type="O_Soldier_F";
-					atlOffset=0.033622742;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=475;
-			atlOffset=0.033622742;
 		};
 		class Item31
 		{
@@ -8332,7 +8328,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8420,7 +8416,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8508,7 +8504,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8596,7 +8592,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8684,7 +8680,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8772,7 +8768,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8860,7 +8856,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8948,7 +8944,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9045,7 +9041,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9133,7 +9129,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9221,7 +9217,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9309,7 +9305,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9392,7 +9388,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9475,7 +9471,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9558,7 +9554,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9641,7 +9637,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9724,7 +9720,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9835,7 +9831,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9932,7 +9928,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10029,7 +10025,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10126,7 +10122,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10173,11 +10169,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14629.846,30.211437,593.6842};
-						angles[]={0,3.1140285,0};
+						position[]={14629.846,30.211437,593.68396};
+						angles[]={0,3.1140339,0};
 					};
 					side="Independent";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						isPlayable=1;
@@ -10214,7 +10210,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10240,8 +10236,50 @@ class Mission
 							headgear="H_HelmetIA";
 						};
 					};
-					id=535;
-					type="I_Soldier_AR_F";
+					id=1293;
+					type="I_support_MG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -10302,7 +10340,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10390,7 +10428,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10437,11 +10475,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14630.043,30.211437,596.21796};
-						angles[]={0,3.1140285,0};
+						position[]={14630.043,30.211437,596.21802};
+						angles[]={0,3.1140339,0};
 					};
 					side="Independent";
-					flags=7;
+					flags=6;
 					class Attributes
 					{
 						description="DMR";
@@ -10500,8 +10538,8 @@ class Mission
 							gps="ItemGPS";
 						};
 					};
-					id=541;
-					type="I_Sniper_F";
+					id=1292;
+					type="I_Soldier_M_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10686,7 +10724,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10769,7 +10807,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10852,7 +10890,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10935,7 +10973,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_TacVest_oli";
+								typeName="V_PlateCarrierIA1_dgtl";
 								isBackpack=0;
 								class MagazineCargo
 								{
