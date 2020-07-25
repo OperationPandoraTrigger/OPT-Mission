@@ -109,7 +109,7 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.75;
+force force ace_medical_AIDamageThreshold = 0.5;
 force force ace_medical_bleedingCoefficient = 0.1;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
@@ -127,7 +127,7 @@ force ace_medical_gui_openAfterTreatment = false;
 force force ace_medical_ivFlowRate = 1;
 force force ace_medical_limping = 0;
 force force ace_medical_painCoefficient = 1;
-force force ace_medical_playerDamageThreshold = 0.75;
+force force ace_medical_playerDamageThreshold = 0.5;
 force force ace_medical_spontaneousWakeUpChance = 0;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1;
 force ace_medical_statemachine_AIUnconsciousness = true;
@@ -328,6 +328,16 @@ diwako_dui_radar_trackingColor = [0.93,0.26,0.93,1];
 diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
+// OPT Feldreparatur
+force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
+force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_EACH_PART_TIME = 15;
+force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_MAX_REP_TIME = 240;
+force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS = 1;
+force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS_DURATION = 30;
+force opt_FIELDREPAIR_DEFAULT_FREE_REPAIRS = 1;
+force opt_FIELDREPAIR_DEFAULT_FULLREPAIR_LENGTH = 60;
+force opt_FIELDREPAIR_DEFAULT_REPAIR_TRUCK_USES = 10;
+
 // OPT Mission
 force force opt_GELDZEIT_aaf_budget = "3000000";
 force force opt_GELDZEIT_csat_budget = "3000000";
@@ -338,7 +348,7 @@ force force opt_GELDZEIT_nato_budget = "3000000";
 force force opt_GELDZEIT_PLAYTIME = 9000;
 force force opt_GELDZEIT_repairSystem_refuelCost = "1000";
 force force opt_GELDZEIT_repairSystem_repairCost = "1000";
-force opt_GELDZEIT_TEAMBALANCE = 5;
+force force opt_GELDZEIT_TEAMBALANCE = 5;
 force force opt_GELDZEIT_TRUCETIME = 480;
 
 // OPT San-System
