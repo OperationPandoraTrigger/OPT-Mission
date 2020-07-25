@@ -3,9 +3,9 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Funschlacht #1"
+#define __MISSION_NAME__ "Funschlacht #2"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
-#define __VERSION__ "1.0.1"
+#define __VERSION__ "1.0.2"
 // made by
 #define __MADE_BY__ "Lord,Gelir"
 // short description
