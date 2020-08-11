@@ -373,6 +373,9 @@ force force opt_SECTORCONTROL_flagStartNeutral = false;
 force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_trainingon = false;
 force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
+force force opt_SECTORCONTROL_nato_flags_pos = "0";
+force force opt_SECTORCONTROL_csat_sektor = "10";
+force force opt_SECTORCONTROL_aaf_sektor = "20";
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
@@ -422,14 +425,14 @@ force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
-force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000_bwmod";
+force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
 force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
 force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g_big_bwmod";
 force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
 force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
 force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
-force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_pnr1000a";
-force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
+force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_fadak";
+force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc148jem";
 force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
 force TFAR_spectatorCanHearEnemyUnits = true;
 force TFAR_spectatorCanHearFriendlies = true;
