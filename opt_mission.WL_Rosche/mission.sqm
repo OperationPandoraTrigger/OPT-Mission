@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1432;
+		nextID=1438;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=599;
+		nextID=647;
 	};
 	class Camera
 	{
-		pos[]={14134.269,545.43207,14897.85};
-		dir[]={0.27254868,-0.81553745,0.51051772};
-		up[]={0.38408267,0.57870048,0.71943563};
-		aside[]={0.88216239,-9.7439624e-008,-0.47095779};
+		pos[]={897.26984,412.12146,828.24762};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -5105,7 +5105,7 @@ class Mission
 					name="CSAT Basis";
 					class Entities
 					{
-						items=119;
+						items=124;
 						class Item0
 						{
 							dataType="Object";
@@ -8524,9 +8524,92 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item119
+						{
+							dataType="Marker";
+							position[]={1323.36,858.64697,14951.114};
+							name="CSAT_Basis2";
+							type="respawn_unknown";
+							colorName="ColorRed";
+							angle=50.868988;
+							id=1432;
+							atlOffset=855.02698;
+						};
+						class Item120
+						{
+							dataType="Trigger";
+							position[]={14306.987,31.449759,15156.63};
+							angle=2.3092976;
+							class Attributes
+							{
+								name="csat_trigger_beam_basis1";
+								sizeA=8;
+								sizeB=8;
+								sizeC=0;
+								repeatable=1;
+								activationBy="EAST";
+								isRectangle=1;
+							};
+							id=1434;
+							type="EmptyDetectorAreaR50";
+						};
+						class Item121
+						{
+							dataType="Trigger";
+							position[]={1314.1429,3.6199999,14951.349};
+							angle=4.712389;
+							class Attributes
+							{
+								name="csat_trigger_beam_basis2";
+								sizeA=8;
+								sizeB=8;
+								sizeC=0;
+								repeatable=1;
+								activationBy="EAST";
+								isRectangle=1;
+							};
+							id=1435;
+							type="EmptyDetectorAreaR50";
+						};
+						class Item122
+						{
+							dataType="Trigger";
+							position[]={14622.533,30.209999,552.15729};
+							angle=3.1721005;
+							class Attributes
+							{
+								name="AAF_trigger_beam_basis1";
+								sizeA=8;
+								sizeB=8;
+								sizeC=0;
+								repeatable=1;
+								activationBy="GUER";
+								isRectangle=1;
+							};
+							id=1436;
+							type="EmptyDetectorAreaR50";
+						};
+						class Item123
+						{
+							dataType="Trigger";
+							position[]={787.57947,26.534351,1171.7999};
+							angle=1.5576319e-005;
+							class Attributes
+							{
+								name="AAF_trigger_beam_basis2";
+								sizeA=8;
+								sizeB=8;
+								sizeC=0;
+								repeatable=1;
+								activationBy="GUER";
+								isRectangle=1;
+							};
+							id=1437;
+							type="EmptyDetectorAreaR50";
+						};
 					};
 					id=73;
-					atlOffset=5.6773033;
+					atlOffset=30.577429;
 				};
 				class Item1
 				{
@@ -8534,7 +8617,7 @@ class Mission
 					name="AAF Basis";
 					class Entities
 					{
-						items=26;
+						items=27;
 						class Item0
 						{
 							dataType="Object";
@@ -9232,13 +9315,24 @@ class Mission
 							id=1006;
 							type="Land_HelipadCivil_F";
 						};
+						class Item26
+						{
+							dataType="Marker";
+							position[]={780.71399,881.12903,1172.337};
+							name="AAF_Basis2";
+							type="respawn_unknown";
+							colorName="ColorGreen";
+							angle=161.63797;
+							id=1433;
+							atlOffset=854.55005;
+						};
 					};
 					id=210;
-					atlOffset=-1.6520348;
+					atlOffset=432.13855;
 				};
 			};
 			id=72;
-			atlOffset=-0.84054375;
+			atlOffset=229.70921;
 		};
 		class Item3
 		{
