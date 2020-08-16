@@ -350,6 +350,8 @@ force force opt_GELDZEIT_repairSystem_refuelCost = "1000";
 force force opt_GELDZEIT_repairSystem_repairCost = "1000";
 force force opt_GELDZEIT_TEAMBALANCE = 5;
 force force opt_GELDZEIT_TRUCETIME = 480;
+force force opt_GELDZEIT_aaf_sonderausobjektanzahl = "0";
+force force opt_GELDZEIT_csat_sonderausobjektanzahl = "0";
 
 // OPT San-System
 force force opt_REVIVE_ausblutzeit = 600;

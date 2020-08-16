@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=647;
+		nextID=659;
 	};
 	class Camera
 	{
@@ -8531,7 +8531,7 @@ class Mission
 							name="CSAT_Basis2";
 							type="respawn_unknown";
 							colorName="ColorRed";
-							angle=50.868988;
+							angle=50.868984;
 							id=1432;
 							atlOffset=855.02698;
 						};
@@ -9322,7 +9322,7 @@ class Mission
 							name="AAF_Basis2";
 							type="respawn_unknown";
 							colorName="ColorGreen";
-							angle=161.63797;
+							angle=161.63795;
 							id=1433;
 							atlOffset=854.55005;
 						};
