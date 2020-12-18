@@ -39,11 +39,6 @@ ace_csw_dragAfterDeploy = false;
 force ace_csw_handleExtraMagazines = true;
 force ace_csw_progressBarTimeCoefficent = 1;
 
-// ACE Explosives
-force ace_explosives_explodeOnDefuse = true;
-force ace_explosives_punishNonSpecialists = true;
-force ace_explosives_requireSpecialist = false;
-
 // ACE Interaction
 force force ace_interaction_disableNegativeRating = true;
 ace_interaction_enableMagazinePassing = true;
@@ -106,59 +101,6 @@ ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
 // ACE Map Tools
 ace_maptools_drawStraightLines = true;
 ace_maptools_rotateModifierKey = 1;
-
-// ACE Medical
-force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.5;
-force force ace_medical_bleedingCoefficient = 0.1;
-force ace_medical_blood_bloodLifetime = 900;
-force ace_medical_blood_enabledFor = 2;
-force ace_medical_blood_maxBloodObjects = 500;
-force force ace_medical_fatalDamageSource = 2;
-force force ace_medical_feedback_bloodVolumeEffectType = 2;
-force force ace_medical_feedback_painEffectType = 1;
-force force ace_medical_fractureChance = 0.8;
-force force ace_medical_fractures = 1;
-force ace_medical_gui_enableActions = 2;
-force ace_medical_gui_enableMedicalMenu = 0;
-force ace_medical_gui_enableSelfActions = false;
-force ace_medical_gui_maxDistance = 3;
-force ace_medical_gui_openAfterTreatment = false;
-force force ace_medical_ivFlowRate = 1;
-force force ace_medical_limping = 1;
-force force ace_medical_painCoefficient = 1;
-force force ace_medical_playerDamageThreshold = 0.5;
-force force ace_medical_spontaneousWakeUpChance = 0;
-force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1;
-force ace_medical_statemachine_AIUnconsciousness = true;
-force force ace_medical_statemachine_cardiacArrestTime = 600;
-force force ace_medical_statemachine_fatalInjuriesAI = 1;
-force force ace_medical_statemachine_fatalInjuriesPlayer = 1;
-force force ace_medical_treatment_advancedBandages = 0;
-force force ace_medical_treatment_advancedDiagnose = false;
-force ace_medical_treatment_advancedMedication = false;
-force ace_medical_treatment_allowLitterCreation = true;
-force force ace_medical_treatment_allowSelfIV = 0;
-force ace_medical_treatment_allowSelfPAK = 0;
-force force ace_medical_treatment_allowSelfStitch = 1;
-force force ace_medical_treatment_allowSharedEquipment = 0;
-force force ace_medical_treatment_clearTraumaAfterBandage = true;
-force force ace_medical_treatment_consumePAK = 0;
-force ace_medical_treatment_consumeSurgicalKit = 0;
-force force ace_medical_treatment_convertItems = 2;
-force force ace_medical_treatment_cprSuccessChance = 0.5;
-force ace_medical_treatment_holsterRequired = 0;
-force ace_medical_treatment_litterCleanupDelay = 600;
-force ace_medical_treatment_locationEpinephrine = 0;
-force ace_medical_treatment_locationPAK = 3;
-force ace_medical_treatment_locationsBoostTraining = false;
-force ace_medical_treatment_locationSurgicalKit = 2;
-force ace_medical_treatment_maxLitterObjects = 500;
-force ace_medical_treatment_medicEpinephrine = 0;
-force force ace_medical_treatment_medicIV = 1;
-force force ace_medical_treatment_medicPAK = 1;
-force ace_medical_treatment_medicSurgicalKit = 1;
-force ace_medical_treatment_timeCoefficientPAK = 1;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -354,15 +296,13 @@ force force opt_GELDZEIT_aaf_sonderausobjektanzahl = "0";
 force force opt_GELDZEIT_csat_sonderausobjektanzahl = "0";
 
 // OPT San-System
-force force opt_REVIVE_ausblutzeit = 600;
-force force opt_REVIVE_Blutuntergrenze = 3.4;
+force force opt_REVIVE_Heliwerteigen = 80;
 force force opt_REVIVE_Helizeiteigen = 20;
-force force opt_REVIVE_Helizeitsani = 30;
-force force opt_REVIVE_sanidist = 500;
-force force opt_REVIVE_stabilisierungzeit = 15;
+force force opt_REVIVE_onlysani = true;
+force force opt_REVIVE_playerdist = 500;
 
 // OPT Sektorkontrolle
-force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
+force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_flagCountAAF = 1;
 force force opt_SECTORCONTROL_flagCountCSAT = 1;
 force force opt_SECTORCONTROL_flagCountNATO = 1;
@@ -372,12 +312,26 @@ force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
 force force opt_SECTORCONTROL_flagMarkerOn = true;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
-force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
+force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
 force force opt_SECTORCONTROL_trainingon = true;
 force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_nato_flags_pos = "0";
 force force opt_SECTORCONTROL_csat_sektor = "10";
 force force opt_SECTORCONTROL_aaf_sektor = "20";
+
+// OPT WEATHERTIME
+force force opt_WEATHERTIME_timeslider_hours = 12;
+force force opt_WEATHERTIME_timeslider_minutes = 0;
+force force opt_WEATHERTIME_weather_overcast = 0;
+force force opt_WEATHERTIME_weather_rain_start = 0;
+force force opt_WEATHERTIME_weather_fogValue_start = 0;
+force force opt_WEATHERTIME_weather_fogBase_start = 0;
+force force opt_WEATHERTIME_weather_fogDecay_start = 0;
+force force opt_WEATHERTIME_weather_rain_end = 0;
+force force opt_WEATHERTIME_weather_fogValue_end = 0;
+force force opt_WEATHERTIME_weather_fogBase_end = 0;
+force force opt_WEATHERTIME_weather_fogDecay_end = 0;
+
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
@@ -418,11 +372,11 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_lr_independent = "50,70,30,40,39,80,60,61,62";
+force TFAR_setting_defaultFrequencies_lr_east = "50,70,30,40,39,80,60,41,81";
+force TFAR_setting_defaultFrequencies_lr_independent = "40,50,60,41,42,43,51,61,62";
 force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_sr_east = "41,42,43,60,61,62,50,51";
-force TFAR_setting_defaultFrequencies_sr_independent = "40,41,42,80,81,82,60,71";
+force TFAR_setting_defaultFrequencies_sr_east = "40,41,42,80,81,82,60,71";
+force TFAR_setting_defaultFrequencies_sr_independent = "41,42,43,60,61,62,50,51";
 force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
