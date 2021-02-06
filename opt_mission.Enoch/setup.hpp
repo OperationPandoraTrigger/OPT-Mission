@@ -3,7 +3,7 @@
 * wird in descprition.ext verwendet
 */
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Ernte Gut Alles Gut"
+#define __MISSION_NAME__ "Test 123 "
 // Versionsnummer eintragen (nur die des Base Templates!!!)
 #define __VERSION__ "1.0.5"
 // made by

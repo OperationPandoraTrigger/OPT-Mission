@@ -302,22 +302,22 @@ force force opt_REVIVE_onlysani = true;
 force force opt_REVIVE_playerdist = 500;
 
 // OPT Sektorkontrolle
-force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
+force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_flagCountAAF = 1;
 force force opt_SECTORCONTROL_flagCountCSAT = 1;
-force force opt_SECTORCONTROL_flagCountNATO = 1;
+force force opt_SECTORCONTROL_flagCountNATO = 0;
 force force opt_SECTORCONTROL_flagDistanceToPlayer = 5;
 force force opt_SECTORCONTROL_flagFreeMineZoneMarkerOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
 force force opt_SECTORCONTROL_flagMarkerOn = true;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
-force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
-force force opt_SECTORCONTROL_trainingon = true;
+force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
+force force opt_SECTORCONTROL_trainingon = false;
 force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_nato_flags_pos = "0";
-force force opt_SECTORCONTROL_csat_sektor = "10";
-force force opt_SECTORCONTROL_aaf_sektor = "20";
+force force opt_SECTORCONTROL_csat_sektor = "25";
+force force opt_SECTORCONTROL_aaf_sektor = "25";
 
 // OPT WEATHERTIME
 force force opt_WEATHERTIME_timeslider_hours = 12;
@@ -331,6 +331,7 @@ force force opt_WEATHERTIME_weather_rain_end = 0;
 force force opt_WEATHERTIME_weather_fogValue_end = 0;
 force force opt_WEATHERTIME_weather_fogBase_end = 0;
 force force opt_WEATHERTIME_weather_fogDecay_end = 0;
+
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
@@ -371,11 +372,11 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_lr_independent = "50,70,30,40,39,80,60,61,62";
+force TFAR_setting_defaultFrequencies_lr_east = "50,70,30,40,39,80,60,41,81";
+force TFAR_setting_defaultFrequencies_lr_independent = "40,50,60,41,42,43,51,61,62";
 force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
-force TFAR_setting_defaultFrequencies_sr_east = "41,42,43,60,61,62,50,51";
-force TFAR_setting_defaultFrequencies_sr_independent = "40,41,42,80,81,82,60,71";
+force TFAR_setting_defaultFrequencies_sr_east = "40,41,42,80,81,82,60,71";
+force TFAR_setting_defaultFrequencies_sr_independent = "41,42,43,60,61,62,50,51";
 force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";

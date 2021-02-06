@@ -15,6 +15,6 @@ class CLib {
 
 cba_settings_hasSettingsFile = 1;
 
-//#include "war.ext"
-#include "train.ext"
+#include "war.ext"
+//#include "train.ext"
 
