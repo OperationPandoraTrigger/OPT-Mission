@@ -1,9 +1,48 @@
 #define EXCLUDE_CBA_MACROS
 
-#include "setup.hpp"
+// hier den Missionsnamen festlegen
+#define __MISSION_NAME__ "1. Promo-Schlacht"
+// Versionsnummer eintragen (nur die des Base Templates!!!)
+#define __VERSION__ "1.0.5"
+// made by
+#define __MADE_BY__ "Lord, form, maxSzone, Gelir, Raffda"
+// short description
+#define __MISSION_DESCRIPTION__ "This is the Operation Pandora Trigger Mission"
+
+// festlegen des Respawn Typs:
+// 0 = No Respawn (NONE)
+// 1 = Respawn als Möwe/Rabe/Schmetterling (BIRD)
+// 2 = Instant, also an der Stelle an der man stirbt
+// 3 = Respawn an der Base (BASE)
+// 4 = Respawn in der Gruppe, nur wenn noch KI da ist (GROUP)
+// 5 = Respawn in eine KI der eigenen Seite, sofern vorhanden (SIDE)
+#define __RESPAWN_TYPE__ 3
+
+// Anzahl max. möglicher Spieler eingeben
+#define __PLNUM__ 117
+
+// falls die Mission respawn haben soll, dann die folgende Zeile auskommentieren und respawn Zeit festlegen
+// wenn das Respawndelay größer als 10 Sekunden ist erscheint ein berühmtes Zitat während die Kamera den leblosen Körper zeigt
+#define __RESPAWN_DELAY__ 12
+
+// wenn nicht auskommentiert mit // dann verdoppelt sich das Respawndelay des Spielers mit jedem Respawn
+// Beispiel: Delay am Anfang, 30 Sekunden, der 3. Respawn dauert dann schon 4 Minuten!
+// Die Zahl gibt das maximale Delay an (in Sekunden)
+//#define __FLEXIBLE_RESPAWNTIME__ 300
+
+// DM - Death Match
+// CTF - Capture the Flag
+// FF - Flag Fight
+// Coop / ZCoop -Cooperative Mission
+// Team - Team Mission
+// SC - Sector Control
+// Hold - Hold Location
+#define __GAMETYPE__ SC
+
 
 class CLib {
-    class GarbageCollector {
+    class GarbageCollector
+    {
         EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
@@ -15,6 +54,136 @@ class CLib {
 
 cba_settings_hasSettingsFile = 1;
 
-#include "war.ext"
-//#include "train.ext"
+author = __MADE_BY__;
+onLoadName = __MISSION_NAME__;
+onLoadMission = __VERSION__;
+loadScreen = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 
+overviewTextLocked = __MISSION_NAME__;
+overviewPicture = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+overviewText = __MISSION_DESCRIPTION__;
+
+onLoadIntro = "Prepare yourself...";
+onLoadIntroTime = 0;
+onLoadMissionTime = 0;
+
+ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
+ReviveRequiredItems = 0;                //0: none, 1: medkit, 2: medkit or first aid kit
+ReviveRequiredItemsFakConsumed = 0;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 45;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 3;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 3;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 600;              //unconscious state duration (in secs)
+
+respawnButton = 1;
+respawnDialog = 0;
+respawn = 3;
+respawnOnStart = 0; //Dont respawn on start. Run respawn script on start.
+
+#ifdef __RESPAWN_DELAY__
+    respawndelay = __RESPAWN_DELAY__;
+#endif
+
+debriefing=1;
+disabledAI=1;
+joinUnassigned = 1;
+enableDebugConsole = 1;
+
+#ifdef __DEBUG__
+    allowFunctionsLog = 1;
+#endif
+
+class Header 
+{
+	gameType = __GAMETYPE__;
+	minPlayers = 1;
+	maxPlayers = __PLNUM__;
+	playerCountMultipleOf = 1;
+};
+
+// Chat-Kanäle deaktivieren (der Admin darf trotzdem)
+// 	0 = 	Global
+// 	1 = 	Side
+// 	2 = 	Command
+// 	3 = 	Group
+// 	4 = 	Vehicle
+// 	5 = 	Direct
+// 	6 = 	System
+disableChannels[] = {
+	{
+		0,	// channel ID
+		true,	// disable text chat
+		true	// disable voice chat
+	}
+};
+
+class CfgDebriefing 
+{ 
+	class End1 
+	{
+		subtitle = "NATO hat die Schlacht gewonnen!";
+		description = "Die NATO Truppen eroberten weitere Gebiete in diesem Krieg.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_NATO";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End2 
+	{
+		subtitle = "CSAT hat die Schlacht gewonnen!";
+		description = "Die CSAT Truppen eroberten weitere Gebiete in diesem Krieg.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_CSAT";
+		pictureColor[] = {0.6,0.1,0.2,1};
+	};
+	class End3 
+	{
+		subtitle = "AAF hat die Schlacht gewonnen!";
+		description = "Die AAF Truppen eroberten weitere Gebiete in diesem Krieg.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_AAF";
+		pictureColor[] = {0.1,0.6,0.2,1};
+	};
+	class End4
+	{
+		title = "Untentschieden";
+		subtitle = "Eine knappe Kiste ohne echten Sieger!";
+		description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "KIA";
+		//pictureColor[] = {};
+	};
+	class Loser 
+	{
+		subtitle = "Player Init Error";
+		description = "Bad profile or error during initialization - try to restart";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "KIA";
+		//pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class balanceBLUFOR 
+	{
+		subtitle = "Überhangregel";
+		description = "Zu viele Nato Spieler - Überhangregel greift";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_NATO";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class balanceOPFOR 
+	{
+		subtitle = "Ueberhangregel";
+		description = "Zu viele CSAT Spieler - Überhangregel greift.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_CSAT";
+		pictureColor[] = {0.6,0.1,0.2,1};
+	};
+	class balanceindependent 
+	{
+		subtitle = "Ueberhangregel";
+		description = "Zu viele AAF Spieler - Überhangregel greift.";
+		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+		picture = "flag_AAF";
+		pictureColor[] = {0.1,0.6,0.2,1};
+	};
+};
