@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2459;
+		nextID=2468;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=764;
+		nextID=779;
 	};
 	class Camera
 	{
-		pos[]={668.52539,278.41388,12380.115};
-		dir[]={0.28727877,-0.65647906,-0.69753361};
-		up[]={0.25000948,0.75431961,-0.60704345};
-		aside[]={-0.92467642,-1.5855767e-007,-0.38082355};
+		pos[]={12446.336,58.122581,11957.776};
+		dir[]={0.70534426,-0.55701661,-0.43850297};
+		up[]={0.473093,0.83046758,-0.29411563};
+		aside[]={-0.52798831,3.6903657e-007,-0.84928501};
 	};
 };
 binarizationWanted=0;
@@ -380,7 +380,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=443;
+		items=451;
 		class Item0
 		{
 			dataType="Layer";
@@ -69673,6 +69673,139 @@ class Mission
 			};
 			id=2458;
 			type="EmptyDetector";
+		};
+		class Item443
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={664.86115,257.96988,12406.678};
+				angles[]={0,1.1090653,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2459;
+			type="OPT_Box_EFA_Ammo_F";
+			atlOffset=0.0051879883;
+		};
+		class Item444
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={661.96191,257.99207,12405.193};
+				angles[]={0,1.090556,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2460;
+			type="OPT_Box_EAF_UGL_F";
+			atlOffset=0.027374268;
+		};
+		class Item445
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={667.3949,257.97723,12407.969};
+				angles[]={0,1.1050407,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2461;
+			type="OPT_Box_EAF_Grenades_F";
+			atlOffset=0.012145996;
+		};
+		class Item446
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12485.49,32.298412,11934.419};
+				angles[]={0,3.697103,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2462;
+			type="OPT_Box_East_Ammo_F";
+			atlOffset=2.269846;
+		};
+		class Item447
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12484.301,32.30592,11932.512};
+				angles[]={0,3.7208941,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2463;
+			type="OPT_Box_East_Grenades_F";
+			atlOffset=0.004447937;
+		};
+		class Item448
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12483.096,32.309917,11930.638};
+				angles[]={0,3.7097709,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2464;
+			type="OPT_Box_CSAT_UGL_F";
+			atlOffset=0.0084457397;
+		};
+		class Item449
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12481.628,32.18819,11928.524};
+				angles[]={0,5.2739363,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2465;
+			type="OPT_Box_East_WpsSpecial_AA_F";
+			atlOffset=2.144722;
+		};
+		class Item450
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12479.938,32.198696,11925.798};
+				angles[]={0,5.2572317,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2466;
+			type="OPT_Box_East_WpsSpecial_AT_L2";
+			atlOffset=1.9720173;
 		};
 	};
 	class Connections
