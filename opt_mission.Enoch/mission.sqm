@@ -8,18 +8,18 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2439;
+		nextID=2445;
 	};
 	class LayerIndexProvider
 	{
-		nextID=674;
+		nextID=689;
 	};
 	class Camera
 	{
-		pos[]={12436.762,51.816696,11963.614};
-		dir[]={0.87414634,-0.40087664,-0.27451685};
-		up[]={0.38255453,0.91607541,-0.12013845};
-		aside[]={-0.29964077,-3.1944364e-007,-0.95415163};
+		pos[]={6675.4541,230.05898,12916.873};
+		dir[]={0.14776072,-0.42961085,-0.89087516};
+		up[]={0.070297524,0.90300888,-0.42383733};
+		aside[]={-0.98654282,4.6356581e-007,-0.16362774};
 	};
 };
 binarizationWanted=0;
@@ -64,13 +64,14 @@ addons[]=
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
 	"opt_characters",
 	"A3_Structures_F_Heli_Items_Airport",
-	"A3_Structures_F_Enoch_Infrastructure_Lamps"
+	"A3_Structures_F_Enoch_Infrastructure_Lamps",
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -197,8 +198,8 @@ class AddonsMetaData
 		class Item18
 		{
 			className="cba_jam";
-			name="Community Base Addons - Gemeinsame Munition und Magazine";
-			author="CBA-Team";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item19
@@ -266,6 +267,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item29
+		{
+			className="A3_Data_F_Exp_A";
+			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -374,7 +382,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=466;
+		items=469;
 		class Item0
 		{
 			dataType="Layer";
@@ -64917,7 +64925,7 @@ class Mission
 			};
 			id=2347;
 			type="Land_PortableHelipadLight_01_F";
-			atlOffset=-0.67191124;
+			atlOffset=-0.69112015;
 		};
 		class Item378
 		{
@@ -72075,7 +72083,7 @@ class Mission
 			};
 			id=2423;
 			type="Land_LampStreet_02_F";
-			atlOffset=0.080570221;
+			atlOffset=0.080568314;
 		};
 		class Item452
 		{
@@ -72253,7 +72261,7 @@ class Mission
 			};
 			id=2431;
 			type="Land_PortableLight_02_quad_yellow_F";
-			atlOffset=3.675211;
+			atlOffset=3.675209;
 		};
 		class Item460
 		{
@@ -72270,7 +72278,7 @@ class Mission
 			};
 			id=2432;
 			type="Land_PortableLight_02_quad_yellow_F";
-			atlOffset=2.4243298;
+			atlOffset=2.4243279;
 		};
 		class Item461
 		{
@@ -72304,7 +72312,7 @@ class Mission
 			};
 			id=2434;
 			type="Land_LampStreet_02_F";
-			atlOffset=3.4954567;
+			atlOffset=3.4955082;
 		};
 		class Item463
 		{
@@ -72356,6 +72364,339 @@ class Mission
 			id=2438;
 			type="Land_LampStreet_02_F";
 			atlOffset=0.58737183;
+		};
+		class Item466
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={626.43042,287.96109,12506.344};
+				angles[]={0,2.8620222,0};
+			};
+			isPlayable=1;
+			id=2442;
+			type="VirtualSpectator_F";
+			atlOffset=46.334839;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item467
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12533.336,74.415359,12094.778};
+				angles[]={0,3.5251725,0};
+			};
+			isPlayable=1;
+			id=2443;
+			type="VirtualSpectator_F";
+			atlOffset=39.916836;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item468
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6759.5977,183.21281,12825.386};
+				angles[]={0,3.1517518,0};
+			};
+			isPlayable=1;
+			id=2444;
+			type="VirtualSpectator_F";
+			atlOffset=79.799599;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections
