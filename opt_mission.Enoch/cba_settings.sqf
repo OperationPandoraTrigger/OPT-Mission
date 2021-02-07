@@ -300,8 +300,8 @@ force force opt_REVIVE_MAX_DAMAGE = 0.95;
 
 // OPT Sektorkontrolle
 force force opt_SECTORCONTROL_flagCountNATO = 0;
-force force opt_SECTORCONTROL_flagCountCSAT = 2;
-force force opt_SECTORCONTROL_flagCountAAF = 2;
+force force opt_SECTORCONTROL_flagCountCSAT = 1;
+force force opt_SECTORCONTROL_flagCountAAF = 1;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
 force force opt_SECTORCONTROL_flagMarkerOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
@@ -330,7 +330,7 @@ force force opt_WEATHERTIME_weather_fogBase_end = 0;
 force force opt_WEATHERTIME_weather_fogDecay_end = 0;
 
 // OPT Hardcap
-force force opt_SHOP_hardcaplist = 2;
+force force opt_SHOP_hardcaplist = "2";
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
