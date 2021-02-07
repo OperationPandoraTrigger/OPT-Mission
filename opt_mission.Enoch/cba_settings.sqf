@@ -271,51 +271,48 @@ diwako_dui_reset_ui_pos = false;
 diwako_dui_use_layout_editor = false;
 
 // OPT Feldreparatur
-force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
 force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_EACH_PART_TIME = 15;
+force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_EACH_HARDPART_TIME = 30;
 force opt_FIELDREPAIR_DEFAULT_FIELDREPAIR_MAX_REP_TIME = 240;
-force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS = 1;
-force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS_DURATION = 30;
-force opt_FIELDREPAIR_DEFAULT_FREE_REPAIRS = 1;
 force opt_FIELDREPAIR_DEFAULT_FULLREPAIR_LENGTH = 60;
 force opt_FIELDREPAIR_DEFAULT_REPAIR_TRUCK_USES = 10;
+force opt_FIELDREPAIR_DEFAULT_FREE_REPAIRS = 1;
+force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS = 1;
+force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS_DURATION = 30;
 
 // OPT Mission
+force force opt_GELDZEIT_Fraktionauswahl = "AAFvsCSAT";
+force force opt_GELDZEIT_PLAYTIME = 9000;
+force force opt_GELDZEIT_TRUCETIME = 480;
+force force opt_GELDZEIT_FREEZETIME = 60;
+force force opt_GELDZEIT_TEAMBALANCE = 5;
 force force opt_GELDZEIT_aaf_budget = "3000000";
 force force opt_GELDZEIT_csat_budget = "3000000";
-force force opt_GELDZEIT_dispo = "100000";
-force force opt_GELDZEIT_Fraktionauswahl = "AAFvsCSAT";
-force force opt_GELDZEIT_FREEZETIME = 60;
 force force opt_GELDZEIT_nato_budget = "3000000";
-force force opt_GELDZEIT_PLAYTIME = 9000;
-force force opt_GELDZEIT_repairSystem_refuelCost = "1000";
-force force opt_GELDZEIT_repairSystem_repairCost = "1000";
-force force opt_GELDZEIT_TEAMBALANCE = 5;
-force force opt_GELDZEIT_TRUCETIME = 480;
-force force opt_GELDZEIT_aaf_sonderausobjektanzahl = "0";
-force force opt_GELDZEIT_csat_sonderausobjektanzahl = "0";
+force force opt_GELDZEIT_dispo = "100000";
 
 // OPT San-System
 force force opt_REVIVE_Heliwerteigen = 80;
 force force opt_REVIVE_Helizeiteigen = 20;
-force force opt_REVIVE_onlysani = true;
 force force opt_REVIVE_playerdist = 500;
+force force opt_REVIVE_onlysani = true;
+force force opt_REVIVE_MAX_DAMAGE = 0.95;
 
 // OPT Sektorkontrolle
-force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
-force force opt_SECTORCONTROL_flagCountAAF = 1;
-force force opt_SECTORCONTROL_flagCountCSAT = 1;
 force force opt_SECTORCONTROL_flagCountNATO = 0;
-force force opt_SECTORCONTROL_flagDistanceToPlayer = 5;
-force force opt_SECTORCONTROL_flagFreeMineZoneMarkerOn = true;
-force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
-force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
-force force opt_SECTORCONTROL_flagMarkerOn = true;
+force force opt_SECTORCONTROL_flagCountCSAT = 2;
+force force opt_SECTORCONTROL_flagCountAAF = 2;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
+force force opt_SECTORCONTROL_flagMarkerOn = true;
+force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
+force force opt_SECTORCONTROL_flagFreeMineZoneMarkerOn = true;
+force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
+force force opt_SECTORCONTROL_flagDistanceToPlayer = 5;
+force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
+force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
 force force opt_SECTORCONTROL_trainingon = true;
-force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
-force force opt_SECTORCONTROL_nato_flags_pos = "0";
+force force opt_SECTORCONTROL_nato_sektor = "0";
 force force opt_SECTORCONTROL_csat_sektor = "25";
 force force opt_SECTORCONTROL_aaf_sektor = "25";
 
@@ -332,6 +329,8 @@ force force opt_WEATHERTIME_weather_fogValue_end = 0;
 force force opt_WEATHERTIME_weather_fogBase_end = 0;
 force force opt_WEATHERTIME_weather_fogDecay_end = 0;
 
+// OPT Hardcap
+force force opt_SHOP_hardcaplist = 2;
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
