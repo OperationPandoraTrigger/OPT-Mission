@@ -8,18 +8,22 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2445;
+		nextID=2459;
+	};
+	class MarkerIDProvider
+	{
+		nextID=4;
 	};
 	class LayerIndexProvider
 	{
-		nextID=689;
+		nextID=719;
 	};
 	class Camera
 	{
-		pos[]={12495.355,73.908783,12034.286};
-		dir[]={-0.22025506,-0.48824388,-0.84447825};
-		up[]={-0.12322082,0.87270719,-0.47244015};
-		aside[]={-0.96764255,1.960434e-007,0.25237843};
+		pos[]={767.37659,334.31143,12285.904};
+		dir[]={-0.73188889,-0.47255808,0.49095809};
+		up[]={-0.39244273,0.88130021,0.26325464};
+		aside[]={0.55708414,1.215376e-007,0.8304652};
 	};
 };
 binarizationWanted=0;
@@ -382,7 +386,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=469;
+		items=477;
 		class Item0
 		{
 			dataType="Layer";
@@ -72718,6 +72722,162 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item469
+		{
+			dataType="Trigger";
+			position[]={6400,65.941574,13500};
+			class Attributes
+			{
+				name="Kartenrand_Killer1";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{_x setDamage 1;} forEach (allUnits inAreaArray thisTrigger);}";
+				sizeA=6600;
+				sizeB=500;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2448;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item470
+		{
+			dataType="Trigger";
+			position[]={6400,117.24651,12900};
+			class Attributes
+			{
+				name="Kartenrand_Warnung1";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{" \n " if (player == _x) then" \n " {" \n "  hint ""Das Kampfgebiet darf nicht verlassen werden!"";" \n " }" \n "} forEach (allUnits inAreaArray thisTrigger);" \n "}";
+				sizeA=6400;
+				sizeB=100;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2451;
+			type="EmptyDetector";
+		};
+		class Item471
+		{
+			dataType="Trigger";
+			position[]={6400,316.12082,-700};
+			class Attributes
+			{
+				name="Kartenrand_Killer2";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{_x setDamage 1;} forEach (allUnits inAreaArray thisTrigger);}";
+				sizeA=6600;
+				sizeB=500;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2452;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item472
+		{
+			dataType="Trigger";
+			position[]={6400,255.11081,-100};
+			class Attributes
+			{
+				name="Kartenrand_Warnung2";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{" \n " if (player == _x) then" \n " {" \n "  hint ""Das Kampfgebiet darf nicht verlassen werden!"";" \n " }" \n "} forEach (allUnits inAreaArray thisTrigger);" \n "}";
+				sizeA=6400;
+				sizeB=100;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2453;
+			type="EmptyDetector";
+		};
+		class Item473
+		{
+			dataType="Trigger";
+			position[]={13500,113.89024,6400};
+			angle=1.5707964;
+			class Attributes
+			{
+				name="Kartenrand_Killer3";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{_x setDamage 1;} forEach (allUnits inAreaArray thisTrigger);}";
+				sizeA=7600;
+				sizeB=500;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2455;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item474
+		{
+			dataType="Trigger";
+			position[]={12900,119.70984,6400};
+			angle=1.5707964;
+			class Attributes
+			{
+				name="Kartenrand_Warnung3";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{" \n " if (player == _x) then" \n " {" \n "  hint ""Das Kampfgebiet darf nicht verlassen werden!"";" \n " }" \n "} forEach (allUnits inAreaArray thisTrigger);" \n "}";
+				sizeA=6600;
+				sizeB=100;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2456;
+			type="EmptyDetector";
+		};
+		class Item475
+		{
+			dataType="Trigger";
+			position[]={-700,79.587921,6400};
+			angle=1.5707964;
+			class Attributes
+			{
+				name="Kartenrand_Killer4";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{_x setDamage 1;} forEach (allUnits inAreaArray thisTrigger);}";
+				sizeA=7600;
+				sizeB=500;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2457;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item476
+		{
+			dataType="Trigger";
+			position[]={-100,60.838646,6400};
+			angle=1.5707964;
+			class Attributes
+			{
+				name="Kartenrand_Warnung4";
+				condition="call{count (allUnits inAreaArray thisTrigger) > 0}";
+				onActivation="call{{" \n " if (player == _x) then" \n " {" \n "  hint ""Das Kampfgebiet darf nicht verlassen werden!"";" \n " }" \n "} forEach (allUnits inAreaArray thisTrigger);" \n "}";
+				sizeA=6600;
+				sizeB=100;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2458;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
