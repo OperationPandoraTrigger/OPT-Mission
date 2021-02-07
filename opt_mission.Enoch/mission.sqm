@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=719;
+		nextID=734;
 	};
 	class Camera
 	{
-		pos[]={767.37659,334.31143,12285.904};
-		dir[]={-0.73188889,-0.47255808,0.49095809};
-		up[]={-0.39244273,0.88130021,0.26325464};
-		aside[]={0.55708414,1.215376e-007,0.8304652};
+		pos[]={12470.896,40.845543,11937.096};
+		dir[]={0.52857423,-0.71101433,-0.46377712};
+		up[]={0.53445774,0.70317519,-0.46893895};
+		aside[]={-0.65953636,-7.9511665e-008,-0.7516861};
 	};
 };
 binarizationWanted=0;
@@ -61738,15 +61738,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={672.27985,258.87964,12402.757};
+				position[]={672.28003,258.87955,12402.757};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=2259;
 			type="Box_FIA_Support_F";
+			atlOffset=3.618988;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61764,7 +61764,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""O_NVGoggles_grn_F""],[100]],[[],[]]],false]";
+							value="[[[[],[]],[[""Chemlight_green"",""Chemlight_red"",""Chemlight_yellow"",""Chemlight_blue"",""ACE_Chemlight_White""],[20,20,20,20,20]],[[""O_NVGoggles_grn_F""],[100]],[[],[]]],false]";
 						};
 					};
 				};
@@ -61776,15 +61776,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12476.017,33.215855,11930.646};
+				position[]={12476.017,33.215752,11930.646};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=2260;
 			type="Box_FIA_Support_F";
+			atlOffset=1.664999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61802,7 +61802,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""O_NVGoggles_ghex_F""],[100]],[[],[]]],false]";
+							value="[[[[],[]],[[""Chemlight_green"",""Chemlight_red"",""Chemlight_yellow"",""Chemlight_blue"",""ACE_Chemlight_White""],[20,20,20,20,20]],[[""O_NVGoggles_ghex_F""],[100]],[[],[]]],false]";
 						};
 					};
 				};
