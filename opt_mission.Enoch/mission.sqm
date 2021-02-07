@@ -4713,14 +4713,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -4816,14 +4810,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -5097,14 +5085,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -5202,14 +5184,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -5307,14 +5283,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -63466,14 +63436,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
@@ -63569,14 +63533,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="30Rnd_556x45_Stanag";
 										count=3;
