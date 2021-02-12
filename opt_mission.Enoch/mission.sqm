@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2468;
+		nextID=2469;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=794;
+		nextID=809;
 	};
 	class Camera
 	{
-		pos[]={660.67303,264.60999,12354.991};
-		dir[]={0.16870204,-0.39902559,0.90142065};
-		up[]={0.073426999,0.91685623,0.39234975};
-		aside[]={0.98305154,1.2915552e-006,-0.18397593};
+		pos[]={673.83862,268.38162,12390.342};
+		dir[]={-0.41783977,-0.40902531,0.81126815};
+		up[]={-0.18732609,0.91248059,0.36370918};
+		aside[]={0.88902682,3.2992102e-007,0.45788968};
 	};
 };
 binarizationWanted=0;
@@ -207,8 +207,8 @@ class AddonsMetaData
 		class Item19
 		{
 			className="cba_jam";
-			name="Community Base Addons - Gemeinsame Munition und Magazine";
-			author="CBA-Team";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item20
@@ -27893,7 +27893,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.54572868;
+							value=0.002204488;
 						};
 					};
 				};
@@ -27912,7 +27912,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.58276868;
+							value=0.015877016;
 						};
 					};
 				};
@@ -27931,7 +27931,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.57782078;
+							value=0.032983348;
 						};
 					};
 				};
@@ -27950,7 +27950,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.52412701;
+							value=0;
 						};
 					};
 				};
@@ -68828,8 +68828,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={664.86115,257.96988,12406.678};
-				angles[]={0,1.1090653,0};
+				position[]={662.68024,257.97443,12405.558};
+				angles[]={0,1.0984402,0};
 			};
 			side="Empty";
 			flags=4;
@@ -68838,15 +68838,15 @@ class Mission
 			};
 			id=2459;
 			type="OPT_Box_EFA_Ammo_F";
-			atlOffset=0.0051879883;
+			atlOffset=0.0097351074;
 		};
 		class Item411
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={661.96191,257.99207,12405.193};
-				angles[]={0,1.090556,0};
+				position[]={667.81293,257.98309,12408.164};
+				angles[]={0,1.097141,0};
 			};
 			side="Empty";
 			flags=4;
@@ -68855,15 +68855,15 @@ class Mission
 			};
 			id=2460;
 			type="OPT_Box_EAF_UGL_F";
-			atlOffset=0.027374268;
+			atlOffset=0.018005371;
 		};
 		class Item412
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={667.3949,257.97723,12407.969};
-				angles[]={0,1.1050407,0};
+				position[]={665.20953,257.97406,12406.852};
+				angles[]={0,1.0896966,0};
 			};
 			side="Empty";
 			flags=4;
@@ -68872,7 +68872,7 @@ class Mission
 			};
 			id=2461;
 			type="OPT_Box_EAF_Grenades_F";
-			atlOffset=0.012145996;
+			atlOffset=0.0093688965;
 		};
 		class Item413
 		{
@@ -68941,22 +68941,6 @@ class Mission
 			atlOffset=2.144722;
 		};
 		class Item417
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12479.938,32.198696,11925.798};
-				angles[]={0,5.2572317,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=2466;
-			type="OPT_Box_East_WpsSpecial_AT_L2";
-			atlOffset=1.9721775;
-		};
-		class Item418
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69147,6 +69131,23 @@ class Mission
 				};
 				nAttributes=9;
 			};
+		};
+		class Item418
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12480.103,32.204819,11926.079};
+				angles[]={0,5.2484083,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2468;
+			type="OPT_Box_East_WpsSpecial_AT_L1";
+			atlOffset=0.0006942749;
 		};
 	};
 	class Connections
