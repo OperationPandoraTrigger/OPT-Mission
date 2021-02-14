@@ -46,10 +46,11 @@ class CLib {
         EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
-    Modules[] = {"CLib", "PerformanceMonitor", "OPT"};
+    Modules[] = {"CLib", "Streamator", "PerformanceMonitor", "OPT"};
     useExperimentalAutoload = 0;
     useCompressedFunction = 0;
     useFallbackRemoteExecution = 0;
+    FrameGraphSize = 128;
 };
 
 cba_settings_hasSettingsFile = 1;
