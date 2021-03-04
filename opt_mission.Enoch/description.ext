@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Schlacht #2"
+#define __MISSION_NAME__ "Schlacht #3"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
-#define __VERSION__ "1.0.5"
+#define __VERSION__ "1.0.6"
 // made by
 #define __MADE_BY__ "Lord, form, maxSzone, Gelir, Raffda"
 // short description
