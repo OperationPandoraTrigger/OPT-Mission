@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Schlacht #4"
 // Versionsnummer eintragen (nur die des Base Templates!!!)
-#define __VERSION__ "1.4.4"
+#define __VERSION__ "1.4.5"
 // made by
 #define __MADE_BY__ "Lord, form, maxSzone, Gelir, Raffda"
 // short description
