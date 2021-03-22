@@ -7,7 +7,6 @@ call CLib_fnc_loadModules;
 
 if (isServer) then 
 {
-
     //Function that adds dynamic groups to the mission as seen in End Game
     ["Initialize"] call BIS_fnc_dynamicGroups;
 };

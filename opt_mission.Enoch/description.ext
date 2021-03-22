@@ -39,8 +39,8 @@
 // Hold - Hold Location
 #define __GAMETYPE__ SC
 
-
-class CLib {
+class CLib
+{
     class GarbageCollector
     {
         EnableGarbageCollector = 0;
@@ -98,93 +98,99 @@ enableDebugConsole = 1;
 
 class Header 
 {
-	gameType = __GAMETYPE__;
-	minPlayers = 1;
-	maxPlayers = __PLNUM__;
-	playerCountMultipleOf = 1;
+    gameType = __GAMETYPE__;
+    minPlayers = 1;
+    maxPlayers = __PLNUM__;
+    playerCountMultipleOf = 1;
 };
 
 // Chat-Kanäle deaktivieren (der Admin darf trotzdem)
-// 	0 = 	Global
-// 	1 = 	Side
-// 	2 = 	Command
-// 	3 = 	Group
-// 	4 = 	Vehicle
-// 	5 = 	Direct
-// 	6 = 	System
-disableChannels[] = {
-	{
-		0,	// channel ID
-		true,	// disable text chat
-		true	// disable voice chat
-	}
+// 0 = Global
+// 1 = Side
+// 2 = Command
+// 3 = Group
+// 4 = Vehicle
+// 5 = Direct
+// 6 = System
+disableChannels[] =
+{
+    {
+        0,    // channel ID
+        true,    // disable text chat
+        true    // disable voice chat
+    }
 };
 
 class CfgDebriefing 
 { 
-	class End1 
-	{
-		subtitle = "NATO hat die Schlacht gewonnen!";
-		description = "Die NATO Truppen eroberten weitere Gebiete in diesem Krieg.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_NATO";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class End2 
-	{
-		subtitle = "CSAT hat die Schlacht gewonnen!";
-		description = "Die CSAT Truppen eroberten weitere Gebiete in diesem Krieg.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_CSAT";
-		pictureColor[] = {0.6,0.1,0.2,1};
-	};
-	class End3 
-	{
-		subtitle = "AAF hat die Schlacht gewonnen!";
-		description = "Die AAF Truppen eroberten weitere Gebiete in diesem Krieg.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_AAF";
-		pictureColor[] = {0.1,0.6,0.2,1};
-	};
-	class End4
-	{
-		title = "Untentschieden";
-		subtitle = "Eine knappe Kiste ohne echten Sieger!";
-		description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "KIA";
-		//pictureColor[] = {};
-	};
-	class Loser 
-	{
-		subtitle = "Player Init Error";
-		description = "Bad profile or error during initialization - try to restart";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "KIA";
-		//pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class balanceBLUFOR 
-	{
-		subtitle = "Überhangregel";
-		description = "Zu viele Nato Spieler - Überhangregel greift";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_NATO";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class balanceOPFOR 
-	{
-		subtitle = "Ueberhangregel";
-		description = "Zu viele CSAT Spieler - Überhangregel greift.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_CSAT";
-		pictureColor[] = {0.6,0.1,0.2,1};
-	};
-	class balanceindependent 
-	{
-		subtitle = "Ueberhangregel";
-		description = "Zu viele AAF Spieler - Überhangregel greift.";
-		pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-		picture = "flag_AAF";
-		pictureColor[] = {0.1,0.6,0.2,1};
-	};
+    class End1
+    {
+        subtitle = "NATO hat die Schlacht gewonnen!";
+        description = "Die NATO Truppen eroberten weitere Gebiete in diesem Krieg.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_NATO";
+        pictureColor[] = {0.0,0.3,0.6,1};
+    };
+
+    class End2
+    {
+        subtitle = "CSAT hat die Schlacht gewonnen!";
+        description = "Die CSAT Truppen eroberten weitere Gebiete in diesem Krieg.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_CSAT";
+        pictureColor[] = {0.6,0.1,0.2,1};
+    };
+
+    class End3
+    {
+        subtitle = "AAF hat die Schlacht gewonnen!";
+        description = "Die AAF Truppen eroberten weitere Gebiete in diesem Krieg.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_AAF";
+        pictureColor[] = {0.1,0.6,0.2,1};
+    };
+
+    class End4
+    {
+        title = "Untentschieden";
+        subtitle = "Eine knappe Kiste ohne echten Sieger!";
+        description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "KIA";
+    };
+
+    class Loser
+    {
+        subtitle = "Player Init Error";
+        description = "Bad profile or error during initialization - try to restart";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "KIA";
+    };
+
+    class balanceBLUFOR
+    {
+        subtitle = "Überhangregel";
+        description = "Zu viele Nato Spieler - Überhangregel greift";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_NATO";
+        pictureColor[] = {0.0,0.3,0.6,1};
+    };
+
+    class balanceOPFOR
+    {
+        subtitle = "Ueberhangregel";
+        description = "Zu viele CSAT Spieler - Überhangregel greift.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_CSAT";
+        pictureColor[] = {0.6,0.1,0.2,1};
+    };
+
+    class balanceindependent
+    {
+        subtitle = "Ueberhangregel";
+        description = "Zu viele AAF Spieler - Überhangregel greift.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "flag_AAF";
+        pictureColor[] = {0.1,0.6,0.2,1};
+    };
 };
