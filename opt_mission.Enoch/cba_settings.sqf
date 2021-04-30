@@ -292,7 +292,7 @@ force force opt_GELDZEIT_nato_budget = "3000000";
 force force opt_GELDZEIT_dispo = "100000";
 
 // OPT San-System
-force force opt_REVIVE_Heliwerteigen = 80;
+force force opt_REVIVE_Heliwerteigen = 81;
 force force opt_REVIVE_Helizeiteigen = 20;
 force force opt_REVIVE_playerdist = 500;
 force force opt_REVIVE_onlysani = true;
