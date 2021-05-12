@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Schlacht #3 (SW)"
 // Versionsnummer eintragen
-#define __VERSION__ "2.3.1"
+#define __VERSION__ "2.3.2"
 // made by
 #define __MADE_BY__ "Lord, form, maxSzone, Gelir, Raffda"
 // short description
