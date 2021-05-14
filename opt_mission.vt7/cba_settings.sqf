@@ -281,7 +281,7 @@ force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS = 1;
 force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS_DURATION = 30;
 
 // OPT Mission
-force force opt_GELDZEIT_Fraktionauswahl = "AAFvsCSAT";
+force force opt_GELDZEIT_Fraktionauswahl = "NATOvsCSAT";
 force force opt_GELDZEIT_PLAYTIME = 9000;
 force force opt_GELDZEIT_TRUCETIME = 480;
 force force opt_GELDZEIT_FREEZETIME = 60;
@@ -299,9 +299,9 @@ force force opt_REVIVE_onlysani = true;
 force force opt_REVIVE_MAX_DAMAGE = 0.95;
 
 // OPT Sektorkontrolle
-force force opt_SECTORCONTROL_flagCountNATO = 0;
+force force opt_SECTORCONTROL_flagCountNATO = 1;
 force force opt_SECTORCONTROL_flagCountCSAT = 1;
-force force opt_SECTORCONTROL_flagCountAAF = 1;
+force force opt_SECTORCONTROL_flagCountAAF = 0;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
 force force opt_SECTORCONTROL_flagMarkerOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
@@ -371,12 +371,12 @@ force force tfar_radiocode_west = "_bluefor";
 force force tfar_radioCodesDisabled = false;
 force force TFAR_SameLRFrequenciesForSide = true;
 force force TFAR_SameSRFrequenciesForSide = true;
-force force TFAR_setting_defaultFrequencies_lr_east = "50,70,30,40,39,80,60,41,81";
+force force TFAR_setting_defaultFrequencies_lr_east = "40,50,60,41,42,43,51,61,62";
 force force TFAR_setting_defaultFrequencies_lr_independent = "40,50,60,41,42,43,51,61,62";
-force force TFAR_setting_defaultFrequencies_lr_west = "40,50,60,41,42,43,51,61,62";
-force force TFAR_setting_defaultFrequencies_sr_east = "40,41,42,80,81,82,60,71";
+force force TFAR_setting_defaultFrequencies_lr_west = "50,70,30,40,39,80,60,41,81";
+force force TFAR_setting_defaultFrequencies_sr_east = "41,42,43,60,61,62,50,51";
 force force TFAR_setting_defaultFrequencies_sr_independent = "41,42,43,60,61,62,50,51";
-force force TFAR_setting_defaultFrequencies_sr_west = "41,42,43,60,61,62,50,51";
+force force TFAR_setting_defaultFrequencies_sr_west = "40,41,42,80,81,82,60,71";
 force force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
