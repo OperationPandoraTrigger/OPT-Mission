@@ -3,9 +3,9 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Virolahti Test"
 // Versionsnummer eintragen
-#define __VERSION__ "3.0.7"
+#define __VERSION__ "3.0.9"
 // made by
-#define __MADE_BY__ "Lord, form, maxSzone, Gelir, Raffda"
+#define __MADE_BY__ "Lord, form, eXcalibur, maxSzone"
 // short description
 #define __MISSION_DESCRIPTION__ "This is the Operation Pandora Trigger Mission"
 

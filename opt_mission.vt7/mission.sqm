@@ -8,22 +8,22 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=2162;
+		nextID=2255;
 	};
 	class MarkerIDProvider
 	{
-		nextID=55;
+		nextID=65;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1408;
+		nextID=1520;
 	};
 	class Camera
 	{
-		pos[]={9460.1572,12.243505,1884.2031};
-		dir[]={-0.93143499,-0.041378483,0.36166951};
-		up[]={-0.03867745,0.99914432,0.015017718};
-		aside[]={0.36197853,2.1921005e-007,0.93222684};
+		pos[]={16926.061,31.78406,7772.8003};
+		dir[]={-0.65416574,-0.35208544,-0.66941148};
+		up[]={-0.24608031,0.93596739,-0.25181583};
+		aside[]={-0.71520811,1.3469253e-007,0.69891942};
 	};
 };
 binarizationWanted=0;
@@ -83,13 +83,14 @@ addons[]=
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Structures_F_Civ_Lamps",
 	"ace_map",
-	"A3_Data_F_Exp_A_Virtual"
+	"A3_Data_F_Exp_A_Virtual",
+	"A3_Structures_F_Exp_Military_Flags"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			className="A3_Structures_F_Exp_Commercial";
@@ -356,6 +357,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item41
+		{
+			className="A3_Structures_F_Exp";
+			name="Arma 3 Apex - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -425,7 +433,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -12772,7 +12780,7 @@ class Mission
 							markerType="RECTANGLE";
 							type="rectangle";
 							a=3;
-							angle=55.575928;
+							angle=55.57592;
 							id=1922;
 						};
 						class Item11
@@ -18664,6 +18672,7 @@ class Mission
 									};
 									id=2130;
 									type="Land_FuelStation_Feed_F";
+									atlOffset=2.3841858e-007;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -18705,6 +18714,7 @@ class Mission
 									};
 									id=2133;
 									type="Land_MetalBarrel_F";
+									atlOffset=-0.00033307076;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -18744,6 +18754,7 @@ class Mission
 									};
 									id=2160;
 									type="Land_FuelStation_Feed_F";
+									atlOffset=2.3841858e-007;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -18811,7 +18822,7 @@ class Mission
 								};
 							};
 							id=892;
-							atlOffset=-0.040639639;
+							atlOffset=-0.040557146;
 						};
 						class Item1
 						{
@@ -20966,7 +20977,7 @@ class Mission
 						};
 					};
 					id=891;
-					atlOffset=-9.3883657;
+					atlOffset=-9.3883619;
 				};
 				class Item8
 				{
@@ -21667,7 +21678,7 @@ class Mission
 							side="West";
 							class Entities
 							{
-								items=5;
+								items=10;
 								class Item0
 								{
 									dataType="Object";
@@ -21928,6 +21939,309 @@ class Mission
 									id=2078;
 									type="B_officer_F";
 									atlOffset=-1.1920929e-007;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male10ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.98000002;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16899.465,1.4531479,7783.2075};
+										angles[]={0,3.9760172,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										description="Testeinheit@Testeinheiten";
+										isPlayable=1;
+									};
+									id=2184;
+									type="B_officer_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male10ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.98000002;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16900.494,1.3046714,7785.6924};
+										angles[]={0,4.5015182,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										description="Testeinheit@Testeinheiten";
+										isPlayable=1;
+									};
+									id=2185;
+									type="B_officer_F";
+									atlOffset=1.1920929e-007;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male10ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.98000002;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16902.359,1.1169575,7787.1865};
+										angles[]={0,4.3403416,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										description="Testeinheit@Testeinheiten";
+										isPlayable=1;
+									};
+									id=2187;
+									type="B_officer_F";
+									atlOffset=-1.1920929e-007;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male10ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.98000002;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16903.934,1.101678,7786.3652};
+										angles[]={0,3.3982036,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										description="Testeinheit@Testeinheiten";
+										isPlayable=1;
+									};
+									id=2188;
+									type="B_officer_F";
+									atlOffset=-1.1920929e-007;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male10ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.98000002;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16902.623,1.2670321,7784.2632};
+										angles[]={0,3.6848612,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										description="Testeinheit@Testeinheiten";
+										isPlayable=1;
+									};
+									id=2186;
+									type="B_officer_F";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -26885,6 +27199,7 @@ class Mission
 									};
 									id=2134;
 									type="Land_MetalBarrel_F";
+									atlOffset=-0.0031709671;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -26965,6 +27280,7 @@ class Mission
 									};
 									id=2159;
 									type="Land_MetalBarrel_F";
+									atlOffset=3.0994415e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -26991,7 +27307,7 @@ class Mission
 								};
 							};
 							id=889;
-							atlOffset=0.17595196;
+							atlOffset=0.1764822;
 						};
 						class Item1
 						{
@@ -29464,7 +29780,7 @@ class Mission
 						};
 					};
 					id=888;
-					atlOffset=3.6851296;
+					atlOffset=3.6851349;
 				};
 				class Item4
 				{
@@ -30267,7 +30583,7 @@ class Mission
 							markerType="RECTANGLE";
 							type="rectangle";
 							a=21;
-							angle=226.77573;
+							angle=226.7757;
 							id=1950;
 						};
 					};
@@ -31311,6 +31627,1030 @@ class Mission
 			};
 			id=899;
 			atlOffset=10.930448;
+		};
+		class Item7
+		{
+			dataType="Layer";
+			name="Fahnenvorschläge";
+			class Entities
+			{
+				items=86;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5958.3398,31.250647,13702.147};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2162;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14487,19.082253,14696};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2163;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-9.5367432e-007;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1877.2848,5.538496,6242.8672};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2164;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14362.89,36.821983,10352.403};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2165;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12895.042,11.301571,5770.3091};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2166;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7756.1772,22.778696,10989.836};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2167;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1026.0808,29.449509,16840.102};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2168;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1689.8057,33.994652,14313.305};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2169;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6283.2388,28.185144,8951.2393};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2170;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16095,7.4861898,14324};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2171;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={1025.6519,22.858883,16838.141};
+					name="marker_55";
+					type="mil_flag";
+					id=2173;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={1690.0151,23.411026,14312.847};
+					name="marker_56";
+					type="mil_flag";
+					id=2174;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={5958.3716,27.266499,13702.046};
+					name="marker_57";
+					type="mil_flag";
+					id=2175;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={14487.082,15.104216,14695.943};
+					name="marker_58";
+					type="mil_flag";
+					id=2176;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={16095.023,3.5093725,14323.967};
+					name="marker_59";
+					type="mil_flag";
+					id=2177;
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={14361.29,32.849255,10350.699};
+					name="marker_60";
+					type="mil_flag";
+					id=2178;
+				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={7736.5396,19.228855,10990.389};
+					name="marker_61";
+					type="mil_flag";
+					id=2179;
+				};
+				class Item17
+				{
+					dataType="Marker";
+					position[]={6285.27,24.138664,8950.8301};
+					name="marker_62";
+					type="mil_flag";
+					id=2180;
+				};
+				class Item18
+				{
+					dataType="Marker";
+					position[]={1877.349,1.5993762,6242.2969};
+					name="marker_63";
+					type="mil_flag";
+					id=2181;
+				};
+				class Item19
+				{
+					dataType="Marker";
+					position[]={12895.016,7.3211961,5770.3486};
+					name="marker_64";
+					type="mil_flag";
+					id=2182;
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3678.3657,33.461109,13845.172};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2189;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item21
+				{
+					dataType="Marker";
+					position[]={3678.4478,29.490776,13845.115};
+					name="marker_65";
+					type="mil_flag";
+					id=2190;
+				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4611.5898,33.679432,15686.359};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2191;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item23
+				{
+					dataType="Marker";
+					position[]={4611.6719,29.701481,15686.303};
+					name="marker_66";
+					type="mil_flag";
+					id=2192;
+					atlOffset=1.9073486e-006;
+				};
+				class Item24
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4566.8433,44.443741,10370.957};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2193;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item25
+				{
+					dataType="Marker";
+					position[]={4566.9253,40.457939,10370.9};
+					name="marker_67";
+					type="mil_flag";
+					id=2194;
+				};
+				class Item26
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4253.7827,49.614944,8646.2158};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2195;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item27
+				{
+					dataType="Marker";
+					position[]={4253.8647,45.632839,8646.1592};
+					name="marker_68";
+					type="mil_flag";
+					id=2196;
+				};
+				class Item28
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2553.7893,5.6280885,5872.209};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2197;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-9.5367432e-007;
+				};
+				class Item29
+				{
+					dataType="Marker";
+					position[]={2553.8713,1.6537933,5872.1523};
+					name="marker_69";
+					type="mil_flag";
+					id=2198;
+				};
+				class Item30
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2397.7498,6.8998127,5946.9116};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2199;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item31
+				{
+					dataType="Marker";
+					position[]={2397.8318,2.9214706,5946.855};
+					name="marker_70";
+					type="mil_flag";
+					id=2200;
+					atlOffset=9.5367432e-007;
+				};
+				class Item32
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3277.0737,7.48033,6001.8979};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2201;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item33
+				{
+					dataType="Marker";
+					position[]={3277.1558,3.4987547,6001.8413};
+					name="marker_71";
+					type="mil_flag";
+					id=2202;
+					atlOffset=9.5367432e-007;
+				};
+				class Item34
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3713.584,17.988544,6926.4082};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2203;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item35
+				{
+					dataType="Marker";
+					position[]={3713.666,14.012428,6926.3516};
+					name="marker_72";
+					type="mil_flag";
+					id=2204;
+					atlOffset=9.5367432e-007;
+				};
+				class Item36
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4141.5322,11.930086,5804.0972};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2205;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item37
+				{
+					dataType="Marker";
+					position[]={4141.6143,7.9534688,5804.0405};
+					name="marker_73";
+					type="mil_flag";
+					id=2206;
+					atlOffset=9.5367432e-007;
+				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5448.728,41.770119,5670.3262};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2207;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item39
+				{
+					dataType="Marker";
+					position[]={5448.8101,37.761738,5670.2695};
+					name="marker_74";
+					type="mil_flag";
+					id=2208;
+				};
+				class Item40
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5925.4795,17.525171,6443.5903};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2209;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-9.5367432e-007;
+				};
+				class Item41
+				{
+					dataType="Marker";
+					position[]={5925.5615,13.558443,6443.5337};
+					name="marker_75";
+					type="mil_flag";
+					id=2210;
+				};
+				class Item42
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10085.228,24.041693,7500.2939};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2211;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item43
+				{
+					dataType="Marker";
+					position[]={10085.31,20.06362,7500.2373};
+					name="marker_76";
+					type="mil_flag";
+					id=2212;
+					atlOffset=1.9073486e-006;
+				};
+				class Item44
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9002.7607,9.7728128,6995.3618};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2213;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-9.5367432e-007;
+				};
+				class Item45
+				{
+					dataType="Marker";
+					position[]={9002.8428,5.7982554,6995.3052};
+					name="marker_77";
+					type="mil_flag";
+					id=2214;
+				};
+				class Item46
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7090.5732,9.2019815,7097.2051};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2215;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item47
+				{
+					dataType="Marker";
+					position[]={7090.6553,5.2121568,7097.1484};
+					name="marker_78";
+					type="mil_flag";
+					id=2216;
+					atlOffset=9.5367432e-007;
+				};
+				class Item48
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8827.6465,10.455725,5700.6504};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2217;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item49
+				{
+					dataType="Marker";
+					position[]={8827.7285,6.4779658,5700.5938};
+					name="marker_79";
+					type="mil_flag";
+					id=2218;
+					atlOffset=9.5367432e-007;
+				};
+				class Item50
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11077.131,19.717529,8183.3057};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2219;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item51
+				{
+					dataType="Marker";
+					position[]={11077.213,15.776332,8183.249};
+					name="marker_80";
+					type="mil_flag";
+					id=2220;
+					atlOffset=0.046530724;
+				};
+				class Item52
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12140.541,50.687012,8662.168};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2221;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item53
+				{
+					dataType="Marker";
+					position[]={12151.148,47.00597,8651.9141};
+					name="marker_81";
+					type="mil_flag";
+					id=2222;
+				};
+				class Item54
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12936.412,8.8241806,8312.3105};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2223;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item55
+				{
+					dataType="Marker";
+					position[]={12936.494,4.847208,8312.2539};
+					name="marker_82";
+					type="mil_flag";
+					id=2224;
+					atlOffset=9.5367432e-007;
+				};
+				class Item56
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10760.366,56.089569,11081.261};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2225;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item57
+				{
+					dataType="Marker";
+					position[]={10760.448,52.114639,11081.204};
+					name="marker_83";
+					type="mil_flag";
+					id=2226;
+				};
+				class Item58
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12649.916,26.925903,11111.479};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2227;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item59
+				{
+					dataType="Marker";
+					position[]={12649.998,22.946768,11111.422};
+					name="marker_84";
+					type="mil_flag";
+					id=2228;
+					atlOffset=1.9073486e-006;
+				};
+				class Item60
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11543.29,42.29068,10183.96};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2229;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item61
+				{
+					dataType="Marker";
+					position[]={11543.372,38.309036,10183.903};
+					name="marker_85";
+					type="mil_flag";
+					id=2230;
+				};
+				class Item62
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9731.5957,52.370575,13369.327};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2231;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item63
+				{
+					dataType="Marker";
+					position[]={9731.6777,48.394203,13369.271};
+					name="marker_86";
+					type="mil_flag";
+					id=2232;
+				};
+				class Item64
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9307.2764,44.477478,14265.688};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2233;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item65
+				{
+					dataType="Marker";
+					position[]={9307.3584,40.503555,14265.631};
+					name="marker_87";
+					type="mil_flag";
+					id=2234;
+				};
+				class Item66
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8537.7646,45.911949,13397.501};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2235;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item67
+				{
+					dataType="Marker";
+					position[]={8537.8467,41.93478,13397.444};
+					name="marker_88";
+					type="mil_flag";
+					id=2236;
+				};
+				class Item68
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10864.01,46.076805,13227.667};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2237;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item69
+				{
+					dataType="Marker";
+					position[]={10864.092,42.099998,13227.61};
+					name="marker_89";
+					type="mil_flag";
+					id=2238;
+				};
+				class Item70
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15970.669,15.126256,14984.684};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2239;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item71
+				{
+					dataType="Marker";
+					position[]={15970.751,11.149452,14984.627};
+					name="marker_90";
+					type="mil_flag";
+					id=2240;
+					atlOffset=3.639452;
+				};
+				class Item72
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16792.781,5.2712822,14267.525};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2241;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item73
+				{
+					dataType="Marker";
+					position[]={16792.863,1.296241,14267.469};
+					name="marker_91";
+					type="mil_flag";
+					id=2242;
+					atlOffset=9.5367432e-007;
+				};
+				class Item74
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13166.238,16.721638,15085.625};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2243;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item75
+				{
+					dataType="Marker";
+					position[]={13166.32,12.750333,15085.568};
+					name="marker_92";
+					type="mil_flag";
+					id=2244;
+					atlOffset=9.5367432e-007;
+				};
+				class Item76
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15304.519,7.4441872,12128.865};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2245;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item77
+				{
+					dataType="Marker";
+					position[]={15304.601,3.4669225,12128.809};
+					name="marker_93";
+					type="mil_flag";
+					id=2246;
+					atlOffset=9.5367432e-007;
+				};
+				class Item78
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8419.627,26.651834,9108.5908};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2247;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item79
+				{
+					dataType="Marker";
+					position[]={8419.709,22.666382,9108.5342};
+					name="marker_94";
+					type="mil_flag";
+					id=2248;
+					atlOffset=1.9073486e-006;
+				};
+				class Item80
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6543.7046,26.086843,12749.927};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2249;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item81
+				{
+					dataType="Marker";
+					position[]={6543.7866,22.110603,12749.87};
+					name="marker_95";
+					type="mil_flag";
+					id=2250;
+				};
+				class Item82
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7709.3076,38.08403,11921.5};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2251;
+					type="Flag_HorizonIslands_F";
+				};
+				class Item83
+				{
+					dataType="Marker";
+					position[]={7709.3896,34.170067,11921.443};
+					name="marker_96";
+					type="mil_flag";
+					id=2252;
+					atlOffset=0.072711945;
+				};
+				class Item84
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7100.917,14.326987,11966.581};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=2253;
+					type="Flag_HorizonIslands_F";
+					atlOffset=-9.5367432e-007;
+				};
+				class Item85
+				{
+					dataType="Marker";
+					position[]={7100.999,10.353705,11966.524};
+					name="marker_97";
+					type="mil_flag";
+					id=2254;
+				};
+			};
+			id=2172;
+			atlOffset=-2.1582851;
 		};
 	};
 };
