@@ -2,28 +2,28 @@ version=54;
 class EditorData
 {
 	moveGridStep=0.125;
-	angleGridStep=0.2617994;
+	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=65;
+	toggles=102;
 	class ItemIDProvider
 	{
-		nextID=2255;
+		nextID=2460;
 	};
 	class MarkerIDProvider
 	{
-		nextID=65;
+		nextID=103;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1520;
+		nextID=1812;
 	};
 	class Camera
 	{
-		pos[]={16926.061,31.78406,7772.8003};
-		dir[]={-0.65416574,-0.35208544,-0.66941148};
-		up[]={-0.24608031,0.93596739,-0.25181583};
-		aside[]={-0.71520811,1.3469253e-007,0.69891942};
+		pos[]={9414.6182,7.1098795,1862.6558};
+		dir[]={0.33996829,-0.29840934,-0.89189726};
+		up[]={0.10630228,0.95442796,-0.27888438};
+		aside[]={-0.93445736,2.7089845e-007,-0.35619217};
 	};
 };
 binarizationWanted=0;
@@ -77,6 +77,7 @@ addons[]=
 	"A3_Structures_F_Ind_FuelStation",
 	"A3_Structures_F_Items_Vessels",
 	"A3_Structures_F_Enoch_Decals_Horizontal",
+	"A3_Structures_F_Exp_Infrastructure_Airports",
 	"A3_Structures_F_Heli_Items_Electronics",
 	"A3_Props_F_Orange_Items_Electronics",
 	"A3_Props_F_Enoch_Military_Equipment",
@@ -90,7 +91,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=42;
+		items=43;
 		class Item0
 		{
 			className="A3_Structures_F_Exp_Commercial";
@@ -331,33 +332,40 @@ class AddonsMetaData
 		};
 		class Item37
 		{
+			className="A3_Structures_F_Exp_Infrastructure";
+			name="Arma 3 Apex - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item38
+		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item39
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item40
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item41
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item42
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
@@ -433,7 +441,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -6002,7 +6010,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9447.2588,0.41407284,1841.5885};
+										position[]={9447.75,1.1214062,1848.425};
 										angles[]={0,6.122426,0};
 									};
 									side="East";
@@ -6126,7 +6134,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9447.5723,0.21663356,1838.5638};
+										position[]={9448,0.83887172,1845.425};
 										angles[]={0,0.24022985,0};
 									};
 									side="East";
@@ -6250,7 +6258,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9447.459,0.32056725,1840.1577};
+										position[]={9447.875,1.0084299,1847.05};
 										angles[]={0,5.4337711,0};
 									};
 									side="East";
@@ -6387,7 +6395,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9443.4619,0.46796077,1841.5406};
+										position[]={9443.875,1.1213888,1848.425};
 										angles[]={0,6.2056084,0};
 									};
 									side="East";
@@ -6514,7 +6522,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9443.624,0.25515252,1838.6021};
+										position[]={9444.125,0.84858054,1845.425};
 										angles[]={0,0.30248594,0};
 									};
 									side="East";
@@ -6641,7 +6649,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9443.6377,0.35742515,1840.0582};
+										position[]={9444.125,0.9757638,1846.925};
 										angles[]={0,5.8507829,0};
 									};
 									side="East";
@@ -6768,7 +6776,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9443.7871,0.11269802,1836.903};
+										position[]={9444.25,0.67253196,1843.8};
 										angles[]={0,5.8379025,0};
 									};
 									side="East";
@@ -6895,7 +6903,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9443.8447,0.10491847,1835.2218};
+										position[]={9444.25,0.4871493,1842.05};
 										angles[]={0,0.18917894,0};
 									};
 									side="East";
@@ -6974,7 +6982,6 @@ class Mission
 									};
 									id=206;
 									type="O_Soldier_SL_F";
-									atlOffset=7.4505806e-009;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7036,7 +7043,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9440.4023,0.52883661,1841.1351};
+										position[]={9440.875,1.0897043,1847.925};
 										angles[]={0,6.2320151,0};
 									};
 									side="East";
@@ -7163,7 +7170,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9440.2695,0.32483608,1839.1338};
+										position[]={9440.75,0.96349758,1845.925};
 										angles[]={0,5.9893618,0};
 									};
 									side="East";
@@ -7290,7 +7297,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9440.2793,0.15317012,1837.4579};
+										position[]={9440.75,0.81138027,1844.3};
 										angles[]={0,0.23356271,0};
 									};
 									side="East";
@@ -7417,7 +7424,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9440.3174,0.10218104,1835.0084};
+										position[]={9440.75,0.58385342,1841.8};
 										angles[]={0,6.0398369,0};
 									};
 									side="East";
@@ -7557,7 +7564,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9437.2998,0.50879848,1840.7327};
+										position[]={9437.75,1.1027935,1847.55};
 										angles[]={0,6.1740875,0};
 									};
 									side="East";
@@ -7675,7 +7682,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9437.6543,0.11967005,1836.2643};
+										position[]={9438.125,0.72343594,1843.05};
 										angles[]={0,0.27634454,0};
 									};
 									side="East";
@@ -7793,7 +7800,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9437.4609,0.27761897,1838.5568};
+										position[]={9437.875,0.94130456,1845.425};
 										angles[]={0,5.6758518,0};
 									};
 									side="East";
@@ -7924,7 +7931,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9431.5537,0.47268856,1840.4945};
+										position[]={9432,1.0903366,1847.3};
 										angles[]={0,6.0878162,0};
 									};
 									side="East";
@@ -8037,7 +8044,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9431.6113,0.31375664,1838.8953};
+										position[]={9432,0.94153893,1845.8};
 										angles[]={0,5.8339057,0};
 									};
 									side="East";
@@ -8150,7 +8157,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9431.625,0.17119378,1837.4443};
+										position[]={9432.125,0.81188196,1844.3};
 										angles[]={0,0.36407828,0};
 									};
 									side="East";
@@ -8263,7 +8270,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9431.8896,0.12134486,1835.6881};
+										position[]={9432.375,0.66227502,1842.55};
 										angles[]={0,5.9048882,0};
 									};
 									side="East";
@@ -8328,7 +8335,6 @@ class Mission
 									};
 									id=220;
 									type="O_Soldier_GL_F";
-									atlOffset=-7.4505806e-009;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8390,7 +8396,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9434.2363,0.47142971,1840.4561};
+										position[]={9434.875,1.1183184,1847.3};
 										angles[]={0,6.1664085,0};
 									};
 									side="East";
@@ -8517,7 +8523,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9434.3193,0.27889308,1838.6266};
+										position[]={9434.75,0.93869472,1845.425};
 										angles[]={0,5.6709528,0};
 									};
 									side="East";
@@ -8644,7 +8650,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9434.3594,0.13204005,1836.8717};
+										position[]={9434.75,0.7794174,1843.675};
 										angles[]={0,0.31897712,0};
 									};
 									side="East";
@@ -8771,7 +8777,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9434.3867,0.1080157,1834.7655};
+										position[]={9434.875,0.5927856,1841.55};
 										angles[]={0,5.9529657,0};
 									};
 									side="East";
@@ -8911,7 +8917,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9419.2734,0.6582492,1839.4771};
+										position[]={9419.75,1.5214486,1846.3};
 										angles[]={0,6.1665654,0};
 									};
 									side="East";
@@ -9025,7 +9031,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9419.3262,0.30022913,1837.7661};
+										position[]={9419.75,1.3640219,1844.55};
 										angles[]={0,5.7675481,0};
 									};
 									side="East";
@@ -9139,7 +9145,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9417.3604,0.13725734,1835.0311};
+										position[]={9417.75,1.107622,1841.925};
 										angles[]={0,5.8771548,0};
 									};
 									side="East";
@@ -9263,7 +9269,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9417.2002,0.16028407,1836.7711};
+										position[]={9417.625,1.2745931,1843.675};
 										angles[]={0,0.29398608,0};
 									};
 									side="East";
@@ -9387,7 +9393,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9417.083,0.31454432,1838.0023};
+										position[]={9417.5,1.3755698,1844.8};
 										angles[]={0,5.6862159,0};
 									};
 									side="East";
@@ -9511,7 +9517,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9416.8438,0.56743371,1839.3373};
+										position[]={9417.25,1.4789239,1846.175};
 										angles[]={0,6.1349049,0};
 									};
 									side="East";
@@ -9648,7 +9654,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9414.5439,0.48278099,1839.0154};
+										position[]={9415,1.438143,1845.8};
 										angles[]={0,6.1304893,0};
 									};
 									side="East";
@@ -9762,7 +9768,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9414.5957,0.15669033,1837.1766};
+										position[]={9415,1.2540848,1844.05};
 										angles[]={0,5.7425027,0};
 									};
 									side="East";
@@ -9876,7 +9882,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9411.3594,0.33365291,1838.922};
+										position[]={9411.75,1.2536478,1845.8};
 										angles[]={0,6.2808671,0};
 									};
 									side="East";
@@ -9991,7 +9997,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9407.9639,0.24648923,1838.5015};
+										position[]={9408.375,1.0009719,1845.3};
 										angles[]={0,6.1578913,0};
 									};
 									side="East";
@@ -10104,7 +10110,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9407.9863,0.14107265,1837.248};
+										position[]={9408.375,0.85591578,1844.05};
 										angles[]={0,5.687839,0};
 									};
 									side="East";
@@ -10217,7 +10223,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9408.0928,0.12852748,1835.9248};
+										position[]={9408.5,0.71510768,1842.8};
 										angles[]={0,0.32861328,0};
 									};
 									side="East";
@@ -10330,7 +10336,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9408.1748,0.12191249,1834.3895};
+										position[]={9408.625,0.54159546,1841.175};
 										angles[]={0,5.7624869,0};
 									};
 									side="East";
@@ -10443,7 +10449,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9403.8672,0.24401422,1838.2936};
+										position[]={9404.375,0.88680017,1845.175};
 										angles[]={0,6.1578913,0};
 									};
 									side="East";
@@ -10556,7 +10562,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9403.7773,0.12836757,1836.9684};
+										position[]={9404.25,0.73662442,1843.8};
 										angles[]={0,5.5387001,0};
 									};
 									side="East";
@@ -10669,7 +10675,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9403.8125,0.12820643,1835.4049};
+										position[]={9404.25,0.57974815,1842.3};
 										angles[]={0,0.47700119,0};
 									};
 									side="East";
@@ -10782,7 +10788,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9403.9414,0.12600794,1833.7692};
+										position[]={9404.375,0.42787653,1840.55};
 										angles[]={0,5.7429581,0};
 									};
 									side="East";
@@ -10895,7 +10901,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9400.0879,0.26240015,1838.1416};
+										position[]={9400.5,0.88743126,1844.925};
 										angles[]={0,6.1578913,0};
 									};
 									side="East";
@@ -11008,7 +11014,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9399.998,0.14812647,1836.8163};
+										position[]={9400.5,0.77935022,1843.675};
 										angles[]={0,5.7049103,0};
 									};
 									side="East";
@@ -11121,7 +11127,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9400.0332,0.14069971,1835.2529};
+										position[]={9400.5,0.63885641,1842.05};
 										angles[]={0,0.51689124,0};
 									};
 									side="East";
@@ -11234,7 +11240,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9400.1621,0.13207422,1833.6172};
+										position[]={9400.625,0.48274833,1840.425};
 										angles[]={0,5.7800684,0};
 									};
 									side="East";
@@ -11360,7 +11366,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9450.9316,0.42407924,1841.4579};
+										position[]={9451.375,1.089548,1848.3};
 										angles[]={0,6.1266847,0};
 									};
 									side="East";
@@ -11487,7 +11493,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9451.2578,0.25984949,1839.3326};
+										position[]={9451.75,0.92970455,1846.175};
 										angles[]={0,5.6362295,0};
 									};
 									side="East";
@@ -11627,7 +11633,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9429.1621,0.521101,1839.9325};
+										position[]={9429.625,1.1439795,1846.8};
 										angles[]={0,6.1138563,0};
 									};
 									side="East";
@@ -11759,7 +11765,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9429.1045,0.31033137,1838.3348};
+										position[]={9429.5,1.0127828,1845.175};
 										angles[]={0,5.8404679,0};
 									};
 									side="East";
@@ -11904,7 +11910,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9426.7021,0.57422209,1839.8962};
+										position[]={9427.125,1.2901709,1846.8};
 										angles[]={0,6.1002951,0};
 									};
 									side="East";
@@ -12022,7 +12028,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9426.8135,0.29312283,1837.9313};
+										position[]={9427.25,1.095602,1844.8};
 										angles[]={0,5.8831239,0};
 									};
 									side="East";
@@ -12140,7 +12146,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9424.083,0.68710297,1839.6418};
+										position[]={9424.5,1.4520321,1846.425};
 										angles[]={0,6.1002951,0};
 									};
 									side="East";
@@ -12267,7 +12273,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9424.2363,0.34158412,1837.9783};
+										position[]={9424.625,1.2987221,1844.8};
 										angles[]={0,5.7077532,0};
 									};
 									side="East";
@@ -12394,7 +12400,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9421.5547,0.68298304,1839.5824};
+										position[]={9422,1.5567172,1846.425};
 										angles[]={0,6.1332121,0};
 									};
 									side="East";
@@ -12521,7 +12527,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9421.4688,0.30417812,1837.7617};
+										position[]={9421.875,1.3911837,1844.55};
 										angles[]={0,5.7799578,0};
 									};
 									side="East";
@@ -12651,7 +12657,7 @@ class Mission
 						};
 					};
 					id=880;
-					atlOffset=-0.022153497;
+					atlOffset=0.04408133;
 				};
 				class Item2
 				{
@@ -12780,7 +12786,7 @@ class Mission
 							markerType="RECTANGLE";
 							type="rectangle";
 							a=3;
-							angle=55.57592;
+							angle=55.575901;
 							id=1922;
 						};
 						class Item11
@@ -20332,7 +20338,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9442.999,0.29590869,1792.8348};
+										position[]={9463.5,0,1784.25};
 										angles[]={0,3.1387422,0};
 									};
 									side="Empty";
@@ -20343,7 +20349,7 @@ class Mission
 									};
 									id=338;
 									type="Land_HelipadSquare_F";
-									atlOffset=2.618897;
+									atlOffset=3.5642884;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -20392,7 +20398,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={9464.8584,0,1793.0898};
+										position[]={9487.125,0,1784.375};
 										angles[]={0,3.120882,0};
 									};
 									side="Empty";
@@ -20403,7 +20409,7 @@ class Mission
 									};
 									id=337;
 									type="Land_HelipadSquare_F";
-									atlOffset=2.8108969;
+									atlOffset=3.4022238;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -20518,7 +20524,7 @@ class Mission
 								};
 							};
 							id=895;
-							atlOffset=1.78211;
+							atlOffset=2.006732;
 						};
 						class Item4
 						{
@@ -20779,26 +20785,27 @@ class Mission
 						class Item5
 						{
 							dataType="Layer";
-							name="Flughafen";
+							name="Airstrip";
 							class Entities
 							{
-								items=4;
+								items=69;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15449.071,8.5900002,17017.029};
-										angles[]={0,2.6009781,0};
+										position[]={9431.125,-9.9319077,1823};
+										angles[]={0,3.0194197,0};
 									};
 									side="Empty";
-									flags=4;
+									flags=5;
 									class Attributes
 									{
-										name="PlaneBoxEast";
+										disableSimulation=1;
 									};
-									id=2088;
-									type="Land_HelipadSquare_F";
+									id=2389;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-2.546773;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -20820,10 +20827,32 @@ class Mission
 												};
 											};
 										};
-										class Attribute1
+										nAttributes=1;
+									};
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9432.585,-9.9319077,1811.0861};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2390;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-1.9942713;
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											property="allowDamage";
+											expression="_this allowdamage _value;";
 											class Value
 											{
 												class data
@@ -20835,20 +20864,2521 @@ class Mission
 															"BOOL"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
-										nAttributes=2;
+										nAttributes=1;
 									};
 								};
-								class Item1
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15431.5,9.1746655,17045.631};
-										angles[]={0,2.5959504,0};
+										position[]={9434.0498,-9.9317732,1799.1787};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2391;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.99230874;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9435.5107,-9.9319077,1787.2657};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2392;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.23617554;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9436.9717,-9.9317732,1775.3536};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2393;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=0.081350565;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9438.4365,-9.9317732,1763.4445};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2394;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=0.055480957;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9439.8994,-9.9316387,1751.5355};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2395;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.21327114;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9441.3613,-9.9319077,1739.6249};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2396;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.55136228;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9442.8232,-9.9317732,1727.7122};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2397;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.78704572;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9444.2861,-9.9317732,1715.8031};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2398;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.87594533;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item10
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9445.75,-9.9316387,1703.8942};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2399;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.78211987;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item11
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9447.21,-9.9317732,1691.9802};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2400;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.61213541;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item12
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9448.6719,-9.9316387,1680.0714};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2401;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.41018271;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item13
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9450.1357,-9.9316387,1668.16};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2402;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.15051961;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item14
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9451.5977,-9.9315042,1656.2496};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2403;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=0.1733079;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item15
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9453.0605,-9.9319077,1644.34};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2404;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=0.63324952;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item16
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9454.5234,-9.9317732,1632.4294};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2405;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.387918;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item17
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9455.9873,-9.9317732,1620.5201};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2406;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.7281666;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item18
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9457.4482,-9.9316387,1608.608};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2407;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=5.2068067;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item19
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9458.9102,-9.9317732,1596.6975};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2408;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=8.7189074;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item20
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9460.374,-9.9316387,1584.7881};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2409;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=12.686222;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item21
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9461.835,-9.9316387,1572.876};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2410;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.790804;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item22
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9463.2979,-9.9315042,1560.9648};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2411;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.256866;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item23
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9464.7617,-9.9317732,1549.0574};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2412;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.519608;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9466.2217,-9.9316387,1537.1436};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2413;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385269;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item25
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9467.6855,-9.9316387,1525.2343};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2414;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385269;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item26
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9469.1475,-9.9315042,1513.3239};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2415;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385403;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item27
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9470.6104,-9.9316387,1501.4131};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2416;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385269;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item28
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9472.0732,-9.9315042,1489.5037};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2417;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385403;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item29
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9473.5342,-9.9315042,1477.5918};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2418;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.385403;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item30
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9474.9971,-9.9313698,1465.6807};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2419;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.390656;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item31
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9476.458,-9.9319077,1453.7684};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2420;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.460705;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item32
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9477.9219,-9.9317732,1441.8606};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2421;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.607769;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item33
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9479.3848,-9.9317732,1429.9498};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2422;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.770832;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item34
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9480.8477,-9.9316387,1418.0393};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2423;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.890646;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item35
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9482.3086,-9.9317732,1406.1287};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2424;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.970146;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item36
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9483.7715,-9.9316387,1394.2175};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2425;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=18.048306;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item37
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9485.2324,-9.9316387,1382.3053};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2426;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.83769;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item38
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9486.6973,-9.9315042,1370.3979};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2427;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.708683;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item39
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9488.1572,-9.9317732,1358.4841};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2428;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.995247;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item40
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9489.6211,-9.9316387,1346.5751};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2429;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=18.326141;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item41
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9491.085,-9.9316387,1334.6658};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2430;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=18.026836;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item42
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9492.5469,-9.9315042,1322.7549};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2431;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.865261;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item43
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9494.0098,-9.9316387,1310.8464};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2432;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.709503;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item44
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9495.4697,-9.9315042,1298.932};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2433;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.182514;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item45
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9496.9346,-9.9315042,1287.0239};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2434;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.235859;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item46
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9498.3955,-9.9313698,1275.1118};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2435;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.420933;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item47
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9499.8574,-9.9317732,1263.2017};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2436;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.817593;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item48
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9501.3213,-9.9316387,1251.2905};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2437;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=18.169643;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item49
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9502.7832,-9.9316387,1239.3817};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2438;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=18.196903;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item50
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9504.2451,-9.9315042,1227.4686};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2439;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.880787;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item51
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9505.708,-9.9316387,1215.5575};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2440;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.52878;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item52
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9507.1709,-9.9315042,1203.6493};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2441;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.237553;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item53
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9508.6338,-9.9315042,1191.7401};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2442;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.03001;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item54
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9510.0947,-9.9313698,1179.8286};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2443;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.028664;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item55
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9511.5596,-9.9316387,1167.9178};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2444;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.254757;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item56
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9513.0215,-9.9315042,1156.0071};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2445;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.329426;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item57
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9514.4805,-9.9315042,1144.094};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2446;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.234398;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item58
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9515.9453,-9.9313698,1132.186};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2447;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.168526;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item59
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9517.4082,-9.9315042,1120.2756};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2448;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.180862;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item60
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9518.8711,-9.9313698,1108.3645};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2449;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.174898;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item61
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9520.333,-9.9313698,1096.4536};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2450;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.116877;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item62
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9521.7949,-9.9312353,1084.5453};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2451;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=17.186729;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item63
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9417.3545,1.1006699,1838.8795};
+										angles[]={0,3.0744674,0};
 									};
 									side="Empty";
 									flags=4;
@@ -20857,9 +23387,9 @@ class Mission
 										name="east_shop_plane";
 										disableSimulation=1;
 									};
-									id=2089;
+									id=2454;
 									type="Land_InfoStand_V2_F";
-									atlOffset=-0.0036592484;
+									atlOffset=-5.9604645e-008;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -20903,13 +23433,13 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item64
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15431.748,9.6310539,17045.383};
-										angles[]={0,2.6059425,0};
+										position[]={9417.375,1.4877441,1838.625};
+										angles[]={0,3.0640645,0};
 									};
 									side="Empty";
 									flags=5;
@@ -20917,7 +23447,7 @@ class Mission
 									{
 										disableSimulation=1;
 									};
-									id=2090;
+									id=2452;
 									type="SignAd_Sponsor_Vrana_F";
 									class CustomAttributes
 									{
@@ -20962,22 +23492,135 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item65
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9433,2.3809214,1806.75};
+										angles[]={0,3.0194197,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="PlaneBoxEast";
+									};
+									id=2455;
+									type="Land_HelipadSquare_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item66
 								{
 									dataType="Marker";
-									position[]={15429.801,7.7758789,17048.342};
-									name="marker_54";
+									position[]={9475.8496,-0.62513447,1461.0675};
+									name="marker_103";
+									markerType="RECTANGLE";
+									type="rectangle";
+									a=20;
+									b=390;
+									angle=173;
+									id=2456;
+									atlOffset=19.405571;
+								};
+								class Item67
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={9429.875,-10.681908,1832.75};
+										angles[]={0.15709543,3.0212443,0.017357673};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2388;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-3.4595623;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item68
+								{
+									dataType="Marker";
+									position[]={9417.25,0,1839.625};
+									name="marker_102";
 									type="o_plane";
-									id=2093;
-									atlOffset=-0.81412125;
+									id=2458;
+									atlOffset=-0.65149534;
 								};
 							};
-							id=2092;
-							atlOffset=-0.40751839;
+							id=2457;
+							atlOffset=1.5117855;
 						};
 					};
 					id=891;
-					atlOffset=-9.3883619;
+					atlOffset=1.1871307;
 				};
 				class Item8
 				{
@@ -21656,7 +24299,7 @@ class Mission
 				};
 			};
 			id=192;
-			atlOffset=26.191608;
+			atlOffset=-7.2227778;
 		};
 		class Item3
 		{
@@ -29583,17 +32226,2709 @@ class Mission
 						class Item5
 						{
 							dataType="Layer";
-							name="Flughafen";
+							name="AIrstrip";
 							class Entities
 							{
-								items=4;
+								items=69;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={909.73279,13.744787,3109.9851};
-										angles[]={0,2.4985087,0};
+										position[]={16938,-11.306908,7769.5};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2255;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-4.7389235;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16946.916,-11.306773,7777.5293};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2316;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-3.2841649;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16955.838,-11.306773,7785.5591};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2317;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.79050517;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16964.752,-11.306639,7793.5884};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2318;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.6570659;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16973.672,-11.306773,7801.6187};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2319;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.7142067;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16982.592,-11.306639,7809.6479};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2320;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.6979251;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16991.508,-11.306639,7817.6777};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2321;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.4019952;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17000.424,-11.306504,7825.707};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2322;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.2236676;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17009.342,-11.306773,7833.7363};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2323;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.5983291;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17018.262,-11.306639,7841.7666};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2324;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=3.7112651;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item10
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17027.178,-11.306639,7849.7959};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2325;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=5.7404308;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item11
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17036.094,-11.306504,7857.8252};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2326;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=8.5176325;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item12
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17045.016,-11.306639,7865.855};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2327;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=11.214707;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item13
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17053.932,-11.306504,7873.8838};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2328;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=13.433173;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item14
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17062.85,-11.306504,7881.9146};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2329;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=14.90635;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item15
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17071.768,-11.30637,7889.9434};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2330;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.592245;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item16
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17080.684,-11.306773,7897.9736};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2331;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=16.191986;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item17
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17089.602,-11.306639,7906.0029};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2332;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=16.281176;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item18
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17098.518,-11.306639,7914.0327};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2333;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=16.35458;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item19
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17107.438,-11.306504,7922.062};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2334;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.865117;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item20
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17116.355,-11.306639,7930.0913};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2335;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.701704;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item21
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17125.271,-11.306504,7938.1211};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2336;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.846835;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item22
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17134.191,-11.306504,7946.1504};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2337;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.756333;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item23
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17143.109,-11.30637,7954.1807};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2338;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.691729;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17152.023,-11.306639,7962.21};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2339;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.961142;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item25
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17160.945,-11.306504,7970.2393};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2340;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.917212;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item26
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17169.861,-11.306504,7978.2695};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2341;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=15.276378;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item27
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17178.779,-11.30637,7986.2983};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2342;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=14.442743;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item28
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17187.697,-11.306504,7994.3281};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2343;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=13.719625;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item29
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17196.613,-11.30637,8002.3579};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2344;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=12.413506;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item30
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17205.533,-11.30637,8010.3867};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2345;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=10.726622;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item31
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17214.451,-11.306235,8018.417};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2346;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=8.7926035;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item32
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17223.371,-11.306773,8026.4463};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2347;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=6.8398972;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item33
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17232.285,-11.306639,8034.4761};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2348;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=5.0703936;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item34
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17241.203,-11.306639,8042.5059};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2349;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=3.6026077;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item35
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17250.121,-11.306504,8050.5352};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2350;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.4351325;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item36
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17259.039,-11.306639,8058.5645};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2351;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.4162374;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item37
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17267.957,-11.306504,8066.5947};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2352;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=0.4267354;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item38
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17276.877,-11.306504,8074.624};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2353;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.57755923;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item39
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17285.791,-11.30637,8082.6533};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2354;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-1.548207;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item40
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17294.713,-11.306639,8090.6826};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2355;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-2.4102974;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item41
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17303.629,-11.306504,8098.7124};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2356;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-3.2471039;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item42
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17312.545,-11.306504,8106.7422};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2357;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-3.8435028;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item43
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17321.463,-11.30637,8114.772};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2358;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-1.9365959;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item44
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17330.379,-11.306504,8122.8003};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2359;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=-0.053085566;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item45
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17339.301,-11.30637,8130.8306};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2360;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.1105137;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item46
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17348.215,-11.30637,8138.8608};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2361;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.5252986;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item47
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17357.135,-11.306235,8146.8901};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2362;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.5322981;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item48
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17366.053,-11.306639,8154.9189};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2363;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.3842702;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item49
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17374.971,-11.306504,8162.9492};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2364;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.226409;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item50
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17383.887,-11.306504,8170.978};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2365;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.1059971;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item51
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17392.807,-11.30637,8179.0088};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2366;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.0423837;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item52
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17401.725,-11.306504,8187.0391};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2367;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.0104036;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item53
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17410.641,-11.30637,8195.0674};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2368;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.0105381;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item54
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17419.557,-11.30637,8203.0967};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2369;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.0300913;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item55
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17428.477,-11.306235,8211.125};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2370;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.1069031;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item56
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17437.393,-11.306504,8219.1572};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2371;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.3715324;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item57
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17446.311,-11.30637,8227.1865};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2372;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=1.9478402;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item58
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17455.232,-11.30637,8235.2148};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2373;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=2.8563728;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item59
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17464.146,-11.306235,8243.2451};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2374;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=4.3495884;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item60
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17473.064,-11.30637,8251.2744};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2375;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=6.2826347;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item61
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17481.982,-11.306235,8259.3047};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2376;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=8.376935;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item62
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17490.9,-11.306235,8267.334};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2377;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=10.361156;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item63
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={17499.816,-11.306101,8275.3623};
+										angles[]={0,0.83775812,0};
+									};
+									side="Empty";
+									flags=1;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2378;
+									type="Land_AirstripPlatform_01_F";
+									atlOffset=12.172943;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item64
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16946.527,1.9528066,7760.0059};
+										angles[]={0,0.88240296,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2380;
+									type="SignAd_Sponsor_Vrana_F";
+									atlOffset=0.097353697;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item65
+								{
+									dataType="Marker";
+									position[]={16946,0.86497325,7759.5};
+									name="marker_99";
+									type="b_plane";
+									id=2383;
+								};
+								class Item66
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={16946.314,1.515507,7759.9063};
+										angles[]={0,0.89280587,0};
 									};
 									side="Empty";
 									flags=4;
@@ -29602,9 +34937,9 @@ class Mission
 										name="west_shop_plane";
 										disableSimulation=1;
 									};
-									id=2081;
+									id=2379;
 									type="Land_InfoStand_V2_F";
-									atlOffset=-0.003537178;
+									atlOffset=0.095972538;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -29648,72 +34983,13 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item1
+								class Item67
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={909.82684,14.201054,3109.7275};
-										angles[]={0,2.4881058,0};
-									};
-									side="Empty";
-									flags=5;
-									class Attributes
-									{
-										disableSimulation=1;
-									};
-									id=2082;
-									type="SignAd_Sponsor_Vrana_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ObjectTextureCustom0";
-											expression="_this setObjectTextureGlobal [0,_value]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="allowDamage";
-											expression="_this allowdamage _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item2
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={939.71698,13.16,3137.103};
-										angles[]={0,2.5028369,0};
+										position[]={16947.25,1.0060558,7776.875};
+										angles[]={0,0.83775812,0};
 									};
 									side="Empty";
 									flags=4;
@@ -29721,7 +34997,7 @@ class Mission
 									{
 										name="PlaneBoxWest";
 									};
-									id=2079;
+									id=2381;
 									type="Land_HelipadSquare_F";
 									class CustomAttributes
 									{
@@ -29766,21 +35042,26 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item68
 								{
 									dataType="Marker";
-									position[]={907.56885,13.16,3112.0496};
-									name="marker_53";
-									type="b_plane";
-									id=2087;
+									position[]={17217.576,0.00013446808,8021.249};
+									name="marker_98";
+									markerType="RECTANGLE";
+									type="rectangle";
+									a=20;
+									b=390;
+									angle=48;
+									id=2382;
+									atlOffset=12.09869;
 								};
 							};
-							id=2083;
-							atlOffset=-0.00044250488;
+							id=2384;
+							atlOffset=20.553268;
 						};
 					};
 					id=888;
-					atlOffset=3.6851349;
+					atlOffset=-3.8805761;
 				};
 				class Item4
 				{
@@ -30583,7 +35864,7 @@ class Mission
 							markerType="RECTANGLE";
 							type="rectangle";
 							a=21;
-							angle=226.7757;
+							angle=226.77562;
 							id=1950;
 						};
 					};
@@ -30921,7 +36202,7 @@ class Mission
 				};
 			};
 			id=881;
-			atlOffset=16.931644;
+			atlOffset=15.22213;
 		};
 		class Item4
 		{
@@ -31665,7 +36946,7 @@ class Mission
 					};
 					id=2163;
 					type="Flag_HorizonIslands_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-1.9073486e-006;
 				};
 				class Item2
 				{
@@ -31681,6 +36962,7 @@ class Mission
 					};
 					id=2164;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-2.3841858e-007;
 				};
 				class Item3
 				{
@@ -31696,6 +36978,7 @@ class Mission
 					};
 					id=2165;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item4
 				{
@@ -31711,6 +36994,7 @@ class Mission
 					};
 					id=2166;
 					type="Flag_HorizonIslands_F";
+					atlOffset=4.7683716e-007;
 				};
 				class Item5
 				{
@@ -31786,6 +37070,7 @@ class Mission
 					};
 					id=2171;
 					type="Flag_HorizonIslands_F";
+					atlOffset=2.3841858e-007;
 				};
 				class Item10
 				{
@@ -31951,6 +37236,7 @@ class Mission
 					};
 					id=2195;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item27
 				{
@@ -31974,7 +37260,7 @@ class Mission
 					};
 					id=2197;
 					type="Flag_HorizonIslands_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-1.0728836e-006;
 				};
 				class Item29
 				{
@@ -32046,6 +37332,7 @@ class Mission
 					};
 					id=2203;
 					type="Flag_HorizonIslands_F";
+					atlOffset=9.5367432e-007;
 				};
 				class Item35
 				{
@@ -32070,6 +37357,7 @@ class Mission
 					};
 					id=2205;
 					type="Flag_HorizonIslands_F";
+					atlOffset=4.7683716e-007;
 				};
 				class Item37
 				{
@@ -32094,6 +37382,7 @@ class Mission
 					};
 					id=2207;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item39
 				{
@@ -32213,6 +37502,7 @@ class Mission
 					};
 					id=2217;
 					type="Flag_HorizonIslands_F";
+					atlOffset=4.7683716e-007;
 				};
 				class Item49
 				{
@@ -32284,6 +37574,7 @@ class Mission
 					};
 					id=2223;
 					type="Flag_HorizonIslands_F";
+					atlOffset=4.7683716e-007;
 				};
 				class Item55
 				{
@@ -32386,6 +37677,7 @@ class Mission
 					name="marker_86";
 					type="mil_flag";
 					id=2232;
+					atlOffset=-4.196167e-005;
 				};
 				class Item64
 				{
@@ -32401,6 +37693,7 @@ class Mission
 					};
 					id=2233;
 					type="Flag_HorizonIslands_F";
+					atlOffset=4.5776367e-005;
 				};
 				class Item65
 				{
@@ -32494,6 +37787,7 @@ class Mission
 					};
 					id=2241;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-1.1920929e-007;
 				};
 				class Item73
 				{
@@ -32518,6 +37812,7 @@ class Mission
 					};
 					id=2243;
 					type="Flag_HorizonIslands_F";
+					atlOffset=9.5367432e-007;
 				};
 				class Item75
 				{
@@ -32542,6 +37837,7 @@ class Mission
 					};
 					id=2245;
 					type="Flag_HorizonIslands_F";
+					atlOffset=-2.3841858e-007;
 				};
 				class Item77
 				{
@@ -32651,6 +37947,413 @@ class Mission
 			};
 			id=2172;
 			atlOffset=-2.1582851;
+		};
+		class Item8
+		{
+			dataType="Layer";
+			name="Flughäfen";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Layer";
+					name="Südwest";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={939.71698,13.16,3137.103};
+								angles[]={0,2.5028369,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="PlaneBoxCiv1";
+							};
+							id=2079;
+							type="Land_HelipadSquare_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="hideObject";
+									expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={909.73297,13.744325,3109.9851};
+								angles[]={0,2.4985087,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="civ_shop_plane";
+								disableSimulation=1;
+							};
+							id=2081;
+							type="Land_InfoStand_V2_F";
+							atlOffset=-0.0039997101;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={909.82684,14.201054,3109.7275};
+								angles[]={0,2.4881058,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2082;
+							type="SignAd_Sponsor_Vrana_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={908.125,13.16,3111.125};
+							name="marker_100";
+							type="c_plane";
+							id=2385;
+						};
+					};
+					id=2387;
+					atlOffset=-0.00049972534;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="Nordost";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={15449.071,8.5900002,17017.029};
+								angles[]={0,2.6009767,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="PlaneBoxCiv2";
+							};
+							id=2088;
+							type="Land_HelipadSquare_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="hideObject";
+									expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={15431.5,9.174325,17045.631};
+								angles[]={0,2.5959504,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="civ_shop_plane2";
+								disableSimulation=1;
+							};
+							id=2089;
+							type="Land_InfoStand_V2_F";
+							atlOffset=-0.0039997101;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={15431.748,9.6310539,17045.383};
+								angles[]={0,2.6059425,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2090;
+							type="SignAd_Sponsor_Vrana_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="\opt\opt_client\addons\core\bilder\schild_luftwaffe.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={15429.875,8.5900002,17048.375};
+							name="marker_101";
+							type="c_plane";
+							id=2386;
+						};
+					};
+					id=2092;
+					atlOffset=-0.00049972534;
+				};
+			};
+			id=2083;
+			atlOffset=-1.1232634;
 		};
 	};
 };
