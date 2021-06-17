@@ -38504,7 +38504,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								name="civ_shop_plane";
+								name="civ1_shop_plane";
 								disableSimulation=1;
 							};
 							id=2081;
@@ -38702,7 +38702,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								name="civ_shop_plane2";
+								name="civ2_shop_plane";
 								disableSimulation=1;
 							};
 							id=2089;
