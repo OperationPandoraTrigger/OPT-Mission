@@ -312,9 +312,12 @@ force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf
 force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
 force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_trainingon = true;
-force force opt_SECTORCONTROL_nato_sector_str = "0";
-force force opt_SECTORCONTROL_csat_sector_str = "0";
-force force opt_SECTORCONTROL_aaf_sector_str = "0";
+force force opt_SECTORCONTROL_nato_allsectors_str = "6,7,8,9,13,14,15,16,17,21,22,23,24,27,29";
+force force opt_SECTORCONTROL_nato_sectors_str = "6,7,8,9,13,14,15,16,17,21,22,23,24,27,29";
+force force opt_SECTORCONTROL_csat_allsectors_str = "1,2,3,4,5,10,11,12,18,19,20,25,26,28,30";
+force force opt_SECTORCONTROL_csat_sectors_str = "1,2,3,4,5,10,11,12,18,19,20,25,26,28,30";
+force force opt_SECTORCONTROL_aaf_allsectors_str = "";
+force force opt_SECTORCONTROL_aaf_sectors_str = "";
 
 // OPT WEATHERTIME
 force force opt_WEATHERTIME_timeslider_hours = 12;
