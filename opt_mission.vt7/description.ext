@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Virolahti Test"
 // Versionsnummer eintragen
-#define __VERSION__ "3.0.15"
+#define __VERSION__ "3.0.16"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, maxSzone"
 // short description
