@@ -3,9 +3,9 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Virolahti Test"
 // Versionsnummer eintragen
-#define __VERSION__ "3.0.19"
+#define __VERSION__ "3.0.21"
 // made by
-#define __MADE_BY__ "Lord, form, eXcalibur, maxSzone"
+#define __MADE_BY__ "Lord, form, eXcalibur, Fank, Vitaly K., TeTeT"
 // short description
 #define __MISSION_DESCRIPTION__ "This is the Operation Pandora Trigger Mission"
 
@@ -46,7 +46,7 @@ class CLib
         EnableGarbageCollector = 0;
         GarbageCollectorTime = 300;
     };
-    Modules[] = {"CLib", "Streamator", "PerformanceMonitor", "OPT"};
+    Modules[] = {"CLib", "Streamator", "PerformanceMonitor", "OPT", "Insight"};
     useExperimentalAutoload = 0;
     useCompressedFunction = 0;
     useFallbackRemoteExecution = 0;
