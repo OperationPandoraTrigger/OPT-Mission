@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Ohrenbetäubende Waldromantik"
+#define __MISSION_NAME__ "OhrenbetäubendeWaldromantik"
 // Versionsnummer eintragen
-#define __VERSION__ "47"
+#define __VERSION__ "48"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
