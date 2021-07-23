@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "50"
+#define __VERSION__ "52"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -94,6 +94,27 @@ joinUnassigned = 1;
 //                     {       <form>       ,       <Fank>       }
 enableDebugConsole[] = { "76561198124047439", "76561198000074241"};
 enableTargetDebug = 1;
+
+// Garbage Collector
+minPlayerDistance = 50;  // The minimum distance between corpse or wreck and nearest player before the corpse or wreck is allowed to be removed by the garbage collector.
+
+corpseManagerMode = 1; // Sets the mode for corpse removal manager.
+//  0 = None - None of the units are managed by the manager
+//  1 = All - All units are managed by the manager
+//  2 = None_But_Respawned - Only units that can respawn are managed by the manager
+//  3 = All_But_Respawned - All units are managed by the manager with exception of respawned (opposite to mode 2)
+corpseLimit = 10;    // Corpse limit before which ( <= ) corpseRemovalMaxTime applies and after which ( > ) corpseRemovalMinTime applies.
+corpseRemovalMinTime = 30;  // Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is reached.
+corpseRemovalMaxTime = 180;  // Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
+
+wreckManagerMode = 1;   // Sets the mode for wreck removal manager.
+//  0 = None - None of the vehicles are managed by the manager
+//  1 = All - All vehicles are managed by the manager
+//  2 = None_But_Respawned - Only vehicles that can respawn are managed by the manager
+//  3 = All_But_Respawned - All vehicles are managed by the manager with exception of respawned (opposite to mode 2)
+wreckLimit = 10; // Vehicle wreck limit before which ( <= ) wreckRemovalMaxTime applies and after which ( > ) wreckRemovalMinTime applies.
+wreckRemovalMinTime = 30;   // Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
+wreckRemovalMaxTime = 180;   // Maximum time a wreck can remain on the ground if total number of wrecks is equal or under wreckLimit.
 
 #ifdef __DEBUG__
     allowFunctionsLog = 1;
