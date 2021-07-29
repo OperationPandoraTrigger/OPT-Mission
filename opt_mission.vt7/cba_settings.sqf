@@ -281,12 +281,10 @@ force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS = 1;
 force opt_FIELDREPAIR_DEFAULT_FREE_REFUELS_DURATION = 30;
 
 // OPT Mission
-force force opt_GELDZEIT_Fraktionauswahl = "NATOvsCSAT";
 force force opt_GELDZEIT_PLAYTIME = 9000;
 force force opt_GELDZEIT_TRUCETIME = 480;
 force force opt_GELDZEIT_FREEZETIME = 60;
 force force opt_GELDZEIT_TEAMBALANCE = 5;
-force force opt_GELDZEIT_aaf_budget = "3000000";
 force force opt_GELDZEIT_csat_budget = "3000000";
 force force opt_GELDZEIT_nato_budget = "3000000";
 force force opt_GELDZEIT_dispo = "100000";
@@ -301,23 +299,19 @@ force force opt_REVIVE_MAX_DAMAGE = 0.95;
 // OPT Sektorkontrolle
 force force opt_SECTORCONTROL_flagCountNATO = 1;
 force force opt_SECTORCONTROL_flagCountCSAT = 1;
-force force opt_SECTORCONTROL_flagCountAAF = 0;
 force force opt_SECTORCONTROL_flagStartNeutral = false;
 force force opt_SECTORCONTROL_flagMarkerOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneMarkerOn = true;
 force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
 force force opt_SECTORCONTROL_flagDistanceToPlayer = 5;
-force force opt_SECTORCONTROL_westflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
-force force opt_SECTORCONTROL_eastflag = "\opt\opt_client\addons\core\bilder\sword_fahne.paa";
-force force opt_SECTORCONTROL_independentflag = "\opt\opt_client\addons\core\bilder\arf_fahne.paa";
 force force opt_SECTORCONTROL_trainingon = true;
+force force opt_SECTORCONTROL_nato_faction = "ARF";
 force force opt_SECTORCONTROL_nato_allsectors_str = "6,7,8,9,13,14,15,16,17,21,22,23,24,27,29";
 force force opt_SECTORCONTROL_nato_sectors_str = "6,7,8,9,13,14,15,16,17,21,22,23,24,27,29";
+force force opt_SECTORCONTROL_csat_faction = "SWORD";
 force force opt_SECTORCONTROL_csat_allsectors_str = "1,2,3,4,5,10,11,12,18,19,20,25,26,28,30";
 force force opt_SECTORCONTROL_csat_sectors_str = "1,2,3,4,5,10,11,12,18,19,20,25,26,28,30";
-force force opt_SECTORCONTROL_aaf_allsectors_str = "";
-force force opt_SECTORCONTROL_aaf_sectors_str = "";
 
 // OPT WEATHERTIME
 force force opt_WEATHERTIME_timeslider_hours = 12;
@@ -333,7 +327,7 @@ force force opt_WEATHERTIME_weather_fogBase_end = 0;
 force force opt_WEATHERTIME_weather_fogDecay_end = 0;
 
 // OPT Hardcap
-force force opt_SHOP_hardcaplist = "2";
+force force opt_SHOP_hardcapmode = 1;
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
@@ -369,28 +363,21 @@ TFAR_noAutomoveSpectator = false;
 force force TFAR_objectInterceptionEnabled = true;
 force force TFAR_objectInterceptionStrength = 400;
 force force tfar_radiocode_east = "_opfor";
-force force tfar_radiocode_independent = "_independent";
 force force tfar_radiocode_west = "_bluefor";
 force force tfar_radioCodesDisabled = false;
 force force TFAR_SameLRFrequenciesForSide = true;
 force force TFAR_SameSRFrequenciesForSide = true;
 force force TFAR_setting_defaultFrequencies_lr_east = "60,61,62,70,71,72,80,81,82";
-force force TFAR_setting_defaultFrequencies_lr_independent = "0,0,0,0,0,0,0,0,0";
 force force TFAR_setting_defaultFrequencies_lr_west = "50,51,52,40,39,30,53,41,31";
 force force TFAR_setting_defaultFrequencies_sr_east = "60,61,62,70,71,72,80,81";
-force force TFAR_setting_defaultFrequencies_sr_independent = "0,0,0,0,0,0,0,0";
 force force TFAR_setting_defaultFrequencies_sr_west = "40,41,42,30,31,32,53,51";
 force force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
-force force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
 force force TFAR_setting_DefaultRadio_Backpack_east = "OPT_TFAR_mr3000";
-force force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
 force force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g_big_bwmod";
 force force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
-force force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
 force force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
 force force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_fadak";
-force force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc148jem";
 force force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
 force force TFAR_spectatorCanHearEnemyUnits = true;
 force force TFAR_spectatorCanHearFriendlies = true;
