@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "65"
+#define __VERSION__ "69"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -19,7 +19,7 @@
 #define __RESPAWN_TYPE__ 3
 
 // Anzahl max. möglicher Spieler eingeben
-#define __PLNUM__ 106
+#define __PLNUM__ 114
 
 // falls die Mission respawn haben soll, dann die folgende Zeile auskommentieren und respawn Zeit festlegen
 // wenn das Respawndelay größer als 10 Sekunden ist erscheint ein berühmtes Zitat während die Kamera den leblosen Körper zeigt
@@ -58,10 +58,10 @@ cba_settings_hasSettingsFile = 1;
 author = __MADE_BY__;
 onLoadName = __MISSION_NAME__;
 onLoadMission = __VERSION__;
-loadScreen = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+loadScreen = "\opt\opt_client\addons\core\bilder\missionslogo.paa";
 
 overviewTextLocked = __MISSION_NAME__;
-overviewPicture = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+overviewPicture = "\opt\opt_client\addons\core\bilder\missionslogo.paa";
 overviewText = __MISSION_DESCRIPTION__;
 
 onLoadIntro = "Prepare yourself...";
@@ -165,15 +165,6 @@ class CfgDebriefing
         pictureColor[] = {0.6,0.1,0.2,1};
     };
 
-    class End3
-    {
-        subtitle = "AAF hat die Schlacht gewonnen!";
-        description = "Die AAF Truppen eroberten weitere Gebiete in diesem Krieg.";
-        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "flag_AAF";
-        pictureColor[] = {0.1,0.6,0.2,1};
-    };
-
     class End4
     {
         title = "Untentschieden";
@@ -207,14 +198,5 @@ class CfgDebriefing
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
         picture = "flag_CSAT";
         pictureColor[] = {0.6,0.1,0.2,1};
-    };
-
-    class balanceindependent
-    {
-        subtitle = "Ueberhangregel";
-        description = "Zu viele AAF Spieler - Überhangregel greift.";
-        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "flag_AAF";
-        pictureColor[] = {0.1,0.6,0.2,1};
     };
 };
