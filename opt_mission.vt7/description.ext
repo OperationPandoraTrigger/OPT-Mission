@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "75"
+#define __VERSION__ "78"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -149,20 +149,18 @@ class CfgDebriefing
 { 
     class End1
     {
-        subtitle = "NATO hat die Schlacht gewonnen!";
-        description = "Die NATO Truppen eroberten weitere Gebiete in diesem Krieg.";
+        subtitle = "Die finnischen Truppen haben die Schlacht gewonnen!";
+        description = "Die finnischen Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "flag_NATO";
-        pictureColor[] = {0.0,0.3,0.6,1};
+        picture = "\opt\opt_client\addons\core\bilder\flag_finland.paa";
     };
 
     class End2
     {
-        subtitle = "CSAT hat die Schlacht gewonnen!";
-        description = "Die CSAT Truppen eroberten weitere Gebiete in diesem Krieg.";
+        subtitle = "Die sowjetischen Truppen haben die Schlacht gewonnen!";
+        description = "Die sowjetischen Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "flag_CSAT";
-        pictureColor[] = {0.6,0.1,0.2,1};
+        picture = "\opt\opt_client\addons\core\bilder\flag_soviet_union.paa";
     };
 
     class End4
@@ -185,7 +183,7 @@ class CfgDebriefing
     class balanceBLUFOR
     {
         subtitle = "Überhangregel";
-        description = "Zu viele Nato Spieler - Überhangregel greift";
+        description = "Zu viele NATO Spieler - Überhangregel greift";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
         picture = "flag_NATO";
         pictureColor[] = {0.0,0.3,0.6,1};
