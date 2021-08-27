@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "91"
+#define __VERSION__ "93"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -147,25 +147,25 @@ disableChannels[] =
 
 class CfgDebriefing 
 { 
-    class End1
+    class END_SWORD
     {
-        subtitle = "Die finnischen Truppen haben die Schlacht gewonnen!";
-        description = "Die finnischen Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
+        subtitle = "SWORD hat die Schlacht gewonnen!";
+        description = "Die SWORD-Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "\opt\opt_client\addons\core\bilder\flag_finland.paa";
+        picture = "\opt\opt_client\addons\core\bilder\sword_logo.paa";
     };
 
-    class End2
+    class END_ARF
     {
-        subtitle = "Die sowjetischen Truppen haben die Schlacht gewonnen!";
-        description = "Die sowjetischen Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
+        subtitle = "ARF hat die Schlacht gewonnen!";
+        description = "Die ARF-Truppen eroberten ein weiteres Gebiet in diesem Krieg.";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
-        picture = "\opt\opt_client\addons\core\bilder\flag_soviet_union.paa";
+        picture = "\opt\opt_client\addons\core\bilder\arf_logo.paa";
     };
 
-    class End4
+    class END_DRAW
     {
-        title = "Untentschieden";
+        title = "Unentschieden";
         subtitle = "Eine knappe Kiste ohne echten Sieger!";
         description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
