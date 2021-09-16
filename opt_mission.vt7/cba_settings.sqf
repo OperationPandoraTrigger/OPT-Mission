@@ -70,7 +70,7 @@ force ace_cargo_enable = true;
 force ace_cargo_loadTimeCoefficient = 5;
 force ace_cargo_paradropTimeCoefficent = 0.207957;
 force ace_refuel_hoseLength = 12;
-force ace_refuel_rate = 1;
+force ace_refuel_rate = 25;
 
 // ACE Magazine Repack
 force ace_magazinerepack_timePerAmmo = 1.5;
@@ -126,7 +126,7 @@ ace_finger_indicatorForSelf = true;
 force ace_finger_maxRange = 4;
 
 // ACE Respawn
-force ace_respawn_removeDeadBodiesDisconnected = false;
+force ace_respawn_removeDeadBodiesDisconnected = true;
 force ace_respawn_savePreDeathGear = true;
 
 // ACE Spectator
@@ -209,6 +209,9 @@ cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
+
+// CBA Network
+force force cba_network_loadoutValidation = 1;
 
 // DUI - Squad Radar - Indicators
 diwako_dui_indicators_fov_scale = false;
