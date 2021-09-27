@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "103"
+#define __VERSION__ "107"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -168,6 +168,15 @@ class CfgDebriefing
         title = "Unentschieden";
         subtitle = "Eine knappe Kiste ohne echten Sieger!";
         description = "Beide Fraktionen sind gleich stark. Das sinnlose Blutvergießen wird für heute beendet und die Fraktionen ziehen sich zurück.";
+        pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
+        picture = "KIA";
+    };
+
+    class END_SLOTS
+    {
+        title = "Falsche Slotwahl";
+        subtitle = "Unpassender Slot für das aktive Kontingent!";
+        description = "Der gewählte Slot ist im derzeitigen Kontingent nicht erlaubt. Bitte umslotten!";
         pictureBackground = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
         picture = "KIA";
     };
