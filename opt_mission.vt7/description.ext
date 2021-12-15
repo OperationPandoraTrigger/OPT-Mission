@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "OPT Virolahti Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "111"
+#define __VERSION__ "112"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -58,10 +58,10 @@ cba_settings_hasSettingsFile = 1;
 author = __MADE_BY__;
 onLoadName = __MISSION_NAME__;
 onLoadMission = __VERSION__;
-loadScreen = "\opt\opt_client\addons\core\bilder\missionslogo.paa";
+loadScreen = "\opt\opt_client\addons\core\bilder\missionslogo2.paa";
 
 overviewTextLocked = __MISSION_NAME__;
-overviewPicture = "\opt\opt_client\addons\core\bilder\missionslogo.paa";
+overviewPicture = "\opt\opt_client\addons\core\bilder\missionslogo2.paa";
 overviewText = __MISSION_DESCRIPTION__;
 
 onLoadIntro = "Prepare yourself...";
