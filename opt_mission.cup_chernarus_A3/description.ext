@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "OPT Virolahti Kampagne"
+#define __MISSION_NAME__ "OPT Cherno Kampagne"
 // Versionsnummer eintragen
-#define __VERSION__ "126"
+#define __VERSION__ "141"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
@@ -58,10 +58,10 @@ cba_settings_hasSettingsFile = 1;
 author = __MADE_BY__;
 onLoadName = __MISSION_NAME__;
 onLoadMission = __VERSION__;
-loadScreen = "\opt\opt_client\addons\core\bilder\missionslogo2.paa";
+loadScreen = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 
 overviewTextLocked = __MISSION_NAME__;
-overviewPicture = "\opt\opt_client\addons\core\bilder\missionslogo2.paa";
+overviewPicture = "\opt\opt_client\addons\core\bilder\opt4_logo.paa";
 overviewText = __MISSION_DESCRIPTION__;
 
 onLoadIntro = "Prepare yourself...";
