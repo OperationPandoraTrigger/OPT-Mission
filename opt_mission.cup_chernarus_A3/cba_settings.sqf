@@ -332,6 +332,12 @@ force force opt_WEATHERTIME_weather_fogDecay_end = 0;
 // OPT Hardcap
 force force opt_SHOP_hardcapmode = 1;
 
+// OPT Spritverbrauch
+force force opt_GELDZEIT_helibasisflughohe = 300;
+force force opt_GELDZEIT_heliverbrauchsfaktor = 200;
+force force opt_GELDZEIT_flugzeugbasisflughohe= 300;
+force force opt_GELDZEIT_flugzeugverbrauchsfaktor= 200;
+
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 8.53416;
 TFAR_intercomDucking = 0.2;
