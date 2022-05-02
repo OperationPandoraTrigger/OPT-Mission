@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "OPT Cherno Kampagne"
+#define __MISSION_NAME__ "Anyone in Cherno?"
 // Versionsnummer eintragen
-#define __VERSION__ "159"
+#define __VERSION__ "161"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
