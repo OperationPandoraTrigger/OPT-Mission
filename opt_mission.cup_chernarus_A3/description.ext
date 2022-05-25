@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Anyone in Cherno?"
 // Versionsnummer eintragen
-#define __VERSION__ "165"
+#define __VERSION__ "166"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
