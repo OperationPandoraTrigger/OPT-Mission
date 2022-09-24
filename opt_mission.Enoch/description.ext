@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Living in Onia"
 // Versionsnummer eintragen
-#define __VERSION__ "177"
+#define __VERSION__ "178"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
