@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Gertrud aus Maldevien"
+#define __MISSION_NAME__ "Malden Operation S.A.N.T.A."
 // Versionsnummer eintragen
-#define __VERSION__ "203"
+#define __VERSION__ "205"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
