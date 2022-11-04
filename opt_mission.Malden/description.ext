@@ -3,7 +3,7 @@
 // hier den Missionsnamen festlegen
 #define __MISSION_NAME__ "Gertrud aus Maldevien"
 // Versionsnummer eintragen
-#define __VERSION__ "201"
+#define __VERSION__ "203"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
