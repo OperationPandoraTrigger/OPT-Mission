@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Malden Operation S.A.N.T.A."
+#define __MISSION_NAME__ "Malden Madness"
 // Versionsnummer eintragen
-#define __VERSION__ "205"
+#define __VERSION__ "207"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
