@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Living in Onia"
+#define __MISSION_NAME__ "Critical Mass"
 // Versionsnummer eintragen
-#define __VERSION__ "199"
+#define __VERSION__ "201"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
