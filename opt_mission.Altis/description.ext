@@ -1,9 +1,9 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Sommer Sonnenschlacht"
+#define __MISSION_NAME__ "Panzerschlacht"
 // Versionsnummer eintragen
-#define __VERSION__ "206"
+#define __VERSION__ "209"
 // made by
 #define __MADE_BY__ "Lord, form, eXcalibur, Fank, maxSzone, TeTeT"
 // short description
