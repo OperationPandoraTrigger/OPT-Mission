@@ -1,7 +1,7 @@
 #define EXCLUDE_CBA_MACROS
 
 // hier den Missionsnamen festlegen
-#define __MISSION_NAME__ "Critical Mass"
+#define __MISSION_NAME__ "xyz"
 // Versionsnummer eintragen
 #define __VERSION__ "201"
 // made by
