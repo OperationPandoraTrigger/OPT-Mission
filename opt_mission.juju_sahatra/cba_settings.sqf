@@ -310,11 +310,11 @@ force force opt_SECTORCONTROL_flagFreeMineZoneRadius = 20;
 force force opt_SECTORCONTROL_flagDistanceToPlayer = 5;
 force force opt_SECTORCONTROL_trainingon = true;
 force force opt_SECTORCONTROL_nato_faction = "ARF";
-force force opt_SECTORCONTROL_nato_allsectors_str = "2";
-force force opt_SECTORCONTROL_nato_sectors_str = "2";
+force force opt_SECTORCONTROL_nato_allsectors_str = "1";
+force force opt_SECTORCONTROL_nato_sectors_str = "1";
 force force opt_SECTORCONTROL_csat_faction = "SWORD";
-force force opt_SECTORCONTROL_csat_allsectors_str = "1";
-force force opt_SECTORCONTROL_csat_sectors_str = "1";
+force force opt_SECTORCONTROL_csat_allsectors_str = "2";
+force force opt_SECTORCONTROL_csat_sectors_str = "2";
 
 // OPT WEATHERTIME
 force force opt_WEATHERTIME_timeslider_hours = 12;
